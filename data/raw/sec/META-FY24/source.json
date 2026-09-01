@@ -1,0 +1,34 @@
+{
+  "id": "META-FY24",
+  "company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "cik": "0001326801",
+  "accession": "0001326801-25-000017",
+  "fiscalYear": "FY2024",
+  "periodEnd": "2024-12-31",
+  "filingDate": "2025-01-30",
+  "sourceType": "Issuer-hosted annual report PDF containing Form 10-K",
+  "sourceUrl": "https://s21.q4cdn.com/399680738/files/doc_financials/2024/ar/Meta-12-31-2024-10K-ARS.pdf",
+  "secHtmlUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+  "retrievedAt": "2026-09-01T16:26:48.995Z",
+  "localFiles": {
+    "pdf": "data/raw/sec/META-FY24/filing.pdf",
+    "fullText": "data/raw/sec/META-FY24/filing.txt",
+    "item1a": "data/processed/item_1a/META-FY24.txt",
+    "modelInput": "data/processed/model_inputs/META-FY24.txt"
+  },
+  "pdf": {
+    "pages": 134,
+    "fileSizeBytes": 1892145,
+    "sha256": "9b81ad9b6ecb9e23b1d810b9cecabcad05e00386d24dd64b4cd44a5bab54a13f",
+    "title": "Meta-12.31.2024-10K ARS",
+    "producer": "Wdesk Fidelity Content Translations Version 014.009.043"
+  },
+  "item1a": {
+    "pdfPageStart": 16,
+    "pdfPageEnd": 51,
+    "substantiveHeadingCandidates": 1,
+    "nextBoundary": "\n\nItem 1B. Unresolved Staff Comments",
+    "extractedCharacters": 188704
+  }
+}

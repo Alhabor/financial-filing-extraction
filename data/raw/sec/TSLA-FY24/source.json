@@ -1,0 +1,34 @@
+{
+  "id": "TSLA-FY24",
+  "company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "cik": "0001318605",
+  "accession": "0001628280-25-003063",
+  "fiscalYear": "FY2024",
+  "periodEnd": "2024-12-31",
+  "filingDate": "2025-01-30",
+  "sourceType": "Issuer-hosted Form 10-K PDF",
+  "sourceUrl": "https://ir.tesla.com/_flysystem/s3/sec/000162828025003063/tsla-20241231-gen.pdf",
+  "secHtmlUrl": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
+  "retrievedAt": "2026-09-01T16:26:48.995Z",
+  "localFiles": {
+    "pdf": "data/raw/sec/TSLA-FY24/filing.pdf",
+    "fullText": "data/raw/sec/TSLA-FY24/filing.txt",
+    "item1a": "data/processed/item_1a/TSLA-FY24.txt",
+    "modelInput": "data/processed/model_inputs/TSLA-FY24.txt"
+  },
+  "pdf": {
+    "pages": 144,
+    "fileSizeBytes": 1720174,
+    "sha256": "2957d89daa2066035df5cf56f3586dd3c25a20a8e366fcf4da866e7e48c1a504",
+    "title": null,
+    "producer": "Qt 5.15.2"
+  },
+  "item1a": {
+    "pdfPageStart": 16,
+    "pdfPageEnd": 30,
+    "substantiveHeadingCandidates": 1,
+    "nextBoundary": "\n\nITEM 1B. UNRESOLVED STAFF COMMENTS",
+    "extractedCharacters": 79647
+  }
+}

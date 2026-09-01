@@ -1,0 +1,34 @@
+{
+  "id": "PYPL-FY24",
+  "company": "PayPal Holdings, Inc.",
+  "ticker": "PYPL",
+  "cik": "0001633917",
+  "accession": "0001633917-25-000019",
+  "fiscalYear": "FY2024",
+  "periodEnd": "2024-12-31",
+  "filingDate": "2025-02-04",
+  "sourceType": "SEC filing PDF",
+  "sourceUrl": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001633917/ce09b590-7f74-448a-9616-a9817693b50e.pdf",
+  "secHtmlUrl": "https://www.sec.gov/Archives/edgar/data/1633917/000163391725000019/pypl-20241231.htm",
+  "retrievedAt": "2026-09-01T16:26:48.995Z",
+  "localFiles": {
+    "pdf": "data/raw/sec/PYPL-FY24/filing.pdf",
+    "fullText": "data/raw/sec/PYPL-FY24/filing.txt",
+    "item1a": "data/processed/item_1a/PYPL-FY24.txt",
+    "modelInput": "data/processed/model_inputs/PYPL-FY24.txt"
+  },
+  "pdf": {
+    "pages": 374,
+    "fileSizeBytes": 2802847,
+    "sha256": "27787ae26bddde901e4d1220ded3549994ef5610c331f4ffb1f5ec292097f7eb",
+    "title": "0001633917-25-000019",
+    "producer": "EDGRpdf Service w/ EO.Pdf 22.0.40.0"
+  },
+  "item1a": {
+    "pdfPageStart": 14,
+    "pdfPageEnd": 28,
+    "substantiveHeadingCandidates": 1,
+    "nextBoundary": "\n\n\nITEM 1B. UNRESOLVED STAFF COMMENTS",
+    "extractedCharacters": 87950
+  }
+}

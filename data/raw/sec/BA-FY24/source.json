@@ -1,0 +1,34 @@
+{
+  "id": "BA-FY24",
+  "company": "The Boeing Company",
+  "ticker": "BA",
+  "cik": "0000012927",
+  "accession": "0000012927-25-000015",
+  "fiscalYear": "FY2024",
+  "periodEnd": "2024-12-31",
+  "filingDate": "2025-02-03",
+  "sourceType": "SEC-filed annual report PDF containing Form 10-K",
+  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/12927/000119312525049918/d844315dars.pdf",
+  "secHtmlUrl": "https://www.sec.gov/Archives/edgar/data/12927/000001292725000015/ba-20241231.htm",
+  "retrievedAt": "2026-09-01T16:26:48.995Z",
+  "localFiles": {
+    "pdf": "data/raw/sec/BA-FY24/filing.pdf",
+    "fullText": "data/raw/sec/BA-FY24/filing.txt",
+    "item1a": "data/processed/item_1a/BA-FY24.txt",
+    "modelInput": "data/processed/model_inputs/BA-FY24.txt"
+  },
+  "pdf": {
+    "pages": 161,
+    "fileSizeBytes": 6958158,
+    "sha256": "0a7b4383c3a344efff87841962e1b11e527e8b160c1f3fae3270aefa87187897",
+    "title": null,
+    "producer": "PDFium"
+  },
+  "item1a": {
+    "pdfPageStart": 14,
+    "pdfPageEnd": 27,
+    "substantiveHeadingCandidates": 1,
+    "nextBoundary": "\nItem 1B. Unresolved Staff Comments",
+    "extractedCharacters": 58169
+  }
+}

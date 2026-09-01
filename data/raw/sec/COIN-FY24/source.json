@@ -1,0 +1,34 @@
+{
+  "id": "COIN-FY24",
+  "company": "Coinbase Global, Inc.",
+  "ticker": "COIN",
+  "cik": "0001679788",
+  "accession": "0001679788-25-000022",
+  "fiscalYear": "FY2024",
+  "periodEnd": "2024-12-31",
+  "filingDate": "2025-02-13",
+  "sourceType": "Issuer-hosted Form 10-K PDF",
+  "sourceUrl": "https://investor.coinbase.com/files/doc_financials/2024/q4/Coinbase-Global-Inc-2024-10K-for-IR.pdf",
+  "secHtmlUrl": "https://www.sec.gov/Archives/edgar/data/1679788/000167978825000022/coin-20241231.htm",
+  "retrievedAt": "2026-09-01T16:26:48.995Z",
+  "localFiles": {
+    "pdf": "data/raw/sec/COIN-FY24/filing.pdf",
+    "fullText": "data/raw/sec/COIN-FY24/filing.txt",
+    "item1a": "data/processed/item_1a/COIN-FY24.txt",
+    "modelInput": "data/processed/model_inputs/COIN-FY24.txt"
+  },
+  "pdf": {
+    "pages": 186,
+    "fileSizeBytes": 2100044,
+    "sha256": "8ac69c453d362d9eb0ab4a0cd34fbcce0eb3b1a80ce95f0b041a56942d1abc32",
+    "title": "Coinbase Global, Inc 2024 - 10K",
+    "producer": "Wdesk Fidelity Content Translations Version 011.002.024"
+  },
+  "item1a": {
+    "pdfPageStart": 21,
+    "pdfPageEnd": 86,
+    "substantiveHeadingCandidates": 1,
+    "nextBoundary": "\nITEM 1B. UNRESOLVED STAFF COMMENTS",
+    "extractedCharacters": 288952
+  }
+}

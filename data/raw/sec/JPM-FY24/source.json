@@ -1,0 +1,34 @@
+{
+  "id": "JPM-FY24",
+  "company": "JPMorgan Chase & Co.",
+  "ticker": "JPM",
+  "cik": "0000019617",
+  "accession": "0000019617-25-000270",
+  "fiscalYear": "FY2024",
+  "periodEnd": "2024-12-31",
+  "filingDate": "2025-02-14",
+  "sourceType": "Issuer-hosted Form 10-K PDF",
+  "sourceUrl": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2024/4th-quarter/corp-10k-2024.pdf",
+  "secHtmlUrl": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000270/jpm-20241231.htm",
+  "retrievedAt": "2026-09-01T16:26:48.995Z",
+  "localFiles": {
+    "pdf": "data/raw/sec/JPM-FY24/filing.pdf",
+    "fullText": "data/raw/sec/JPM-FY24/filing.txt",
+    "item1a": "data/processed/item_1a/JPM-FY24.txt",
+    "modelInput": "data/processed/model_inputs/JPM-FY24.txt"
+  },
+  "pdf": {
+    "pages": 436,
+    "fileSizeBytes": 7776252,
+    "sha256": "4df8c8007381845715ad56955a4f16c34bdc9e6df6b39a2e7e1c878c2fe0c566",
+    "title": "CORP 10K 2024",
+    "producer": "Wdesk Fidelity Content Translations Version 011.002.024"
+  },
+  "item1a": {
+    "pdfPageStart": 12,
+    "pdfPageEnd": 39,
+    "substantiveHeadingCandidates": 1,
+    "nextBoundary": "\nItem 1B. Unresolved Staff Comments.                                The premises and facilities occupied by",
+    "extractedCharacters": 135706
+  }
+}
