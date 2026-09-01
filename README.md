@@ -1,6 +1,28 @@
 # Financial filing extraction
 
-Group 7 的 AI in Finance mini-exercise 工作区。
+本项目是纽约大学 Stern 商学院课程 **SHBI-GB 7343 — AI in Finance** 的 Group 7 mini-exercise 工作区。
+
+## 课程背景
+
+- 课程编号：`SHBI-GB 7343`
+- 课程名称：`AI in Finance`
+- 小组：Group 7
+- 分配任务：`Mini-exercise: financial filing extraction`
+- 课程位置：Lecture 1, Page 73
+
+## 课程原始要求
+
+以下内容根据课程公告和课堂材料整理，属于课程原始任务要求，不是本项目额外添加的评分标准：
+
+1. 输入一段简短的 10-K Risk Factors 原文；
+2. 设计一个能够产生可验证证据的提示词；
+3. 识别三个重大风险；
+4. 引用支持每个判断的原文；
+5. 对风险进行类型分类；
+6. 对每一项结论回到原始文本进行核验；
+7. 扩展比较通用大语言模型与金融领域专门模型或本地模型的表现。
+
+课程公告还说明：每个小组提交一份作业，并确保包含所有组员姓名；Group 7 需要在周四课堂进行分享。
 
 本项目比较通用云端模型、通用本地模型和金融专门模型，测试它们能否从 SEC Form 10-K 的 Risk Factors 原文中抽取三个可验证的重大风险，并提供准确引用和风险类型分类。
 
