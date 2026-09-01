@@ -1,4 +1,4 @@
-# Mini-exercise: Financial Filing Extraction
+# Financial filing extraction
 
 Group 7 的 AI in Finance mini-exercise 工作区。
 
