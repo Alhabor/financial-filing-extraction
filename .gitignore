@@ -1,0 +1,30 @@
+# macOS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Local model files and caches
+models/
+*.gguf
+*.safetensors
+*.bin
+.cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
