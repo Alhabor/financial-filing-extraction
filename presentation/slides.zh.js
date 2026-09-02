@@ -12,7 +12,7 @@ window.FINANCIAL_FILING_SLIDES = [
   },
   {
     layout: "manual-time", kicker: "假定的原始人工流程", title: "没有 AI：完成一个短案例约 30 分钟",
-    body: `<div class="manual-flow"><article><span>01</span><strong>定位 Item 1A</strong><em>3 min</em><p>打开文件并确认页码</p></article><b>→</b><article><span>02</span><strong>阅读与标记</strong><em>10 min</em><p>找出可能重大风险</p></article><b>→</b><article><span>03</span><strong>选择与分类</strong><em>6 min</em><p>确定前三项及主类型</p></article><b>→</b><article><span>04</span><strong>复制证据</strong><em>6 min</em><p>抄录原文与页码</p></article><b>→</b><article><span>05</span><strong>复核与格式化</strong><em>5 min</em><p>检查引用并整理输出</p></article></div><div class="assumption-box"><strong>30 分钟是情景假设，不是实验实测。</strong><p>范围是一份已经准备好的短 10-K 风险案例；文档长度、行业熟悉度和分析深度都会改变实际时间。</p></div>`,
+    body: `<div class="manual-flow"><article><span>01</span><strong>定位 Item 1A</strong><em>3 min</em><p>打开文件并确认页码</p></article><b>→</b><article><span>02</span><strong>阅读与标记</strong><em>10 min</em><p>找出可能重大风险</p></article><b>→</b><article><span>03</span><strong>选择与分类</strong><em>6 min</em><p>确定前三项及主类型</p></article><b>→</b><article><span>04</span><strong>复制证据</strong><em>6 min</em><p>抄录原文与页码</p></article><b>→</b><article><span>05</span><strong>复核与格式化</strong><em>5 min</em><p>检查引用并整理输出</p></article></div><div class="manual-summary"><span style="--share:53%"><strong>53%</strong> 阅读 + 证据复制</span><span style="--share:20%"><strong>20%</strong> 选择与分类</span><span style="--share:27%"><strong>27%</strong> 定位 + 复核</span></div><div class="assumption-box"><strong>30 分钟是情景假设，不是实验实测。</strong><p>范围是一份已经准备好的短 10-K 风险案例；文档长度、行业熟悉度和分析深度都会改变实际时间。</p></div>`,
     sources: [["任务步骤依据", "report/financial_filing_extraction_report_zh.md#14-模型必须交付什么"]], notes: "明确说明这是一组用于课堂比较的透明假设。"
   },
   {
@@ -37,12 +37,12 @@ window.FINANCIAL_FILING_SLIDES = [
   },
   {
     layout: "assisted-time", kicker: "AI 辅助后的情景时间", title: "按同一人工复核假设，约从 30 分钟降到 7–11 分钟",
-    body: `<div class="time-bars"><div><span>纯人工</span><i style="--time:100%"></i><strong>30.0 min</strong></div><div><span>DeepSeek 辅助</span><i style="--time:24%"></i><strong>7.1 min</strong></div><div><span>Finance 辅助</span><i style="--time:30%"></i><strong>9.1 min</strong></div><div><span>Gemma 辅助</span><i style="--time:35%"></i><strong>10.5 min</strong></div></div><div class="time-formula"><span>共同假设</span><strong>2 分钟准备 + 实测机器运行 + 5 分钟人工复核</strong></div><p class="reader-note"><strong>纠错时间未计入。</strong>如果输出未完整通过，DeepSeek 与 Gemma 还需要额外人工修正，因此本页不是生产效率实测。</p>`,
+    body: `<div class="time-bars"><div><span>纯人工</span><i style="--time:100%"></i><strong>30.0 min</strong></div><div><span>DeepSeek 辅助</span><i style="--time:24%"></i><strong>7.1 min</strong></div><div><span>Finance 辅助</span><i style="--time:30%"></i><strong>9.1 min</strong></div><div><span>Gemma 辅助</span><i style="--time:35%"></i><strong>10.5 min</strong></div></div><div class="savings-row"><span>DeepSeek <strong>−76%</strong></span><span>Finance <strong>−70%</strong></span><span>Gemma <strong>−65%</strong></span></div><div class="time-formula"><span>共同假设</span><strong>2 分钟准备 + 实测机器运行 + 5 分钟人工复核</strong></div><p class="reader-note"><strong>纠错时间未计入。</strong>如果输出未完整通过，DeepSeek 与 Gemma 还需要额外人工修正，因此本页不是生产效率实测。</p>`,
     sources: [["机器时间", "report/data/reviewed_results.csv"], ["计算口径", "presentation/README.md"]], notes: "只有模型运行时间来自实验；其余时间均为明确假设。"
   },
   {
     layout: "pipeline", kicker: "为什么 Finance 更稳定", title: "模型做判断，程序保证逐字忠实",
-    body: `<div class="pipeline-lanes"><div class="lane deterministic"><span>程序</span><strong>① 筛选候选证据</strong><p>完整句 · 段落 · PDF 页</p></div><b>→</b><div class="lane model"><span>金融模型</span><strong>② 选择 3 个 Evidence ID</strong><p>摘要 · 分类 · 不生成引文</p></div><b>→</b><div class="lane deterministic"><span>程序</span><strong>③ 按 ID 原样回填</strong><p>逐字引用 · 页码 · 校验</p></div></div><div class="responsibility-row"><span>模型权重没有改变</span><strong>减少输入和职责后，引用与定位错误被管线直接消除</strong></div>`,
+    body: `<div class="pipeline-lanes"><div class="lane deterministic"><span>程序</span><strong>① 筛选候选证据</strong><p>完整句 · 段落 · PDF 页</p></div><b>→</b><div class="lane model"><span>金融模型</span><strong>② 选择 3 个 Evidence ID</strong><p>摘要 · 分类 · 不生成引文</p></div><b>→</b><div class="lane deterministic"><span>程序</span><strong>③ 按 ID 原样回填</strong><p>逐字引用 · 页码 · 校验</p></div></div><div class="ownership-grid"><p><span>模型负责</span><strong>风险判断与分类</strong></p><p><span>程序负责</span><strong>原文、页码与格式</strong></p><p><span>人工负责</span><strong>最终金融合理性复核</strong></p></div><div class="responsibility-row"><span>模型权重没有改变</span><strong>减少输入和职责后，引用与定位错误被管线直接消除</strong></div>`,
     sources: [["Evidence Catalog", "scripts/lib/evidence_catalog.cjs"], ["Locator", "scripts/apply_evidence_locator.cjs"]], notes: "Evidence ID 是不可变引用。模型做金融判断，程序做精确复制。"
   },
   {
