@@ -1,0 +1,11 @@
+# PV014 — DeepSeek core risk extraction
+
+Analyze only the supplied Form 10-K Item 1A packet. Identify exactly three distinct material risks using severe or broad consequences explicitly stated by the filer. Do not use outside knowledge, search, or unstated facts.
+
+Return one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects ordered `R1`, `R2`, `R3` and every schema field.
+
+For each risk, write a concrete source-supported `risk_summary`, choose one allowed `risk_type`, and copy a 5–18 word `evidence_quote` from one physical input line. Do not merge lines, repair whitespace, remove a word, or change punctuation. Cite the governing `[PARAGRAPH ...]` ID and nearest preceding integer `[PDF_PAGE ...]`. Use the minimum paragraph and page citations needed for that quote.
+
+Classify the primary driver rather than its downstream consequence: market demand, competition, asset prices, adoption, and strategic partnerships are `Strategic / Market / Technology`; operational service dependencies and disruptions are `Operational / Supply Chain`; laws and enforcement are `Regulatory / Legal / Geopolitical`; liquidity, credit, lending, funding, and counterparty default are `Financial / Liquidity / Credit`; security, data, privacy, access, and breaches are `Cybersecurity / Data / Privacy`; otherwise use `Other`.
+
+This is the core extraction task. Set `reasoning`, `financial_impact`, `time_horizon`, `mitigation`, and `uncertainty` exactly to `Not separately analyzed in the core extraction task.` Set `monitoring_indicators` to `[]`. Do not put analysis or suggestions in those fields.

@@ -1,0 +1,40 @@
+{
+  "locator_version": "EL001",
+  "run_id": "P002-COIN-FY24-finance-llama-20260902T061406113Z-51ea66-a02",
+  "source_files": {
+    "raw_selection": "raw/response.txt",
+    "raw_selection_sha256": "09d7cd3ac28ad02c887b53a800265ec23cbfc949e88a70df0b0f009efc2308bb",
+    "evidence_catalog": "input/evidence_catalog.json",
+    "evidence_catalog_sha256": "18ea19c2b0e69751d808f8207928b472947679dbfe1f38ab694861166a1f661e",
+    "source_packet": "input/source_packet.txt",
+    "source_packet_sha256": "35ad2caca4e16cf8880996dadefffd785e135718ad1340308bf97adfb572f2b2"
+  },
+  "passed": true,
+  "errors": [],
+  "mappings": [
+    {
+      "risk_id": "R1",
+      "evidence_id": "E0003",
+      "paragraph_id": "COIN-FY24-P002",
+      "pdf_page": 25,
+      "source_line": 11,
+      "text_sha256": "8483eca9c6400ccddc93915951b6e09618161c41864b93bb5a52ca298c67b419"
+    },
+    {
+      "risk_id": "R2",
+      "evidence_id": "E0016",
+      "paragraph_id": "COIN-FY24-P008",
+      "pdf_page": 26,
+      "source_line": 86,
+      "text_sha256": "5651078860695a4ebf8c2a34d01a1a0905c60f8a91ca26694f23a47265df29fc"
+    },
+    {
+      "risk_id": "R3",
+      "evidence_id": "E0031",
+      "paragraph_id": "COIN-FY24-P012",
+      "pdf_page": 28,
+      "source_line": 149,
+      "text_sha256": "51dfceda17dd0f0350635375c094c9772fc9519b0c814c5f157bbfe75f7d7c11"
+    }
+  ]
+}

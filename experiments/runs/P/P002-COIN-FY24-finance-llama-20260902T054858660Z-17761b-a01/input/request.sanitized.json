@@ -1,0 +1,89 @@
+{
+  "model": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "# PV012 — Finance RAG grouped core material-risk selection\n\nUse only the supplied grouped material-consequence sentence catalog derived from a Form 10-K Item 1A packet. Identify exactly three distinct material risks. The deterministic lexical screen is only a search aid, not a gold answer.\n\nFor each risk, select one sentence that states both a concrete risk theme or driver and an explicit consequence for the filer. Prefer broad or severe consequences affecting operations, financial condition, results, customers, or reputation. Do not select a heading, fragment, generic background statement, or a sentence whose consequence belongs only to an uncited prior sentence.\n\nEach record has the form `[E0001 | GROUP G001] complete evidence sentence`. Select exactly one record from each of three different GROUP values. Return only its `evidence_id`; the deterministic locator restores the exact quote, paragraph, and page. Do not quote or rewrite source text.\n\nReturn one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects ordered `R1`, `R2`, `R3`, with only these fields: `risk_id`, `risk_summary`, `risk_type`, and `evidence_id`.\n\n`risk_summary` must be a concrete 4–12 word noun phrase naming the source-supported risk theme. It must not equal the category label and must not add a product, activity, cause, or consequence absent from the selected sentence.\n\nClassification boundaries:\n\n- Use `Cybersecurity / Data / Privacy` only when the selected sentence explicitly concerns security, data, privacy, access, or a breach.\n- Use `Operational / Supply Chain` only when it explicitly concerns operations, service interruption, production, delivery, suppliers, providers, or third parties.\n- Use `Regulatory / Legal / Geopolitical` for laws, regulations, enforcement, litigation, fines, sanctions, or political/trade restrictions.\n- Use `Financial / Liquidity / Credit` for liquidity, credit, lending, funding, fees, losses, revenue, income, or financial counterparties when that is the central theme.\n- Use `Strategic / Market / Technology` for competition, market demand, adoption, pricing, or technological change.\n- Use `Other` when the central theme, such as intellectual-property protection, does not fit the five categories above.\n\nThe three evidence IDs must exist, be different, come from three different GROUP values, and represent three different risk themes. Never add facts from memory.\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: COIN-FY24\n- model_id: QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M\n- prompt_version: PV012"
+    },
+    {
+      "role": "user",
+      "content": "Case: COIN-FY24\nInput view: deterministic grouped material-consequence sentence catalog derived from the frozen packet.\nThe lexical screen reduces search volume but is not a gold label; choose three distinct material risks.\nChoose exactly one record from each of three different GROUP values.\nEach ID maps to one complete sentence; only extraction-layout whitespace was normalized.\n\n[E0003 | GROUP G002] In the event that the price of crypto assets or the demand for trading crypto assets decline, our business, operating results, and financial condition would be adversely affected and the price of our Class A common stock could decline.\n[E0006 | GROUP G003] If revenue from these areas declines and is not replaced by new demand for crypto assets or other products and services, our business, operating results, and financial condition could be adversely affected.\n[E0014 | GROUP G007] If such factors are negatively impacted, our business, operating results, and financial condition could be adversely affected.\n[E0016 | GROUP G008] If we are unsuccessful in establishing or maintaining strategic relationships with these third parties or if these third parties fail to deliver certain operational services, our business, operating results, and financial condition could be adversely affected.\n[E0023 | GROUP G009] Despite this evaluation, third parties may still not meet our or our customers’ needs which may adversely affect our ability to deliver products and services to customers, and could adversely affect our business, operating results, and financial condition.\n[E0024 | GROUP G009] Counterparties to any strategic relationship may have economic or business interests or goals that are, or that may become, inconsistent with our business interests or goals, and may subject us to additional risks to the extent any such third party becomes the subject of negative publicity, faces its own litigation or regulatory challenges, or faces other adverse circumstances.\n[E0026 | GROUP G009] If we are unsuccessful in establishing or maintaining strategic relationships with third parties, our ability to compete in the marketplace or to grow our revenue could be impaired and our business, operating results, and financial condition could be adversely affected.\n[E0028 | GROUP G010] As a result, there may be a lack of consensus or clarity on the governance of any particular crypto network, a lack of incentives for developers to maintain or develop the network, and other unforeseen issues, any of which could result in unexpected or undesirable errors, bugs, or changes, or stymie such network’s utility and ability to respond to challenges and grow; and • many crypto networks are in the early stages of developing partnerships and collaborations, any or all of which may not succeed and adversely affect the usability and adoption of the respective crypto assets.\n[E0030 | GROUP G011] If any such risks or other risks materialize, and in particular if they are not resolved, the development and growth of crypto may be significantly affected and, as a result, our business, operating results, and financial condition could be adversely affected.\n[E0031 | GROUP G012] Cyberattacks and security breaches of our platform, or those impacting our customers or third parties, could adversely affect our brand, reputation, business, operating results, and financial condition.\n[E0038 | GROUP G016] Further, any actual or perceived breach or cybersecurity attack directed at other financial institutions or crypto companies, whether or not we are directly impacted, could lead to a general loss of customer confidence in the cryptoeconomy or in the use of technology to conduct financial transactions, which could negatively impact us, including the market perception of the effectiveness of our security measures and technology infrastructure.\n[E0046 | GROUP G019] Although we have developed systems and processes designed to protect the data we manage, prevent data loss and other security breaches, effectively respond to known and potential risks, and expect to continue to expend significant resources to bolster these protections, there can be no assurance that these security measures will provide absolute security or prevent breaches or attacks.\n[E0051 | GROUP G019] We may also acquire other companies that expose us to unexpected security risks or increase costs to improve the security posture of the acquired company.\n[E0052 | GROUP G019] Further, there has been an increase in such threat actor activities as a result of the increased prevalence of hybrid and remote working arrangements in recent years.\n[E0054 | GROUP G020] Although we maintain insurance coverage, it may be insufficient to protect us against all losses and costs stemming from security breaches, cyberattacks, and other types of unlawful activity, or any resulting disruptions or data theft and loss from such events.\n[E0055 | GROUP G020] Outages and disruptions of our platform, including any caused by cyberattacks, may harm our reputation, business, operating results, and financial condition.\n[E0058 | GROUP G021] These third parties may be subject to financial, legal, regulatory, and labor issues, cybersecurity incidents, data theft or loss, break-ins, computer viruses or vulnerabilities in their code, denial-of-service attacks, sabotage, acts of vandalism, loss, disruption, or instability of third-party banking relationships, privacy breaches, service terminations, disruptions, interruptions, and other misconduct.\n[E0059 | GROUP G021] They are also vulnerable to damage or interruption from human error, power loss, telecommunications failures, fires, floods, earthquakes, hurricanes, tornadoes, pandemics and similar events.\n[E0062 | GROUP G021] If any third parties do not adequately or appropriately provide their services or perform their responsibilities to us or our customers on our behalf, such as if third-party service providers to close their data center facilities without adequate notice, are unable to restore operations and data, fail to perform as expected, or experience other unanticipated problems, we may be unable to procure alternatives in a timely and efficient manner and on acceptable terms, or at all, and we may be subject to business disruptions, losses or costs to remediate any of the deficiencies, customer dissatisfaction, reputational damage, legal or regulatory proceedings, or other adverse consequences which could adversely affect our business, operating results, and financial condition.\n[E0063 | GROUP G022] Loss of a critical banking or insurance relationship could adversely affect our business, operating results, and financial condition.\n[E0069 | GROUP G023] The loss of these banking partners or the imposition of operational restrictions by these banking partners and the inability for us to utilize other redundant financial institutions may result in a disruption of business activity as well as regulatory risks.\n[E0070 | GROUP G023] In addition, as a result of the myriad of regulations, the risks of crypto assets generally, the adverse reputational impact of the 2022 Events on our industry, or in the event of an adverse outcome of the June 2023 SEC Complaint, financial institutions in the United States and globally may decide to not provide, or be prohibited from providing, account, custody, or other financial services to us or the cryptoeconomy generally.\n[E0072 | GROUP G024] However, if these financial institutions are subject to bank resolution or failure, or limit or end their crypto market activity, or if banking relationships become severely limited or unavailable to crypto market participants in a certain country, there could be temporary delays in or unavailability of services in such country that are critical to our or our partners’ operations, developers or customers, a further limit on available vendors, reduced quality in services we, our partners, our developers or our customers are able to obtain, and a general disruption to the cryptoeconomy, potentially leading to reduced activity on our platform which could adversely affect our business, operating results, and financial condition.\n[E0075 | GROUP G026] We also rely on insurance carriers to insure customer losses resulting from a breach of our physical security, cybersecurity, or by employee or third party theft and hold surety bonds as required for compliance with certain of our licenses under applicable state laws.\n[E0076 | GROUP G026] Our ability to maintain crime, specie, and cyber insurance, as well as surety bonds, is subject to the insurance carriers’ ongoing underwriting criteria and our inability to obtain and maintain appropriate insurance coverage could cause a substantial business disruption, adverse reputational impact, inability to compete with our competitors, and regulatory scrutiny, and could adversely affect our business, operating results, and financial condition.\n[E0077 | GROUP G027] Any significant disruption in our products and services, in our information technology systems, or in any of the blockchain networks we support, could result in a loss of customers or funds and adversely affect our brand, reputation, business, operating results, and financial condition.\n[E0082 | GROUP G029] Our systems, the systems of our third-party service providers and partners, and certain crypto asset and blockchain networks have experienced from time to time, and may experience in the future service interruptions or degradation because of hardware and software defects or malfunctions, distributed denial-of-service and other cyberattacks, insider threats, break-ins, sabotage, human error, vandalism, earthquakes, hurricanes, floods, fires, and other natural disasters, power losses, disruptions in telecommunications services, fraud, military or political conflicts, terrorist attacks, computer viruses or other malware, or other events.\n[E0085 | GROUP G030] If any of our systems, or those of our third-party service providers, are disrupted for any reason, our products and services may fail, resulting in unanticipated disruptions, slower response times and delays in our customers’ trade execution and processing, failed settlement of trades, incomplete or inaccurate accounting, recording or processing of trades, unauthorized trades, loss of customer information, increased demand on limited customer support resources, customer claims, complaints with regulatory organizations, lawsuits, or enforcement actions.\n[E0086 | GROUP G030] Further, when these disruptions occur, we have in the past, and may in the future, fulfill customer transactions using inventory to prevent adverse user impact and limit detrimental impact to our operating results.\n[E0087 | GROUP G030] A prolonged interruption in the availability or reduction in the availability, speed, or functionality of our products and services could harm our business.\n[E0088 | GROUP G030] Significant or persistent interruptions in our services could cause current or potential customers or partners to believe that our systems are unreliable, leading them to switch to our competitors or to avoid or reduce the use of our products and services, and could permanently harm our reputation and brands."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 1600,
+  "seed": 7343,
+  "response_format": {
+    "type": "json_object",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "finance-selection-v003",
+      "title": "Finance model core material-risk selection",
+      "type": "object",
+      "required": [
+        "case_id",
+        "model_id",
+        "prompt_version",
+        "risks"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prompt_version": {
+          "type": "string",
+          "pattern": "^PV[0-9]{3,}$"
+        },
+        "risks": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "risk_id",
+              "risk_summary",
+              "risk_type",
+              "evidence_id"
+            ],
+            "properties": {
+              "risk_id": {
+                "type": "string",
+                "pattern": "^R[1-3]$"
+              },
+              "risk_summary": {
+                "type": "string",
+                "minLength": 4,
+                "maxLength": 120
+              },
+              "risk_type": {
+                "type": "string",
+                "enum": [
+                  "Strategic / Market / Technology",
+                  "Operational / Supply Chain",
+                  "Regulatory / Legal / Geopolitical",
+                  "Financial / Liquidity / Credit",
+                  "Cybersecurity / Data / Privacy",
+                  "Other"
+                ]
+              },
+              "evidence_id": {
+                "type": "string",
+                "pattern": "^E[0-9]{4}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

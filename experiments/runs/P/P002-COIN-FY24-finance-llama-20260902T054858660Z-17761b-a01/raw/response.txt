@@ -1,0 +1,25 @@
+{
+"case_id": "COIN-FY24",
+"model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+"prompt_version": "PV012",
+"risks": [
+{
+"risk_id": "R1",
+"risk_summary": "Decline in crypto asset prices or demand",
+"risk_type": "Financial / Liquidity / Credit",
+"evidence_id": "E0003"
+},
+{
+"risk_id": "R2",
+"risk_summary": "Failure to establish or maintain strategic relationships",
+"risk_type": "Operational / Supply Chain",
+"evidence_id": "E0026"
+},
+{
+"risk_id": "R3",
+"risk_summary": "Cybersecurity breaches or attacks",
+"risk_type": "Cybersecurity / Data / Privacy",
+"evidence_id": "E0031"
+}
+]
+}

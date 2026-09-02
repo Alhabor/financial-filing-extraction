@@ -8,9 +8,9 @@ const ROOT = path.resolve(__dirname, '..');
 const MATERIALIZER = path.join(ROOT, 'scripts', 'materialize_experiment_run.cjs');
 const RUNS_ROOT = path.join(ROOT, 'experiments', 'runs', 'P');
 const CONFIGURATIONS = [
-  ['cloud-deepseek', 'optimized-deepseek-text-v003'],
-  ['local-gemma', 'optimized-gemma-text-v003'],
-  ['finance-llama', 'optimized-finance-text-v003']
+  ['cloud-deepseek', 'optimized-deepseek-text-v005'],
+  ['local-gemma', 'optimized-gemma-text-v004'],
+  ['finance-llama', 'optimized-finance-pipeline-v009']
 ];
 
 function parseArgs(argv) {
@@ -41,7 +41,7 @@ function manifests(directory) {
 
 function matrix(scope) {
   if (scope === 'finance-pipeline-smoke') {
-    return [{ caseId: 'PYPL-FY24', modelAlias: 'finance-llama', profile: 'optimized-finance-pipeline-v008' }];
+    return [{ caseId: 'PYPL-FY24', modelAlias: 'finance-llama', profile: 'optimized-finance-pipeline-v009' }];
   }
   const cases = scope === 'smoke'
     ? ['PYPL-FY24']

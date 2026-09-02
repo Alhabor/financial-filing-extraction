@@ -114,6 +114,28 @@ try {
   assert.equal(financePipelineV3.manifest.tools.rag, true);
   assert.equal(financePipelineV4.manifest.parameters.max_output_tokens, 1600);
   assert.equal(financePipelineV4.manifest.tools.rag, true);
+
+  const deepseekCore = materialize(temporary, 'cloud-deepseek', 'optimized-deepseek-text-v004');
+  assert.deepEqual(deepseekCore.request.thinking, { type: 'disabled' });
+  assert.deepEqual(deepseekCore.request.response_format, { type: 'json_object' });
+  assert.equal(deepseekCore.manifest.prompt_version, 'PV014');
+  assert.equal(deepseekCore.manifest.output_schema_version, 'risk-output-core-v001');
+
+  const gemmaCore = materialize(temporary, 'local-gemma', 'optimized-gemma-text-v004');
+  assert.equal(gemmaCore.request.think, false);
+  assert.equal(gemmaCore.request.format.$id, 'risk-output-core-v001');
+  assert.equal(gemmaCore.manifest.prompt_version, 'PV015');
+
+  const financePipelineV5 = materialize(temporary, 'finance-llama', 'optimized-finance-pipeline-v009');
+  assert.equal(financePipelineV5.request.response_format.schema.$id, 'finance-selection-v003');
+  assert.equal(financePipelineV5.manifest.prompt_version, 'PV013');
+  assert.equal(financePipelineV5.manifest.input.transform, 'evidence-catalog-v005');
+
+  const deepseekCoreV2 = materialize(temporary, 'cloud-deepseek', 'optimized-deepseek-text-v005');
+  assert.deepEqual(deepseekCoreV2.request.thinking, { type: 'disabled' });
+  assert.deepEqual(deepseekCoreV2.request.response_format, { type: 'json_object' });
+  assert.equal(deepseekCoreV2.manifest.prompt_version, 'PV016');
+  assert.equal(deepseekCoreV2.manifest.output_schema_version, 'risk-output-core-v001');
   process.stdout.write('test_materialize_transport_controls: all deterministic tests passed\n');
 } finally {
   fs.rmSync(temporary, { recursive: true, force: true });

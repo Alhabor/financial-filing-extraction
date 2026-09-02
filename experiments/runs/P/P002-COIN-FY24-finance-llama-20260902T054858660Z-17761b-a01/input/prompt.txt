@@ -1,0 +1,22 @@
+# PV012 — Finance RAG grouped core material-risk selection
+
+Use only the supplied grouped material-consequence sentence catalog derived from a Form 10-K Item 1A packet. Identify exactly three distinct material risks. The deterministic lexical screen is only a search aid, not a gold answer.
+
+For each risk, select one sentence that states both a concrete risk theme or driver and an explicit consequence for the filer. Prefer broad or severe consequences affecting operations, financial condition, results, customers, or reputation. Do not select a heading, fragment, generic background statement, or a sentence whose consequence belongs only to an uncited prior sentence.
+
+Each record has the form `[E0001 | GROUP G001] complete evidence sentence`. Select exactly one record from each of three different GROUP values. Return only its `evidence_id`; the deterministic locator restores the exact quote, paragraph, and page. Do not quote or rewrite source text.
+
+Return one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects ordered `R1`, `R2`, `R3`, with only these fields: `risk_id`, `risk_summary`, `risk_type`, and `evidence_id`.
+
+`risk_summary` must be a concrete 4–12 word noun phrase naming the source-supported risk theme. It must not equal the category label and must not add a product, activity, cause, or consequence absent from the selected sentence.
+
+Classification boundaries:
+
+- Use `Cybersecurity / Data / Privacy` only when the selected sentence explicitly concerns security, data, privacy, access, or a breach.
+- Use `Operational / Supply Chain` only when it explicitly concerns operations, service interruption, production, delivery, suppliers, providers, or third parties.
+- Use `Regulatory / Legal / Geopolitical` for laws, regulations, enforcement, litigation, fines, sanctions, or political/trade restrictions.
+- Use `Financial / Liquidity / Credit` for liquidity, credit, lending, funding, fees, losses, revenue, income, or financial counterparties when that is the central theme.
+- Use `Strategic / Market / Technology` for competition, market demand, adoption, pricing, or technological change.
+- Use `Other` when the central theme, such as intellectual-property protection, does not fit the five categories above.
+
+The three evidence IDs must exist, be different, come from three different GROUP values, and represent three different risk themes. Never add facts from memory.

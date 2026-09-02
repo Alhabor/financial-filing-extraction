@@ -1,0 +1,75 @@
+{
+  "evaluation_version": "AE002",
+  "parser_version": "PE001",
+  "run_id": "P002-COIN-FY24-cloud-deepseek-20260902T061406076Z-bf62a7-a02",
+  "case_id": "COIN-FY24",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "prompt_version": "PV014",
+  "source_files": {
+    "candidate_response": "raw/response.txt",
+    "evaluation_input": "input/model_input.txt",
+    "raw_response_sha256": "958b28c559acdcd225030b76db23fa5ca3dc27bdda95f4ef0e7b438f3357473f",
+    "model_input_sha256": "35ad2caca4e16cf8880996dadefffd785e135718ad1340308bf97adfb572f2b2"
+  },
+  "parse": {
+    "passed": true,
+    "format": "plain-json",
+    "parsed_text_sha256": "958b28c559acdcd225030b76db23fa5ca3dc27bdda95f4ef0e7b438f3357473f",
+    "errors": []
+  },
+  "schema": {
+    "passed": false,
+    "errors": [
+      "$.reasoning is not allowed by the schema",
+      "$.financial_impact is not allowed by the schema",
+      "$.time_horizon is not allowed by the schema",
+      "$.mitigation is not allowed by the schema",
+      "$.uncertainty is not allowed by the schema",
+      "$.monitoring_indicators is not allowed by the schema",
+      "$.risks[0].source_paragraph_ids is required",
+      "$.risks[0].source_pages is required",
+      "$.risks[0].reasoning is required",
+      "$.risks[0].financial_impact is required",
+      "$.risks[0].time_horizon is required",
+      "$.risks[0].monitoring_indicators is required",
+      "$.risks[0].mitigation is required",
+      "$.risks[0].uncertainty is required",
+      "$.risks[0].paragraph_id is not allowed by the schema",
+      "$.risks[0].pdf_page is not allowed by the schema",
+      "$.risks[1].source_paragraph_ids is required",
+      "$.risks[1].source_pages is required",
+      "$.risks[1].reasoning is required",
+      "$.risks[1].financial_impact is required",
+      "$.risks[1].time_horizon is required",
+      "$.risks[1].monitoring_indicators is required",
+      "$.risks[1].mitigation is required",
+      "$.risks[1].uncertainty is required",
+      "$.risks[1].paragraph_id is not allowed by the schema",
+      "$.risks[1].pdf_page is not allowed by the schema",
+      "$.risks[2].source_paragraph_ids is required",
+      "$.risks[2].source_pages is required",
+      "$.risks[2].reasoning is required",
+      "$.risks[2].financial_impact is required",
+      "$.risks[2].time_horizon is required",
+      "$.risks[2].monitoring_indicators is required",
+      "$.risks[2].mitigation is required",
+      "$.risks[2].uncertainty is required",
+      "$.risks[2].paragraph_id is not allowed by the schema",
+      "$.risks[2].pdf_page is not allowed by the schema"
+    ]
+  },
+  "metadata": {
+    "passed": false,
+    "errors": [
+      "Skipped because schema validation failed."
+    ]
+  },
+  "citations": {
+    "passed": false,
+    "errors": [
+      "Skipped because schema validation failed."
+    ],
+    "risk_checks": []
+  },
+  "status": "failed"
+}

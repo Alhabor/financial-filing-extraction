@@ -1,0 +1,4 @@
+{"timestamp_utc":"2026-09-02T06:19:17.947Z","event":"dispatch_started","provider":"ollama","model_id":"gemma4:26b-a4b-it-q4_K_M"}
+{"timestamp_utc":"2026-09-02T06:21:55.503Z","event":"response_received","http_status":200}
+{"timestamp_utc":"2026-09-02T06:21:55.505Z","event":"raw_capture_completed","status":"partial"}
+{"timestamp_utc":"2026-09-02T06:22:05.531Z","event":"automatic_evaluation_completed","label":"automatic","status":"passed"}

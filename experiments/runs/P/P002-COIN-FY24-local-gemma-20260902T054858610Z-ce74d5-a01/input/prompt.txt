@@ -1,0 +1,16 @@
+# PV006 — Gemma literal-line evidence extraction
+
+Use only the supplied Form 10-K Item 1A packet. Identify exactly three distinct material risks supported by severe or broad consequences stated by the filer. Do not use prior knowledge or external information.
+
+Emit only one final JSON object. Copy the harness `case_id`, `model_id`, and `prompt_version`. Put exactly three objects in `risks`, ordered `R1`, `R2`, `R3`. Every object must include all schema fields. `source_paragraph_ids` and `monitoring_indicators` are arrays of strings; `source_pages` is an array of integers. Use exactly one allowed taxonomy label.
+
+Literal quote procedure for every risk:
+
+1. Choose one physical text line inside the selected paragraph.
+2. Copy 5–18 consecutive words from that single line.
+3. Paste them into `evidence_quote` without omitting, adding, reordering, normalizing, or changing any character or punctuation.
+4. Copy the active `[PARAGRAPH ...]` ID into `source_paragraph_ids`.
+5. Copy the integer from the nearest preceding `[PDF_PAGE ...]` marker into `source_pages`.
+6. Re-read the line and reject the candidate unless the quote is a literal substring.
+
+Allowed risk types are `Strategic / Market / Technology`, `Operational / Supply Chain`, `Regulatory / Legal / Geopolitical`, `Financial / Liquidity / Credit`, `Cybersecurity / Data / Privacy`, and `Other`. Never cite a heading for evidence in the following paragraph. Do not invent mitigation, controls, amounts, probabilities, forecasts, or plans. Use `Not disclosed in the supplied excerpt.` for absent string details and `[]` for absent monitoring indicators. Keep all prose concise.

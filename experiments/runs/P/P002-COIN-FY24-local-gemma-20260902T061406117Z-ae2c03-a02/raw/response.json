@@ -1,0 +1,16 @@
+{
+  "model": "gemma4:26b-a4b-it-q4_K_M",
+  "created_at": "2026-09-02T06:21:55.48839Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"case_id\": \"COIN-FY24\",\n  \"model_id\": \"gemma4:26b-a4b-it-q4_K_M\",\n  \"prompt_version\": \"PV015\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R1\",\n      \"risk_summary\": \"Fluctuations in the value or demand for supported crypto assets could negatively impact business results and stock price.\",\n      \"risk_type\": \"Strategic / Market / Technology\",\n      \"evidence_quote\": \"In the event that the price of crypto assets or the demand for\",\n      \"source_paragraph_ids\": [\n        \"COIN-FY24-P002\"\n      ],\n      \"source_pages\": [\n        25\n      ],\n      \"reasoning\": \"Not separately analyzed in the core extraction task.\",\n      \"financial_impact\": \"Not separately analyzed in the core extraction task.\",\n      \"time_horizon\": \"Not separately analyzed in the core extraction task.\",\n      \"monitoring_indicators\": [],\n      \"mitigation\": \"Not separately analyzed in the core extraction task.\",\n      \"uncertainty\": \"Not separately analyzed in the core extraction task.\"\n    },\n    {\n      \"risk_id\": \"R2\",\n      \"risk_summary\": \"The loss of critical banking or insurance relationships could lead to business disruptions and adverse financial conditions.\",\n      \"risk_type\": \"Operational / Supply Chain\",\n      \"evidence_quote\": \"Loss of a critical banking or insurance relationship could adversely affect our business,\",\n      \"source_paragraph_ids\": [\n        \"COIN-FY24-P022\"\n      ],\n      \"source_pages\": [\n        42\n      ],\n      \"reasoning\": \"Not separately analyzed in the core extraction task.\",\n      \"financial_impact\": \"Not separately analyzed in the core extraction task.\",\n      \"time_horizon\": \"Not separately analyzed in the core extraction task.\",\n      \"monitoring_indicators\": [],\n      \"mitigation\": \"Not separately analyzed in the core extraction task.\",\n      \"uncertainty\": \"Not separately analyzed in the core extraction task.\"\n    },\n    {\n      \"risk_id\": \"R3\",\n      \"risk_summary\": \"Cyberattacks and security breaches of the platform or third parties could damage brand reputation and financial condition.\",\n      \"risk_type\": \"Cybersecurity / Data / Privacy\",\n      \"evidence_quote\": \"Cyberattacks and security breaches of our platform, or those impacting our customers or third\",\n      \"source_paragraph_ids\": [\n        \"COIN-FY24-P012\"\n      ],\n      \"source_pages\": [\n        28\n      ],\n      \"reasoning\": \"Not separately analyzed in the core extraction task.\",\n      \"financial_impact\": \"Not separately analyzed in the core extraction task.\",\n      \"time_horizon\": \"Not separately analyzed in the core extraction task.\",\n      \"monitoring_indicators\": [],\n      \"mitigation\": \"Not separately analyzed in the core extraction task.\",\n      \"uncertainty\": \"Not separately analyzed in the core extraction task.\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 157515568208,
+  "load_duration": 17476214167,
+  "prompt_eval_count": 6336,
+  "prompt_eval_duration": 71892502000,
+  "eval_count": 726,
+  "eval_duration": 68074130999
+}

@@ -17,6 +17,7 @@ const ROOT = path.resolve(__dirname, '..');
 const MODEL_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'models.json');
 const PROFILE_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'profiles.json');
 const OUTPUT_SCHEMA_PATH = path.join(ROOT, 'schemas', 'risk-output.schema.json');
+const CORE_OUTPUT_SCHEMA_PATH = path.join(ROOT, 'schemas', 'risk-output-core.schema.json');
 const FINANCE_SELECTION_SCHEMA_PATH = path.join(ROOT, 'schemas', 'finance-selection.schema.json');
 const FINANCE_SELECTION_SCHEMA_V2_PATH = path.join(ROOT, 'schemas', 'finance-selection-v002.schema.json');
 const FINANCE_SELECTION_SCHEMA_V3_PATH = path.join(ROOT, 'schemas', 'finance-selection-v003.schema.json');
@@ -125,7 +126,9 @@ function compactObject(value) {
 function applyTransportControls(request, model, profile) {
   const schemaPath = profile.structured_output === 'risk-schema'
     ? OUTPUT_SCHEMA_PATH
-    : profile.structured_output === 'finance-selection-schema'
+    : profile.structured_output === 'risk-core-schema'
+      ? CORE_OUTPUT_SCHEMA_PATH
+      : profile.structured_output === 'finance-selection-schema'
       ? FINANCE_SELECTION_SCHEMA_PATH
       : profile.structured_output === 'finance-selection-schema-v002'
         ? FINANCE_SELECTION_SCHEMA_V2_PATH

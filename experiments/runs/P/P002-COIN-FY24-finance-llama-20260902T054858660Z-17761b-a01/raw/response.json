@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n\"case_id\": \"COIN-FY24\",\n\"model_id\": \"QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M\",\n\"prompt_version\": \"PV012\",\n\"risks\": [\n{\n\"risk_id\": \"R1\",\n\"risk_summary\": \"Decline in crypto asset prices or demand\",\n\"risk_type\": \"Financial / Liquidity / Credit\",\n\"evidence_id\": \"E0003\"\n},\n{\n\"risk_id\": \"R2\",\n\"risk_summary\": \"Failure to establish or maintain strategic relationships\",\n\"risk_type\": \"Operational / Supply Chain\",\n\"evidence_id\": \"E0026\"\n},\n{\n\"risk_id\": \"R3\",\n\"risk_summary\": \"Cybersecurity breaches or attacks\",\n\"risk_type\": \"Cybersecurity / Data / Privacy\",\n\"evidence_id\": \"E0031\"\n}\n]\n}"
+      }
+    }
+  ],
+  "created": 1788328270,
+  "model": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "system_fingerprint": "b10621-c1d0e7a00",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 192,
+    "prompt_tokens": 2676,
+    "total_tokens": 2868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-qVm6kE4dGUYS7bIdJCeZ8fi0Jj6NzFhI",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 2676,
+    "prompt_ms": 45187.49,
+    "prompt_per_token_ms": 16.88620702541106,
+    "prompt_per_second": 59.21993011782686,
+    "predicted_n": 192,
+    "predicted_ms": 24662.357,
+    "predicted_per_token_ms": 129.12228795811518,
+    "predicted_per_second": 7.744596349813604
+  }
+}

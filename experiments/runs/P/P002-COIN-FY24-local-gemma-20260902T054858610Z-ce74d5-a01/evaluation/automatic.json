@@ -1,0 +1,97 @@
+{
+  "evaluation_version": "AE002",
+  "parser_version": "PE001",
+  "run_id": "P002-COIN-FY24-local-gemma-20260902T054858610Z-ce74d5-a01",
+  "case_id": "COIN-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV006",
+  "source_files": {
+    "candidate_response": "raw/response.txt",
+    "evaluation_input": "input/model_input.txt",
+    "raw_response_sha256": "ec7e7ecef35ddec33e75465229c28dbb6eb9fba9463c9b8da14be50a32764a56",
+    "model_input_sha256": "35ad2caca4e16cf8880996dadefffd785e135718ad1340308bf97adfb572f2b2"
+  },
+  "parse": {
+    "passed": true,
+    "format": "plain-json",
+    "parsed_text_sha256": "ec7e7ecef35ddec33e75465229c28dbb6eb9fba9463c9b8da14be50a32764a56",
+    "errors": []
+  },
+  "schema": {
+    "passed": true,
+    "errors": []
+  },
+  "metadata": {
+    "passed": true,
+    "errors": []
+  },
+  "citations": {
+    "passed": true,
+    "input_page_count": 6,
+    "input_paragraph_count": 30,
+    "risk_checks": [
+      {
+        "risk_id": "R1",
+        "passed": true,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "whitespace-normalized",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "COIN-FY24-P002"
+        ],
+        "cited_pdf_pages": [
+          25
+        ],
+        "errors": []
+      },
+      {
+        "risk_id": "R2",
+        "passed": true,
+        "exact_substring_in_input": true,
+        "supported_by_cited_paragraphs": true,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "raw-exact",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "COIN-FY24-P012"
+        ],
+        "cited_pdf_pages": [
+          28
+        ],
+        "errors": []
+      },
+      {
+        "risk_id": "R3",
+        "passed": true,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "whitespace-normalized",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "COIN-FY24-P021"
+        ],
+        "cited_pdf_pages": [
+          42
+        ],
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "status": "passed"
+}

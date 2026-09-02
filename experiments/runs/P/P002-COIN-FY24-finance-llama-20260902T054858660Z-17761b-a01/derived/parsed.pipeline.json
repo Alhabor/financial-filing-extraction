@@ -1,0 +1,61 @@
+{
+  "case_id": "COIN-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV012",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Decline in crypto asset prices or demand",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "In the event that the price of crypto assets or the demand for trading crypto assets decline, our business, operating results, and financial condition would be adversely affected and the price of our Class A common stock could decline.",
+      "source_paragraph_ids": [
+        "COIN-FY24-P002"
+      ],
+      "source_pages": [
+        25
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Failure to establish or maintain strategic relationships",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "If we are unsuccessful in establishing or maintaining strategic relationships with third parties, our ability to compete in the marketplace or to grow our revenue could be impaired and our business, operating results, and financial condition could be adversely affected.",
+      "source_paragraph_ids": [
+        "COIN-FY24-P009"
+      ],
+      "source_pages": [
+        26
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Cybersecurity breaches or attacks",
+      "risk_type": "Cybersecurity / Data / Privacy",
+      "evidence_quote": "Cyberattacks and security breaches of our platform, or those impacting our customers or third parties, could adversely affect our brand, reputation, business, operating results, and financial condition.",
+      "source_paragraph_ids": [
+        "COIN-FY24-P012"
+      ],
+      "source_pages": [
+        28
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

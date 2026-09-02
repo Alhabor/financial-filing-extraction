@@ -1,0 +1,61 @@
+{
+  "case_id": "COIN-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV015",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Fluctuations in the value or demand for supported crypto assets could negatively impact business results and stock price.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "In the event that the price of crypto assets or the demand for",
+      "source_paragraph_ids": [
+        "COIN-FY24-P002"
+      ],
+      "source_pages": [
+        25
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "The loss of critical banking or insurance relationships could lead to business disruptions and adverse financial conditions.",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Loss of a critical banking or insurance relationship could adversely affect our business,",
+      "source_paragraph_ids": [
+        "COIN-FY24-P022"
+      ],
+      "source_pages": [
+        42
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Cyberattacks and security breaches of the platform or third parties could damage brand reputation and financial condition.",
+      "risk_type": "Cybersecurity / Data / Privacy",
+      "evidence_quote": "Cyberattacks and security breaches of our platform, or those impacting our customers or third",
+      "source_paragraph_ids": [
+        "COIN-FY24-P012"
+      ],
+      "source_pages": [
+        28
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}
