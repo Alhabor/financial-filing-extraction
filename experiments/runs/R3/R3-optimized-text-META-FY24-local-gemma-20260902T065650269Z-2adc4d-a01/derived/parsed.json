@@ -1,0 +1,61 @@
+{
+  "case_id": "META-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV015",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Failure to retain or add users or a decrease in engagement can significantly harm revenue and business.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "If we fail to retain existing users or add new users, or if our users decrease",
+      "source_paragraph_ids": [
+        "META-FY24-P008"
+      ],
+      "source_pages": [
+        17
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Changes to regulatory environments and privacy laws can impact the ability to use data signals for advertising.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "legislative and regulatory developments, such as the GDPR, ePrivacy Directive, DMA, and U.S. state privacy laws",
+      "source_paragraph_ids": [
+        "META-FY24-P062"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Dependence on mobile operating systems and networks that the company does not control creates operational risks.",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Our user growth, engagement, and monetization on mobile devices depend upon effective operation with mobile operating systems",
+      "source_paragraph_ids": [
+        "META-FY24-P065"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

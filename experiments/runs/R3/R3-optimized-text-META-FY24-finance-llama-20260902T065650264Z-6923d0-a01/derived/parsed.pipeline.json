@@ -1,0 +1,61 @@
+{
+  "case_id": "META-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV013",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "User retention and growth",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "Any significant decrease in user retention, growth, or engagement could render our products less attractive to users, marketers, and developers, which is likely to have a material and adverse impact on our ability to deliver ad impressions and, accordingly, our revenue, business, financial condition, and results of operations.",
+      "source_paragraph_ids": [
+        "META-FY24-P034"
+      ],
+      "source_pages": [
+        19
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Ad targeting and measurement",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "Our ad targeting and measurement tools incorporate data signals from user activity on websites and services that we do not control, as well as signals generated within our products, and changes to the regulatory environment, third-party mobile operating systems and browsers, and our own products have impacted, and we expect will continue to impact, the availability of such signals, which will adversely affect our advertising revenue.",
+      "source_paragraph_ids": [
+        "META-FY24-P061"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "New product development and adoption",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Our ability to retain, increase, and engage our user base and to increase our revenue depends heavily on our ability to continue to evolve our existing products and to create successful new products, both independently and in conjunction with developers or other third parties.",
+      "source_paragraph_ids": [
+        "META-FY24-P069"
+      ],
+      "source_pages": [
+        22
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

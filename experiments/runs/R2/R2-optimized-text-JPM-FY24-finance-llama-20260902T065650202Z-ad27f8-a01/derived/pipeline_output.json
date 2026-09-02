@@ -1,0 +1,61 @@
+{
+  "case_id": "JPM-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV013",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Greater exposure in litigation",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "In • greater exposure in litigation addition, JPMorganChase can be subject to higher costs or requests for additional capital in connection • damage to JPMorganChase’s reputation with the resolution of governmental investigations and • disqualification from doing business with certain enforcement actions involving newly-acquired clients or customers, or in specific jurisdictions, or businesses, companies in which JPMorganChase has • other direct and indirect adverse effects. made principal investments, parties to joint ventures with JPMorganChase, and vendors with which Furthermore, government officials in the U.S. and other JPMorganChase does business. countries have demonstrated a willingness to bring criminal actions against financial institutions and have JPMorganChase’s operations and financial results required that institutions plead guilty to criminal can be negatively impacted in jurisdictions with less offenses or admit other wrongdoing in connection with predictable legal and regulatory frameworks. resolving regulatory investigations or enforcement JPMorganChase conducts existing and new business actions.",
+      "source_paragraph_ids": [
+        "JPM-FY24-P002"
+      ],
+      "source_pages": [
+        15
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Changes in interest rates and credit spreads",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "Changes in interest rates and credit spreads can When credit spreads widen, it becomes more adversely affect JPMorganChase’s earnings, its expensive for JPMorganChase to borrow. liquidity or its capital levels.",
+      "source_paragraph_ids": [
+        "JPM-FY24-P009"
+      ],
+      "source_pages": [
+        20
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Adverse economic conditions",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Adverse economic conditions could also lead to an or other adverse macroeconomic conditions.",
+      "source_paragraph_ids": [
+        "JPM-FY24-P007"
+      ],
+      "source_pages": [
+        19
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

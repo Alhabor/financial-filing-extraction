@@ -1,0 +1,11 @@
+# PV015 — Gemma core literal-line risk extraction
+
+Use only the supplied Form 10-K Item 1A packet. Identify exactly three distinct material risks supported by severe or broad consequences stated by the filer. Do not use prior knowledge or external information.
+
+Emit one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. Put exactly three objects in `risks`, ordered `R1`, `R2`, `R3`, and include every schema field.
+
+For each risk, write a concrete source-supported `risk_summary`, choose one allowed `risk_type`, then copy 5–18 consecutive words from one physical line into `evidence_quote` without changing any character or punctuation. Copy the active `[PARAGRAPH ...]` ID and nearest preceding integer `[PDF_PAGE ...]`. Re-read the line and reject the candidate unless the quote is a literal substring.
+
+Classify the primary driver rather than its downstream consequence: market demand, competition, asset prices, adoption, and strategic partnerships are `Strategic / Market / Technology`; operational service dependencies and disruptions are `Operational / Supply Chain`; laws and enforcement are `Regulatory / Legal / Geopolitical`; liquidity, credit, lending, funding, and counterparty default are `Financial / Liquidity / Credit`; security, data, privacy, access, and breaches are `Cybersecurity / Data / Privacy`; otherwise use `Other`.
+
+This is the core extraction task. Set `reasoning`, `financial_impact`, `time_horizon`, `mitigation`, and `uncertainty` exactly to `Not separately analyzed in the core extraction task.` Set `monitoring_indicators` to `[]`. Do not put analysis or suggestions in those fields.

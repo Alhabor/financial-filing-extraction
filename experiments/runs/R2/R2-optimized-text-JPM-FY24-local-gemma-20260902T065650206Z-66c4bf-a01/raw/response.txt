@@ -1,0 +1,61 @@
+{
+  "case_id": "JPM-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV015",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Failure to meet regulatory requirements or resolve investigations could lead to increased operational costs, penalties, or business restrictions.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "JPMorganChase could become subject to similar regulatory or governmental resolutions",
+      "source_paragraph_ids": [
+        "JPM-FY24-P001"
+      ],
+      "source_pages": [
+        15
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Political and geopolitical developments can create economic instability, market volatility, and impact the firm's business environment.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "Political developments in the U.S. and other countries can cause uncertainty",
+      "source_paragraph_ids": [
+        "JPM-FY24-P006"
+      ],
+      "source_pages": [
+        17
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Changes in interest rates and credit spreads can negatively impact earnings, liquidity, and capital levels.",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "Changes in interest rates and credit spreads can adversely affect JPMorganChase’s earnings",
+      "source_paragraph_ids": [
+        "JPM-FY24-P009"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

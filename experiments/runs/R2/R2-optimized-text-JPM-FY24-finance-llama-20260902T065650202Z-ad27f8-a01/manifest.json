@@ -1,0 +1,114 @@
+{
+  "run_id": "R2-optimized-text-JPM-FY24-finance-llama-20260902T065650202Z-ad27f8-a01",
+  "phase": "R2",
+  "round": "R2-optimized-text",
+  "status": "completed",
+  "attempt": 1,
+  "case_id": "JPM-FY24",
+  "dataset_role": "reserve",
+  "model_alias": "finance-llama",
+  "model_display_name": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "model_config_version": "MC001",
+  "provider": "llama.cpp",
+  "interface": "llama.cpp-compatible",
+  "profile_id": "optimized-finance-pipeline-v009",
+  "prompt_version": "PV013",
+  "output_schema_version": "finance-selection-v003",
+  "pipeline_output_schema_version": "risk-output-v001",
+  "rubric_version": "RV001",
+  "input": {
+    "path": "experiments/runs/R2/R2-optimized-text-JPM-FY24-finance-llama-20260902T065650202Z-ad27f8-a01/input/model_input.txt",
+    "source_path": "data/processed/case_packets/JPM-FY24/packet.txt",
+    "evaluation_path": "input/source_packet.txt",
+    "packet_id": "CP-JPM-FY24-v001",
+    "canonical_pdf_path": "data/raw/sec/JPM-FY24/filing.pdf",
+    "sha256": "b8d4d248fd061222155706a223786037307dba996fa0f7178da92746ada7bacd",
+    "source_sha256": "a85a5a5ae2d4d373f79f7054c4a715000f7a973f0d774469b6b271ea08440986",
+    "transform": "evidence-catalog-v005",
+    "evidence_catalog_version": "evidence-catalog-v005",
+    "evidence_record_count": 20,
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "grouped_material_consequence_sentence_catalog",
+    "fallback_reason": null,
+    "image_count": 0
+  },
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": 8192
+  },
+  "tools": {
+    "external_search": false,
+    "rag": true,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": "2026-09-02T06:58:38.345Z",
+    "ended_at_utc": "2026-09-02T07:01:06.822Z",
+    "latency_ms": 148477,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": 3099,
+    "output_tokens": 192,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": null,
+    "reasoning_tokens": null
+  },
+  "environment": {
+    "git_commit": "048db71198ce2af42e1ecf59cfa0aa81a2fa467b",
+    "runtime": "node v24.18.0",
+    "hardware": "darwin arm64"
+  },
+  "harness": {
+    "mode": "live",
+    "network_called": true,
+    "credential_env_name": null,
+    "case_packet_version": "case-packet-spec-v001",
+    "endpoint": "http://127.0.0.1:8080/v1/chat/completions"
+  },
+  "artifacts": {
+    "model_input": "input/model_input.txt",
+    "prompt": "input/prompt.txt",
+    "modality": "input/modality.json",
+    "request_sanitized": "input/request.sanitized.json",
+    "model_config": "input/model_config.json",
+    "profile": "input/profile.json",
+    "source_packet": "input/source_packet.txt",
+    "evidence_catalog": "input/evidence_catalog.json",
+    "checksums": "checksums.sha256",
+    "raw_response": "raw/response.json",
+    "raw_body": "raw/response.body.txt",
+    "events": "events.ndjson",
+    "raw_text": "raw/response.txt",
+    "selection": "derived/selection.json",
+    "pipeline_output": "derived/pipeline_output.json",
+    "locator_evaluation": "evaluation/locator.json",
+    "pipeline_parsed_output": "derived/parsed.pipeline.json",
+    "pipeline_evaluation": "evaluation/pipeline.json"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": null,
+  "notes": "derived/pipeline_output.json, schema, metadata, and citation validation completed successfully.",
+  "provider_response": {
+    "http_status": 200,
+    "request_id": "chatcmpl-EMbpqomwVOuBvEkUyi3bWrAttWWBJAzS",
+    "finish_reason": "stop"
+  },
+  "pipeline": {
+    "locator_version": "EL001",
+    "locator_status": "passed",
+    "normalized_output_schema": "risk-output-v001"
+  },
+  "evaluation": {
+    "pipeline": {
+      "parser_version": "PE001",
+      "automatic_evaluation_version": "AE002",
+      "automatic_status": "passed"
+    }
+  }
+}

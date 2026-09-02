@@ -1,0 +1,89 @@
+{
+  "model": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "# PV013 — Finance RAG grouped selection with primary-driver classification\n\nUse only the supplied grouped material-consequence sentence catalog derived from a Form 10-K Item 1A packet. Identify exactly three distinct material risks. The deterministic lexical screen is only a search aid, not a gold answer.\n\nFor each risk, select one sentence that states both a concrete risk driver and an explicit consequence for the filer. Prefer broad or severe consequences affecting operations, financial condition, results, customers, or reputation. Do not select a heading, fragment, generic background statement, or a sentence whose consequence belongs only to an uncited prior sentence.\n\nEach record has the form `[E0001 | GROUP G001] complete evidence sentence`. Select exactly one record from each of three different GROUP values. Return only its `evidence_id`; the deterministic locator restores the exact quote, paragraph, and page. Do not quote or rewrite source text.\n\nReturn one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects ordered `R1`, `R2`, `R3`, with only these fields: `risk_id`, `risk_summary`, `risk_type`, and `evidence_id`.\n\n`risk_summary` must be a concrete 4–12 word noun phrase naming the source-supported risk driver. It must not equal the category label and must not add a product, activity, cause, or consequence absent from the selected sentence.\n\nClassify the primary risk driver, not merely the downstream consequence:\n\n- `Strategic / Market / Technology`: competition, demand, asset or product prices, adoption, pricing, strategic partnerships, or technological change.\n- `Operational / Supply Chain`: operational service dependency or disruption, production, delivery, suppliers, infrastructure, or third-party service performance. A strategic partnership is not operational merely because a third party is involved.\n- `Regulatory / Legal / Geopolitical`: laws, regulations, enforcement, litigation, fines, sanctions, or political/trade restrictions.\n- `Financial / Liquidity / Credit`: liquidity, credit, lending, funding, insurance sufficiency, counterparty default, or fee/funding structure. Do not use this category merely because a market or operational risk affects revenue or financial condition.\n- `Cybersecurity / Data / Privacy`: security, data, privacy, unauthorized access, or a breach.\n- `Other`: a central theme such as intellectual-property protection that does not fit the five categories above.\n\nThe three evidence IDs must exist, be different, come from three different GROUP values, and represent three different risk themes. Never add facts from memory.\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: META-FY24\n- model_id: QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M\n- prompt_version: PV013"
+    },
+    {
+      "role": "user",
+      "content": "Case: META-FY24\nInput view: deterministic grouped material-consequence sentence catalog derived from the frozen packet.\nThe lexical screen reduces search volume but is not a gold label; choose three distinct material risks.\nChoose exactly one record from each of three different GROUP values.\nEach ID maps to one complete sentence; only extraction-layout whitespace was normalized.\n\n[E0008 | GROUP G008] If we fail to retain existing users or add new users, or if our users decrease their level of engagement with our products, our revenue, financial results, and business may be significantly harmed.\n[E0015 | GROUP G009] Any future declines in the size of our active user base may adversely impact our ability to deliver ad impressions and, in turn, our financial performance.\n[E0045 | GROUP G034] From time to time, certain of these factors have negatively affected user retention, growth, and engagement to varying degrees.\n[E0046 | GROUP G034] If we are unable to maintain or increase our user base and user engagement, particularly for our significant revenue- generating products like Facebook and Instagram, our revenue and financial results may be adversely affected.\n[E0047 | GROUP G034] Any significant decrease in user retention, growth, or engagement could render our products less attractive to users, marketers, and developers, which is likely to have a material and adverse impact on our ability to deliver ad impressions and, accordingly, our revenue, business, financial condition, and results of operations.\n[E0048 | GROUP G034] As the size of our active user base fluctuates in one or more markets from time to time, we will become increasingly dependent on our ability to maintain or increase levels of user engagement and monetization in order to grow revenue.\n[E0050 | GROUP G035] The loss of marketers, or reduction in spending by marketers, could seriously harm our business.\n[E0056 | GROUP G036] Some of these changes reduce our ability to effectively target ads, which has to some extent adversely affected, and will continue to adversely affect, our advertising business.\n[E0057 | GROUP G036] If we are unable to provide marketers with a suitable return on investment, the demand for our ads may not increase, or may decline, in which case our revenue and financial results may be harmed.\n[E0082 | GROUP G060] From time to time, certain of these factors have adversely affected our advertising revenue to varying degrees.\n[E0083 | GROUP G060] The occurrence of any of these or other factors in the future, including our enforcement efforts, could result in a reduction in marketer spend or demand for our ads, which may reduce the prices we receive for our ads, could cause marketers to stop advertising with us altogether, or could otherwise negatively affect our revenue and financial results, and could be material.\n[E0084 | GROUP G061] Our ad targeting and measurement tools incorporate data signals from user activity on websites and services that we do not control, as well as signals generated within our products, and changes to the regulatory environment, third-party mobile operating systems and browsers, and our own products have impacted, and we expect will continue to impact, the availability of such signals, which will adversely affect our advertising revenue.\n[E0085 | GROUP G062] Our ad targeting and measurement tools rely on data signals from user activity on websites and services that we do not control, as well as signals generated within our products, in order to deliver relevant and effective ads to our users, and any changes in our ability to use such signals will adversely affect our business.\n[E0089 | GROUP G062] Judicial and regulatory guidance, decisions, or enforcement actions, or new legislation in these or other jurisdictions may require us to make additional changes to our products in the future that further reduce our ability to use these signals, which has occurred in the past.\n[E0096 | GROUP G063] For example, in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us and other advertising platforms.\n[E0097 | GROUP G063] In addition, we have implemented, and may continue to implement, product changes that give users the ability to limit our use of such data signals to improve ads and other experiences on our products and services, including changes implemented in connection with the GDPR, ePrivacy Directive, DMA, and other regulatory frameworks.\n[E0098 | GROUP G064] These developments have limited our ability to target and measure the effectiveness of ads on our platform and negatively impacted our advertising revenue.\n[E0099 | GROUP G064] For example, our advertising revenue has been negatively impacted by marketer reaction to targeting and measurement challenges associated with iOS changes beginning in 2021.\n[E0100 | GROUP G064] If we are unable to mitigate these developments as they take further effect in the future, our targeting and measurement capabilities will be materially and adversely affected, which would in turn significantly impact our advertising revenue.\n[E0109 | GROUP G067] We expect that any similar changes to Apple's, Google's, or other browser or mobile platforms will further limit our ability to target and measure the effectiveness of ads and impact monetization.\n[E0114 | GROUP G067] Such actions may adversely affect our users and our relationships with the operators of mobile operating systems, handset manufacturers, mobile carriers, browser developers, other business partners, or advertisers, and there is no assurance that these actions will result in the anticipated long-term benefits.\n[E0115 | GROUP G067] In the event that our users are adversely affected by these actions or if our relationships with such third parties deteriorate, our user growth, engagement, and monetization could be adversely affected and our business could be harmed.\n[E0116 | GROUP G067] We have experienced challenges in operating with mobile operating systems, networks, technologies, products, and standards that we do not control, and any such occurrences in the future may negatively impact our user growth, engagement, and monetization on mobile devices, which may in turn materially and adversely affect our business and financial results.\n[E0117 | GROUP G068] Our new products and changes to existing products could fail to attract or retain users or generate revenue and profits, or otherwise adversely affect our business.\n[E0118 | GROUP G069] Our ability to retain, increase, and engage our user base and to increase our revenue depends heavily on our ability to continue to evolve our existing products and to create successful new products, both independently and in conjunction with developers or other third parties.\n[E0120 | GROUP G069] For example, we have relatively limited experience with consumer hardware products and virtual, augmented, and mixed reality technology, which may adversely affect our ability to successfully develop and market these evolving products and technologies.\n[E0128 | GROUP G071] If our new products or changes to existing products fail to engage users, marketers, or developers, or if our business plans are unsuccessful, we may fail to attract or retain users or to generate sufficient revenue, operating margin, or other value to justify our investments, and our business may be adversely affected.\n[E0129 | GROUP G072] We may not be successful in our artificial intelligence initiatives, which could adversely affect our business, reputation, or financial results.\n[E0131 | GROUP G073] In particular, we expect our AI initiatives will require increased investment in infrastructure and headcount."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 1600,
+  "seed": 7343,
+  "response_format": {
+    "type": "json_object",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "finance-selection-v003",
+      "title": "Finance model core material-risk selection",
+      "type": "object",
+      "required": [
+        "case_id",
+        "model_id",
+        "prompt_version",
+        "risks"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prompt_version": {
+          "type": "string",
+          "pattern": "^PV[0-9]{3,}$"
+        },
+        "risks": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "risk_id",
+              "risk_summary",
+              "risk_type",
+              "evidence_id"
+            ],
+            "properties": {
+              "risk_id": {
+                "type": "string",
+                "pattern": "^R[1-3]$"
+              },
+              "risk_summary": {
+                "type": "string",
+                "minLength": 4,
+                "maxLength": 120
+              },
+              "risk_type": {
+                "type": "string",
+                "enum": [
+                  "Strategic / Market / Technology",
+                  "Operational / Supply Chain",
+                  "Regulatory / Legal / Geopolitical",
+                  "Financial / Liquidity / Credit",
+                  "Cybersecurity / Data / Privacy",
+                  "Other"
+                ]
+              },
+              "evidence_id": {
+                "type": "string",
+                "pattern": "^E[0-9]{4}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

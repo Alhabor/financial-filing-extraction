@@ -1,0 +1,49 @@
+{
+  "case_id": "JPM-FY24",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "prompt_version": "PV016",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Regulatory investigations and enforcement actions could lead to penalties, restrictions, and reputational damage.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "JPMorganChase could become subject to similar regulatory or governmental resolutions or other actions in the future",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": ["JPM-FY24-P001"],
+      "source_pages": [15],
+      "monitoring_indicators": []
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Resolution plan requirements could force restructuring and increase funding or operational costs.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "Requirements for the orderly resolution of JPMorganChase could result in JPMorganChase having to restructure or reorganize its businesses",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": ["JPM-FY24-P005"],
+      "source_pages": [16],
+      "monitoring_indicators": []
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Adverse economic and market conditions could reduce earnings and increase credit losses.",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "Adverse economic conditions could also lead to an increase in delinquencies, additions to the allowance for credit losses and higher net charge-offs",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": ["JPM-FY24-P007"],
+      "source_pages": [19],
+      "monitoring_indicators": []
+    }
+  ]
+}

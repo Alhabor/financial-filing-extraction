@@ -1,0 +1,356 @@
+Case: JPM-FY24
+Form: 10-K
+Section: Item 1A. Risk Factors
+Input view: selected PDF physical pages 15, 16, 17, 19, 20; printed page numbers are retained where detected.
+The paragraph markers are harness locators; quoted evidence must still match the text exactly.
+
+[PDF_PAGE 15 | PRINTED_PAGE 13]
+[PARAGRAPH JPM-FY24-P001]
+penalties and experienced other repercussions in            If JPMorganChase fails to meet the requirements of
+connection with resolving investigations and                any resolution of a governmental investigation or
+enforcement actions by governmental agencies.               enforcement action, or to maintain risk and control
+JPMorganChase could become subject to similar               processes that meet the heightened standards and
+regulatory or governmental resolutions or other             expectations of its regulators, it could be required to,
+actions in the future, and addressing the requirements      among other things:
+of any such resolutions or actions could result in          • enter into further resolutions of investigations or
+JPMorganChase incurring higher operational and                enforcement actions
+compliance costs, including devoting substantial
+resources to the required remediation or needing to         • pay additional regulatory penalties or enter into
+comply with other restrictions.                               judgments, or
+
+[PARAGRAPH JPM-FY24-P002]
+In connection with resolving specific regulatory            • accept material regulatory restrictions on, or
+investigations or enforcement actions, certain                changes in the management of, its businesses.
+regulators have required JPMorganChase and other            In these circumstances, JPMorganChase could also
+financial institutions to admit wrongdoing with respect     become subject to other sanctions, or to prosecution
+to the activities that gave rise to the resolution. These   or civil litigation with respect to the conduct that gave
+types of admissions can lead to:                            rise to an investigation or enforcement action. In
+• greater exposure in litigation                            addition, JPMorganChase can be subject to higher
+                                                            costs or requests for additional capital in connection
+• damage to JPMorganChase’s reputation                      with the resolution of governmental investigations and
+• disqualification from doing business with certain         enforcement actions involving newly-acquired
+  clients or customers, or in specific jurisdictions, or    businesses, companies in which JPMorganChase has
+• other direct and indirect adverse effects.                made principal investments, parties to joint ventures
+                                                            with JPMorganChase, and vendors with which
+Furthermore, government officials in the U.S. and other     JPMorganChase does business.
+countries have demonstrated a willingness to bring
+criminal actions against financial institutions and have    JPMorganChase’s operations and financial results
+required that institutions plead guilty to criminal         can be negatively impacted in jurisdictions with less
+offenses or admit other wrongdoing in connection with       predictable legal and regulatory frameworks.
+resolving regulatory investigations or enforcement          JPMorganChase conducts existing and new business
+actions. Resolutions of this type can have significant      in certain countries, states, municipalities, territories
+collateral consequences for the subject financial           and other jurisdictions in which the application of the
+institution, including:                                     rule of law is inconsistent, extralegal or less
+• loss of clients, customers and business                   predictable, including with respect to:
+• restrictions on offering certain products or services,    • the absence of a statutory or regulatory basis or
+  and                                                         guidance for engaging in specific types of business
+• losing permission to operate certain businesses,            or transactions
+  either temporarily or permanently.                        • conflicting or ambiguous laws, rules, regulations and
+JPMorganChase expects that:                                   judicial orders, or the inconsistent application or
+                                                              interpretation of existing laws, rules, regulations and
+• it and other financial services firms will continue to      judicial precedents
+  be subject to heightened regulatory scrutiny and
+  governmental investigations and enforcement               • actions by or at the direction of government officials
+  actions                                                     or agencies
+
+[PARAGRAPH JPM-FY24-P003]
+• governmental authorities will continue to require         • uncertainty concerning the enforceability of
+  that financial institutions be penalized for actual or      intellectual property rights or contractual or other
+  deemed violations of law with formal and punitive           obligations
+  enforcement actions, including the imposition of          • difficulty in competing in economies in which the
+  significant monetary and other sanctions, rather            government controls or protects all or a portion of
+  than resolving these matters through informal               the local economy or specific businesses, or where
+  supervisory actions, and                                    graft or corruption may be pervasive
+• governmental authorities will be more likely to           • the threat of regulatory investigations, civil
+  pursue formal enforcement actions and resolutions           litigations or criminal prosecutions that are arbitrary
+  against JPMorganChase to the extent that it has             or otherwise contrary to established legal principles
+  previously been subject to other governmental               in other parts of the world, and
+  investigations or enforcement actions.
+
+[PDF_PAGE 16 | PRINTED_PAGE 14]
+[PARAGRAPH JPM-FY24-P004]
+Part I
+
+[PARAGRAPH JPM-FY24-P005]
+• the termination of licenses required to operate in the     • the threat of enforcement actions, including under
+  local market or the suspension of business                   antitrust or other anti-competition laws, rules and
+  relationships with governmental bodies.                      regulations, and
+If the application of the laws, rules, regulations and       • harm to its reputation arising from public criticism,
+judicial precedents in any jurisdiction is susceptible to      including from politicians, activists and other
+producing outcomes that are inconsistent, unexpected           stakeholders.
+or contrary to established legal principles, this can        JPMorganChase has been prohibited from engaging in
+create a more difficult environment in which                 certain business activities in specific jurisdictions as a
+JPMorganChase conducts its business and could                result of these types of governmental actions, and
+negatively affect JPMorganChase’s operations and             there is no assurance that it will not face similar
+reduce its earnings with respect to that jurisdiction.       restrictions on its business and operations in the
+For example, JPMorganChase has faced actual and              future.
+threatened litigation in Russia with respect to
+payments that JPMorganChase cannot make under,               Requirements for the orderly resolution of
+and is contractually excused from paying as a result of,     JPMorganChase could result in JPMorganChase
+relevant economic sanctions laws. That litigation has        having to restructure or reorganize its businesses
+also resulted in the seizure of assets. In addition,         and could increase its funding or operational costs or
+conducting business in jurisdictions with less               curtail its businesses.
+predictable legal and regulatory frameworks could            JPMorganChase is required under Federal Reserve
+require JPMorganChase to devote significant                  and FDIC rules to prepare and submit periodically to
+additional resources to understanding local laws, rules      those agencies a detailed plan for rapid and orderly
+and regulations, as well as structuring its operations to    resolution in bankruptcy, without extraordinary
+comply with local laws, rules and regulations and            government support, in the event of material financial
+implementing and administering related internal              distress or failure. The evaluation of JPMorganChase’s
+policies and procedures.                                     resolution plan by these agencies may change, and the
+There can be no assurance that JPMorganChase will            requirements for resolution plans may be modified
+always be successful in its efforts to fully understand      from time to time. Any such determinations or
+and to conduct its business in compliance with the           modifications could result in JPMorganChase needing
+laws, rules and regulations of all of the jurisdictions in   to make changes to its legal entity structure or to
+which it operates, and the risk of non-compliance, or of     certain internal or external activities, which could
+interference with JPMorganChase's businesses, can be         increase its funding or operational costs, or hamper its
+greater in jurisdictions that have less predictable legal    ability to serve clients and customers.
+and regulatory frameworks.                                   If the Federal Reserve and the FDIC were both to
+JPMorganChase's businesses may be negatively                 determine that a resolution plan submitted by
+impacted by governmental policies that either                JPMorganChase has deficiencies, they could jointly
+discourage or penalize business with certain                 impose more stringent capital, leverage or liquidity
+industries or require specific business practices.           requirements or restrictions on JPMorganChase’s
+                                                             growth, activities or operations. The agencies could
+JPMorganChase's businesses and results of                    also require that JPMorganChase restructure,
+operations may be adversely affected by actions or           reorganize or divest assets or businesses in ways that
+initiatives by national, state or local governmental         could materially and adversely affect
+authorities that:                                            JPMorganChase’s operations and strategy.
+• seek to discourage financial institutions from doing
+                                                             Holders of JPMorgan Chase & Co.’s debt and equity
+  business with companies engaged in certain
+                                                             securities will absorb losses if it were to enter into a
+  industries, or conversely, to penalize financial
+                                                             resolution.
+  institutions that elect not to do business with such
+  companies, or                                              Federal Reserve rules require that JPMorgan Chase &
+                                                             Co. (the “Parent Company”) maintain minimum levels
+• mandate specific business practices that companies
+                                                             of unsecured external long-term debt and other loss-
+  operating in the relevant jurisdiction must adopt.
+                                                             absorbing capacity with specific terms (“eligible LTD”)
+Because governmental policies in one jurisdiction may        for purposes of recapitalizing JPMorganChase’s
+differ or conflict with those in other jurisdictions,        operating subsidiaries if the Parent Company were to
+JPMorganChase may face negative consequences                 enter into a resolution either:
+regardless of the course of action it takes or elects not
+                                                             • in a bankruptcy proceeding under Chapter 11 of the
+to take, including:
+                                                               U.S. Bankruptcy Code, or
+• restrictions or prohibitions on doing business within
+                                                             • in a receivership administered by the FDIC under
+  a particular jurisdiction, or with governmental
+                                                               Title II of the Dodd-Frank Act (“Title II”).
+  entities in a jurisdiction
+
+[PDF_PAGE 17 | PRINTED_PAGE 15]
+[PARAGRAPH JPM-FY24-P006]
+If the Parent Company were to enter into a resolution,      could significantly affect U.S. and global economic
+holders of eligible LTD, other unsecured creditors and      growth and cause higher volatility in the financial
+holders of equity securities of the Parent Company will     markets, including:
+absorb the losses of the Parent Company and its             • monetary policies and actions taken by the Federal
+subsidiaries.                                                 Reserve and other central banks or governmental
+The preferred “single point of entry” strategy under          authorities, including changes in interest rate levels
+JPMorganChase’s resolution plan contemplates that             and any sustained large-scale asset purchases or
+the Parent Company would enter bankruptcy                     any suspension or reversal of those actions
+proceedings and JPMorganChase’s material                    • fiscal policies, including with respect to taxation and
+subsidiaries would be recapitalized, as needed, so that       spending
+they could continue normal operations or
+subsequently be divested or wound down in an orderly        • isolationist foreign policies
+manner. As a result, the Parent Company’s losses and        • economic or financial sanctions
+any losses incurred by its subsidiaries would be            • the implementation of tariffs and other protectionist
+imposed first on holders of the Parent Company’s              trade policies
+equity securities and thereafter on its unsecured
+creditors, including holders of eligible LTD. Claims of     • changes to immigration policies, or
+the Parent Company's shareholders and unsecured             • actions that the government takes or fails to take in
+creditors would have a junior position to the claims of       response to the effects of health emergencies, the
+creditors of JPMorganChase’s subsidiaries and to the          spread of infectious diseases, epidemics or
+claims of priority (as determined by statute) and             pandemics.
+secured creditors of the Parent Company.                    These types of political developments, and uncertainty
+Accordingly, in a resolution of the Parent Company in       about the possible outcomes of these developments,
+bankruptcy, unsecured creditors of the Parent               could:
+Company, including holders of eligible LTD of the           • erode investor or consumer confidence in the U.S.
+Parent Company, would realize value only to the extent        economy and financial markets, which could
+available to the Parent Company as a shareholder of           potentially undermine the status of the U.S. dollar as
+JPMorgan Chase Bank, N.A. and its other subsidiaries,         a safe haven currency
+and only after any claims of priority and secured
+creditors of the Parent Company have been fully             • provoke retaliatory countermeasures by other
+repaid.                                                       countries and otherwise heighten tensions in
+                                                              regulatory, enforcement or diplomatic relations
+The FDIC has similarly indicated that a single point of
+entry recapitalization model would be its expected          • increase the risk of targeted cyber attacks
+strategy to resolve a systemically important financial      • increase concerns about whether the U.S.
+institution, such as the Parent Company, under Title II.      government will be funded, and its outstanding debt
+However, the FDIC has not formally adopted or                 serviced, at any particular time
+committed to any specific resolution strategy.              • result in periodic shutdowns of the U.S. government
+If the Parent Company were to approach, or enter into,      • influence investor perceptions concerning
+a resolution, none of the Parent Company, the Federal         government support of certain sectors of the
+Reserve or the FDIC is obligated to follow                    economy or the economy as a whole
+JPMorganChase’s preferred resolution strategy, and
+losses to unsecured creditors of the Parent Company,        • influence monetary policy actions of the Federal
+including holders of eligible LTD, and to holders of          Reserve to moderate the economic impact of
+equity securities of the Parent Company, under                political developments, including decisions on
+whatever strategy is ultimately followed, could be            interest rate levels and asset purchases and sales
+greater than they might have been under                     • adversely affect the financial condition or credit
+JPMorganChase’s preferred strategy.                           ratings of clients and counterparties with which
+                                                              JPMorganChase does business, or
+Political
+                                                            • cause JPMorganChase to refrain from engaging in
+Economic uncertainty or instability caused by                 business opportunities that it might otherwise
+political and geopolitical developments can                   pursue.
+negatively impact JPMorganChase’s businesses.
+                                                            These factors could lead to:
+Political developments in the U.S. and other countries
+can cause uncertainty in the economic environment           • slower growth rates, rising inflation or recession
+and market conditions in which JPMorganChase                • disruptions in labor markets
+operates its businesses. Certain governmental policy        • greater market volatility
+initiatives, as well as heightened geopolitical tensions,
+
+[PDF_PAGE 19 | PRINTED_PAGE 17]
+[PARAGRAPH JPM-FY24-P007]
+Adverse economic conditions could also lead to an            or other adverse macroeconomic conditions. For
+increase in delinquencies, additions to the allowance        example, higher interest rates or a downturn in
+for credit losses and higher net charge-offs, which can      financial markets could affect the valuation of client
+reduce JPMorganChase’s earnings. These                       assets that JPMorganChase manages or holds under
+consequences could be significantly worse in certain         custody, which, in turn, could affect JPMorganChase’s
+geographies, including where declining industrial or         revenue from fees that are based on the amount of
+manufacturing activity has resulted in or could result in    assets under management or custody. Similarly,
+higher levels of unemployment, or where high levels of       adverse macroeconomic or market conditions could
+consumer debt, such as outstanding student loans,            prompt outflows from JPMorganChase funds or
+could impair the ability of customers to pay their other     accounts, or cause clients to invest in products that
+consumer loan obligations.                                   generate lower revenue. Substantial and unexpected
+JPMorganChase’s earnings from its consumer                   withdrawals from a JPMorganChase fund can also
+businesses could also be adversely affected by               hamper the investment performance of the fund,
+governmental policies and actions that affect                particularly if the outflows create the need for the fund
+consumers, including:                                        to dispose of fund assets at disadvantageous times or
+                                                             prices, and could lead to further withdrawals based on
+• policies and initiatives relating to medical insurance,    the weaker investment performance.
+  education, immigration and housing, or that may
+  impact employment status                                   An adverse change in market conditions in particular
+                                                             segments of the economy, such as a sudden and
+• laws, rules and regulations relating specifically to the   severe downturn in oil and gas prices or an increase in
+  financial services industry, such as limitations on late   commodity prices, severe declines in commercial real
+  payment, overdraft and interchange fees, and               estate values, or sustained changes in consumer
+• policies aimed at the economy more broadly, such           behavior that affect specific economic sectors, could
+  as higher taxes and increased regulation, which            have a material adverse effect on clients of
+  could result in reductions in consumer disposable          JPMorganChase whose operations or financial
+  income.                                                    condition are directly or indirectly dependent on the
+                                                             health or stability of those market segments or
+Unfavorable market and economic conditions can
+                                                             economic sectors, as well as clients that are engaged
+have an adverse effect on JPMorganChase’s
+                                                             in related businesses. JPMorganChase could incur
+wholesale businesses.
+                                                             credit losses on its loans and other commitments to
+In JPMorganChase’s wholesale businesses, market              clients that operate in, or are dependent on, any sector
+and economic factors can affect the volume of                of the economy that is or comes under stress.
+transactions that JPMorganChase executes for its
+                                                             An economic downturn or sustained changes in
+clients or for which it advises clients, and, therefore,
+                                                             consumer behavior that results in shifts in consumer
+the revenue that JPMorganChase receives from those
+                                                             and business spending could also have a negative
+transactions. These factors can also influence the
+                                                             impact on certain of JPMorganChase’s wholesale
+willingness of other financial institutions and investors
+                                                             clients, and thereby diminish JPMorganChase’s
+to participate in capital markets transactions that
+                                                             earnings from its wholesale operations. For example,
+JPMorganChase manages, such as loan syndications
+                                                             the businesses of certain of JPMorganChase’s
+or securities underwriting. Furthermore, if a significant
+                                                             wholesale clients are dependent on consistent
+and sustained deterioration in market conditions were
+                                                             streams of rental income from commercial real estate
+to occur, the profitability of JPMorganChase’s
+                                                             properties, including offices, which are owned or being
+businesses engaged in capital markets activities,
+                                                             built by those clients. Sustained adverse economic
+including loan syndication, securities underwriting and
+                                                             conditions or hybrid work models could result in
+leveraged lending activities, could be reduced to the
+                                                             reductions in the rental cash flows that owners or
+extent that those businesses:
+                                                             developers receive from their tenants which, in turn,
+• earn less fee revenue due to lower transaction             could depress the values of the properties, impair the
+  volumes, including when clients are unwilling or           ability of borrowers to service or refinance their
+  unable to refinance their outstanding debt                 commercial real estate loans and lead to an increase in
+  obligations in unfavorable market conditions, or           foreclosures. These consequences could result in
+• dispose of portions of credit commitments at a loss,       JPMorganChase experiencing increases in the
+  or hold larger residual positions in credit                allowance for credit losses, higher delinquencies,
+  commitments that cannot be sold at favorable               defaults and charge-offs within its commercial real
+  prices.                                                    estate loan portfolio and incurring higher costs for
+                                                             servicing a larger volume of delinquent loans in that
+The fees that JPMorganChase earns from managing
+                                                             portfolio. An increase in foreclosures could result in
+client assets or holding assets under custody for
+                                                             higher operational risk associated with
+clients could be diminished by declining asset values
+                                                             JPMorganChase owning and managing real property,
+
+[PDF_PAGE 20 | PRINTED_PAGE 18]
+[PARAGRAPH JPM-FY24-P008]
+Part I
+
+[PARAGRAPH JPM-FY24-P009]
+and any inadequacy in governance or control over the          • a reduction in the value of JPMorganChase’s
+foreclosed properties could result in regulatory                mortgage servicing rights (“MSRs”) asset, resulting
+scrutiny and reputational harm.                                 in decreased revenues.
+Changes in interest rates and credit spreads can              When credit spreads widen, it becomes more
+adversely affect JPMorganChase’s earnings, its                expensive for JPMorganChase to borrow.
+liquidity or its capital levels.                              JPMorganChase’s credit spreads may widen or narrow
+                                                              not only in response to events and circumstances that
+When interest rates are high or increasing,
+                                                              are specific to JPMorganChase but also as a result of
+JPMorganChase can generally be expected to earn
+                                                              general economic and geopolitical events and
+higher net interest income. However, higher interest
+                                                              conditions. Changes in JPMorganChase’s credit
+rates can also lead to:
+                                                              spreads will affect, positively or negatively,
+• fewer originations of commercial and residential real       JPMorganChase’s earnings on certain liabilities, such
+  estate loans                                                as derivatives, that are recorded at fair value.
+• losses on underwriting exposures or incremental             JPMorganChase’s results may be materially affected
+  client-specific downgrades, or increases in the             by market fluctuations and significant changes in the
+  allowance for credit losses and net charge-offs due         valuation of financial instruments.
+  to higher financing costs for clients
+                                                              The value of securities, derivatives and other financial
+• the loss of deposits, particularly if customers             instruments which JPMorganChase owns or in which it
+  withdraw deposits because they believe that interest        makes markets can be materially affected by market
+  rates offered by JPMorganChase are lower than               fluctuations. Market volatility, illiquid market
+  those of competitors or if JPMorganChase makes              conditions and other disruptions in the financial
+  incorrect assumptions about depositor behavior              markets may make it extremely difficult to value
+• losses on available-for-sale (“AFS”) securities held in     certain financial instruments. Subsequent valuations of
+  the investment securities portfolio                         financial instruments in future periods, in light of
+• lower net interest income if central banks introduce        factors then prevailing, may result in significant
+  interest rate increases more quickly than anticipated       changes in the value of these instruments. In addition,
+  and this results in a misalignment in the pricing of        at the time of any disposition of these financial
+  short-term and long-term borrowings                         instruments, the price that JPMorganChase ultimately
+                                                              realizes will depend on the demand and liquidity in the
+• less liquidity in the financial markets, and                market at that time and may be materially lower than
+• higher funding costs.                                       their current fair value. Any of these factors could
+All of these outcomes could adversely affect                  cause a decline in the value of financial instruments
+JPMorganChase’s earnings or its liquidity and capital         that JPMorganChase owns or in which it makes
+levels, and any negative outcomes could be more               markets, which may have an adverse effect on
+severe in a prolonged period of high interest rates.          JPMorganChase’s results of operations.
+Higher interest rates can also negatively affect the          JPMorganChase’s risk management and monitoring
+payment performance on loans within                           processes, including its stress testing framework, seek
+JPMorganChase’s consumer and wholesale loan                   to quantify and manage JPMorganChase’s exposure to
+portfolios that are linked to variable interest rates. If     more extreme market moves. However,
+borrowers of variable rate loans are unable to afford         JPMorganChase’s hedging and other risk
+higher interest payments, those borrowers may                 management strategies may not be effective, and it
+reduce or stop making payments, thereby causing               could incur significant losses, if extreme market events
+JPMorganChase to incur losses and increased                   were to occur.
+operational costs related to servicing a higher volume
+                                                              Credit
+of delinquent loans.
+On the other hand, a low or negative interest rate            JPMorganChase can be negatively affected by
+environment may cause:                                        adverse changes in the financial condition of clients,
+                                                              counterparties, custodians and CCPs.
+• net interest margins to be compressed, which could
+  reduce the amounts that JPMorganChase earns on              JPMorganChase routinely executes transactions with
+  its investment securities portfolio to the extent that it   clients and counterparties such as corporations,
+  is unable to reinvest contemporaneously in higher-          financial institutions, asset managers, hedge funds,
+  yielding instruments                                        securities exchanges and government entities within
+                                                              and outside the U.S. Many of these transactions
+• unanticipated or adverse changes in depositor               expose JPMorganChase to the credit risk of its clients
+  behavior, which could negatively affect                     and counterparties, and can involve JPMorganChase in
+  JPMorganChase’s broader asset and liability                 disputes and litigation if a client or counterparty
+  management strategy, and                                    defaults. JPMorganChase can also be subject to losses

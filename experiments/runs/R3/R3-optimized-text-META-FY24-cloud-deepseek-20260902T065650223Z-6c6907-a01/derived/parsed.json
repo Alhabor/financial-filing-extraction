@@ -1,0 +1,61 @@
+{
+  "case_id": "META-FY24",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "prompt_version": "PV016",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Failure to retain existing users or add new users, or decrease in user engagement, could significantly harm revenue and financial results.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "If we fail to retain existing users or add new users, or if our users decrease their level of engagement with our products, our revenue, financial results, and business may be significantly harmed.",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": [
+        "META-FY24-P008"
+      ],
+      "source_pages": [
+        17
+      ],
+      "monitoring_indicators": []
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Loss of marketers or reduction in advertising spending could seriously harm the business, as substantially all revenue comes from advertising.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "The loss of marketers, or reduction in spending by marketers, could seriously harm our business.",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": [
+        "META-FY24-P035"
+      ],
+      "source_pages": [
+        19
+      ],
+      "monitoring_indicators": []
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Changes in regulatory environment, third-party mobile operating systems, and browsers limit data signals for ad targeting, adversely affecting advertising revenue.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "changes to the regulatory environment, third-party mobile operating systems and browsers, and our own products have impacted, and we expect will continue to impact, the availability of such signals, which will adversely affect our advertising revenue.",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": [
+        "META-FY24-P061"
+      ],
+      "source_pages": [
+        21
+      ],
+      "monitoring_indicators": []
+    }
+  ]
+}

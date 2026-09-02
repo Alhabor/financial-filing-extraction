@@ -30,7 +30,7 @@ Group 7 的 **SHBI-GB 7343 — AI in Finance** 课程项目。项目从课程要
 | 通用本地 | `gemma4:26b-a4b-it-q4_K_M` | 本地推理 |
 | 金融专门 | `QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M` | 本地 GGUF 推理 |
 
-模型调用尚未开始。后续每次运行都必须记录实际模型 ID、运行参数、调用时间、Token、延迟、错误和资源消耗。
+模型调用已通过统一 harness 完成。每次运行均记录实际模型 ID、运行参数、调用时间、Token、延迟、错误和资源消耗。
 
 ## 当前状态
 
@@ -40,9 +40,10 @@ Group 7 的 **SHBI-GB 7343 — AI in Finance** 课程项目。项目从课程要
 - 三模型标准基准与 PYPL、COIN 多轮 Prompt/工作流准备；
 - 金融模型的确定性证据目录和原文定位管线；
 - 面向课堂截止时间的配置冻结，以及 `PFE-FY24` 单案例、三输入条件、8 次无重试的精简 R1 盲测；
+- `JPM-FY24` 与 `META-FY24` 两个额外案例的优化方案 R2/R3，共 6 次无重试调用；
 - 每次成功、失败、上下文预检、原始响应、Token、延迟和引用校验的不可覆盖档案。
 
-精简 R1 结果见 [experiments/R1_PFE_SUMMARY.md](experiments/R1_PFE_SUMMARY.md)。原计划 24 次 P003 稳定性矩阵未运行，因此项目不声称已建立统计稳定性。产品演示仓库和部署仍属于下一阶段。
+精简 R1 结果见 [experiments/R1_PFE_SUMMARY.md](experiments/R1_PFE_SUMMARY.md)，额外优化方案盲测见 [experiments/R2_R3_OPTIMIZED_SUMMARY.md](experiments/R2_R3_OPTIMIZED_SUMMARY.md)。原计划 24 次 P003 稳定性矩阵未运行，因此项目不声称已建立统计稳定性。产品演示仓库和部署仍属于下一阶段。
 
 ## 仓库边界
 
@@ -58,7 +59,7 @@ Group 7 的 **SHBI-GB 7343 — AI in Finance** 课程项目。项目从课程要
 
 ```text
 data/                    # 公开 10-K 原始材料和模型输入
-experiments/              # P、F、R1、R2 的运行档案和留痕模板
+experiments/              # P、F、R1、R2、R3 的运行档案和留痕模板
 prompts/                  # 各模型 Prompt 版本与变更记录
 evaluations/              # 人工金融分析、自动评分和专家参照
 schemas/                 # 研究线与产品线共享的输出契约

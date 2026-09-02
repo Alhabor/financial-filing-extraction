@@ -1,0 +1,40 @@
+{
+  "locator_version": "EL001",
+  "run_id": "R2-optimized-text-JPM-FY24-finance-llama-20260902T065650202Z-ad27f8-a01",
+  "source_files": {
+    "raw_selection": "raw/response.txt",
+    "raw_selection_sha256": "facc9241d270f365441849719f838e2040c53c75f542355e718960b5e181414b",
+    "evidence_catalog": "input/evidence_catalog.json",
+    "evidence_catalog_sha256": "72b52378aef78e0c224b19147598ed4db09b46887d39af43e97b42d210b8d7ab",
+    "source_packet": "input/source_packet.txt",
+    "source_packet_sha256": "a85a5a5ae2d4d373f79f7054c4a715000f7a973f0d774469b6b271ea08440986"
+  },
+  "passed": true,
+  "errors": [],
+  "mappings": [
+    {
+      "risk_id": "R1",
+      "evidence_id": "E0004",
+      "paragraph_id": "JPM-FY24-P002",
+      "pdf_page": 15,
+      "source_line": 21,
+      "text_sha256": "138d443e9a44965f86d563524fb247b26cee15863048c35701f7acca765bf6d7"
+    },
+    {
+      "risk_id": "R2",
+      "evidence_id": "E0038",
+      "paragraph_id": "JPM-FY24-P009",
+      "pdf_page": 20,
+      "source_line": 292,
+      "text_sha256": "7a5fcf80e9ba2a1878aebb3459402d4ecd8a8e42da6b1ceaf30982cfe6f1ec00"
+    },
+    {
+      "risk_id": "R3",
+      "evidence_id": "E0024",
+      "paragraph_id": "JPM-FY24-P007",
+      "pdf_page": 19,
+      "source_line": 207,
+      "text_sha256": "9396148aac03e898cacb451ad0cb9172e7969611c6738e150f2d0d24318c8e98"
+    }
+  ]
+}

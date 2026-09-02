@@ -1,0 +1,25 @@
+{
+  "case_id": "META-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV013",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "User retention and growth",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_id": "E0047"
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Ad targeting and measurement",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_id": "E0084"
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "New product development and adoption",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_id": "E0118"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+"case_id": "JPM-FY24",
+"model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+"prompt_version": "PV013",
+"risks": [
+{
+"risk_id": "R1",
+"risk_summary": "Greater exposure in litigation",
+"risk_type": "Strategic / Market / Technology",
+"evidence_id": "E0004"
+},
+{
+"risk_id": "R2",
+"risk_summary": "Changes in interest rates and credit spreads",
+"risk_type": "Financial / Liquidity / Credit",
+"evidence_id": "E0038"
+},
+{
+"risk_id": "R3",
+"risk_summary": "Adverse economic conditions",
+"risk_type": "Operational / Supply Chain",
+"evidence_id": "E0024"
+}
+]
+}

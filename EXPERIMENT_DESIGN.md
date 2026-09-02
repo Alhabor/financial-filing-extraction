@@ -1,7 +1,7 @@
 # Mini-exercise 实验设计
 
 **版本：** v0.2.0
-**状态：** 准备轮已收口；已完成单案例精简 R1 盲测
+**状态：** 准备轮已收口；已完成精简 R1 及两个优化方案扩展盲测
 **项目：** Group 7 — Financial filing extraction
 **课程：** SHBI-GB 7343 — AI in Finance
 
@@ -137,15 +137,15 @@
 - 案例分组；
 - 运行参数和成本记录方式。
 
-冻结后发现问题，不回改旧结果，而是建立新的 Prompt 版本和 R2 测试集。
+冻结后发现问题，不回改旧结果；若修改 Prompt，必须建立新的版本和独立测试集。未修改配置的扩展轮次也必须与旧轮次分开报告。
 
-## 7. R1/R2：正式测试
+## 7. R1/R2/R3：正式测试
 
 基本实验单元是：
 
 > 一个模型 × 一个案例 × 一次运行
 
-R1 使用没有参与 Prompt 修改的新案例。R2 只有在需要验证新方案或修复设计问题时建立，R1 结果保持不变，两个轮次不混合统计。
+R1 使用没有参与 Prompt 修改的新案例。面向课堂截止时间的扩展协议将 R2、R3 定义为两个新的 reserve 案例，仅运行三种已冻结优化方案；不根据其输出修改 Prompt。三个轮次分别保留和报告，不覆盖旧结果，也不把这个小样本解释为统计稳定性证据。
 
 每个正式运行都保留原始请求、原始响应、错误、耗时、Token/资源和派生评分，见 [EXPERIMENT_ARCHIVE.md](EXPERIMENT_ARCHIVE.md)。
 
@@ -231,6 +231,7 @@ R1 使用没有参与 Prompt 修改的新案例。R2 只有在需要验证新方
 - 准备轮：PYPL 与 COIN 多轮结果、失败诊断和最终配置已归档；
 - 冻结配置：DeepSeek `PV016`、Gemma `PV015`、金融证据管线 `PV013`；
 - 精简 R1：已在未参与 Prompt 修改的 `PFE-FY24` 上完成 standard text、optimized text 和 native vision 三条件，共 8 个无重试尝试；
+- 扩展盲测：已在 `JPM-FY24`（R2）和 `META-FY24`（R3）上各运行三种冻结优化方案，共 6 个无重试尝试；
 - 稳定性边界：未运行原计划 24 次 P003，不声称统计稳定性；
-- 结果：见 `experiments/R1_PFE_SUMMARY.md`；
+- 结果：见 `experiments/R1_PFE_SUMMARY.md` 与 `experiments/R2_R3_OPTIMIZED_SUMMARY.md`；
 - 产品仓库：计划名为 `financial_filing_risk_analyzer`，尚未创建。
