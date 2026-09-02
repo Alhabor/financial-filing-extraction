@@ -1,2 +1,5 @@
 prompt_version,created_at_utc,scope,parent_version,change_reason,affected_cases,validation_summary,status,git_commit,notes
 PV001,2026-09-02T00:00:00Z,core,,Initial evidence-first prompt for the standardized text condition,all,Not yet run; preparation only,active,,No analyst answer or gold label is embedded.
+PV002,2026-09-02T05:00:00Z,DeepSeek,PV001,P001 exhausted the output budget on reasoning,PYPL-FY24;COIN-FY24;NVDA-FY25,Pending P002 smoke,candidate,,Reasoning disabled and JSON output enforced; no answer labels embedded.
+PV003,2026-09-02T05:00:00Z,Gemma,PV001,P001 exhausted the output budget on thinking,PYPL-FY24;COIN-FY24;NVDA-FY25,Pending P002 smoke,candidate,,Thinking disabled and schema output enforced; no answer labels embedded.
+PV004,2026-09-02T05:00:00Z,Finance Llama,PV001,P001 returned prose and unsupported citations,PYPL-FY24;COIN-FY24;NVDA-FY25,Pending P002 smoke,candidate,,Compact explicit contract and schema output; no answer labels embedded.

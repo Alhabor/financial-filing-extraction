@@ -23,5 +23,46 @@
     "allow_human_intervention": false,
     "fallback_allowed": true,
     "fallback_profile": "standard-text-v001"
+  },
+  "optimized-deepseek-text-v002": {
+    "description": "P002 DeepSeek text profile: visible-output mode plus JSON enforcement.",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "prompt_path": "prompts/PV002.md",
+    "prompt_version": "PV002",
+    "reasoning": "disabled",
+    "structured_output": "risk-schema",
+    "allow_external_search": false,
+    "allow_rag": false,
+    "allow_human_intervention": false,
+    "fallback_allowed": false
+  },
+  "optimized-gemma-text-v002": {
+    "description": "P002 Gemma text profile: thinking disabled plus schema-constrained output.",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "prompt_path": "prompts/PV003.md",
+    "prompt_version": "PV003",
+    "reasoning": "disabled",
+    "structured_output": "risk-schema",
+    "allow_external_search": false,
+    "allow_rag": false,
+    "allow_human_intervention": false,
+    "fallback_allowed": false
+  },
+  "optimized-finance-text-v002": {
+    "description": "P002 finance profile: compact instructions plus llama.cpp schema-constrained output.",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "prompt_path": "prompts/PV004.md",
+    "prompt_version": "PV004",
+    "structured_output": "risk-schema",
+    "allow_external_search": false,
+    "allow_rag": false,
+    "allow_human_intervention": false,
+    "fallback_allowed": false
   }
 }

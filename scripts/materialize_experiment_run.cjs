@@ -9,6 +9,7 @@ const { execFileSync } = require('node:child_process');
 const ROOT = path.resolve(__dirname, '..');
 const MODEL_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'models.json');
 const PROFILE_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'profiles.json');
+const OUTPUT_SCHEMA_PATH = path.join(ROOT, 'schemas', 'risk-output.schema.json');
 
 function parseArgs(argv) {
   const args = {};
@@ -111,7 +112,20 @@ function compactObject(value) {
   return Object.fromEntries(Object.entries(value).filter(([, item]) => item !== null && item !== undefined));
 }
 
-function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModality, images, parameters) {
+function applyTransportControls(request, model, profile) {
+  const schema = profile.structured_output === 'risk-schema' ? readJson(OUTPUT_SCHEMA_PATH) : null;
+  if (profile.reasoning === 'disabled') {
+    if (model.interface === 'ollama-chat') request.think = false;
+    else if (model.provider === 'deepseek') request.thinking = { type: 'disabled' };
+  }
+  if (schema) {
+    if (model.interface === 'ollama-chat') request.format = schema;
+    else if (model.provider === 'llama.cpp') request.response_format = { type: 'json_object', schema };
+    else request.response_format = { type: 'json_object' };
+  }
+}
+
+function buildRequest(model, profile, prompt, caseText, caseId, promptVersion, actualModality, images, parameters) {
   const systemContent = `${prompt.trim()}\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: ${caseId}\n- model_id: ${model.model_id}\n- prompt_version: ${promptVersion}`;
   const request = {
     model: model.model_id,
@@ -136,6 +150,7 @@ function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModa
       seed: parameters.seed,
       num_ctx: parameters.context_length
     });
+    applyTransportControls(request, model, profile);
     return request;
   }
 
@@ -158,6 +173,7 @@ function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModa
     max_tokens: parameters.max_output_tokens,
     seed: parameters.seed
   }));
+  applyTransportControls(request, model, profile);
   return request;
 }
 
@@ -296,7 +312,7 @@ function main() {
   };
   writeJson(path.join(inputDir, 'modality.json'), modality);
 
-  const request = buildRequest(model, prompt, caseText, caseId, profile.prompt_version, actualModality, images, parameters);
+  const request = buildRequest(model, profile, prompt, caseText, caseId, profile.prompt_version, actualModality, images, parameters);
   assertSanitized(request);
   writeJson(path.join(inputDir, 'request.sanitized.json'), request);
 
