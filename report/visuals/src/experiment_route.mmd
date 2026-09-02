@@ -1,14 +1,14 @@
 %%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial Unicode MS", "primaryColor": "#EEF0F5", "primaryTextColor": "#222222", "primaryBorderColor": "#2E5A9E", "lineColor": "#777777"}}}%%
 flowchart LR
-  A[8份10-K<br/>冻结短案例包] --> B[P001共同基准<br/>同一Prompt与文本]
-  B --> C{失败类型分化}
+  A[8份10-K<br/>冻结短案例包] --> B[P001方案诊断起点<br/>同一Prompt与文本]
+  B --> C{识别方案适配问题}
   C --> D[DeepSeek<br/>reasoning耗尽预算]
   C --> E[Gemma<br/>thinking耗尽预算]
   C --> F[Finance Llama<br/>结构与定位失败]
-  D --> G[模型专属调优]
+  D --> G[按模型独立设计<br/>Prompt与处理机制]
   E --> G
   F --> G
-  G --> H[配置冻结<br/>PV016 / PV015 / PV013]
+  G --> H[三套方案冻结<br/>PV016 / PV015 / PV013]
   H --> I[R1 Pfizer<br/>标准 / 优化 / 视觉]
   I --> J[R2 JPMorgan<br/>仅冻结优化方案]
   J --> K[R3 Meta<br/>仅冻结优化方案]
