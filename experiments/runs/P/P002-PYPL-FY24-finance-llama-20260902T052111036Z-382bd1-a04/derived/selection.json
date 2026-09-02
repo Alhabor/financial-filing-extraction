@@ -1,0 +1,52 @@
+{
+  "case_id": "PYPL-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV008",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Regulatory risks related to cryptocurrency and stablecoins",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_id": "E0008",
+      "reasoning": "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world.",
+      "financial_impact": "Uncertainty on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice",
+      "time_horizon": "Ongoing",
+      "monitoring_indicators": [
+        "Regulatory updates",
+        "Stablecoin adoption rates"
+      ],
+      "mitigation": "Not disclosed in the selected evidence line",
+      "uncertainty": "Uncertainty on how regulatory changes will impact the business"
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Operational risks related to cryptocurrency custody and lending",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_id": "E0014",
+      "reasoning": "We hold our customers’ cryptocurrency assets through one or more third-party custodians, and financial and third-party risks related to our customer cryptocurrency offerings",
+      "financial_impact": "Exposure to loss, significantly harming our business, financial condition, and reputation",
+      "time_horizon": "Ongoing",
+      "monitoring_indicators": [
+        "Custodian performance",
+        "Cryptocurrency market volatility"
+      ],
+      "mitigation": "Not disclosed in the selected evidence line",
+      "uncertainty": "Uncertainty on the effectiveness of custodial arrangements"
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Competition risks in the global payments industry",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_id": "E0051",
+      "reasoning": "The global payments industry is highly competitive, dynamic, and innovative, and increasingly subject to regulatory scrutiny and oversight",
+      "financial_impact": "Increased competition could negatively impact our business, financial condition, and results of operations",
+      "time_horizon": "Ongoing",
+      "monitoring_indicators": [
+        "Competitor activity",
+        "Market trends"
+      ],
+      "mitigation": "Not disclosed in the selected evidence line",
+      "uncertainty": "Uncertainty on the competitive landscape"
+    }
+  ]
+}

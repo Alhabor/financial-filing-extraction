@@ -119,8 +119,10 @@ function main() {
   const manifest = readJson(manifestPath);
   const catalog = readJson(catalogPath);
   const sourcePacket = fs.readFileSync(sourcePacketPath, 'utf8');
-  if (manifest.output_schema_version !== 'finance-selection-v001') throw new Error('Run does not use the finance-selection-v001 raw contract.');
-  if (catalog.catalog_version !== 'evidence-catalog-v001') throw new Error('Unsupported evidence catalog version.');
+  if (!['finance-selection-v001', 'finance-selection-v002'].includes(manifest.output_schema_version)) {
+    throw new Error('Run does not use a supported finance-selection raw contract.');
+  }
+  if (!['evidence-catalog-v001', 'evidence-catalog-v002', 'evidence-catalog-v003'].includes(catalog.catalog_version)) throw new Error('Unsupported evidence catalog version.');
   if (catalog.case_id !== manifest.case_id) throw new Error('Catalog case_id does not match the run.');
   if (catalog.source_packet_sha256 !== sha256Text(sourcePacket)) throw new Error('Frozen source packet hash does not match the catalog.');
   if (!Array.isArray(catalog.records) || catalog.records.length !== catalog.record_count) throw new Error('Catalog record count is inconsistent.');

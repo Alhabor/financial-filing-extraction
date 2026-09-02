@@ -1,0 +1,11 @@
+{
+  "preflight_version": "CP001",
+  "run_id": "P002-PYPL-FY24-finance-llama-20260902T051858730Z-51ac03-a03",
+  "tokenizer": "llama.cpp-/tokenize-concatenated-messages-v001",
+  "input_tokens": 9429,
+  "reserved_output_tokens": 1600,
+  "required_context_tokens": 11029,
+  "configured_context_tokens": 8192,
+  "passed": false,
+  "measured_at_utc": "2026-09-02T05:20:35.256Z"
+}

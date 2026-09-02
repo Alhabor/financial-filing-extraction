@@ -5,13 +5,18 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
-const { buildEvidenceCatalog } = require('./lib/evidence_catalog.cjs');
+const {
+  buildEvidenceCatalog,
+  buildCompactLineEvidenceCatalog,
+  buildSentenceEvidenceCatalog
+} = require('./lib/evidence_catalog.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const MODEL_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'models.json');
 const PROFILE_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'profiles.json');
 const OUTPUT_SCHEMA_PATH = path.join(ROOT, 'schemas', 'risk-output.schema.json');
 const FINANCE_SELECTION_SCHEMA_PATH = path.join(ROOT, 'schemas', 'finance-selection.schema.json');
+const FINANCE_SELECTION_SCHEMA_V2_PATH = path.join(ROOT, 'schemas', 'finance-selection-v002.schema.json');
 
 function parseArgs(argv) {
   const args = {};
@@ -119,6 +124,8 @@ function applyTransportControls(request, model, profile) {
     ? OUTPUT_SCHEMA_PATH
     : profile.structured_output === 'finance-selection-schema'
       ? FINANCE_SELECTION_SCHEMA_PATH
+      : profile.structured_output === 'finance-selection-schema-v002'
+        ? FINANCE_SELECTION_SCHEMA_V2_PATH
       : null;
   const schema = schemaPath ? readJson(schemaPath) : null;
   if (profile.reasoning === 'disabled') {
@@ -288,6 +295,14 @@ function main() {
   let evidenceCatalog = null;
   if (profile.input_transform === 'evidence-catalog-v001') {
     const transformed = buildEvidenceCatalog(sourcePacketText, caseId);
+    caseText = transformed.modelInput;
+    evidenceCatalog = transformed.catalog;
+  } else if (profile.input_transform === 'evidence-catalog-v002') {
+    const transformed = buildCompactLineEvidenceCatalog(sourcePacketText, caseId);
+    caseText = transformed.modelInput;
+    evidenceCatalog = transformed.catalog;
+  } else if (profile.input_transform === 'evidence-catalog-v003') {
+    const transformed = buildSentenceEvidenceCatalog(sourcePacketText, caseId);
     caseText = transformed.modelInput;
     evidenceCatalog = transformed.catalog;
   } else if (profile.input_transform) {

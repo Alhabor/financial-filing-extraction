@@ -69,6 +69,15 @@ try {
   assert.match(financePipeline.request.messages[1].content, /\[EVIDENCE PYPL-FY24-E0001 \| PDF_PAGE 18 \| PARAGRAPH PYPL-FY24-P001\]/);
   assert.ok(fs.existsSync(path.join(financePipeline.runDir, 'input', 'source_packet.txt')));
 
+  const financePipelineV2 = materialize(temporary, 'finance-llama', 'optimized-finance-pipeline-v006');
+  assert.equal(financePipelineV2.request.response_format.schema.$id, 'finance-selection-v002');
+  assert.equal(financePipelineV2.manifest.prompt_version, 'PV010');
+  assert.equal(financePipelineV2.manifest.input.transform, 'evidence-catalog-v003');
+  const sentenceCatalog = JSON.parse(fs.readFileSync(path.join(financePipelineV2.runDir, 'input', 'evidence_catalog.json'), 'utf8'));
+  assert.equal(sentenceCatalog.catalog_version, 'evidence-catalog-v003');
+  assert.ok(sentenceCatalog.records.some((record) => record.match_mode === 'whitespace-normalized'));
+  assert.match(financePipelineV2.request.messages[1].content, /\[E0001\]/);
+
   for (const result of [deepseek, gemma, finance, deepseekV3, gemmaV3, financeV3]) {
     assert.equal(result.manifest.parameters.max_output_tokens, 1600);
     assert.equal(result.manifest.tools.external_search, false);
@@ -77,6 +86,8 @@ try {
   assert.equal(financePipeline.manifest.parameters.max_output_tokens, 1600);
   assert.equal(financePipeline.manifest.tools.external_search, false);
   assert.equal(financePipeline.manifest.tools.rag, true);
+  assert.equal(financePipelineV2.manifest.parameters.max_output_tokens, 1600);
+  assert.equal(financePipelineV2.manifest.tools.rag, true);
   process.stdout.write('test_materialize_transport_controls: all deterministic tests passed\n');
 } finally {
   fs.rmSync(temporary, { recursive: true, force: true });

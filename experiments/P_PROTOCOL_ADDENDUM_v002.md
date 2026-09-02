@@ -11,7 +11,7 @@ Two prompt-only finance attempts produced valid JSON but unreliable quotations a
 ## Declared two-stage finance solution
 
 1. `evidence-catalog-v001` converts every physical source line in the frozen packet into an immutable record containing `evidence_id`, exact text, paragraph ID, PDF page, printed page, source line, and text hash.
-2. The finance model receives the complete catalog and returns exactly three risk analyses plus one selected `evidence_id` per risk under `finance-selection-v001`.
+2. The finance model receives the compact ID-plus-exact-text catalog view and returns exactly three risk analyses plus one selected `evidence_id` per risk under `finance-selection-v001`. Paragraph/page metadata remains in the archived catalog and is not spent as repeated model-input tokens.
 3. `EL001` validates that each selected ID exists, is unique, resolves to at least five words, has a complete locator, and retains its catalog text hash.
 4. The locator creates a `risk-output-v001` candidate by copying the catalog text, paragraph ID, and PDF page. It cannot alter the model's risk summary, type, reasoning, financial impact, horizon, indicators, mitigation, or uncertainty.
 5. `AE002` evaluates the normalized candidate against the original frozen source packet, not against the transformed catalog.
@@ -40,3 +40,5 @@ Run `PYPL-FY24` first. Proceed to other development cases only if:
 - deterministic localization completes without repair or fallback;
 - the normalized output passes schema, metadata, page, paragraph, and quotation validation;
 - a human review finds no material unsupported claim in the model-authored analytical fields.
+
+After the compact physical-line catalog passed automatic checks but exposed incomplete-line and theme-expansion problems in manual review, `evidence-catalog-v003` may prospectively use complete sentence spans. It normalizes extraction whitespace only, retains the original paragraph/page mapping, and remains subject to `AE002` word-and-punctuation fidelity checks. `v001` is the original verbose locator view; `v002` is the compact physical-line view; neither is rewritten.

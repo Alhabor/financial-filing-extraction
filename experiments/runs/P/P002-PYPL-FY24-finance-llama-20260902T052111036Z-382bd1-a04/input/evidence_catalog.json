@@ -1,0 +1,1502 @@
+{
+  "catalog_version": "evidence-catalog-v001",
+  "case_id": "PYPL-FY24",
+  "source_packet_sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01",
+  "record_count": 166,
+  "records": [
+    {
+      "evidence_id": "E0001",
+      "text": "legislative and regulatory landscapes with respect to cryptocurrency may subject us to additional licensing and regulatory obligations or to additional inquiries",
+      "paragraph_id": "PYPL-FY24-P001",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 9,
+      "text_sha256": "be8ad82061ae991684f3bd5aa60762fe6e21cf198d3618e90d0180f5cc3687b5"
+    },
+    {
+      "evidence_id": "E0002",
+      "text": "or investigations from the SEC or other regulators and governmental authorities, and require us to make product changes, restrict or discontinue product",
+      "paragraph_id": "PYPL-FY24-P001",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 10,
+      "text_sha256": "f49e3c2dbb26a35a26fbb1dd1fc5f8947b23630f2167dfc2439394cea919a56b"
+    },
+    {
+      "evidence_id": "E0003",
+      "text": "offerings in certain markets, implement additional and potentially costly controls, or take other actions.",
+      "paragraph_id": "PYPL-FY24-P001",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 11,
+      "text_sha256": "12fcfc1ca9137a34bd34025315a4daf697ff0fe193ea5b5c9fdd84c4023ece6d"
+    },
+    {
+      "evidence_id": "E0004",
+      "text": "In August 2023, a third-party issuer with which we have partnered commercially (the “PYUSD Issuer”) launched a U.S. dollar-denominated stablecoin named",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 14,
+      "text_sha256": "38e89c69c0207217c29fb0999f5f74433eceaced3796d4a1297955a787ef436a"
+    },
+    {
+      "evidence_id": "E0005",
+      "text": "PayPal USD (“PYUSD”), which is available to PayPal U.S. customers and Venmo customers. These PayPal and Venmo customers may, if provisioned for",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 15,
+      "text_sha256": "a99df8e7e4e0a1c443add62ceb48a9fb5344c6a59388c6e9b767dde260194802"
+    },
+    {
+      "evidence_id": "E0006",
+      "text": "external transfers and subject to our sanctions and anti-money laundering controls, send PYUSD to external wallets not controlled by PayPal. The PYUSD",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 16,
+      "text_sha256": "2e74491f63d0725ea9e6c26813082ac7923a3b10aa2c096ab982cd5d0cf4808f"
+    },
+    {
+      "evidence_id": "E0007",
+      "text": "Issuer may also allow institutional users to directly purchase PYUSD from the PYUSD Issuer (as per the PYUSD Issuer’s stablecoin terms and conditions).",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 17,
+      "text_sha256": "f4e7bfd6acac760d0aea2f644297348f3eb823ed083400cafccd965b3013250e"
+    },
+    {
+      "evidence_id": "E0008",
+      "text": "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 18,
+      "text_sha256": "0002b635c02fa2262681b99f330fade6e97f7fbf0ac394c25b0302f98c20eade"
+    },
+    {
+      "evidence_id": "E0009",
+      "text": "SEC. There are uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice, and we",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 19,
+      "text_sha256": "ea2bc439a6c037a936f1a1201d68a7faa02d8b1ea99e025911a23761c4d949a8"
+    },
+    {
+      "evidence_id": "E0010",
+      "text": "and the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirement. If we or the PYUSD Issuer fail to",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 20,
+      "text_sha256": "f6dfb4de847a8bd9c7d77280fee83ac9b6fccd871e24fc7d3163bc01c096b9e4"
+    },
+    {
+      "evidence_id": "E0011",
+      "text": "comply with regulations, requirements, prohibitions or other obligations applicable to us, we could face regulatory or other enforcement actions, potential fines,",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 21,
+      "text_sha256": "072a60c47bdb26cc34328cb2b0f3e7eb4a6666d3395f51cbe00e81eebdb943f7"
+    },
+    {
+      "evidence_id": "E0012",
+      "text": "penalties, and other consequences. In addition, we could face reputational harm through our relationship with the PYUSD Issuer if the PYUSD Issuer were to",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 22,
+      "text_sha256": "1d3269e6d579ca3d436886edf15b09733356c292debfdae837866fda4b2c3326"
+    },
+    {
+      "evidence_id": "E0013",
+      "text": "face regulatory scrutiny, PYUSD is deemed to be a security, or PYUSD is alleged to be used for transactions in connection with illicit or illegal activities.",
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 23,
+      "text_sha256": "c0a131377552e02ab0c1077afcb930a7497c9c75b3e1f77e3a16205de7ff7283"
+    },
+    {
+      "evidence_id": "E0014",
+      "text": "We hold our customers’ cryptocurrency assets through one or more third-party custodians. Financial and third-party risks related to our customer",
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 26,
+      "text_sha256": "fa9ed5d3004fbdc4d9ba4429ec019c52e8eb506489bae18883fe4a4eb47ba326"
+    },
+    {
+      "evidence_id": "E0015",
+      "text": "cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, insufficient insurance coverage",
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 27,
+      "text_sha256": "19d70321c7e037214191d88ec8b832036eaa0248a02f8bd0f96c219a32c814a2"
+    },
+    {
+      "evidence_id": "E0016",
+      "text": "by a custodian to reimburse us for all such losses, a custodian’s failure to maintain effective controls over the custody and settlement services provided to us, a",
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 28,
+      "text_sha256": "f6668076e542bee5716971bba095557a9b7b062e49b99123a7e5c77617770b39"
+    },
+    {
+      "evidence_id": "E0017",
+      "text": "custodian’s inability to purchase or liquidate cryptocurrency holdings, the failure of the PYUSD Issuer to maintain sufficient reserve assets backing PYUSD",
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 29,
+      "text_sha256": "c916d3876f5c59bacb0f0973a8232b46b0623d18dec7fe9541515bd1d4eceb00"
+    },
+    {
+      "evidence_id": "E0018",
+      "text": "and defaults on financial or performance obligations by a custodian, banks with which the PYUSD Issuer maintains reserve assets or counterparty financial",
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 30,
+      "text_sha256": "5cb3239e94fe6136cdc1b8ef85c035e0d5467f8e67196c1ed5b4efff19ec4519"
+    },
+    {
+      "evidence_id": "E0019",
+      "text": "institutions, could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation.",
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 31,
+      "text_sha256": "b8d6f3495f1681c37030f2e7ac126e118715d4318df6f78719673ad8a29d9e78"
+    },
+    {
+      "evidence_id": "E0020",
+      "text": "We have selected custodian partners and the PYUSD Issuer, and may in the future select additional custodian partners and stablecoin issuing entities, that are",
+      "paragraph_id": "PYPL-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 34,
+      "text_sha256": "cb738e971fc580703f4057d17b511e1ac7b77e8a4d34e06a1e8c2396c16f2c28"
+    },
+    {
+      "evidence_id": "E0021",
+      "text": "subject to regulatory oversight, capital requirements, maintenance of audit and compliance industry certifications, and cybersecurity procedures and policies.",
+      "paragraph_id": "PYPL-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 35,
+      "text_sha256": "88d54b9b440a1289f408375165343e2eed8f0d09e2e76489476a0e7f235ffb16"
+    },
+    {
+      "evidence_id": "E0022",
+      "text": "Nevertheless, any operational disruptions at any such custodian or issuer, or such custodians’ or issuer’s failure to safeguard cryptocurrency holdings (or",
+      "paragraph_id": "PYPL-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 36,
+      "text_sha256": "f5e529d33aaf47208cea6e47b86347290cba6093eeba52214698cdc44cb1766f"
+    },
+    {
+      "evidence_id": "E0023",
+      "text": "reserve assets), could result in losses of customer assets, expose us to customer claims, reduce consumer confidence and materially impact our cryptocurrency",
+      "paragraph_id": "PYPL-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 37,
+      "text_sha256": "2c462d630898d65988382e940d9149a15a0b825d0a89aa10304c8a0acd2f9937"
+    },
+    {
+      "evidence_id": "E0024",
+      "text": "product offerings and our operating results.",
+      "paragraph_id": "PYPL-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 38,
+      "text_sha256": "d160f01a6beada1866859bcc56cf728b838dc3a14e34a5ce8f16feb677641480"
+    },
+    {
+      "evidence_id": "E0025",
+      "text": "Custodial arrangements to safeguard cryptocurrency assets involve unique risks and uncertainties in the event of a custodian’s bankruptcy. While other types of",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 41,
+      "text_sha256": "df8ce176126164ee698b239c02b21040f08c84e8b6b27abe66b8e6e6f48dc579"
+    },
+    {
+      "evidence_id": "E0026",
+      "text": "assets and some custodied cryptocurrencies have been deemed not to be part of the custodian’s bankruptcy estate under various regulatory regimes, bankruptcy",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 42,
+      "text_sha256": "8f7cdbc913ad2320576e6740f1df20e66057c2e413902eccf3f76f35f280cf20"
+    },
+    {
+      "evidence_id": "E0027",
+      "text": "courts have not yet definitively determined the appropriate treatment of custodial holdings of digital assets in a bankruptcy proceeding. In the event of a",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 43,
+      "text_sha256": "23259b5006311e13b65adac24fb2a404cf229a0649d08428019b901043ec7141"
+    },
+    {
+      "evidence_id": "E0028",
+      "text": "custodian’s bankruptcy, the lack of precedent and the highly fact-dependent nature of the determination could delay or preclude the return of custodied",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 44,
+      "text_sha256": "c43ad922d0062871e1813b0329483fef87e4b05ca5e1a1c98688be34e85c65d5"
+    },
+    {
+      "evidence_id": "E0029",
+      "text": "cryptocurrency assets to us or to our customers. Although we contractually require our custodians to segregate our customer assets and not commingle them",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 45,
+      "text_sha256": "cebee0b146dac062548a580ad5594d1d74401eb56c8fcd295dd8f825e3905aee"
+    },
+    {
+      "evidence_id": "E0030",
+      "text": "with proprietary or other assets, we cannot be certain that these contractual obligations, even if duly observed by a custodian, will be effective in preventing",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 46,
+      "text_sha256": "d780d8a908b2f45553423c5b56953d312656609d174c510b58c9c515777d852d"
+    },
+    {
+      "evidence_id": "E0031",
+      "text": "such assets from being treated as part of the custodian’s estate under bankruptcy or other insolvency law. In that event, our claim on behalf of such customers",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 47,
+      "text_sha256": "4f5b80b101c6331b431dfad39de08c759cdbcb493367d52d348d5a0ee24d771e"
+    },
+    {
+      "evidence_id": "E0032",
+      "text": "against a custodian’s estate for our customers’ cryptocurrency assets could be treated as a general unsecured claim against the custodian, in which case our",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 48,
+      "text_sha256": "1f76c951c06b6c18639346ccd46387b8c9aaf49daddb67349c299ce2a0cc05fa"
+    },
+    {
+      "evidence_id": "E0033",
+      "text": "customers could seek to hold us liable for any resulting losses.",
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 49,
+      "text_sha256": "9eb21a5911e5d293816f446664b2c165b8a202c7694f639dbcbf9b7efa9dfcf0"
+    },
+    {
+      "evidence_id": "E0034",
+      "text": "Lending Regulation",
+      "paragraph_id": "PYPL-FY24-P006",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 52,
+      "text_sha256": "61bc65a480729b9f997e02b67680d4ac7dcc77aba9c263c1d129b7010217b5ba"
+    },
+    {
+      "evidence_id": "E0035",
+      "text": "We hold a number of U.S. state lending licenses for our U.S. consumer short-term installment loan product, which is subject to federal and state laws governing",
+      "paragraph_id": "PYPL-FY24-P007",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 55,
+      "text_sha256": "a779968aa5d59b3e8df0dd541e2ea300afc92c2911a4b921928b1fc2809fd209"
+    },
+    {
+      "evidence_id": "E0036",
+      "text": "consumer credit and debt collection. Similarly, the consumer short-term installment loan products that we offer outside the U.S. may be subject to consumer",
+      "paragraph_id": "PYPL-FY24-P007",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 56,
+      "text_sha256": "9c8cc8253d1c6f30107b5ab44e97fe4f259d898f9414145f1cf25aab454161c5"
+    },
+    {
+      "evidence_id": "E0037",
+      "text": "credit legislation, licensing requirements, consumer lending laws, consumer protection or banking transparency regulations. Increased global regulatory focus",
+      "paragraph_id": "PYPL-FY24-P007",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 57,
+      "text_sha256": "1ca9d0430f86799657007a862e8c5d413f32b52dea44ee528429d379d7779101"
+    },
+    {
+      "evidence_id": "E0038",
+      "text": "on short-term installment products and consumer credit more broadly could result in laws or regulations requiring changes to our policies, procedures,",
+      "paragraph_id": "PYPL-FY24-P007",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 58,
+      "text_sha256": "120b888414a3c0835ea59657fb9bf53d2971c0db08a24dd8cd2ed20d908c8ae2"
+    },
+    {
+      "evidence_id": "E0039",
+      "text": "operations, and product offerings, and restrict or limit our ability to offer credit products.",
+      "paragraph_id": "PYPL-FY24-P007",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 59,
+      "text_sha256": "f909030e300fd6bc4842b85a2c9cf3a92b063992c8f578afc71d2b65e80c0eb8"
+    },
+    {
+      "evidence_id": "E0040",
+      "text": "Consumer Protection",
+      "paragraph_id": "PYPL-FY24-P008",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "source_line": 62,
+      "text_sha256": "41ce02be68256fe2b6d0402ac033f35ca6c3d1f04d7d404bc4ffdd053ef3b9e9"
+    },
+    {
+      "evidence_id": "E0041",
+      "text": "property, there can be no assurance that we will be successful in protecting or enforcing our rights in every jurisdiction, that our contractual arrangements will",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 66,
+      "text_sha256": "6b8eff0e6003e52e5879f78c5b200524d334b1b7318eb93b467bc99c431eacda"
+    },
+    {
+      "evidence_id": "E0042",
+      "text": "prevent or deter third parties from infringing or misappropriating our intellectual property, or that third parties will not independently develop equivalent or",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 67,
+      "text_sha256": "eab1ae95692153f54c6060e2a771cb53be00bd9d569336f40d7a188e7004944f"
+    },
+    {
+      "evidence_id": "E0043",
+      "text": "superior intellectual property rights. We may be required to expend significant time and resources to prevent infringement and enforce our rights, and we may",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 68,
+      "text_sha256": "b624cc3303b884e837d4d0d5fc0ee27c23d33e8c11173da62a448dfe3a3dfa3a"
+    },
+    {
+      "evidence_id": "E0044",
+      "text": "be unable to discover or determine the extent of any unauthorized use of our proprietary rights. If we are unable to prevent third parties from infringing or",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 69,
+      "text_sha256": "83e3c95e01ce7bbe39a34cd802c746a2c682afec8de97fc0d2d7563338b3db2d"
+    },
+    {
+      "evidence_id": "E0045",
+      "text": "otherwise violating our proprietary rights, the uniqueness and value of our products and services could be adversely affected, the value of our brands could be",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 70,
+      "text_sha256": "9d99c8fe7815b5f34aa5ebf34f2e919e6bc9a60476d2a07357b4079e1fc147f9"
+    },
+    {
+      "evidence_id": "E0046",
+      "text": "diminished, and our business could be adversely affected. We expect to continue to license in the future certain of our proprietary rights, such as trademarks or",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 71,
+      "text_sha256": "8bbce454d4699f3be5eaeaf2399ab550f1b3ddfb764ed0a29f5d5528c18b6f2f"
+    },
+    {
+      "evidence_id": "E0047",
+      "text": "copyrighted material, to others. These licensees may take actions that diminish the value of our proprietary rights or harm our reputation. Any failure to",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 72,
+      "text_sha256": "8b6b4f03379ddc5adadb52e248c099451687b92a5e771539ee0ef9035bfb0cab"
+    },
+    {
+      "evidence_id": "E0048",
+      "text": "adequately protect or enforce our proprietary rights, or significant costs incurred in doing so, could diminish the value of our intangible assets and materially",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 73,
+      "text_sha256": "bf6c35bc2b7b5362066673a3d4db4248811dd0823996ddbb4e1bbf28544acfd6"
+    },
+    {
+      "evidence_id": "E0049",
+      "text": "harm our business.",
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 74,
+      "text_sha256": "020d184eb4971bb007e6ff6067d6bbbd67cf8a025ccef3d36a1e1de399685ac3"
+    },
+    {
+      "evidence_id": "E0050",
+      "text": "BUSINESS AND OPERATIONS RISKS",
+      "paragraph_id": "PYPL-FY24-P010",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 77,
+      "text_sha256": "dfb6e1e8137046453e754c93f5f16ab1cd3b7405833ccae66117e0c774e1c2b2"
+    },
+    {
+      "evidence_id": "E0051",
+      "text": "We face substantial and increasingly intense competition worldwide in the global payments industry.",
+      "paragraph_id": "PYPL-FY24-P011",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 80,
+      "text_sha256": "18ce800c00ae7479d7213e6ecf5de938a294c35eb21a22e2e752c151bde0fe44"
+    },
+    {
+      "evidence_id": "E0052",
+      "text": "The global payments industry is highly competitive, dynamic, and innovative, and increasingly subject to regulatory scrutiny and oversight. Many of the areas",
+      "paragraph_id": "PYPL-FY24-P012",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 83,
+      "text_sha256": "7e22bdc8afe93e8ae1ef721863d1945e18558382db00d2be3f2fbc13c2116056"
+    },
+    {
+      "evidence_id": "E0053",
+      "text": "in which we compete evolve rapidly with innovative and disruptive technologies, shifting user preferences and needs, price sensitivity of consumers and",
+      "paragraph_id": "PYPL-FY24-P012",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 84,
+      "text_sha256": "180b98e0264b100162297fcb92c13f90bce0566e0a9c76a50deebd123c87e026"
+    },
+    {
+      "evidence_id": "E0054",
+      "text": "merchants, and frequent introductions of new products and services. Competition also may intensify as new competitors emerge, businesses combine or enter",
+      "paragraph_id": "PYPL-FY24-P012",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 85,
+      "text_sha256": "73f6920d01d4a2f294ce134d721701f19d14b98bbf8682a5676a0f73f07ed038"
+    },
+    {
+      "evidence_id": "E0055",
+      "text": "into new partnerships, and established companies in other segments expand to become competitive with various aspects of our business.",
+      "paragraph_id": "PYPL-FY24-P012",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 86,
+      "text_sha256": "d16a612a17be8afdf23e903ceb2f56035744f69bc54a7ebfa553b91ce41d5a2a"
+    },
+    {
+      "evidence_id": "E0056",
+      "text": "We compete with a wide range of businesses in every aspect of our business. Some of our current and potential competitors are or may be larger than we are,",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 89,
+      "text_sha256": "4b9bcf5837bbf77d06f0dffdc53838a0bb5f7c5a5bbb2af62c850e091d4eb5d5"
+    },
+    {
+      "evidence_id": "E0057",
+      "text": "have larger customer bases, greater brand recognition, longer operating histories, a dominant or more secure position, broader geographic scope, volume, scale,",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 90,
+      "text_sha256": "48058827b04f7e7a6408f68d7853825f8188e341f9f91cbe6312b25a0f572739"
+    },
+    {
+      "evidence_id": "E0058",
+      "text": "resources, and market share than we do, or offer products and services that we do not offer. Other competitors are or may be smaller or younger companies that",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 91,
+      "text_sha256": "bebdd9c10e1ab6a8c0b417d01805c62aa0db7edce400eee42a2c4e84c49cb9bb"
+    },
+    {
+      "evidence_id": "E0059",
+      "text": "may be more agile in responding to regulatory and technological changes and customer preferences. Our competitors may devote greater resources to the",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 92,
+      "text_sha256": "df0d6b9f05be648d18fed160157ca1073466cb99835e522641f79678bb827ea4"
+    },
+    {
+      "evidence_id": "E0060",
+      "text": "development, promotion, and sale of products and services, and/or offer lower prices or more effectively offer their own innovative programs, products, and",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 93,
+      "text_sha256": "99436e73145cfe4fa1ed8d1322a70d32f343e1078aebe764d1f8168658668003"
+    },
+    {
+      "evidence_id": "E0061",
+      "text": "services. We often partner with other businesses, and the ability to continue developing these partnerships is important to our business. Competition for",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 94,
+      "text_sha256": "6259f56b8d085098edfedf81adee1a2916123ef3afd4c620de731dbe54437733"
+    },
+    {
+      "evidence_id": "E0062",
+      "text": "relationships with these partners is intense, and there can be no assurance that we will be able to continue to establish, grow, or maintain these partner",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 95,
+      "text_sha256": "c79dbb1bfd2d18ad4eb8e56c74b6edfcb4ddb6b138513f3331a60d3c7faed832"
+    },
+    {
+      "evidence_id": "E0063",
+      "text": "relationships. If we are unable to differentiate our products and services from those of our competitors, drive value for our customers and adoption of our",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 96,
+      "text_sha256": "87697517e7ec38ea0299cd02d2581f73551c20252d1ebc1009d22b318968b692"
+    },
+    {
+      "evidence_id": "E0064",
+      "text": "products and services, or effectively and efficiently align our resources with our goals and objectives, we may not be able to compete effectively, which could",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 97,
+      "text_sha256": "14dff5e073f3696ed42612095eb232822ffc6033471338185db31bcfdc7b6eec"
+    },
+    {
+      "evidence_id": "E0065",
+      "text": "negatively impact our results of operations and financial condition.",
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 98,
+      "text_sha256": "1862fc35f0d46c3f45fd0533c82ec3bb5c2c0a2201b21b27821f983801e06dd7"
+    },
+    {
+      "evidence_id": "E0066",
+      "text": "Changes to payment card networks or bank fees, rules, or practices could harm our business.",
+      "paragraph_id": "PYPL-FY24-P014",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 101,
+      "text_sha256": "c8568de590b949e35d86e72c173762cf6e443e4dd96b0784c51dd37fbac5ff2d"
+    },
+    {
+      "evidence_id": "E0067",
+      "text": "To process certain transactions, we must comply with applicable payment card, bank or other network (collectively, “network”) rules. The rules govern all",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 104,
+      "text_sha256": "7c2fe105bcaba6e123253cdcded8c2d14ce453f8201d5d34c558b12fec9e6b87"
+    },
+    {
+      "evidence_id": "E0068",
+      "text": "aspects of a transaction on the networks, including fees and other practices. From time to time, the networks have increased the fees and assessments that they",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 105,
+      "text_sha256": "bd7eb86dcb7147a9089a908d3aa3c0ed79a983f75673400c768309bcad92dc8c"
+    },
+    {
+      "evidence_id": "E0069",
+      "text": "charge for transactions that access their networks. Certain networks have also imposed special fees or assessments for transactions that are executed through a",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 106,
+      "text_sha256": "dc91387c4278a7449f3abbb76f7ee6d30e6f7e5a65ea3af30fe4b9493bda57cc"
+    },
+    {
+      "evidence_id": "E0070",
+      "text": "digital wallet such as the one that PayPal offers. Our payment processors may have the right to pass any increases in fees and assessments on to us and to",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 107,
+      "text_sha256": "75bdf15ee3c32693623d56f8bbfe2e3598de8640c0046c7e5222cd2987362dfc"
+    },
+    {
+      "evidence_id": "E0071",
+      "text": "increase their own fees for processing. Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 108,
+      "text_sha256": "9e642a1ac89cd91d8542032109013b2666dbd5cb346f2e2c936020e4f098346d"
+    },
+    {
+      "evidence_id": "E0072",
+      "text": "payment processors could make our pricing less competitive, increase our operating costs, and reduce our operating income, which could materially harm our",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 109,
+      "text_sha256": "85c222eaabc9fd3cd0cf101176bd3c53407e7132ba9b9b03e517ba82528645f5"
+    },
+    {
+      "evidence_id": "E0073",
+      "text": "business, financial condition, and results of operations.",
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 110,
+      "text_sha256": "26709a0822938e55e2eb4d6e947d59756a2955c2a5bf3ea7d8403273972dbcee"
+    },
+    {
+      "evidence_id": "E0074",
+      "text": "In some jurisdictions, government regulations have required payment card networks to reduce or cap interchange fees. Any changes in interchange fee rates or",
+      "paragraph_id": "PYPL-FY24-P016",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 113,
+      "text_sha256": "e013068060ad71318a8b89f262f775d375f5595fef89644a739ffff44ba05278"
+    },
+    {
+      "evidence_id": "E0075",
+      "text": "limitations, or their applicability to PayPal’s products and services, could adversely affect our competitive position against payment card service providers and",
+      "paragraph_id": "PYPL-FY24-P016",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 114,
+      "text_sha256": "1e6b0b2f3552fb4fe4c9ac72eef47f574af632a9a0f564494f121f55f998220b"
+    },
+    {
+      "evidence_id": "E0076",
+      "text": "the revenue we earn from our branded card programs, require us to change our business practices, and harm our business.",
+      "paragraph_id": "PYPL-FY24-P016",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 115,
+      "text_sha256": "3c22b0ab886d68ba98e64253595c6eee54b8dba193eb957d32c1b9c412960710"
+    },
+    {
+      "evidence_id": "E0077",
+      "text": "We may also be subject to fines and other penalties assessed by networks resulting from any rule violations by us or our merchants. The networks set and",
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 118,
+      "text_sha256": "1d431686a60bfbd940c0d1d2ab9c41b53e49d6f0a72f72cc2545fddd42c7dcac"
+    },
+    {
+      "evidence_id": "E0078",
+      "text": "interpret their rules, and have alleged from time to time that various aspects of our business model violate these rules, or our agreements with the networks.",
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 119,
+      "text_sha256": "569b2833ac991c998280d9137855a5a9a4f95597f34a2da339ff8e94fcd9730b"
+    },
+    {
+      "evidence_id": "E0079",
+      "text": "Such allegations may result in significant fines, penalties, damages, or other liabilities, adversely impact benefits to us under the agreements, or require changes",
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 120,
+      "text_sha256": "956ccfa1822972961698657b7fdbdc801b9f3f571b211e4e28fcbaf3e155d3af"
+    },
+    {
+      "evidence_id": "E0080",
+      "text": "in our business practices that may be costly and adversely affect our business, results of operations and financial condition. The network rules may also",
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 121,
+      "text_sha256": "b37af41ea2a7dc6e19416eac4e3a73612af66e3a196ad34189cf9e8eded846d5"
+    },
+    {
+      "evidence_id": "E0081",
+      "text": "increase the cost of, impose restrictions on, or otherwise impact the development of, our products which may negatively affect product deployment and",
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 122,
+      "text_sha256": "b564f562a2f0d18668701fe37607ad6199ae6ebd7e77ad9b6716b930ea103701"
+    },
+    {
+      "evidence_id": "E0082",
+      "text": "adoption. The networks could adopt new operating rules or interpret or re-interpret existing rules that",
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "source_line": 123,
+      "text_sha256": "a66ef51fc18592cd2b148b2b5e5317750bbbea1bc6e959d6aad988b5dd3a84d2"
+    },
+    {
+      "evidence_id": "E0083",
+      "text": "we or our payment processors might find difficult or impractical to follow, or costly to implement, which could require us to make significant changes to our",
+      "paragraph_id": "PYPL-FY24-P018",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 127,
+      "text_sha256": "eef9279a9b6bfb4cbc8ac1f7faa40338e598533b52de36f7e40442705741f06b"
+    },
+    {
+      "evidence_id": "E0084",
+      "text": "products, increase our operational costs, and negatively impact our business. If we become unable or limited in our ability to accept certain payment types such",
+      "paragraph_id": "PYPL-FY24-P018",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 128,
+      "text_sha256": "e02d30906b816fea1c6352b7b0f5c1ace0cf04eebba3a7d0307ccbdfa1e76927"
+    },
+    {
+      "evidence_id": "E0085",
+      "text": "as debit or credit cards, our business would be materially and adversely affected.",
+      "paragraph_id": "PYPL-FY24-P018",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 129,
+      "text_sha256": "b6fc0a7625a21422b410822d0f344e7ff896b49dabd8c220983da06b8e58389c"
+    },
+    {
+      "evidence_id": "E0086",
+      "text": "Changes in how consumers fund their PayPal transactions could harm our business.",
+      "paragraph_id": "PYPL-FY24-P019",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 132,
+      "text_sha256": "0b83cc068517bc2b300197e138cd683f7ef06f3fe4677e3643d5606e4f346951"
+    },
+    {
+      "evidence_id": "E0087",
+      "text": "We pay transaction fees when consumers fund payment transactions using credit cards, lower fees when consumers fund payments with debit cards, and",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 135,
+      "text_sha256": "9faf502c78c335b8d1b4467c96b830043f567c1fe7a7618dd0e480fe5c56425f"
+    },
+    {
+      "evidence_id": "E0088",
+      "text": "nominal fees when consumers fund payment transactions by electronic transfer of funds from bank accounts, from an existing PayPal account balance or",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 136,
+      "text_sha256": "b2c4eaaa1494f3b56f1c165d74712bf7ba2b466e181934d6ee4ffa46e4094a1c"
+    },
+    {
+      "evidence_id": "E0089",
+      "text": "Venmo account balance, or through our PayPal branded consumer credit products. Our financial performance is sensitive to changes in the rate at which our",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 137,
+      "text_sha256": "5fafa937b60f754429d19365b203a6b94f4731c6db723709c9c71b8b61009522"
+    },
+    {
+      "evidence_id": "E0090",
+      "text": "consumers fund payments using payment cards, which can significantly increase our costs. Although we provide consumers in certain markets with the",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 138,
+      "text_sha256": "4da73cac57f9064341316b43f093e49e68dd5b2dddb6ce9a58847be3381c87c8"
+    },
+    {
+      "evidence_id": "E0091",
+      "text": "opportunity to use their existing PayPal account balance or Venmo account balance to fund payment transactions, some of our consumers may prefer to use",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 139,
+      "text_sha256": "08850f98b77c1a877a017d44866b30c7985c2b5ba66c56192ebe25ab6378d98f"
+    },
+    {
+      "evidence_id": "E0092",
+      "text": "payment cards, which may offer features and benefits not provided as part of their PayPal accounts. Any increase in the portion of our payment volume funded",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 140,
+      "text_sha256": "35d35f2773976c2a8789d3b34092431bf4d827849dc05f5af07d2723dbd0faa6"
+    },
+    {
+      "evidence_id": "E0093",
+      "text": "using payment cards or in fees associated with our funding mix, or other events or developments that make it more difficult or costly for us to fund transactions",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 141,
+      "text_sha256": "8505efb946f84e61667f3baf542c0dce28941108c22999dcd45f8d3130a8fa8c"
+    },
+    {
+      "evidence_id": "E0094",
+      "text": "with lower-cost funding options, could materially and adversely affect our financial performance and significantly harm our business.",
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 142,
+      "text_sha256": "dc476971543a2b257c9a7a74674f1c594fadebfc376190abc97fc180ae698f93"
+    },
+    {
+      "evidence_id": "E0095",
+      "text": "Our credit products expose us to additional risks.",
+      "paragraph_id": "PYPL-FY24-P021",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 145,
+      "text_sha256": "6195b54a1523bc03db1fced065eabf3c3dd0f027455152774d1b1705a1f3d7f3"
+    },
+    {
+      "evidence_id": "E0096",
+      "text": "We offer credit products to a wide range of consumers and merchants in the U.S. and various international markets. The financial success of these products",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 148,
+      "text_sha256": "98a945875e5c35502a8c2b6d33a98b25ae103ba75d66a988691c2de1391f2352"
+    },
+    {
+      "evidence_id": "E0097",
+      "text": "depends largely on the effective management of related risk. The credit decision-making process for our consumer credit products uses proprietary",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 149,
+      "text_sha256": "6cb95bd6e37ff9b396cfa7df5d94ae9e9ed7cc13af63f1174d8363769c42cb3e"
+    },
+    {
+      "evidence_id": "E0098",
+      "text": "methodologies and credit algorithms and other analytical techniques designed to analyze the credit risk of specific consumers based on, among other factors,",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 150,
+      "text_sha256": "f34847f3302daee72773df7ef5f5effa29095bc56d5aa386806b17e6784f441d"
+    },
+    {
+      "evidence_id": "E0099",
+      "text": "their past purchase and transaction history with PayPal or Venmo and their credit scores. Similarly, proprietary risk models and other indicators are applied to",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 151,
+      "text_sha256": "233813c92658b635da3509fe0ae9da3f4ffaa586950b262fd48d0fd639661052"
+    },
+    {
+      "evidence_id": "E0100",
+      "text": "assess merchants who desire to use our merchant financing offerings to help predict their ability to repay. These risk models may not accurately predict the",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 152,
+      "text_sha256": "ae3a304bd05361922afb04028c1817a2bc47a1d90b6a98ba4fc71ea71aa00d27"
+    },
+    {
+      "evidence_id": "E0101",
+      "text": "creditworthiness of a consumer or merchant due to inaccurate assumptions, including those related to the particular consumer or merchant, market conditions,",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 153,
+      "text_sha256": "abc544036169b830936ea41d68427d52f00ded85d56a1bfb564113769edc54b5"
+    },
+    {
+      "evidence_id": "E0102",
+      "text": "economic environment, or limited transaction history or other data. The accuracy of these risk models and the ability to manage credit risk related to our credit",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 154,
+      "text_sha256": "93fd5cb48f5eff9b4cb3e84b611aa45ce9ff41d8e1d460a02f59e33ff7134e67"
+    },
+    {
+      "evidence_id": "E0103",
+      "text": "products may also be affected by legal or regulatory requirements, changes in consumer behavior, changes in the economic environment, issuing bank policies,",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 155,
+      "text_sha256": "01d0af29c60e3beeb07eb52597d619073c1978417445fc5a49deb790de2eec71"
+    },
+    {
+      "evidence_id": "E0104",
+      "text": "and other factors.",
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 156,
+      "text_sha256": "0f5c0dc324c373d41521c1c52afec4cb336d8a23ebbb5a09570a6c54b302c3fa"
+    },
+    {
+      "evidence_id": "E0105",
+      "text": "We are subject to the risk that account holders who use our credit products will default on their payment obligations. The non-payment rate among account",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 159,
+      "text_sha256": "3cb4844362789f4b3ced5142c17627ac99cbabfb101bb565dba86a8a9416937d"
+    },
+    {
+      "evidence_id": "E0106",
+      "text": "holders may increase due to, among other factors, changes to underwriting standards, risk models not accurately predicting the creditworthiness of a user,",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 160,
+      "text_sha256": "0c566a6f543e06b85c71d836937d5118bfa339797009572e7abf7b28f717f2f8"
+    },
+    {
+      "evidence_id": "E0107",
+      "text": "worsening economic conditions, such as a recession or government austerity programs, increases in prevailing interest rates, and high unemployment rates.",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 161,
+      "text_sha256": "8a59e3383e79c0fe5e3b5a6b7d08ce2e1eb43d78f144fb04e165d8fa18d42cfe"
+    },
+    {
+      "evidence_id": "E0108",
+      "text": "Account holders who miss payments often fail to repay their loans, and account holders who file for protection under the bankruptcy laws generally do not",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 162,
+      "text_sha256": "559de634c400efabebb3f6572e66180c1952a6accacef4e12f706166d930a345"
+    },
+    {
+      "evidence_id": "E0109",
+      "text": "repay their loans. Further, laws or regulations may limit the assessment of late fees or penalties on certain credit products, which could negatively impact our",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 163,
+      "text_sha256": "aeacca0bca427d2edf833b04c6bbeab5c3413fa515356f77d018ca59e3ed1f64"
+    },
+    {
+      "evidence_id": "E0110",
+      "text": "revenue share arrangement with an independent chartered financial institution with respect to our U.S. consumer credit products. Any deterioration in the",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 164,
+      "text_sha256": "c960382f821cb4bd725574ddb3aa1b0a81ace91244dd9678c417a7d19c5f436a"
+    },
+    {
+      "evidence_id": "E0111",
+      "text": "performance of loans facilitated through our platform or unexpected losses on such loans may increase the risk of potential charge-offs, increase our allowance",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 165,
+      "text_sha256": "abd056c35bd3beceb39b27928f16d13c2ec0358581a3b367b8ca5beab6652078"
+    },
+    {
+      "evidence_id": "E0112",
+      "text": "for loans and interest receivable, negatively impact our revenue share arrangement (as discussed in “Item 7. Management’s Discussion and Analysis of",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 166,
+      "text_sha256": "bdb57e3f0f6c66391398283c1400474ad3b9f35c2bf2f975d9931c4c4896815b"
+    },
+    {
+      "evidence_id": "E0113",
+      "text": "Financial Condition and Results of Operations — Key Metrics and Financial Results”), and materially and adversely affect our financial condition and results",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 167,
+      "text_sha256": "53545bc21e4087e639f1bde3000cf835f2a9cce1a3bd9f08798b3ede7dff6f8b"
+    },
+    {
+      "evidence_id": "E0114",
+      "text": "of operations.",
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 168,
+      "text_sha256": "3815b6dcc1a1e9ce0b9ee4c4000bc6bbe4fc18794bec82fbaf584c6116635eba"
+    },
+    {
+      "evidence_id": "E0115",
+      "text": "We generally rely on the activities and charters of unaffiliated financial institutions to provide PayPal and Venmo branded consumer credit and merchant",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 171,
+      "text_sha256": "a42cb7c2af8ebf343836973a6c1f8e414e0ccfb4e48452c76ddfe712f58c5e4d"
+    },
+    {
+      "evidence_id": "E0116",
+      "text": "financing offerings to our U.S. customers. As a service provider to these unaffiliated financial institutions, which are federally supervised U.S. financial",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 172,
+      "text_sha256": "6ab14194f1c3730b34e1a33ea463fa259bf172df0aa2f197ea6399d40af542eb"
+    },
+    {
+      "evidence_id": "E0117",
+      "text": "institutions, we are subject from time to time to examination by their federal banking regulators. In the event of any termination or interruption in a partner",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 173,
+      "text_sha256": "e313cf412d61c21706c232727c836163ce35901a5cd5cdf377825c7149f996ca"
+    },
+    {
+      "evidence_id": "E0118",
+      "text": "bank’s ability or willingness to lend, our ability to offer consumer credit and merchant financing products could be interrupted or limited, which could",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 174,
+      "text_sha256": "89277bcb8c8531bddd8444fabaa422b354e5ce58378c588e82d944003ea76e21"
+    },
+    {
+      "evidence_id": "E0119",
+      "text": "materially and adversely affect our business. We may be unable to reach a similar arrangement with another unaffiliated financial institution on favorable terms",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 175,
+      "text_sha256": "7edeed4426fb65f918c4a082ba818f566e768a55339922d6ffc68df72a29037f"
+    },
+    {
+      "evidence_id": "E0120",
+      "text": "or at all. Obtaining and maintaining the lending licenses required for us to originate such loans ourselves would be a costly, time-consuming and uncertain",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 176,
+      "text_sha256": "9129437c670b895e00869ae63d4e5967ac847349ba59aef018b25bad535db20a"
+    },
+    {
+      "evidence_id": "E0121",
+      "text": "process, and would subject us to additional laws and regulatory requirements, which could significantly increase our costs and compliance obligations and",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 177,
+      "text_sha256": "9d5807684d8060afab915ab5e382b672b56f2f7c725c12b931eebdfbf205e609"
+    },
+    {
+      "evidence_id": "E0122",
+      "text": "require us to change our business practices.",
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 178,
+      "text_sha256": "0300dc6dd9db760b7636166c6adde266e67cdf4b494494a88a0ab7c7bceac577"
+    },
+    {
+      "evidence_id": "E0123",
+      "text": "Merchant loans under our U.S. PayPal Working Capital (“PPWC”) and PayPal Business Loan (“PPBL”) products and certain U.S. installment loan products are",
+      "paragraph_id": "PYPL-FY24-P025",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 181,
+      "text_sha256": "1ba7ffd0834c8d7641a5114580c22ac02087b1901d81357e7b534c2ceae4750f"
+    },
+    {
+      "evidence_id": "E0124",
+      "text": "provided by a state-chartered industrial bank under a program agreement with us, and we acquire the receivables generated by those loans from the state-",
+      "paragraph_id": "PYPL-FY24-P025",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 182,
+      "text_sha256": "3aceb41dcd515e261b8f1cdd20c1623f878a4f0a4ad33e5d3d441800d88b9686"
+    },
+    {
+      "evidence_id": "E0125",
+      "text": "chartered bank after origination. In June 2020, the Federal",
+      "paragraph_id": "PYPL-FY24-P025",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "source_line": 183,
+      "text_sha256": "f5823e75c30cd78ba39649424faac51cf01089c863ce98a6d13a0bb652e40ab7"
+    },
+    {
+      "evidence_id": "E0126",
+      "text": "Deposit Insurance Corporation (“FDIC”) approved a final rule clarifying that loans validly originated by state-chartered banks or insured branches of foreign",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 187,
+      "text_sha256": "149a2b8d9b920d6f44c638ade0d31051f54bd2ee650a199369b02e15f677f8de"
+    },
+    {
+      "evidence_id": "E0127",
+      "text": "banks remain valid throughout the lifetime of the loan, reflecting a similar rule finalized by the Office of the Comptroller of Currency (“OCC”) in May 2020",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 188,
+      "text_sha256": "0d96139457309315810901f72292535c38242d8c367ec78f71c45867869c0645"
+    },
+    {
+      "evidence_id": "E0128",
+      "text": "for nationally chartered banks. The final rule reaffirms and codifies the so-called “valid-when-made doctrine,” which provides that the permissibility of an",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 189,
+      "text_sha256": "9d623789bf2ee9d868133d5a4fa0e69438d417906238df494b2efc42cc85cf00"
+    },
+    {
+      "evidence_id": "E0129",
+      "text": "interest rate for a loan is determined when the loan is made and will not be affected by subsequent events such as sale, assignment, or other transfer. While a",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 190,
+      "text_sha256": "19055bbe70c5125330679f0deff7d529fc1f1686b06f284204444a908912261e"
+    },
+    {
+      "evidence_id": "E0130",
+      "text": "number of state attorneys general have unsuccessfully challenged these FDIC and OCC rules, there remains some uncertainty whether non-bank entities",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 191,
+      "text_sha256": "6890e6221540d9ececa6935db7d83bdd5a490f90b08003a8230debafc96d3e86"
+    },
+    {
+      "evidence_id": "E0131",
+      "text": "purchasing loan receivables originated by FDIC-insured, state-chartered banks may rely on federal preemption of state usury laws and other state laws. An",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 192,
+      "text_sha256": "941d89ba5f0f055b570d5fc72fd7f1ee08c60ca18f32b9514ee5f28795b740b9"
+    },
+    {
+      "evidence_id": "E0132",
+      "text": "adverse outcome of these or similar challenges, or changes to applicable laws and regulations or regulatory policy, could materially impact our U.S. PPWC and",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 193,
+      "text_sha256": "4649e4d7990433c5cc67f58612c316d2285f1f100d253d72edd9194a1114c4ed"
+    },
+    {
+      "evidence_id": "E0133",
+      "text": "PPBL products, certain installment products, and our business.",
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 194,
+      "text_sha256": "40fa9f311b24392be53f16e3f87f74b47cff4c01eb8290cdfcc2e28c63ee04df"
+    },
+    {
+      "evidence_id": "E0134",
+      "text": "We currently purchase receivables related to our U.S. PayPal-branded merchant financing offerings and certain U.S. consumer installment loan products and",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 197,
+      "text_sha256": "c1ef0cb786f29306f21e9abe3a888629e89b650aaa31dd9091f91670006073f1"
+    },
+    {
+      "evidence_id": "E0135",
+      "text": "extend credit for our consumer and merchant products outside the U.S. through our international subsidiaries. In June 2023, we entered into a multi-year",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 198,
+      "text_sha256": "98344446abf73ce83703d10e0e9f5bf4a67428771b05a8819de842e533996ac1"
+    },
+    {
+      "evidence_id": "E0136",
+      "text": "agreement to sell U.K. and European buy now, pay later (“BNPL”) loan receivables originated by PayPal (Europe) and PayPal U.K., consisting of the sale of a",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 199,
+      "text_sha256": "97d1918effd3970d4b386dda55ca1da6d6b5a8201281e5249b15924a9494f138"
+    },
+    {
+      "evidence_id": "E0137",
+      "text": "substantial majority of the U.K. and European BNPL loan portfolio held on PayPal (Europe)’s balance sheet at the closing of the transaction and a forward-",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 200,
+      "text_sha256": "dab230f8207e18bea8a9806102aae96648272a661d41c32ba1884e4daa653372"
+    },
+    {
+      "evidence_id": "E0138",
+      "text": "flow arrangement for the sale of future originations of eligible loans. The sale of future eligible receivables is subject to certain conditions. If these conditions",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 201,
+      "text_sha256": "a78b0b22dce10652f9fc54340c6da750eb2b9392fcf0215d841c9ca351fd3a02"
+    },
+    {
+      "evidence_id": "E0139",
+      "text": "are not satisfied or waived or if the parties are unable to fulfill their obligations under these arrangements, the sale of these receivables could be delayed and we",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 202,
+      "text_sha256": "fa933743c342fbc296e2a5477248cf859ce1eaf0e977a4b1d90d52c1b34c1684"
+    },
+    {
+      "evidence_id": "E0140",
+      "text": "may not realize the expected benefits of this arrangement.",
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 203,
+      "text_sha256": "6d288e33ecb11d5f27ac829a389e1f7111c3ca32a8c5f70582c57b356c329ba9"
+    },
+    {
+      "evidence_id": "E0141",
+      "text": "We rely on third parties in many aspects of our business, which creates additional risk.",
+      "paragraph_id": "PYPL-FY24-P028",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 206,
+      "text_sha256": "455081f4ddf5e76dc9ffb86e3425ec798c419ce43efde71e1850e83c9f083d6b"
+    },
+    {
+      "evidence_id": "E0142",
+      "text": "We rely on third parties in many aspects of our business, including, but not limited to, networks, banks, payment processors, and payment gateways that link us",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 209,
+      "text_sha256": "9f6622c72f5220488fec384e98f9c5a1d34d6350aed2a4752761d2d6bb2863b6"
+    },
+    {
+      "evidence_id": "E0143",
+      "text": "to the payment card and bank clearing networks to process transactions; unaffiliated third-party lenders to originate our U.S. credit products to consumers, U.S.",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 210,
+      "text_sha256": "0656b413332954a989bf294f98b75b0ca0bcbb312e47476df5718d57187d2b04"
+    },
+    {
+      "evidence_id": "E0144",
+      "text": "merchant financing, and branded credit card products; branded debit card and savings products issued by unaffiliated banks; cryptocurrency custodial service",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 211,
+      "text_sha256": "8dacd42b19ffcaf942407911615b9a2e728eb8e6d0f29cf1f5922e67329a467b"
+    },
+    {
+      "evidence_id": "E0145",
+      "text": "providers; and external business partners and contractors who provide key functions (including, but not limited to, data center facilities and cloud computing,",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 212,
+      "text_sha256": "9408ae82140c7a4c8c5c4f1a2e66e569493edc362402de84726ea5c8c0ed6116"
+    },
+    {
+      "evidence_id": "E0146",
+      "text": "information technology, and outsourced customer support and product development functions). We are subject to additional risks inherent in engaging and",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 213,
+      "text_sha256": "23e2e3fbf5f9712b077b871a7a8e2a17981475c1c2277c204f186fc016e3f7c5"
+    },
+    {
+      "evidence_id": "E0147",
+      "text": "relying upon third-party providers, including operational, legal, regulatory, information security, reputational, commercial, and resiliency risks. If we are unable",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 214,
+      "text_sha256": "d8473244a38130e674b191c190a7be9e0541b700dc8600d1cfa1902529f3cab2"
+    },
+    {
+      "evidence_id": "E0148",
+      "text": "to effectively manage our third-party relationships, these third parties are unable to meet their obligations to us, we are overly reliant on certain relationships, or",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 215,
+      "text_sha256": "dca2f09c3bd7989888195b1cf43ca2fd2dd1346d1ef5fb2f81099c1a9eb09a10"
+    },
+    {
+      "evidence_id": "E0149",
+      "text": "we experience substantial disruptions in these relationships (including interruptions to the availability of our products and services), our operations, results of",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 216,
+      "text_sha256": "aa11e2b620f4a921a99417bfcad43827bdf76dd200fc410ac9a1f2b13f5ddad7"
+    },
+    {
+      "evidence_id": "E0150",
+      "text": "operations, and financial results could be adversely impacted. Additionally, our relationships with third parties inherently involve a lesser degree of control over",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 217,
+      "text_sha256": "ebc8bb46140084f401bccf1406612074b05e396c49544a7b371b3ed8f5907d85"
+    },
+    {
+      "evidence_id": "E0151",
+      "text": "business operations, governance, and compliance, which potentially increases our financial, legal, reputational, and operational risk.",
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 218,
+      "text_sha256": "64e74b17c7d0c14629d402f114ec9cef6a7d93f15c8cef51ab15294262e951b7"
+    },
+    {
+      "evidence_id": "E0152",
+      "text": "Any factors that reduce cross-border trade or make such trade more difficult could harm our business.",
+      "paragraph_id": "PYPL-FY24-P030",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 221,
+      "text_sha256": "ab21aca4a13ee8761dd63f7db16375b7787284f9df9ba826fcd8158f031af748"
+    },
+    {
+      "evidence_id": "E0153",
+      "text": "Cross-border trade (i.e., transactions where the merchant and consumer are in different countries) is an important source of our revenues and profits. Cross-",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 224,
+      "text_sha256": "2e43d752a0bbb18f6ac011f84e84253bb7729619791208c9d4018bfe1596aa6b"
+    },
+    {
+      "evidence_id": "E0154",
+      "text": "border transactions generally provide higher revenues and operating income than similar transactions that take place within a single country or market. In",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 225,
+      "text_sha256": "0830692b58bca02ec8d3cc5ff4898335b12d594c46944f67f36746a51f34e280"
+    },
+    {
+      "evidence_id": "E0155",
+      "text": "certain markets, cross-border trade represents our primary (and in some instances our only) offerings. Cross-border trade may be negatively impacted by",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 226,
+      "text_sha256": "2b56c9d577e86ab4c79b92f464f8735c6f894b52029958b52a3b976d1f1d07f9"
+    },
+    {
+      "evidence_id": "E0156",
+      "text": "various factors including foreign exchange rate fluctuations, tariffs, trade barriers or restrictions, sanctions, import or export controls, and the interpretation and",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 227,
+      "text_sha256": "4e937b366b25f651a256f48486dc843d82c4193b32e41ac300a1437428eba59d"
+    },
+    {
+      "evidence_id": "E0157",
+      "text": "application of laws of multiple jurisdictions in the context of cross-border trade and foreign exchange. Any factors that increase the costs of cross-border trade",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 228,
+      "text_sha256": "7b294b80bfd3e55ed8577f08b4981a1c1d9e2bd81801ba4852de39576a24921f"
+    },
+    {
+      "evidence_id": "E0158",
+      "text": "for us or our customers or that restrict, delay, or make cross-border trade more difficult or impractical could reduce our cross-border transactions and volume,",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 229,
+      "text_sha256": "56e7ad249f4a4accf6840963d540e52e18f7abe443e298f9b8fb46bf1fbeeb30"
+    },
+    {
+      "evidence_id": "E0159",
+      "text": "negatively impact our revenues and profits, and harm our business.",
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 230,
+      "text_sha256": "a51938f257905a18eb0c602f68692a85cdda5798b85528dcf3c1365d971e8700"
+    },
+    {
+      "evidence_id": "E0160",
+      "text": "Failure to deal effectively with fraud, abusive behaviors, bad transactions, and negative customer experiences may increase our loss rate and could",
+      "paragraph_id": "PYPL-FY24-P032",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 233,
+      "text_sha256": "d299d8db045836e8655c3dff92c25ecf07cfb239864658a2c44f2521eacb89ac"
+    },
+    {
+      "evidence_id": "E0161",
+      "text": "negatively impact our business and severely diminish merchant and consumer confidence in and use of our services.",
+      "paragraph_id": "PYPL-FY24-P032",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 234,
+      "text_sha256": "9b58fb0b90c1321bc6d63c85afc9f6e8db259253be048b49e25ddf3ee550c04a"
+    },
+    {
+      "evidence_id": "E0162",
+      "text": "We expect that third parties will continue to attempt to abuse access to and misuse our payments services to commit fraud by, among other things, creating",
+      "paragraph_id": "PYPL-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 237,
+      "text_sha256": "d129259e8646cc42c02fa37838d9932c58848b15ccc8db10b3aeace4a138dd3a"
+    },
+    {
+      "evidence_id": "E0163",
+      "text": "fictitious PayPal accounts using stolen or synthetic identities or personal information, taking over customer accounts or creating fraudulent accounts, making",
+      "paragraph_id": "PYPL-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 238,
+      "text_sha256": "12e4ac0069c4c25389f50b5e8072b3241464e265a208e6f968121dc732ea1103"
+    },
+    {
+      "evidence_id": "E0164",
+      "text": "transactions with stolen financial instruments, abusing or misusing our services for financial gain, or fraudulently inducing users of our products and services",
+      "paragraph_id": "PYPL-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 239,
+      "text_sha256": "24ff531c1627148095f253023f7e51fc5b8db56f7890a67a02d79b3e9b1a3be1"
+    },
+    {
+      "evidence_id": "E0165",
+      "text": "into engaging in fraudulent transactions. Due to the nature of PayPal’s digital payments services, third parties may seek to engage in abusive schemes or fraud",
+      "paragraph_id": "PYPL-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 240,
+      "text_sha256": "01af7b638ecfcd79fdd0b7ea00b69baca07963037cf825617382e79469005066"
+    },
+    {
+      "evidence_id": "E0166",
+      "text": "attacks that are often difficult to detect and may be deployed at a scale that would otherwise not be possible in physical",
+      "paragraph_id": "PYPL-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "source_line": 241,
+      "text_sha256": "5426226c998333834d296a679e8a6bddb375f74e7be05c641c727e6c1a05d025"
+    }
+  ]
+}
