@@ -1,0 +1,61 @@
+{
+  "case_id": "PYPL-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV006",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Regulatory changes regarding stablecoins could lead to significant costs, enforcement actions, and reputational harm.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "we and the PYUSD Issuer may face substantial costs",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P002"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "The filer states that changes to laws could result in substantial costs to operationalize and comply with requirements.",
+      "financial_impact": "substantial costs to operationalize and comply with any additional or changed requirement",
+      "time_horizon": "Not disclosed in the supplied excerpt.",
+      "monitoring_indicators": [],
+      "mitigation": "Not disclosed in the supplied excerpt.",
+      "uncertainty": "uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply"
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Operational failures or inability to safeguard holdings by custodian partners could result in asset losses and impact operating results.",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "could result in losses of customer assets, expose us to customer claims",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P004"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "The filer notes that failures by custodians or issuers to safeguard holdings could lead to losses and impact operating results.",
+      "financial_impact": "could result in losses of customer assets, expose us to customer claims, reduce consumer confidence and materially impact our cryptocurrency product offerings and our operating results.",
+      "time_horizon": "Not disclosed in the supplied excerpt.",
+      "monitoring_indicators": [],
+      "mitigation": "Not disclosed in the supplied excerpt.",
+      "uncertainty": "any operational disruptions at any such custodian or issuer, or such custodians’ or issuer’s failure to safeguard cryptocurrency holdings"
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Increases in network fees or assessments could increase operating costs and reduce operating income.",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "increase our operating costs, and reduce our operating income",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P015"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "The filer states that increases in interchange fees or assessments could increase costs and reduce income.",
+      "financial_impact": "could make our pricing less competitive, increase our operating costs, and reduce our operating income, which could materially harm our business, financial condition, and results of operations.",
+      "time_horizon": "Not disclosed in the supplied excerpt.",
+      "monitoring_indicators": [],
+      "mitigation": "Not disclosed in the supplied excerpt.",
+      "uncertainty": "Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our payment processors"
+    }
+  ]
+}

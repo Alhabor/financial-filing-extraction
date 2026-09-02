@@ -1,0 +1,49 @@
+{
+"case_id": "PYPL-FY24",
+"model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+"prompt_version": "PV007",
+"risks": [
+{
+"risk_id": "R1",
+"risk_summary": "Regulatory and legal risks related to cryptocurrency and stablecoins",
+"risk_type": "Regulatory / Legal / Geopolitical",
+"evidence_quote": "There are uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice, and we and the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirements.",
+"source_paragraph_ids": ["PYPL-FY24-P003"],
+"source_pages": [21, 22, 23],
+"reasoning": "The regulatory treatment of stablecoins is evolving, and there are uncertainties on how ongoing changes to laws and regulations would apply to stablecoins in practice, which could lead to substantial costs to operationalize and comply with any additional or changed requirements.",
+"financial_impact": "Substantial costs to operationalize and comply with any additional or changed requirements, potential fines, penalties, and reputational harm through our relationship with the PYUSD Issuer if the PYUSD Issuer were to face regulatory scrutiny, PYUSD is deemed to be a security, or PYUSD is alleged to be used for transactions in connection with illicit or illegal activities.",
+"time_horizon": "Short-term to long-term",
+"monitoring_indicators": ["Regulatory changes", "Stablecoin adoption", "Cryptocurrency market fluctuations"],
+"mitigation": "Not disclosed in the supplied excerpt, but the filer may have internal controls and risk management strategies in place to mitigate these risks, such as monitoring regulatory changes and adapting to new requirements, as well as implementing internal controls to prevent and detect fraudulent activities, including anti-money laundering and know-your-customer controls, and maintaining a robust cybersecurity program to protect against cyber threats and data breaches.",
+"uncertainty": "The regulatory treatment of stablecoins is evolving, and there are uncertainties on how ongoing changes to laws and regulations would apply to stablecoins in practice, which could lead to substantial costs to operationalize and comply with any additional or changed requirements."
+},
+{
+"risk_id": "R2",
+"risk_summary": "Operational risks related to cryptocurrency and stablecoins",
+"risk_type": "Operational / Supply Chain",
+"evidence_quote": "We may be required to expend significant time and resources to prevent infringement and enforce our rights, and we may be unable to discover or determine the extent of any unauthorized use of our proprietary rights.",
+"source_paragraph_ids": ["PYPL-FY24-P004"],
+"source_pages": [21, 22, 23],
+"reasoning": "The operational risks related to cryptocurrency and stablecoins include the potential for unauthorized use of proprietary rights, the need to expend significant time and resources to prevent infringement and enforce our rights, and the potential for losses due to the lack of precedent and the highly fact-dependent nature of the determination in the event of a custodian's bankruptcy.",
+"financial_impact": "Potential losses due to the lack of precedent and the highly fact-dependent nature of the determination in the event of a custodian's bankruptcy, potential reputational harm through our relationship with the PYUSD Issuer if the PYUSD Issuer were to face regulatory scrutiny, PYUSD is deemed to be a security, or PYUSD is alleged to be used for transactions in connection with illicit or illegal activities.",
+"time_horizon": "Short-term to long-term",
+"monitoring_indicators": ["Cryptocurrency market fluctuations", "Stablecoin adoption", "Regulatory changes"],
+"mitigation": "Not disclosed in the supplied excerpt, but the filer may have internal controls and risk management strategies in place to mitigate these risks, such as monitoring regulatory changes and adapting to new requirements, as well as implementing internal controls to prevent and detect fraudulent activities, including anti-money laundering and know-your-customer controls, and maintaining a robust cybersecurity program to protect against cyber threats and data breaches.",
+"uncertainty": "The regulatory treatment of stablecoins is evolving, and there are uncertainties on how ongoing changes to laws and regulations would apply to stablecoins in practice, which could lead to substantial costs to operationalize and comply with any additional or changed requirements."
+},
+{
+"risk_id": "R3",
+"risk_summary": "Cybersecurity risks related to cryptocurrency and stablecoins",
+"risk_type": "Cybersecurity / Data / Privacy",
+"evidence_quote": "We may be subject to fines and other penalties assessed by networks resulting from any rule violations by us or our merchants, and the networks could adopt new operating rules or interpret or re-interpret existing rules that we or our payment processors might find difficult or impractical to follow.",
+"source_paragraph_ids": ["PYPL-FY24-P017"],
+"source_pages": [21, 22, 23],
+"reasoning": "The cybersecurity risks related to cryptocurrency and stablecoins include the potential for unauthorized access to and use of our systems and data, the potential for data breaches, and the potential for reputational harm due to security incidents.",
+"financial_impact": "Potential fines and other penalties assessed by networks, potential reputational harm due to security incidents, potential losses due to the lack of precedent and the highly fact-dependent nature of the determination in the event of a custodian's bankruptcy.",
+"time_horizon": "Short-term to long-term",
+"monitoring_indicators": ["Cryptocurrency market fluctuations", "Stablecoin adoption", "Regulatory changes"],
+"mitigation": "Not disclosed in the supplied excerpt, but the filer may have internal controls and risk management strategies in place to mitigate these risks, such as monitoring regulatory changes and adapting to new requirements, as well as implementing internal controls to prevent and detect fraudulent activities, including anti-money laundering and know-your-customer controls, and maintaining a robust cybersecurity program to protect against cyber threats and data breaches.",
+"uncertainty": "The regulatory treatment of stablecoins is evolving, and there are uncertainties on how ongoing changes to laws and regulations would apply to stablecoins in practice, which could lead to substantial costs to operationalize and comply with any additional or changed requirements."
+}
+]
+}

@@ -1,0 +1,14 @@
+{
+  "description": "P002 attempt-2 Gemma profile with stricter single-line quote copying.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "text",
+  "prompt_path": "prompts/PV006.md",
+  "prompt_version": "PV006",
+  "reasoning": "disabled",
+  "structured_output": "risk-schema",
+  "allow_external_search": false,
+  "allow_rag": false,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}

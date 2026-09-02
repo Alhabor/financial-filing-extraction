@@ -1,0 +1,14 @@
+{
+  "description": "P002 attempt-2 DeepSeek profile with explicit JSON field types.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "text",
+  "prompt_path": "prompts/PV005.md",
+  "prompt_version": "PV005",
+  "reasoning": "disabled",
+  "structured_output": "risk-schema",
+  "allow_external_search": false,
+  "allow_rag": false,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}
