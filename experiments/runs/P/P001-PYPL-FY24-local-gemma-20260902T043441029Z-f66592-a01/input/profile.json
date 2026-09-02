@@ -1,0 +1,12 @@
+{
+  "description": "All models receive the same text input and core prompt.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "text",
+  "prompt_path": "prompts/PV001.md",
+  "prompt_version": "PV001",
+  "allow_external_search": false,
+  "allow_rag": false,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}

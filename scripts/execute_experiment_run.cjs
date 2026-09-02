@@ -3,6 +3,12 @@
 const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
+const {
+  assistantText,
+  reasoningText,
+  responseUsage,
+  providerResponse
+} = require('./lib/provider_response.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -98,28 +104,6 @@ function hydrateRequest(value, runDir, interfaceName, key = null) {
     output[childKey] = hydrateRequest(child, runDir, interfaceName, childKey);
   }
   return output;
-}
-
-function assistantText(response, interfaceName) {
-  if (interfaceName === 'ollama-chat') return response?.message?.content;
-  return response?.choices?.[0]?.message?.content;
-}
-
-function responseUsage(response, interfaceName) {
-  if (interfaceName === 'ollama-chat') {
-    return {
-      input_tokens: response.prompt_eval_count ?? null,
-      output_tokens: response.eval_count ?? null,
-      local_runtime_seconds: typeof response.total_duration === 'number'
-        ? response.total_duration / 1e9
-        : null
-    };
-  }
-  return {
-    input_tokens: response?.usage?.prompt_tokens ?? null,
-    output_tokens: response?.usage?.completion_tokens ?? null,
-    local_runtime_seconds: null
-  };
 }
 
 function filesRecursively(directory) {
@@ -243,6 +227,30 @@ async function main() {
       throw new Error(`Provider returned non-JSON content with HTTP ${response.status}.`);
     }
     fs.writeFileSync(path.join(rawDir, 'response.json'), `${JSON.stringify(parsedResponse, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' });
+
+    // Record provider metadata before validating assistant content so a length-limited
+    // reasoning-only response remains measurable instead of looking like no response.
+    const usage = responseUsage(parsedResponse, model.interface);
+    manifest.usage.input_tokens = usage.input_tokens;
+    manifest.usage.output_tokens = usage.output_tokens;
+    manifest.usage.reasoning_tokens = usage.reasoning_tokens;
+    manifest.usage.local_runtime_seconds = usage.local_runtime_seconds;
+    manifest.provider_response = providerResponse(
+      parsedResponse,
+      model.interface,
+      response.status,
+      response.headers.get('x-request-id') || response.headers.get('request-id')
+    );
+    manifest.artifacts.raw_response = 'raw/response.json';
+    manifest.artifacts.raw_body = 'raw/response.body.txt';
+    manifest.artifacts.events = 'events.ndjson';
+    const reasoning = reasoningText(parsedResponse, model.interface);
+    if (typeof reasoning === 'string' && reasoning.trim() !== '') {
+      const derivedDir = path.join(runDir, 'derived');
+      fs.mkdirSync(derivedDir, { recursive: true });
+      fs.writeFileSync(path.join(derivedDir, 'reasoning.txt'), reasoning, { encoding: 'utf8', flag: 'wx' });
+      manifest.artifacts.reasoning = 'derived/reasoning.txt';
+    }
     if (!response.ok) {
       const providerMessage = parsedResponse?.error?.message || parsedResponse?.message || `HTTP ${response.status}`;
       throw new Error(`Provider request failed: ${providerMessage}`);
@@ -253,24 +261,10 @@ async function main() {
     fs.writeFileSync(path.join(rawDir, 'response.txt'), text, { encoding: 'utf8', flag: 'wx' });
 
     const endedAt = new Date();
-    const usage = responseUsage(parsedResponse, model.interface);
     manifest.status = 'partial';
     manifest.timing.ended_at_utc = endedAt.toISOString();
     manifest.timing.latency_ms = endedAt.getTime() - startedAt.getTime();
-    manifest.usage.input_tokens = usage.input_tokens;
-    manifest.usage.output_tokens = usage.output_tokens;
-    manifest.usage.local_runtime_seconds = usage.local_runtime_seconds;
-    manifest.artifacts.raw_response = 'raw/response.json';
-    manifest.artifacts.raw_body = 'raw/response.body.txt';
     manifest.artifacts.raw_text = 'raw/response.txt';
-    manifest.artifacts.events = 'events.ndjson';
-    manifest.provider_response = {
-      http_status: response.status,
-      request_id: response.headers.get('x-request-id') || response.headers.get('request-id') || null,
-      finish_reason: model.interface === 'ollama-chat'
-        ? parsedResponse.done_reason || null
-        : parsedResponse?.choices?.[0]?.finish_reason || null
-    };
     manifest.failure = null;
     manifest.notes = 'Raw response captured successfully. Automatic parsing and citation validation are still required before status=completed.';
     writeJsonAtomic(manifestPath, manifest);

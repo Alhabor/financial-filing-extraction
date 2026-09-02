@@ -1,0 +1,46 @@
+We need answer user's task. Need identify exactly three material risks from excerpt. Must return JSON object only no fences, exactly 3 items in risks, copy case_id/model_id/prompt_version. Need parse carefully.
+
+Need select exactly three risks from supplied excerpt. Could choose:
+1. Cryptocurrency/stablecoin regulatory risk (P002) — Regulatory/Legal/Geopolitical maybe.
+2. Custodian/counterparty risk for customer crypto assets (P003/P004/P005) — Operational/Supply Chain maybe, also Financial? Need exactly one primary type. We need classify. Could use Operational / Supply Chain because third-party custodians failure. But also financial/counterparty. Need decide.
+3. Competition risk (P011/P012/P013) — Strategic / Market / Technology.
+Or other risks: payment network fees, funding mix, credit risk, third-party reliance, cross-border, IP. Need exactly three material risks, likely best from excerpt.
+
+Need ensure evidence quote shortest sufficient supporting passage verbatim. Need quote from text exact. Need provide integer from PDF_PAGE in source_pages. If PRINTED_PAGE differs, preserve distinction in explanation. They say "Provide the integer from `PDF_PAGE` in `source_pages`. If `PRINTED_PAGE` differs, preserve that distinction in your explanation. If paragraph IDs are supplied, provide them; otherwise use an empty list."
+
+We need output schema? Need know expected structure. We don't have schema but can infer. Top-level JSON with case_id, model_id, prompt_version, risks array. Each risk object likely:
+{
+  "summary": "...",
+  "risk_type": "...",
+  "evidence_quote": "...",
+  "source_pages": [
+    {
+      "pdf_page": 18,
+      "printed_page": 18,
+      "paragraph_ids": ["PYPL-FY24-P002"]
+    }
+  ],
+  "reasoning": "...",
+  "financial_or_operating_impact": "...",
+  "time_horizon": "...",
+  "monitoring_indicators": "...",
+  "mitigation": "...",
+  "uncertainty": "..."
+}
+Need maybe source_pages type int? "Provide the integer from PDF_PAGE in source_pages" Hmm source_pages maybe list of page objects? We can include "pdf_page": 18, "printed_page": 18. Need preserve distinction in explanation. Need maybe also paragraph_ids list.
+
+Need ensure quote shortest sufficient. Let's inspect excerpt.
+
+Potential risk 1: Stablecoin regulatory. P002 includes:
+"The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC. There are uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice, and we and the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirement. If we or the PYUSD Issuer fail to comply with regulations, requirements, prohibitions or other obligations applicable to us, we could face regulatory or other enforcement actions, potential fines, penalties, and other consequences."
+Need shortest sufficient maybe "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC." But need include costs/fines? Better quote two sentences. Need exact. Let's pick:
+"The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC. There are uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice, and we and the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirement. If we or the PYUSD Issuer fail to comply with regulations, requirements, prohibitions or other obligations applicable to us, we could face regulatory or other enforcement actions, potential fines, penalties, and other consequences."
+Need quote is long but sufficient. Could shorten? Need shortest sufficient passage. Maybe include "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC. There are uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice, and we and the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirement." This covers regulatory uncertainty and costs. Then risk type regulatory. Good. But if need "failure to comply" consequences? Hmm maybe not necessary. The risk is regulatory evolution. Use first two sentences.
+
+Need source page: PDF_PAGE 18, PRINTED_PAGE 18, paragraph IDs ["PYPL-FY24-P002"].
+
+Potential risk 2: Third-party custodian/counterparty risk for crypto. P003 or P004/P005. Need choose quote from P003? It says:
+"We hold our customers’ cryptocurrency assets through one or more third-party custodians. Financial and third-party risks related to our customer cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, insufficient insurance coverage by a custodian to reimburse us for all such losses, a custodian’s failure to maintain effective controls over the custody and settlement services provided to us, a custodian’s inability to purchase or liquidate cryptocurrency holdings, the failure of the PYUSD Issuer to maintain sufficient reserve assets backing PYUSD and defaults on financial or performance obligations by a custodian, banks with which the PYUSD Issuer maintains reserve assets or counterparty financial institutions, could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation."
+Could quote "Financial and third-party risks related to our customer cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, ... could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation." But "shortest sufficient" maybe the whole "We hold our customers’ cryptocurrency assets through one or more third-party custodians. Financial and third-party risks related to our customer cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, ... could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation." Need exact quote with ellipsis? User says quote verbatim, no paraphrase. We can include ellipsis? "Do not paraphrase inside the quote." If using ellipsis, still exact? Better quote exact entire sentence? But "shortest sufficient" can be a sentence. Need exact. Let's pick:
+"We hold our customers’ cryptocurrency assets through one or more third-party custodians. Financial and third-party risks related to our customer cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, insufficient insurance coverage by a custodian to reimburse us for all such losses, a custodian’s failure to maintain effective controls over the custody and settlement services provided to us, a custodian’s inability to purchase or liquidate cryptocurrency holdings, the failure of the PYUSD Issuer to maintain sufficient reserve assets backing PYUSD and defaults on financial or performance obligations by a custodian, banks with which the PYUSD Issuer maintains reserve assets or counterparty financial institutions, could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation."
+This is long but exact. Could maybe use P004: "Nevertheless, any operational disruptions at any such custodian or issuer, or such custodians’ or issuer’s failure to safeguard cryptocurrency holdings (or reserve assets), could result in losses of customer assets, expose us to customer

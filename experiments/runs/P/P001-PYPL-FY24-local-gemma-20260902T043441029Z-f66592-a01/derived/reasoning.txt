@@ -1,0 +1,63 @@
+Financial Filing Analyst.
+Use *only* the provided excerpt from Form 10-K Item 1A.
+Identify exactly three material risks.
+
+        1.  Concise risk summary.
+        2.  One primary risk type from a specific list.
+        3.  Shortest sufficient verbatim quote.
+        4.  `PDF_PAGE` and `PRINTED_PAGE` (with distinction if different) and paragraph IDs.
+        5.  Evidence-grounded reasoning and possible financial/operating impact.
+        6.  Time horizon, monitoring indicators, disclosed mitigation, and uncertainty.
+Return exactly one JSON object, no Markdown fences, following `schemas/risk-output.schema.json`.
+`case_id: PYPL-FY24`, `model_id: gemma4:26b-a4b-it-q4_K_M`, `prompt_version: PV001`.
+
+    *   *Risk 1: Cryptocurrency/Stablecoin Regulation.*
+        *   Source: [PARAGRAPH PYPL-FY24-P001] and [PARAGRAPH PYPL-FY24-P002].
+        *   Summary: Evolving regulatory landscapes for cryptocurrency and stablecoins (like PYUSD) could lead to increased costs, product changes, or enforcement actions.
+        *   Type: Regulatory / Legal / Geopolitical.
+        *   Quote: "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC."
+        *   Page: PDF 18, Printed 18.
+        *   Reasoning: Changes in laws could require costly controls or discontinuation of products.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Ongoing. Indicators: SEC/legislative actions. Mitigation: Not explicitly detailed for *future* changes, but mentions "implement additional and potentially costly controls". Uncertainty: "uncertainties on how ongoing changes... would apply".
+
+    *   *Risk 2: Credit Product Default/Risk Models.*
+        *   Source: [PARAGRAPH PYPL-FY24-P022] and [PARRAPH PYPL-FY24-P023].
+        *   Summary: Inaccurate credit risk models and economic downturns could lead to increased defaults on consumer and merchant credit products.
+        *   Type: Financial / Liquidity / Credit.
+        *   Quote: "These risk models may not accurately predict the creditworthiness of a consumer or merchant due to inaccurate assumptions, including those related to the particular consumer or merchant, market conditions, economic environment, or limited transaction history or other data."
+        *   Page: PDF 22, Printed 22.
+        *   Reasoning: Higher non-payment rates increase charge-offs and allowances, impacting financial condition.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Long-term/Economic cycles. Indicators: Non-payment rates, unemployment, interest rates. Mitigation: Use of proprietary methodologies/algorithms (though they might fail). Uncertainty: "may not accurately predict".
+
+    *   *Risk 3: Third-Party/Network Dependency (Payment Card Networks).*
+        *   Source: [PARAGRAPH PYPL-FY24-P015].
+        *   Summary: Increases in fees or changes in rules by payment card networks could increase operating costs and reduce profitability.
+        *   Type: Operational / Supply Chain (or Strategic/Market, but "Operational/Supply Chain" fits the dependency on network rules/fees). Let's look at the list: "Strategic / Market / Technology", "Operational / Supply Chain", "Regulatory / Legal / Geopolitical", "Financial / Liquidity / Credit", "Cybersecurity / Data / Privacy", "Other". This is a cost/margin risk driven by external entities. Let's use "Operational / Supply Chain" as it's a dependency on the network's operational rules/fees. Or "Strategic / Market / Technology" if viewed as competition. Actually, "Operational / Supply Chain" is often used for third-party dependencies. Let's check the text: "Any increase in interchange fees... could make our pricing less competitive, increase our operating costs, and reduce our operating income".
+        *   Quote: "Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our payment processors could make our pricing less competitive, increase our operating costs, and reduce our operating income".
+        *   Page: PDF 21, Printed 21.
+        *   Reasoning: Higher fees directly impact margins and competitiveness.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Ongoing. Indicators: Network fee announcements. Mitigation: Not explicitly stated. Uncertainty: "From time to time, the networks have increased the fees".
+
+    *   *Risk 1 (Crypto Regulation):*
+        *   Summary: Regulatory changes regarding cryptocurrency and stablecoins may necessitate costly operational adjustments or product restrictions.
+        *   Type: Regulatory / Legal / Geopolitical.
+        *   Quote: "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC."
+        *   Page: PDF 18, Printed 18.
+        *   Reasoning: Regulatory shifts could force product changes, additional licensing, or discontinuation of offerings, impacting revenue and increasing costs.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Ongoing; Indicators: SEC investigations, new legislation; Mitigation: Implementation of additional controls; Uncertainty: Unclear how changes will apply in practice.
+
+    *   *Risk 2 (Credit Risk):*
+        *   Summary: Inaccuracies in credit risk models and economic shifts could lead to higher default rates on credit products.
+        *   Type: Financial / Liquidity / Credit.
+        *   Quote: "These risk models may not accurately predict the creditworthiness of a consumer or merchant due to inaccurate assumptions, including those related to the particular consumer or merchant, market conditions, economic environment, or limited transaction history or other data."
+        *   Page: PDF 22, Printed 22.
+        *   Reasoning: Increased defaults or non-payment rates can lead to higher charge-offs and increased allowances for loans, negatively impacting financial results.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Economic cycles; Indicators: Non-payment rates, unemployment, interest rates; Mitigation: Use of proprietary methodologies and algorithms; Uncertainty: Effectiveness of models under changing economic conditions.
+
+    *   *Risk 3 (Network Fees):*
+        *   Summary: Increases in transaction fees or changes to rules by payment card networks could increase operating costs and reduce competitiveness.
+        *   Type: Operational / Supply Chain.
+        *   Quote: "Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our payment processors could make our pricing less competitive, increase our operating costs, and reduce our operating income".
+        *   Page: PDF 21, Printed 21.
+        *   Reasoning: Higher network fees directly increase the cost of processing transactions, potentially reducing operating income and market competitiveness.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Ongoing; Indicators: Changes in network fee structures or rules; Mitigation: Not disclosed; Uncertainty: The frequency

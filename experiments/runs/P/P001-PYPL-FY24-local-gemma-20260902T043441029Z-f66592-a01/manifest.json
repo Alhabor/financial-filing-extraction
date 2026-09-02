@@ -1,0 +1,92 @@
+{
+  "run_id": "P001-PYPL-FY24-local-gemma-20260902T043441029Z-f66592-a01",
+  "phase": "P",
+  "round": "P001",
+  "status": "failed",
+  "attempt": 1,
+  "case_id": "PYPL-FY24",
+  "dataset_role": "development",
+  "model_alias": "local-gemma",
+  "model_display_name": "gemma4:26b-a4b-it-q4_K_M",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "model_config_version": "MC001",
+  "provider": "ollama",
+  "interface": "ollama-chat",
+  "profile_id": "standard-text-v001",
+  "prompt_version": "PV001",
+  "output_schema_version": "risk-output-v001",
+  "rubric_version": "RV001",
+  "input": {
+    "path": "experiments/runs/P/P001-PYPL-FY24-local-gemma-20260902T043441029Z-f66592-a01/input/model_input.txt",
+    "source_path": "data/processed/case_packets/PYPL-FY24/packet.txt",
+    "packet_id": "CP-PYPL-FY24-v001",
+    "canonical_pdf_path": "data/raw/sec/PYPL-FY24/filing.pdf",
+    "sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "fallback_reason": null,
+    "image_count": 0
+  },
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": 32768
+  },
+  "tools": {
+    "external_search": false,
+    "rag": false,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": "2026-09-02T04:37:41.506Z",
+    "ended_at_utc": "2026-09-02T04:41:04.894Z",
+    "latency_ms": 203388,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": 5466,
+    "output_tokens": 1600,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": 203.332364625,
+    "reasoning_tokens": 1600
+  },
+  "environment": {
+    "git_commit": "4797136eff79ca8131e2350e8666a47eed55a07e",
+    "runtime": "node v24.18.0",
+    "hardware": "darwin arm64"
+  },
+  "harness": {
+    "mode": "live",
+    "network_called": true,
+    "credential_env_name": null,
+    "case_packet_version": "case-packet-spec-v001",
+    "endpoint": "http://127.0.0.1:11434/api/chat"
+  },
+  "artifacts": {
+    "model_input": "input/model_input.txt",
+    "prompt": "input/prompt.txt",
+    "modality": "input/modality.json",
+    "request_sanitized": "input/request.sanitized.json",
+    "model_config": "input/model_config.json",
+    "profile": "input/profile.json",
+    "checksums": "checksums.sha256",
+    "raw_response": "raw/response.json",
+    "raw_body": "raw/response.body.txt",
+    "events": "events.ndjson",
+    "reasoning": "derived/reasoning.txt"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": {
+    "name": "Error",
+    "message": "Provider response did not contain assistant text."
+  },
+  "notes": "Live execution failed. Preserve this attempt and create a new attempt for any retry. Provider metrics reconciled from the immutable raw response.",
+  "provider_response": {
+    "http_status": 200,
+    "request_id": null,
+    "finish_reason": "length"
+  }
+}

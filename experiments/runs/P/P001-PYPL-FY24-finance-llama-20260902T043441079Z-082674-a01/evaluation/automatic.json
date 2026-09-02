@@ -1,0 +1,35 @@
+{
+  "evaluation_version": "AE001",
+  "parser_version": "PE001",
+  "run_id": "P001-PYPL-FY24-finance-llama-20260902T043441079Z-082674-a01",
+  "case_id": "PYPL-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV001",
+  "source_files": {
+    "raw_response": "raw/response.txt",
+    "model_input": "input/model_input.txt",
+    "raw_response_sha256": "71d958d75cd21416b8a7f640f49c2bbf6f795923c2de643d5610849d9968fc56",
+    "model_input_sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01"
+  },
+  "parse": {
+    "passed": false,
+    "format": null,
+    "errors": [
+      "Could not parse raw/response.txt as plain-json: Unexpected token 'H', \"Here are t\"... is not valid JSON"
+    ]
+  },
+  "schema": {
+    "passed": false,
+    "errors": []
+  },
+  "metadata": {
+    "passed": false,
+    "errors": []
+  },
+  "citations": {
+    "passed": false,
+    "errors": [],
+    "risk_checks": []
+  },
+  "status": "failed"
+}

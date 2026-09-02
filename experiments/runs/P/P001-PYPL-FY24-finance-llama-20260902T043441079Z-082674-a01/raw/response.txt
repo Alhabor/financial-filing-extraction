@@ -1,0 +1,31 @@
+Here are three material risks identified from the provided excerpt:
+
+Risk 1: Regulatory and Legal Risks
+Summary: The company faces regulatory and legal risks due to the evolving nature of laws and regulations, particularly in the context of cryptocurrency and stablecoins.
+Primary Risk Type: Regulatory / Legal / Geopolitical
+Quote: "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC."
+Source: Paragraph PYPL-FY24-P002
+Time Horizon: Ongoing
+Monitoring Indicators: Changes in laws and regulations, enforcement actions, and industry developments
+Disclosed Mitigation: The company is working to comply with evolving regulations and has implemented measures to prevent and detect fraud.
+Uncertainty: The company cannot predict the timing or outcome of regulatory changes.
+
+Risk 2: Operational and Supply Chain Risks
+Summary: The company faces operational and supply chain risks due to the complexity of its business, reliance on third-party providers, and potential disruptions to its operations.
+Primary Risk Type: Operational / Supply Chain
+Quote: "We are subject to additional risks inherent in engaging and relying upon third-party providers, including operational, legal, regulatory, information security, reputational, commercial, and resiliency risks."
+Source: Paragraph PYPL-FY24-P028
+Time Horizon: Ongoing
+Monitoring Indicators: Disruptions to operations, changes in third-party provider relationships, and industry developments
+Disclosed Mitigation: The company has implemented measures to manage risks associated with third-party providers and has developed contingency plans for potential disruptions.
+Uncertainty: The company cannot predict the timing or outcome of potential disruptions.
+
+Risk 3: Cybersecurity and Data Risks
+Summary: The company faces cybersecurity and data risks due to the increasing sophistication of cyber threats and the potential for unauthorized access to customer data.
+Primary Risk Type: Cybersecurity / Data / Privacy
+Quote: "We are subject to various cyber threats, including hacking, phishing, and other forms of unauthorized access to our systems and data."
+Source: Paragraph PYPL-FY24-P028
+Time Horizon: Ongoing
+Monitoring Indicators: Cybersecurity incidents, data breaches, and industry developments
+Disclosed Mitigation: The company has implemented measures to protect against cyber threats, including encryption, firewalls, and incident response plans.
+Uncertainty: The company cannot predict the timing or outcome of potential cybersecurity incidents.

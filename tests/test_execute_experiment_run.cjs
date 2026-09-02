@@ -196,6 +196,20 @@ async function startMockServer() {
           usage: { prompt_tokens: 12, completion_tokens: 8 },
           echoed_authorization: `Bearer ${TEST_SECRET}`
         }));
+      } else if (request.url === '/reasoning-only') {
+        response.writeHead(200, { 'content-type': 'application/json', connection: 'close' });
+        response.end(JSON.stringify({
+          id: 'mock-reasoning-001',
+          choices: [{
+            message: { role: 'assistant', content: '', reasoning_content: 'Internal reasoning exhausted the visible-output budget.' },
+            finish_reason: 'length'
+          }],
+          usage: {
+            prompt_tokens: 24,
+            completion_tokens: 64,
+            completion_tokens_details: { reasoning_tokens: 64 }
+          }
+        }));
       } else if (request.url === '/error') {
         response.writeHead(500, { 'content-type': 'application/json', connection: 'close' });
         response.end(JSON.stringify({ error: { message: 'mock provider failure', type: 'server_error' } }));
@@ -251,6 +265,22 @@ async function main() {
     assertChecksums(success.runDir);
     const successEvents = fs.readFileSync(path.join(success.runDir, 'events.ndjson'), 'utf8').trim().split('\n').map(JSON.parse);
     assert.deepEqual(successEvents.map((event) => event.event), ['dispatch_started', 'response_received', 'raw_capture_completed']);
+
+    const reasoningOnly = makeRun('reasoning-only', mock.endpoint('/reasoning-only'));
+    runs.push(reasoningOnly.runDir);
+    const reasoningResult = await invoke(reasoningOnly.runDir);
+    assert.notEqual(reasoningResult.code, 0);
+    const reasoningManifest = readJson(path.join(reasoningOnly.runDir, 'manifest.json'));
+    assert.equal(reasoningManifest.status, 'failed');
+    assert.equal(reasoningManifest.usage.input_tokens, 24);
+    assert.equal(reasoningManifest.usage.output_tokens, 64);
+    assert.equal(reasoningManifest.usage.reasoning_tokens, 64);
+    assert.equal(reasoningManifest.provider_response.finish_reason, 'length');
+    assert.equal(reasoningManifest.provider_response.request_id, 'mock-reasoning-001');
+    assert.equal(reasoningManifest.artifacts.reasoning, 'derived/reasoning.txt');
+    assert.match(fs.readFileSync(path.join(reasoningOnly.runDir, 'derived', 'reasoning.txt'), 'utf8'), /exhausted/);
+    assertChecksums(reasoningOnly.runDir);
+    assertNoSecret(reasoningOnly.runDir);
 
     const requestCountAfterSuccess = mock.requests.length;
     const rerun = await invoke(success.runDir);

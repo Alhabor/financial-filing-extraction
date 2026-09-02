@@ -1,0 +1,4 @@
+{"timestamp_utc":"2026-09-02T04:37:41.506Z","event":"dispatch_started","provider":"ollama","model_id":"gemma4:26b-a4b-it-q4_K_M"}
+{"timestamp_utc":"2026-09-02T04:41:04.890Z","event":"response_received","http_status":200}
+{"timestamp_utc":"2026-09-02T04:41:04.895Z","event":"dispatch_failed","status":"failed","error_name":"Error","error_message":"Provider response did not contain assistant text."}
+{"timestamp_utc":"2026-09-02T04:46:04.395Z","event":"provider_metrics_reconciled","source":"raw/response.json"}
