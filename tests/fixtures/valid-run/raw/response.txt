@@ -1,0 +1,49 @@
+{
+  "case_id": "FIXTURE-FY24",
+  "model_id": "fixture-model",
+  "prompt_version": "PV001",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Demand volatility",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "demand volatility that could reduce revenue and margins",
+      "source_paragraph_ids": ["FIXTURE-FY24-P001"],
+      "source_pages": [10],
+      "reasoning": "Demand changes can reduce sales and profitability.",
+      "financial_impact": "Lower revenue and margins.",
+      "time_horizon": "Near term",
+      "monitoring_indicators": ["Demand trends"],
+      "mitigation": "Monitor demand and adjust plans.",
+      "uncertainty": "The magnitude is uncertain."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Supplier disruption",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "a disruption could delay production",
+      "source_paragraph_ids": ["FIXTURE-FY24-P002"],
+      "source_pages": [10],
+      "reasoning": "A supplier problem can interrupt operations.",
+      "financial_impact": "Delayed production may defer revenue.",
+      "time_horizon": "Near term",
+      "monitoring_indicators": ["Supplier delivery performance"],
+      "mitigation": "Develop alternate sourcing.",
+      "uncertainty": "The timing is uncertain."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Privacy regulation",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "Changes in privacy regulation could increase compliance costs",
+      "source_paragraph_ids": ["FIXTURE-FY24-P003"],
+      "source_pages": [11],
+      "reasoning": "New rules can impose additional obligations.",
+      "financial_impact": "Compliance costs could increase.",
+      "time_horizon": "Medium term",
+      "monitoring_indicators": ["Regulatory changes"],
+      "mitigation": "Track applicable requirements.",
+      "uncertainty": "The final requirements are uncertain."
+    }
+  ]
+}

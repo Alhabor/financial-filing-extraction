@@ -1,0 +1,13 @@
+Case: FIXTURE-FY24
+Section: Item 1A. Risk Factors
+
+[PDF_PAGE 10 | PRINTED_PAGE 8]
+[PARAGRAPH FIXTURE-FY24-P001]
+The company may face demand volatility that could reduce revenue and margins.
+
+[PARAGRAPH FIXTURE-FY24-P002]
+The company relies on a third-party supplier, and a disruption could delay production.
+
+[PDF_PAGE 11 | PRINTED_PAGE 9]
+[PARAGRAPH FIXTURE-FY24-P003]
+Changes in privacy regulation could increase compliance costs and limit product features.
