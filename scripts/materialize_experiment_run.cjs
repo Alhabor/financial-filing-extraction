@@ -5,11 +5,13 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
+const { buildEvidenceCatalog } = require('./lib/evidence_catalog.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const MODEL_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'models.json');
 const PROFILE_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'profiles.json');
 const OUTPUT_SCHEMA_PATH = path.join(ROOT, 'schemas', 'risk-output.schema.json');
+const FINANCE_SELECTION_SCHEMA_PATH = path.join(ROOT, 'schemas', 'finance-selection.schema.json');
 
 function parseArgs(argv) {
   const args = {};
@@ -113,7 +115,12 @@ function compactObject(value) {
 }
 
 function applyTransportControls(request, model, profile) {
-  const schema = profile.structured_output === 'risk-schema' ? readJson(OUTPUT_SCHEMA_PATH) : null;
+  const schemaPath = profile.structured_output === 'risk-schema'
+    ? OUTPUT_SCHEMA_PATH
+    : profile.structured_output === 'finance-selection-schema'
+      ? FINANCE_SELECTION_SCHEMA_PATH
+      : null;
+  const schema = schemaPath ? readJson(schemaPath) : null;
   if (profile.reasoning === 'disabled') {
     if (model.interface === 'ollama-chat') request.think = false;
     else if (model.provider === 'deepseek') request.thinking = { type: 'disabled' };
@@ -276,7 +283,16 @@ function main() {
     }
   }
 
-  const caseText = fs.readFileSync(inputPath, 'utf8');
+  const sourcePacketText = fs.readFileSync(inputPath, 'utf8');
+  let caseText = sourcePacketText;
+  let evidenceCatalog = null;
+  if (profile.input_transform === 'evidence-catalog-v001') {
+    const transformed = buildEvidenceCatalog(sourcePacketText, caseId);
+    caseText = transformed.modelInput;
+    evidenceCatalog = transformed.catalog;
+  } else if (profile.input_transform) {
+    throw new Error(`Unsupported input transform: ${profile.input_transform}`);
+  }
   const prompt = fs.readFileSync(promptPath, 'utf8');
   const parameters = {
     temperature: null,
@@ -297,6 +313,10 @@ function main() {
   fs.mkdirSync(runDir);
   fs.mkdirSync(inputDir);
   fs.writeFileSync(path.join(inputDir, 'model_input.txt'), caseText, 'utf8');
+  if (evidenceCatalog) {
+    fs.writeFileSync(path.join(inputDir, 'source_packet.txt'), sourcePacketText, 'utf8');
+    writeJson(path.join(inputDir, 'evidence_catalog.json'), evidenceCatalog);
+  }
   fs.writeFileSync(path.join(inputDir, 'prompt.txt'), prompt, 'utf8');
   writeJson(path.join(inputDir, 'model_config.json'), model);
   writeJson(path.join(inputDir, 'profile.json'), profile);
@@ -305,7 +325,7 @@ function main() {
   const modality = {
     requested_modality: requestedModality,
     actual_modality: actualModality,
-    input_view: actualModality === 'native-vision' ? 'page_images' : 'text',
+    input_view: actualModality === 'native-vision' ? 'page_images' : profile.input_view || 'text',
     fallback_allowed: Boolean(profile.fallback_allowed),
     fallback_reason: fallbackReason,
     images
@@ -332,17 +352,23 @@ function main() {
     interface: model.interface,
     profile_id: profileId,
     prompt_version: profile.prompt_version,
-    output_schema_version: 'risk-output-v001',
+    output_schema_version: profile.output_schema_version || 'risk-output-v001',
+    pipeline_output_schema_version: profile.pipeline_output_schema_version || null,
     rubric_version: 'RV001',
     input: {
       path: relativePath(path.join(inputDir, 'model_input.txt')),
       source_path: relativePath(inputPath),
+      evaluation_path: evidenceCatalog ? 'input/source_packet.txt' : 'input/model_input.txt',
       packet_id: packetManifest.packet_id,
       canonical_pdf_path: packetManifest.source.pdf_path,
       sha256: sha256Text(caseText),
+      source_sha256: sha256Text(sourcePacketText),
+      transform: profile.input_transform || null,
+      evidence_catalog_version: evidenceCatalog?.catalog_version || null,
+      evidence_record_count: evidenceCatalog?.record_count || null,
       requested_modality: requestedModality,
       actual_modality: actualModality,
-      input_view: actualModality === 'native-vision' ? 'page_images' : 'text',
+      input_view: actualModality === 'native-vision' ? 'page_images' : profile.input_view || 'text',
       fallback_reason: fallbackReason,
       image_count: images.length
     },
@@ -382,6 +408,10 @@ function main() {
       request_sanitized: 'input/request.sanitized.json',
       model_config: 'input/model_config.json',
       profile: 'input/profile.json',
+      ...(evidenceCatalog ? {
+        source_packet: 'input/source_packet.txt',
+        evidence_catalog: 'input/evidence_catalog.json'
+      } : {}),
       checksums: 'checksums.sha256'
     },
     secret_policy: 'Credentials and authorization headers are never written to experiment artifacts.',
@@ -402,6 +432,11 @@ function main() {
     path: relative,
     sha256: sha256File(path.join(runDir, relative))
   }));
+  if (evidenceCatalog) {
+    for (const relative of ['input/source_packet.txt', 'input/evidence_catalog.json']) {
+      checksumFiles.push({ path: relative, sha256: sha256File(path.join(runDir, relative)) });
+    }
+  }
   for (const image of images) {
     checksumFiles.push({
       path: image.path.replace(`${relativePath(runDir)}/`, ''),

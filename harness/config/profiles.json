@@ -105,5 +105,21 @@
     "allow_rag": false,
     "allow_human_intervention": false,
     "fallback_allowed": false
+  },
+  "optimized-finance-pipeline-v004": {
+    "description": "P002 finance RAG profile with deterministic evidence IDs and locator post-processing.",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "evidence_catalog",
+    "input_transform": "evidence-catalog-v001",
+    "prompt_path": "prompts/PV008.md",
+    "prompt_version": "PV008",
+    "structured_output": "finance-selection-schema",
+    "output_schema_version": "finance-selection-v001",
+    "pipeline_output_schema_version": "risk-output-v001",
+    "allow_external_search": false,
+    "allow_rag": true,
+    "allow_human_intervention": false,
+    "fallback_allowed": false
   }
 }

@@ -40,6 +40,9 @@ function manifests(directory) {
 }
 
 function matrix(scope) {
+  if (scope === 'finance-pipeline-smoke') {
+    return [{ caseId: 'PYPL-FY24', modelAlias: 'finance-llama', profile: 'optimized-finance-pipeline-v004' }];
+  }
   const cases = scope === 'smoke'
     ? ['PYPL-FY24']
     : scope === 'tuning'
@@ -47,14 +50,14 @@ function matrix(scope) {
       : scope === 'holdout'
         ? ['BA-FY24']
         : null;
-  if (!cases) throw new Error('--scope must be smoke, tuning, or holdout.');
+  if (!cases) throw new Error('--scope must be smoke, tuning, holdout, or finance-pipeline-smoke.');
   return cases.flatMap((caseId) => CONFIGURATIONS.map(([modelAlias, profile]) => ({ caseId, modelAlias, profile })));
 }
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) {
-    process.stdout.write('Usage: node scripts/materialize_p002.cjs --scope <smoke|tuning|holdout> [--attempt 1]\n');
+    process.stdout.write('Usage: node scripts/materialize_p002.cjs --scope <smoke|tuning|holdout|finance-pipeline-smoke> [--attempt 1]\n');
     return;
   }
   const scope = String(args.scope || 'smoke');

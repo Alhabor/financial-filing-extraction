@@ -51,6 +51,18 @@ function main() {
   assert.equal(invoke(plainRun).status, 1, 'existing outputs must not be overwritten');
   assert.equal(invoke(plainRun, '--force').status, 0);
 
+  const pipelineRun = copyFixture('pipeline-candidate');
+  const pipelineCandidate = path.join(pipelineRun, 'derived', 'pipeline_output.json');
+  fs.mkdirSync(path.dirname(pipelineCandidate), { recursive: true });
+  fs.copyFileSync(responsePath(pipelineRun), pipelineCandidate);
+  const pipeline = invoke(pipelineRun, '--candidate', 'derived/pipeline_output.json', '--label', 'pipeline');
+  assert.equal(pipeline.status, 0, pipeline.stderr);
+  assert.equal(readJson(path.join(pipelineRun, 'evaluation', 'pipeline.json')).status, 'passed');
+  assert.ok(fs.existsSync(path.join(pipelineRun, 'derived', 'parsed.pipeline.json')));
+  const pipelineManifest = readJson(path.join(pipelineRun, 'manifest.json'));
+  assert.equal(pipelineManifest.artifacts.pipeline_evaluation, 'evaluation/pipeline.json');
+  assert.equal(pipelineManifest.evaluation.pipeline.automatic_status, 'passed');
+
   const layoutRun = copyFixture('layout-whitespace');
   const layoutInputPath = path.join(layoutRun, 'input', 'model_input.txt');
   const layoutInput = fs.readFileSync(layoutInputPath, 'utf8').replace(

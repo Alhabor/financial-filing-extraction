@@ -21,6 +21,7 @@ function materialize(outputRoot, modelAlias, profile) {
   ], { cwd: ROOT, encoding: 'utf8' }));
   const runDir = path.join(ROOT, result.run_dir);
   return {
+    runDir,
     request: JSON.parse(fs.readFileSync(path.join(runDir, 'input', 'request.sanitized.json'), 'utf8')),
     manifest: JSON.parse(fs.readFileSync(path.join(runDir, 'manifest.json'), 'utf8'))
   };
@@ -56,11 +57,26 @@ try {
   assert.equal(financeV3.request.response_format.schema.$id, 'risk-output-v001');
   assert.equal(financeV3.manifest.prompt_version, 'PV007');
 
+  const financePipeline = materialize(temporary, 'finance-llama', 'optimized-finance-pipeline-v004');
+  assert.equal(financePipeline.request.response_format.schema.$id, 'finance-selection-v001');
+  assert.equal(financePipeline.manifest.prompt_version, 'PV008');
+  assert.equal(financePipeline.manifest.input.transform, 'evidence-catalog-v001');
+  assert.equal(financePipeline.manifest.input.evaluation_path, 'input/source_packet.txt');
+  assert.equal(financePipeline.manifest.output_schema_version, 'finance-selection-v001');
+  assert.equal(financePipeline.manifest.pipeline_output_schema_version, 'risk-output-v001');
+  const catalog = JSON.parse(fs.readFileSync(path.join(financePipeline.runDir, 'input', 'evidence_catalog.json'), 'utf8'));
+  assert.ok(catalog.record_count > 20);
+  assert.match(financePipeline.request.messages[1].content, /\[EVIDENCE PYPL-FY24-E0001 \| PDF_PAGE 18 \| PARAGRAPH PYPL-FY24-P001\]/);
+  assert.ok(fs.existsSync(path.join(financePipeline.runDir, 'input', 'source_packet.txt')));
+
   for (const result of [deepseek, gemma, finance, deepseekV3, gemmaV3, financeV3]) {
     assert.equal(result.manifest.parameters.max_output_tokens, 1600);
     assert.equal(result.manifest.tools.external_search, false);
     assert.equal(result.manifest.tools.rag, false);
   }
+  assert.equal(financePipeline.manifest.parameters.max_output_tokens, 1600);
+  assert.equal(financePipeline.manifest.tools.external_search, false);
+  assert.equal(financePipeline.manifest.tools.rag, true);
   process.stdout.write('test_materialize_transport_controls: all deterministic tests passed\n');
 } finally {
   fs.rmSync(temporary, { recursive: true, force: true });

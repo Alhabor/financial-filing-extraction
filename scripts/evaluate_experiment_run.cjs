@@ -18,7 +18,7 @@ const EVALUATION_VERSION = 'AE002';
 const SCHEMA_PATH = path.resolve(__dirname, '..', 'schemas', 'risk-output.schema.json');
 
 function usage() {
-  return `Usage: node scripts/${SCRIPT_NAME} <run-directory> [--force]
+  return `Usage: node scripts/${SCRIPT_NAME} <run-directory> [--force] [--candidate <relative-path>] [--label <name>]
 
 Parse and automatically validate one experiment run.
 
@@ -33,6 +33,8 @@ Writes (and never writes raw files):
 
 Options:
   --force     Explicitly replace existing derived/evaluation outputs
+  --candidate Validate a derived candidate instead of raw/response.txt
+  --label     Safe artifact label used with --candidate, for example pipeline
   -h, --help  Show this help
 
 The response must be plain JSON or one fenced JSON block. The command exits
@@ -46,7 +48,10 @@ function fail(message) {
 function parseArgs(argv) {
   let runDirectory = null;
   let force = false;
-  for (const token of argv) {
+  let candidate = null;
+  let label = 'automatic';
+  for (let index = 0; index < argv.length; index += 1) {
+    const token = argv[index];
     if (token === '-h' || token === '--help') {
       if (runDirectory !== null) fail('Do not combine --help with a run directory.');
       return { help: true, force: false, runDirectory: null };
@@ -55,12 +60,22 @@ function parseArgs(argv) {
       force = true;
       continue;
     }
+    if (token === '--candidate' || token === '--label') {
+      const value = argv[index + 1];
+      if (!value || value.startsWith('-')) fail(`${token} requires a value.`);
+      if (token === '--candidate') candidate = value;
+      else label = value;
+      index += 1;
+      continue;
+    }
     if (token.startsWith('-')) fail(`Unknown option: ${token}`);
     if (runDirectory !== null) fail(`Expected one run directory, received another: ${token}`);
     runDirectory = token;
   }
   if (!runDirectory) fail('Missing run directory. Use --help for usage.');
-  return { help: false, force, runDirectory };
+  if (!/^[a-z][a-z0-9_-]*$/.test(label)) fail('--label must be a safe lowercase identifier.');
+  if (!candidate && label !== 'automatic') fail('--label requires --candidate.');
+  return { help: false, force, runDirectory, candidate, label };
 }
 
 function readText(filePath, label) {
@@ -339,13 +354,22 @@ function metadataChecks(output, manifest) {
   return errors;
 }
 
-function outputPaths(runDirectory) {
+function resolveInside(runDirectory, relative, label) {
+  if (path.isAbsolute(relative)) fail(`${label} must be relative to the run directory.`);
+  const resolved = path.resolve(runDirectory, relative);
+  const relation = path.relative(runDirectory, resolved);
+  if (relation.startsWith('..') || path.isAbsolute(relation)) fail(`${label} resolves outside the run directory.`);
+  return resolved;
+}
+
+function outputPaths(runDirectory, candidate, label, inputRelative) {
+  const defaultMode = !candidate;
   return {
     manifest: path.join(runDirectory, 'manifest.json'),
-    input: path.join(runDirectory, 'input', 'model_input.txt'),
-    rawText: path.join(runDirectory, 'raw', 'response.txt'),
-    parsed: path.join(runDirectory, 'derived', 'parsed.json'),
-    automatic: path.join(runDirectory, 'evaluation', 'automatic.json')
+    input: resolveInside(runDirectory, inputRelative, 'Evaluation input'),
+    candidate: resolveInside(runDirectory, candidate || 'raw/response.txt', 'Candidate'),
+    parsed: path.join(runDirectory, 'derived', defaultMode ? 'parsed.json' : `parsed.${label}.json`),
+    automatic: path.join(runDirectory, 'evaluation', defaultMode ? 'automatic.json' : `${label}.json`)
   };
 }
 
@@ -366,11 +390,18 @@ function main() {
   if (!fs.existsSync(runDirectory) || !fs.statSync(runDirectory).isDirectory()) {
     fail(`Run directory does not exist or is not a directory: ${runDirectory}`);
   }
-  const paths = outputPaths(runDirectory);
+  const manifestPath = path.join(runDirectory, 'manifest.json');
+  const manifest = readJson(manifestPath, 'manifest.json');
+  const inputRelative = manifest.input?.evaluation_path || 'input/model_input.txt';
+  const candidateRelative = args.candidate || 'raw/response.txt';
+  const paths = outputPaths(runDirectory, args.candidate, args.label, inputRelative);
   assertWritableOutputs(paths, args.force);
-  const manifest = readJson(paths.manifest, 'manifest.json');
-  const inputText = readText(paths.input, 'input/model_input.txt');
-  const responseText = readText(paths.rawText, 'raw/response.txt');
+  const inputText = readText(paths.input, inputRelative);
+  const responseText = readText(paths.candidate, candidateRelative);
+  const parsedArtifact = path.relative(runDirectory, paths.parsed).split(path.sep).join('/');
+  const evaluationArtifact = path.relative(runDirectory, paths.automatic).split(path.sep).join('/');
+  const parsedArtifactKey = args.candidate ? `${args.label}_parsed_output` : 'parsed_output';
+  const evaluationArtifactKey = args.candidate ? `${args.label}_evaluation` : 'automatic_evaluation';
   const automatic = {
     evaluation_version: EVALUATION_VERSION,
     parser_version: PARSER_VERSION,
@@ -379,8 +410,8 @@ function main() {
     model_id: manifest.model_id || null,
     prompt_version: manifest.prompt_version || null,
     source_files: {
-      raw_response: 'raw/response.txt',
-      model_input: 'input/model_input.txt',
+      candidate_response: candidateRelative,
+      evaluation_input: inputRelative,
       raw_response_sha256: sha256(responseText),
       model_input_sha256: sha256(inputText)
     },
@@ -405,19 +436,20 @@ function main() {
     writeJson(paths.automatic, automatic);
     manifest.artifacts = {
       ...(manifest.artifacts || {}),
-      automatic_evaluation: 'evaluation/automatic.json'
+      [evaluationArtifactKey]: evaluationArtifact
     };
-    manifest.evaluation = {
+    manifest.evaluation = { ...(manifest.evaluation || {}), [args.label]: {
       parser_version: PARSER_VERSION,
       automatic_evaluation_version: EVALUATION_VERSION,
       automatic_status: 'failed'
-    };
+    } };
     manifest.status = 'partial';
     manifest.notes = 'Raw response was preserved, but automatic JSON parsing failed.';
     writeJson(paths.manifest, manifest);
     fs.appendFileSync(path.join(runDirectory, 'events.ndjson'), `${JSON.stringify({
       timestamp_utc: new Date().toISOString(),
       event: 'automatic_evaluation_completed',
+      label: args.label,
       status: 'failed',
       stage: 'parse'
     })}\n`, 'utf8');
@@ -447,25 +479,26 @@ function main() {
   writeJson(paths.automatic, automatic);
   manifest.artifacts = {
     ...(manifest.artifacts || {}),
-    parsed_output: 'derived/parsed.json',
-    automatic_evaluation: 'evaluation/automatic.json'
+    [parsedArtifactKey]: parsedArtifact,
+    [evaluationArtifactKey]: evaluationArtifact
   };
-  manifest.evaluation = {
+  manifest.evaluation = { ...(manifest.evaluation || {}), [args.label]: {
     parser_version: PARSER_VERSION,
     automatic_evaluation_version: EVALUATION_VERSION,
     automatic_status: automatic.status
-  };
+  } };
   if (allPassed) {
     manifest.status = 'completed';
-    manifest.notes = 'Raw response, schema, metadata, and exact citation validation completed successfully.';
+    manifest.notes = `${candidateRelative}, schema, metadata, and citation validation completed successfully.`;
   } else {
     manifest.status = 'partial';
-    manifest.notes = 'Raw response was preserved, but automatic schema, metadata, or citation validation failed.';
+    manifest.notes = `${candidateRelative} was preserved, but automatic schema, metadata, or citation validation failed.`;
   }
   writeJson(paths.manifest, manifest);
   fs.appendFileSync(path.join(runDirectory, 'events.ndjson'), `${JSON.stringify({
     timestamp_utc: new Date().toISOString(),
     event: 'automatic_evaluation_completed',
+    label: args.label,
     status: automatic.status
   })}\n`, 'utf8');
   refreshChecksums(runDirectory);
