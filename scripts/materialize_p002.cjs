@@ -8,9 +8,9 @@ const ROOT = path.resolve(__dirname, '..');
 const MATERIALIZER = path.join(ROOT, 'scripts', 'materialize_experiment_run.cjs');
 const RUNS_ROOT = path.join(ROOT, 'experiments', 'runs', 'P');
 const CONFIGURATIONS = [
-  ['cloud-deepseek', 'optimized-deepseek-text-v002'],
-  ['local-gemma', 'optimized-gemma-text-v002'],
-  ['finance-llama', 'optimized-finance-text-v002']
+  ['cloud-deepseek', 'optimized-deepseek-text-v003'],
+  ['local-gemma', 'optimized-gemma-text-v003'],
+  ['finance-llama', 'optimized-finance-text-v003']
 ];
 
 function parseArgs(argv) {

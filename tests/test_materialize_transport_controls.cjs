@@ -43,7 +43,20 @@ try {
   assert.equal(finance.request.response_format.schema.$id, 'risk-output-v001');
   assert.equal(finance.manifest.prompt_version, 'PV004');
 
-  for (const result of [deepseek, gemma, finance]) {
+  const deepseekV3 = materialize(temporary, 'cloud-deepseek', 'optimized-deepseek-text-v003');
+  assert.deepEqual(deepseekV3.request.thinking, { type: 'disabled' });
+  assert.equal(deepseekV3.manifest.prompt_version, 'PV005');
+
+  const gemmaV3 = materialize(temporary, 'local-gemma', 'optimized-gemma-text-v003');
+  assert.equal(gemmaV3.request.think, false);
+  assert.equal(gemmaV3.request.format.$id, 'risk-output-v001');
+  assert.equal(gemmaV3.manifest.prompt_version, 'PV006');
+
+  const financeV3 = materialize(temporary, 'finance-llama', 'optimized-finance-text-v003');
+  assert.equal(financeV3.request.response_format.schema.$id, 'risk-output-v001');
+  assert.equal(financeV3.manifest.prompt_version, 'PV007');
+
+  for (const result of [deepseek, gemma, finance, deepseekV3, gemmaV3, financeV3]) {
     assert.equal(result.manifest.parameters.max_output_tokens, 1600);
     assert.equal(result.manifest.tools.external_search, false);
     assert.equal(result.manifest.tools.rag, false);
