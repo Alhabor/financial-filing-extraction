@@ -1,0 +1,3 @@
+{"timestamp_utc":"2026-09-02T06:29:18.929Z","event":"dispatch_started","provider":"deepseek","model_id":"deepseek-v4-flash-vision-exp"}
+{"timestamp_utc":"2026-09-02T06:29:35.064Z","event":"response_received","http_status":200}
+{"timestamp_utc":"2026-09-02T06:29:35.066Z","event":"dispatch_failed","status":"failed","error_name":"Error","error_message":"Provider response did not contain assistant text."}

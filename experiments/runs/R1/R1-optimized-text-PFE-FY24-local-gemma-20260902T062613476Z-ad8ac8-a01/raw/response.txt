@@ -1,0 +1,61 @@
+{
+  "case_id": "PFE-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV015",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Increased negotiating power and cost-containment strategies by private payors and governments may lead to unfavorable pricing and formulary placement.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "The negotiating power of MCOs, PBMs and other private third-party payors has increased",
+      "source_paragraph_ids": [
+        "PFE-FY24-P005"
+      ],
+      "source_pages": [
+        24
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "The launch of competitive products, including generics and biosimilars, may erode sales or lead to product obsolescence.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "Competitive product launches have and may erode future sales of our products",
+      "source_paragraph_ids": [
+        "PFE-FY24-P006"
+      ],
+      "source_pages": [
+        24
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Failures by third-party collaborators or disruptions in their businesses could delay or prevent the development and commercialization of products.",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Failure by one or more of the third-party collaborators, service providers and others",
+      "source_paragraph_ids": [
+        "PFE-FY24-P010"
+      ],
+      "source_pages": [
+        27
+      ],
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

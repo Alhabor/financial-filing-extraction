@@ -1,0 +1,29 @@
+{
+  "requested_modality": "native-vision",
+  "actual_modality": "native-vision",
+  "input_view": "page_images",
+  "fallback_allowed": true,
+  "fallback_reason": null,
+  "images": [
+    {
+      "path": "experiments/runs/R1/R1-native-vision-PFE-FY24-cloud-deepseek-20260902T062613595Z-afcff5-a01/input/images/page-01.png",
+      "sha256": "e70d0440dbdeef9a9c3734b67f1c65e23ddbbe096587888c1c2795fac8dfc8c2",
+      "mime_type": "image/png"
+    },
+    {
+      "path": "experiments/runs/R1/R1-native-vision-PFE-FY24-cloud-deepseek-20260902T062613595Z-afcff5-a01/input/images/page-02.png",
+      "sha256": "c050c01dd0fd0dd1938000b9c74adccc41c3729ea866f8b7e5c5125f49406cdc",
+      "mime_type": "image/png"
+    },
+    {
+      "path": "experiments/runs/R1/R1-native-vision-PFE-FY24-cloud-deepseek-20260902T062613595Z-afcff5-a01/input/images/page-03.png",
+      "sha256": "c6d78b8f9d6370829567598e5ecb7d610a0870fcda07cd68c610e5f308ae3a10",
+      "mime_type": "image/png"
+    },
+    {
+      "path": "experiments/runs/R1/R1-native-vision-PFE-FY24-cloud-deepseek-20260902T062613595Z-afcff5-a01/input/images/page-04.png",
+      "sha256": "caaa5ae5d0fffd88b16496df53e356669d6f67c68f79d1e78b1465cc778c4a21",
+      "mime_type": "image/png"
+    }
+  ]
+}

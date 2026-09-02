@@ -1,0 +1,20 @@
+{
+  "config_version": "MC001",
+  "display_name": "DeepSeek-V4-Flash-Vision-Exp",
+  "provider": "deepseek",
+  "interface": "chat-completions",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "modalities": [
+    "text",
+    "image"
+  ],
+  "credential_env": "DEEPSEEK_API_KEY",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "default_parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": null
+  }
+}

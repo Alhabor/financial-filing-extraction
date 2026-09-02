@@ -1,0 +1,75 @@
+Financial filing analyst.
+Supplied excerpt from a company's Form 10-K Item 1A, Risk Factors (Pfizer Inc. 24 Form 10-K).
+Identify exactly three material risks.
+
+        1.  Concise risk summary.
+        2.  Primary risk type (from a specific list).
+        3.  Shortest sufficient verbatim quote.
+        4.  `PDF_PAGE` (integer) and `PRINTED_PRE_PAGE` (if different). List paragraph IDs if provided.
+        5.  Evidence-grounded reasoning + possible financial/operating impact.
+        6.  Time horizon, monitoring indicators, disclosed mitigation, and uncertainty.
+Separate explicit statements from analytical inference. No invented probabilities/dollars/forecasts.
+Exactly one JSON object, no Markdown fences. Follow `schemas/risk-output.schema.json`.
+`case_id: PFE-FY24`, `model_id: gemma4:26b-a4b-it-q4_K_M`, `prompt_version: PV001`.
+
+    *   *Page 15:*
+        *   "MANAGED CARE TRENDS": Risks related to managed care trends, including generic competition, biosimilar competition, and reimbursement changes.
+        *   "COMPETITIVE PRODUCTS": Risks related to competition from other products (new or existing) and the difficulty of competing with products that have advantages.
+    *   *Page 16:*
+        *   "RESEARCH AND DEVELOPMENT": Risks related to the difficulty of developing new products, clinical trial failures, regulatory delays, and the impact of R&D investment.
+        *   "CONTREFEIT PRODUCTS": Risks related to counterfeit medicines/vaccines affecting patient safety and brand reputation.
+    *   *Page 18:*
+        *   "PRICING AND REIMBURSEMENT": Risks related to US government regulations (IRA), drug pricing legislation, and international pricing/reimbursement changes.
+        *   "U.S. HEALTHCARE REGULATION": Risks related to changes in US healthcare regulations, including Medicare/Medicaid.
+    *   *Page 19:*
+        *   "DEVELOPMENT, REGULATORY APPROVAL AND MARKETING OF PRODUCTS": Risks related to clinical trial failures, regulatory delays, and the impact of regulatory decisions on product commercialization.
+
+    *   *Risk 1: Generic and Biosimilar Competition.*
+        *   Summary: Competition from generic drugs and biosimilars may reduce revenue and market share.
+        *   Type: Strategic / Market / Technology.
+        *   Quote: "In addition, competition from generic drugs, including from generic versions of competition' branded products that their market exclusivity is a major challenge for our branded products." (Wait, the text says "competition from generic drugs... is a major challenge"). Let's refine the quote.
+        *   Page: 15.
+        *   Reasoning: Loss of exclusivity leads to lower prices and loss of market share.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Long-term; patent expirations; development of new products; uncertainty of biosimilar efficacy/adoption.
+
+    *   *Risk 2: R&D Failure and Regulatory Delays.*
+        *   Summary: Failure to successfully develop new products or delays in regulatory approvals can impact future revenue.
+        *   Type: Operational / Supply Chain (or Strategic/Technology - let's go with Strategic/Technology or Operational. The text links it to R&D success). Let's use "Strategic / Market / Technology" or "Operational / Supply and Chain". Actually, R&D is often "Strategic". Let's look at the list: "Strategic / Market / Technology".
+        *   Quote: "The uncertainty and risks associated with the development of new products, as well as the development of additional uses for existing products, are necessary for the continued strength of our business." (Actually, the risk is the *failure*). Let's use: "The uncertainty and risks associated with the development of new products... are necessary for the continued strength of our business." Or better: "We may not be able to meet anticipated pre-clinical or clinical endpoints, commencement and/or completion dates for our pre-clinical or clinical trials, regulatory submission dates, regulatory delays and/or launch dates."
+        *   Page: 16/19.
+        *   Reasoning: Failure to bring products to market results in lost revenue opportunities.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Long-term; trial results/FDA decisions; R&D investment; uncertainty of clinical outcomes.
+
+    *   *Risk 3: Drug Pricing and Reimbursement Legislation (IRA).*
+        *   Summary: US government legislation, specifically the Inflation Reduction Act (IRA), may impact drug pricing and profitability.
+        *   Type: Regulatory / Legal / Geopolitical.
+        *   Quote: "The IRA directs HHS to set the prices to certain high-expenditure, single-source drugs and biologics covered under Medicare."
+        *   Page: 18.
+        *   Reasoning: Price negotiations could reduce revenue from key products.
+        *   Horizon/Indicators/Mitigation/Uncertainty: Medium to long-term; Medicare negotiation outcomes; government policy changes; uncertainty of final pricing/implementation.
+
+    *   *Risk 1 (Competition):*
+        *   Summary: Competition from generic drugs and biosimilars poses a threat to market exclusivity and revenue.
+        *   Type: Strategic / Market / Technology.
+        *   Quote: "In addition, competition from generic drugs, including from generic versions of competition' branded products that their market exclusivity is a major challenge for our branded products." (Note: The text has a typo "competition' branded products", I must quote verbatim).
+        *   Page: 15.
+        *   Reasoning: Loss of patent protection allows lower-cost alternatives to enter the market, potentially eroding market share and pricing power.
+        *   Horizon: Long-term.
+        *   Indicators: Patent expiration dates, biosimilar approvals.
+        *   Mitigation: Development of new products and pipeline.
+        *   Uncertainty: Success of new product launches and regulatory hurdles for biosimilars.
+
+    *   *Risk 2 (R&D/Regulatory):*
+        *   Summary: Inability to successfully complete clinical trials or obtain regulatory approvals may prevent the commercialization of new products.
+        *   Type: Strategic / Market / Technology.
+        *   Quote: "We may not be able to meet anticipated pre-clinical or clinical endpoints, commencement and/or completion dates for our pre-clinical or clinical trials, regulatory submission dates, regulatory delays and/or launch dates."
+        *   Page: 19.
+        *   Reasoning: Delays or failures in the R&D pipeline directly impact the company's ability to replace revenue from expiring patents.
+        *   Horizon: Long-term.
+        *   Indicators: Clinical trial milestones, FDA/EMA decision timelines.
+        *   Mitigation: Investment in R&D and diverse pipeline.
+        *   Uncertainty: Scientific complexity and regulatory unpredictability.
+
+    *   *Risk 3 (Pricing/Legislation):*
+        *   Summary: US legislative changes, such as the Inflation Reduction Act (IRA), may lead to government-mandated drug price reductions.
+        *   

@@ -1,7 +1,7 @@
 # Mini-exercise 实验设计
 
 **版本：** v0.2.0
-**状态：** 方案已确定，模型运行尚未开始
+**状态：** 准备轮已收口；已完成单案例精简 R1 盲测
 **项目：** Group 7 — Financial filing extraction
 **课程：** SHBI-GB 7343 — AI in Finance
 
@@ -227,11 +227,10 @@ R1 使用没有参与 Prompt 修改的新案例。R2 只有在需要验证新方
 
 ## 12. 当前状态
 
-- 研究数据池：8 份公开 10-K，已整理；8 个短案例包已冻结为 `case-packet-spec-v001`；
-- Prompt：`PV001` 和准备轮协议 `experiments/P_PROTOCOL.md` 已冻结，尚未产生正式 P 输出；
-- 模型运行：Ollama、Gemma、金融 GGUF 与 llama.cpp 已就绪；DeepSeek 锁定模型 ID 已确认。金融模型的 8192 context 已形成 P001 明确诊断项；
-- 原始结果留痕结构：已设计，见 `EXPERIMENT_ARCHIVE.md`；
-- harness：已实现两阶段 materialize/live gate、不可覆盖 raw 记录、自动 Schema/引用检查和显式视觉回退协议；
-- 输出契约：已建立初版，见 `schemas/risk-output.schema.json`；
-- 产品仓库：计划名为 `financial_filing_risk_analyzer`，尚未创建；
-- GitHub 远程仓库：尚未创建。
+- 研究数据池：8 份公开 10-K 和 8 个 `case-packet-spec-v001` 案例包已整理并校验；
+- 准备轮：PYPL 与 COIN 多轮结果、失败诊断和最终配置已归档；
+- 冻结配置：DeepSeek `PV016`、Gemma `PV015`、金融证据管线 `PV013`；
+- 精简 R1：已在未参与 Prompt 修改的 `PFE-FY24` 上完成 standard text、optimized text 和 native vision 三条件，共 8 个无重试尝试；
+- 稳定性边界：未运行原计划 24 次 P003，不声称统计稳定性；
+- 结果：见 `experiments/R1_PFE_SUMMARY.md`；
+- 产品仓库：计划名为 `financial_filing_risk_analyzer`，尚未创建。

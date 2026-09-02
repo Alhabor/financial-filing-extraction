@@ -1,0 +1,49 @@
+{
+  "case_id": "PFE-FY24",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "prompt_version": "PV016",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Pricing pressures from managed care and government regulations, including the IRA, could reduce revenues.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "The drug pricing provisions of the IRA are being implemented over the next several years.",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": ["PFE-FY24-P013"],
+      "source_pages": [27],
+      "monitoring_indicators": []
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Competitive product launches and generic competition could erode sales of key products.",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "Competitive product launches have and may erode future sales of our products",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": ["PFE-FY24-P006"],
+      "source_pages": [24],
+      "monitoring_indicators": []
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Counterfeit products could harm patients and damage reputation, leading to lost sales and litigation.",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Counterfeits pose a significant risk to patient health and safety",
+      "reasoning": "Not separately analyzed in the core extraction task.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task.",
+      "source_paragraph_ids": ["PFE-FY24-P011"],
+      "source_pages": [27],
+      "monitoring_indicators": []
+    }
+  ]
+}

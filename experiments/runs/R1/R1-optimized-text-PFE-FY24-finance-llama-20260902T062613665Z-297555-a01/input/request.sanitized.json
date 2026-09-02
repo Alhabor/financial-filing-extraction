@@ -1,0 +1,89 @@
+{
+  "model": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "# PV013 — Finance RAG grouped selection with primary-driver classification\n\nUse only the supplied grouped material-consequence sentence catalog derived from a Form 10-K Item 1A packet. Identify exactly three distinct material risks. The deterministic lexical screen is only a search aid, not a gold answer.\n\nFor each risk, select one sentence that states both a concrete risk driver and an explicit consequence for the filer. Prefer broad or severe consequences affecting operations, financial condition, results, customers, or reputation. Do not select a heading, fragment, generic background statement, or a sentence whose consequence belongs only to an uncited prior sentence.\n\nEach record has the form `[E0001 | GROUP G001] complete evidence sentence`. Select exactly one record from each of three different GROUP values. Return only its `evidence_id`; the deterministic locator restores the exact quote, paragraph, and page. Do not quote or rewrite source text.\n\nReturn one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects ordered `R1`, `R2`, `R3`, with only these fields: `risk_id`, `risk_summary`, `risk_type`, and `evidence_id`.\n\n`risk_summary` must be a concrete 4–12 word noun phrase naming the source-supported risk driver. It must not equal the category label and must not add a product, activity, cause, or consequence absent from the selected sentence.\n\nClassify the primary risk driver, not merely the downstream consequence:\n\n- `Strategic / Market / Technology`: competition, demand, asset or product prices, adoption, pricing, strategic partnerships, or technological change.\n- `Operational / Supply Chain`: operational service dependency or disruption, production, delivery, suppliers, infrastructure, or third-party service performance. A strategic partnership is not operational merely because a third party is involved.\n- `Regulatory / Legal / Geopolitical`: laws, regulations, enforcement, litigation, fines, sanctions, or political/trade restrictions.\n- `Financial / Liquidity / Credit`: liquidity, credit, lending, funding, insurance sufficiency, counterparty default, or fee/funding structure. Do not use this category merely because a market or operational risk affects revenue or financial condition.\n- `Cybersecurity / Data / Privacy`: security, data, privacy, unauthorized access, or a breach.\n- `Other`: a central theme such as intellectual-property protection that does not fit the five categories above.\n\nThe three evidence IDs must exist, be different, come from three different GROUP values, and represent three different risk themes. Never add facts from memory.\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: PFE-FY24\n- model_id: QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M\n- prompt_version: PV013"
+    },
+    {
+      "role": "user",
+      "content": "Case: PFE-FY24\nInput view: deterministic grouped material-consequence sentence catalog derived from the frozen packet.\nThe lexical screen reduces search volume but is not a gold label; choose three distinct material risks.\nChoose exactly one record from each of three different GROUP values.\nEach ID maps to one complete sentence; only extraction-layout whitespace was normalized.\n\n[E0015 | GROUP G003] If known or unknown risks or uncertainties materialize, our business operations, financial condition, operating results (including components of our financial results), cash flows, prospects, reputation or credit ratings could be adversely affected now and in the future, potentially in a material way.\n[E0016 | GROUP G003] The following discussion of risk factors contains forward- looking statements, as discussed in the Forward-Looking Information and Factors that May Affect Future Results section.\n[E0021 | GROUP G005] The growing availability and use of higher cost innovative specialty pharmaceutical medicines that treat rare or life threatening conditions also has generated increased payor interest in the development of cost-containment strategies.\n[E0026 | GROUP G005] As the U.S. private third-party payor market consolidates further, and as the IRA prices become publicly available, we may face greater pricing pressure from private third-party payors as they continue to drive more of their patients to use lower cost alternatives or seek even larger rebates to control costs or offset losses from the IRA.\n[E0039 | GROUP G006] If we are unable to compete effectively, this could reduce actual or anticipated future sales, which could negatively impact our results of operations.\n[E0045 | GROUP G007] In China, we expect to continue to face intense competition by certain generic manufacturers, which has resulted, and may result in the future, in price cuts and volume loss of some of our products.\n[E0059 | GROUP G008] If these products or any of our other major products were to, or continue to (if applicable), experience loss of patent protection (if applicable), changes in prescription or vaccination purchasing or growth rates, reduced product demand, material product liability litigation, unexpected side effects or safety concerns, regulatory proceedings or investigations, lower governmental and/or regulatory confidence, negative publicity affecting doctor or patient confidence, pressure from competitive products, changes in recommendations and coverage, changes in labeling, pricing and access pressures, including those related to the IRA, or supply shortages or if a new, more effective product should be introduced, the adverse impact on our revenues could be significant and our revenue forecasts and expectations could prove to be inaccurate and we may fail to meet these expectations.\n[E0060 | GROUP G008] In particular, certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years.\n[E0069 | GROUP G008] If one of our significant customers should encounter financial or other difficulties, it might decrease the amount of business such customer does with us and/or we might be unable to timely collect all the amounts that such customer owes us or at all, which could negatively impact our results of operations.\n[E0073 | GROUP G009] Our product lines must be replenished over time to offset revenue losses when products lose exclusivity or market share or to respond to healthcare and innovation trends, as well as to provide for earnings growth, primarily through internal R&D or through collaborations, acquisitions, JVs, licensing or other arrangements.\n[E0081 | GROUP G009] We may fail to correctly identify compounds or indications for which our science is promising or allocate R&D investment resources efficiently, and failure to invest in the right technology platforms, therapeutic areas, product classes, geographic markets and/or licensing opportunities could adversely impact the productivity of our pipeline.\n[E0085 | GROUP G010] Failure by one or more of the third-party collaborators, service providers and others to complete activities on schedule or in accordance with our expectations or to meet their contractual or other obligations to us; failure of one or more of these parties to comply with applicable laws or regulations; disruptions in one or more of these parties’ businesses, including unexpected demand for or shortage of raw materials or components, cyber-attacks on supplier systems, labor disputes or shortage and inclement weather, as well as natural or man-made disasters or pandemics; or any disruption in the relationships between us and these parties have or could delay or prevent the development, approval, manufacturing or commercialization of our products and product candidates, expose us to suboptimal quality of service delivery or deliverables, result in repercussions such as missed deadlines or other timeliness issues, erroneous data and supply disruptions, and could also result in non-compliance with legal or regulatory requirements or industry standards, including Good Clinical Practice (GCP) and other requirements, or subject us to reputational harm, all with potential negative implications for our product pipeline and business.\n[E0086 | GROUP G010] Further, our revenues will be adversely affected by the termination or expiration of collaboration and co-promotion agreements that we have entered into and that we may enter into from time to time.\n[E0089 | GROUP G011] Failure to mitigate this threat could adversely impact consumers who use our products, potentially causing them harm.\n[E0090 | GROUP G011] This situation, in turn, may result in the loss of patient confidence in the Pfizer name and in the integrity of our medicines and vaccines, and potentially impact our business through lost sales, product recalls, and possible litigation.\n[E0099 | GROUP G013] PRICING AND REIMBURSEMENT Our future results could be adversely affected by changes in U.S. and international governmental regulations that mandate price controls, create coverage criteria, or limit patient access to our products.\n[E0100 | GROUP G013] In addition to the expansion of price controls in the U.S. in the IRA, the adoption of more restrictive coverage policies and price controls in new and existing jurisdictions, or the failure to obtain or maintain coverage and pricing could also adversely impact revenue.\n[E0114 | GROUP G013] Health plans may also require rebates in addition to the maximum fair price for preferred placement on a Medicare plan formulary.\n[E0116 | GROUP G013] We continue to evaluate the impact of the IRA on our business, operations and financial condition and results as the full effect of the IRA on our business and the pharmaceutical industry remains uncertain.\n[E0123 | GROUP G013] Measures to regulate prices or payment for pharmaceutical products, including legislation on drug importation and prescription drug affordability boards (PDABs) that seek to impose reimbursement limits for certain drugs, could adversely affect our business.\n[E0139 | GROUP G014] Failure to win national immunization tenders or to obtain acceptable pricing, as well as recent entry of additional competitors, could adversely affect our business.\n[E0142 | GROUP G015] Any significant additional efforts at the U.S. federal or state levels to reform the healthcare system by changing the way healthcare is provided or funded could have a material impact on us.\n[E0145 | GROUP G015] Other U.S. federal or state legislative or regulatory action and/or policy efforts could adversely affect our business, including, among others, general budget control actions, changes in patent laws, the importation of prescription drugs to the U.S. at prices that are regulated by foreign governments, revisions to reimbursement of biopharmaceuticals under government programs that could reference international prices or require new discounts, limitations on interactions with healthcare professionals and other industry stakeholders, restrictions on pharmaceutical advertising, or the use of comparative effectiveness methodologies that could be implemented in a manner that focuses primarily on cost differences and minimizes the therapeutic differences among pharmaceutical products and restricts access to innovative medicines.\n[E0148 | GROUP G015] Any other significant spending reductions or cost controls affecting Medicare, Medicaid or other publicly funded or subsidized health programs that may be implemented could have an adverse impact on our results of operations.\n[E0165 | GROUP G016] As a result of regulatory interpretations and assessments or other developments that may occur during the review process, or even after a product is authorized or approved for marketing, a product’s commercial potential could be adversely affected by potential emerging concerns or regulatory decisions regarding or impacting the scope of indicated patient populations, labeling or marketing, manufacturing processes, safety issues and/or other matters, including decisions relating to emerging developments regarding potential product impurities.\n[E0168 | GROUP G016] Further, claims and concerns that may arise regarding the safety and/or efficacy of in-line products and product candidates can negatively impact current or future product sales, as applicable, and potentially lead to regulator-directed risk evaluations and assessments, asset impairments, and/or consumer fraud, product liability and other litigation and claims, as well as product recalls or withdrawals, including our voluntary withdrawal of all lots of Oxbrtya in all markets where it is approved, and any regulatory or other impact on Oxbryta or other sickle cell disease assets."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 1600,
+  "seed": 7343,
+  "response_format": {
+    "type": "json_object",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "finance-selection-v003",
+      "title": "Finance model core material-risk selection",
+      "type": "object",
+      "required": [
+        "case_id",
+        "model_id",
+        "prompt_version",
+        "risks"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prompt_version": {
+          "type": "string",
+          "pattern": "^PV[0-9]{3,}$"
+        },
+        "risks": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "risk_id",
+              "risk_summary",
+              "risk_type",
+              "evidence_id"
+            ],
+            "properties": {
+              "risk_id": {
+                "type": "string",
+                "pattern": "^R[1-3]$"
+              },
+              "risk_summary": {
+                "type": "string",
+                "minLength": 4,
+                "maxLength": 120
+              },
+              "risk_type": {
+                "type": "string",
+                "enum": [
+                  "Strategic / Market / Technology",
+                  "Operational / Supply Chain",
+                  "Regulatory / Legal / Geopolitical",
+                  "Financial / Liquidity / Credit",
+                  "Cybersecurity / Data / Privacy",
+                  "Other"
+                ]
+              },
+              "evidence_id": {
+                "type": "string",
+                "pattern": "^E[0-9]{4}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

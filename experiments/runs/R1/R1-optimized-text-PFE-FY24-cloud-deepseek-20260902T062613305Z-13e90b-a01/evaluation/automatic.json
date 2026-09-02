@@ -1,0 +1,103 @@
+{
+  "evaluation_version": "AE002",
+  "parser_version": "PE001",
+  "run_id": "R1-optimized-text-PFE-FY24-cloud-deepseek-20260902T062613305Z-13e90b-a01",
+  "case_id": "PFE-FY24",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "prompt_version": "PV016",
+  "source_files": {
+    "candidate_response": "raw/response.txt",
+    "evaluation_input": "input/model_input.txt",
+    "raw_response_sha256": "7e49481b78df8c2d97ea5437a55fab81f117c3140404750f3f5c9a7232062420",
+    "model_input_sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a"
+  },
+  "parse": {
+    "passed": true,
+    "format": "plain-json",
+    "parsed_text_sha256": "7e49481b78df8c2d97ea5437a55fab81f117c3140404750f3f5c9a7232062420",
+    "errors": []
+  },
+  "schema": {
+    "passed": true,
+    "errors": []
+  },
+  "metadata": {
+    "passed": true,
+    "errors": []
+  },
+  "citations": {
+    "passed": false,
+    "input_page_count": 4,
+    "input_paragraph_count": 16,
+    "risk_checks": [
+      {
+        "risk_id": "R1",
+        "passed": false,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": false,
+        "whitespace_normalized_supported_by_cited_paragraphs": false,
+        "citation_match_mode": null,
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PFE-FY24-P013"
+        ],
+        "cited_pdf_pages": [
+          27
+        ],
+        "errors": [
+          "evidence_quote changes more than extraction-layout whitespace relative to input/model_input.txt",
+          "evidence_quote is not supported by the cited paragraph text after whitespace normalization"
+        ]
+      },
+      {
+        "risk_id": "R2",
+        "passed": true,
+        "exact_substring_in_input": true,
+        "supported_by_cited_paragraphs": true,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "raw-exact",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PFE-FY24-P006"
+        ],
+        "cited_pdf_pages": [
+          24
+        ],
+        "errors": []
+      },
+      {
+        "risk_id": "R3",
+        "passed": true,
+        "exact_substring_in_input": true,
+        "supported_by_cited_paragraphs": true,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "raw-exact",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PFE-FY24-P011"
+        ],
+        "cited_pdf_pages": [
+          27
+        ],
+        "errors": []
+      }
+    ],
+    "errors": [
+      "R1: evidence_quote changes more than extraction-layout whitespace relative to input/model_input.txt",
+      "R1: evidence_quote is not supported by the cited paragraph text after whitespace normalization"
+    ]
+  },
+  "status": "failed"
+}

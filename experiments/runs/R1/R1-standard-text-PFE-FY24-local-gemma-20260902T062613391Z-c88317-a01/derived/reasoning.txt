@@ -1,0 +1,72 @@
+Financial Filing Analyst.
+Use *only* the provided 10-K excerpt (Item 1A). No external info.
+Identify exactly three material risks.
+
+        1.  Concise risk summary.
+        2.  Primary risk type (from a specific list).
+        3.  Shortest sufficient verbatim quote.
+        4.  `PDF_PAGE` and `PRINTED_PAGE` (if different). Paragraph IDs if available.
+        5.  Evidence-grounded reasoning + possible financial/operating impact.
+        6.  Time horizon, monitoring indicators, disclosed mitigation, and uncertainty.
+Return exactly one JSON object, no Markdown fences. Follow `schemas/risk-output.schema.json`.
+`case_id: PFE-FY24`, `model_id: gemma4:26b-a4b-it-q4_K_M`, `prompt_version: PV001`.
+
+    *   *Risk 1: Managed Care/Pricing Pressures (P005).*
+        *   Summary: Increasing power of private payors (PBMs, MCOs) to control drug costs through formularies, rebates, and utilization management.
+        *   Type: Strategic / Market / Technology (or Regulatory/Legal/Geostrategy, but "Market" fits well). Let's look at the list: "Strategic / Market / Technology".
+        *   Quote: "The negotiating power of MCOs, PBMs and other private third-party payors has increased due to consolidation, and they... increasingly employ formularies to control costs..."
+        *   Impact: Failure to obtain pricing/formulary placement could reduce revenue.
+
+    *   *Risk 2: Patent Expiries/Generic Competition (P007/P008).*
+        *   Summary: Loss of patent protection and entry of generic/biosimilar competitors, especially significant between 2026-2030.
+        *   Type: Strategic / Market / Technology.
+        *   Quote: "We anticipate a more significant impact of reduced revenues from patent-based or regulatory exclusivity expiries in 2026 through 2030..."
+        *   Impact: Significant reduction in revenues from major products.
+
+    *   *Risk 3: Drug Pricing Regulation (IRA) (P013).*
+        *   Summary: US and international government regulations (like the Inflation Reduction Act) mandating price controls and reimbursement limits.
+        *   Type: Regulatory / Legal / Geopolitical.
+        *   Quote: "Our future results could be adversely affected by changes in U.S. and international governmental regulations that mandate price controls, create coverage criteria, or limit patient access to our products."
+        *   Impact: Lower revenues due to maximum fair prices and rebates.
+
+    *   *Risk 4: R&D Failure (P009/P016).*
+        *   Summary: High costs and uncertainty in the drug development process, where candidates may fail at any stage.
+        *   Type: Strategic / Market / Technology.
+        *   Quote: "Additionally, our product candidates can fail at any stage of the R&D process, and may not receive regulatory approval even after many years of R&D."
+        *   Impact: Failure to replenish product lines, impacting long-term growth and earnings.
+
+    *   *Risk 5: Counterfeit Products (P011).*
+        *   Summary: Counterfeit medicines pose health risks and threaten brand reputation and sales.
+        *   Type: Operational / Supply Chain (or Other).
+        *   Quote: "Counterfeits pose a significant risk to patient health andES health and safety... potentially impact our business through lost sales, product recalls, and possible litigation."
+        *   Impact: Lost sales, litigation, and loss of patient confidence.
+
+    *   *Selection 1: Managed Care/Pricing Pressures (P005).*
+    *   *Selection 2: Patent Expiries/Generic Competition (P007).*
+    *   *Selection 3: Drug Pricing Regulation/IRA (P013).*
+
+    *Refining Selection 1 (Managed Care):*
+    *   Summary: Increased negotiating power of private payors and use of cost-containment tools like formularies and rebates.
+    *   Type: Strategic / Market / Technology.
+    *   Quote: "The negotiating power of MCOs, PBMs and other private third-party payors has increased due to consolidation, and they... increasingly employ formularies to control costs"
+    *   Page: PDF 24, Printed 15. Paragraph: PFE-FY24-P005.
+    *   Reasoning: Payors are using tools to drive patients to lower-cost alternatives or demand higher rebates. This could lead to failure in obtaining favorable pricing or placement, directly reducing revenue.
+    *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Ongoing/Future. Indicators: Changes in formulary placement, rebate demands. Mitigation: Not explicitly detailed for this specific risk in P005 (though P001 mentions EHS, it's not for this). Uncertainty: The impact of IRA and further consolidation.
+
+    *Refining Selection 2 (Patent Expiries):*
+    *   Summary: Significant revenue loss expected due to patent and regulatory exclusivity expiries for key products between 2026 and 2030.
+    *   Type: Strategic / Market / Technology.
+    *   Quote: "We anticipate a more significant impact of reduced revenues from patent-based or regulatory exclusivity expiries in 2026 through 2030"
+    *   Page: PDF 25, Printed 16. Paragraph: PFE-FY24-P007.
+    *   Reasoning: The expiration of exclusivity allows generic/biosimilar competition, which reduces the company's ability to maintain high-margin branded sales.
+    *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: 2026-2030. Indicators: Expiry dates of patents/exclusivity. Mitigation: Not explicitly stated for this specific risk in the text (other than the need for R&D mentioned in P009). Uncertainty: Timing and impact of "at-risk" launches.
+
+    *Refining Selection 3 (Regulatory/IRA):*
+    *   Summary: US and international government regulations, specifically the Inflation Reduction Act (IRA), are implementing price controls and reimbursement limits.
+    *   Type: Regulatory / Legal / Geopolitical.
+    *   Quote: "The IRA directs HHS to set the prices of certain high-expenditure, single-source drugs and biologics covered under Medicare."
+    *   Page: PDF 27, Printed 18. Paragraph: PFE-FY24-P013.
+    *   Reasoning: Government-mandated price caps (like the MDPNP) and inflation-linked rebates can lead to lower revenues for high-expenditure drugs.
+    *   Horizon/Indicators/Mitigation/Uncertainty: Horizon: Ongoing (implementation through 2028). Indicators: CMS announcements of drugs selected for maximum fair price. Mitigation: Evaluating impact and legal challenges. Uncertainty: The full effect of the IRA and the outcome of legal challenges to MDPNP.
+
+    *

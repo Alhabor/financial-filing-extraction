@@ -1,0 +1,28 @@
+{
+  "id": "a1f523b3-9c9d-4f7c-bf16-942e5e317a09",
+  "object": "chat.completion",
+  "created": 1788330552,
+  "model": "deepseek-v4-flash-vision-exp",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"case_id\": \"PFE-FY24\",\n  \"model_id\": \"deepseek-v4-flash-vision-exp\",\n  \"prompt_version\": \"PV016\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R1\",\n      \"risk_summary\": \"Pricing pressures from managed care and government regulations, including the IRA, could reduce revenues.\",\n      \"risk_type\": \"Regulatory / Legal / Geopolitical\",\n      \"evidence_quote\": \"The drug pricing provisions of the IRA are being implemented over the next several years.\",\n      \"reasoning\": \"Not separately analyzed in the core extraction task.\",\n      \"financial_impact\": \"Not separately analyzed in the core extraction task.\",\n      \"time_horizon\": \"Not separately analyzed in the core extraction task.\",\n      \"mitigation\": \"Not separately analyzed in the core extraction task.\",\n      \"uncertainty\": \"Not separately analyzed in the core extraction task.\",\n      \"source_paragraph_ids\": [\"PFE-FY24-P013\"],\n      \"source_pages\": [27],\n      \"monitoring_indicators\": []\n    },\n    {\n      \"risk_id\": \"R2\",\n      \"risk_summary\": \"Competitive product launches and generic competition could erode sales of key products.\",\n      \"risk_type\": \"Strategic / Market / Technology\",\n      \"evidence_quote\": \"Competitive product launches have and may erode future sales of our products\",\n      \"reasoning\": \"Not separately analyzed in the core extraction task.\",\n      \"financial_impact\": \"Not separately analyzed in the core extraction task.\",\n      \"time_horizon\": \"Not separately analyzed in the core extraction task.\",\n      \"mitigation\": \"Not separately analyzed in the core extraction task.\",\n      \"uncertainty\": \"Not separately analyzed in the core extraction task.\",\n      \"source_paragraph_ids\": [\"PFE-FY24-P006\"],\n      \"source_pages\": [24],\n      \"monitoring_indicators\": []\n    },\n    {\n      \"risk_id\": \"R3\",\n      \"risk_summary\": \"Counterfeit products could harm patients and damage reputation, leading to lost sales and litigation.\",\n      \"risk_type\": \"Operational / Supply Chain\",\n      \"evidence_quote\": \"Counterfeits pose a significant risk to patient health and safety\",\n      \"reasoning\": \"Not separately analyzed in the core extraction task.\",\n      \"financial_impact\": \"Not separately analyzed in the core extraction task.\",\n      \"time_horizon\": \"Not separately analyzed in the core extraction task.\",\n      \"mitigation\": \"Not separately analyzed in the core extraction task.\",\n      \"uncertainty\": \"Not separately analyzed in the core extraction task.\",\n      \"source_paragraph_ids\": [\"PFE-FY24-P011\"],\n      \"source_pages\": [27],\n      \"monitoring_indicators\": []\n    }\n  ]\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6980,
+    "completion_tokens": 601,
+    "total_tokens": 7581,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 6980
+  },
+  "system_fingerprint": "aa8d6caccae4a22492bb51091cfc8eab"
+}

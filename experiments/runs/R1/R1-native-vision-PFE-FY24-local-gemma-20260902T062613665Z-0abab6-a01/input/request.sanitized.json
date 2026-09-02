@@ -1,0 +1,27 @@
+{
+  "model": "gemma4:26b-a4b-it-q4_K_M",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "# PV001 — Core evidence-first task\n\nYou are a financial filing analyst. Use only the supplied excerpt from a company's Form 10-K Item 1A, Risk Factors. Do not use external search, prior knowledge, analyst reports, or information not present in the supplied excerpt.\n\nIdentify exactly three material risks. For each risk:\n\n1. Give a concise risk summary.\n2. Classify it using exactly one primary risk type from this list:\n   - Strategic / Market / Technology\n   - Operational / Supply Chain\n   - Regulatory / Legal / Geopolitical\n   - Financial / Liquidity / Credit\n   - Cybersecurity / Data / Privacy\n   - Other\n3. Quote the shortest sufficient supporting passage verbatim. Do not paraphrase inside the quote.\n4. Provide the integer from `PDF_PAGE` in `source_pages`. If `PRINTED_PAGE` differs, preserve that distinction in your explanation. If paragraph IDs are supplied, provide them; otherwise use an empty list.\n5. Explain the evidence-grounded reasoning and the possible financial or operating impact.\n6. State a time horizon, monitoring indicators, disclosed mitigation, and uncertainty.\n\nSeparate what the filing explicitly states from your own analytical inference. Do not invent probabilities, dollar losses, forecasts, or causal facts. If the excerpt does not support a detail, say so explicitly.\n\nReturn exactly one JSON object and no Markdown fences. It must follow `schemas/risk-output.schema.json`, contain exactly three items in `risks`, and copy the `case_id`, `model_id`, and `prompt_version` from the harness metadata when that metadata is supplied.\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: PFE-FY24\n- model_id: gemma4:26b-a4b-it-q4_K_M\n- prompt_version: PV001"
+    },
+    {
+      "role": "user",
+      "content": "Analyze the supplied page images using the task and output contract.",
+      "images": [
+        "<local-image:experiments/runs/R1/R1-native-vision-PFE-FY24-local-gemma-20260902T062613665Z-0abab6-a01/input/images/page-01.png>",
+        "<local-image:experiments/runs/R1/R1-native-vision-PFE-FY24-local-gemma-20260902T062613665Z-0abab6-a01/input/images/page-02.png>",
+        "<local-image:experiments/runs/R1/R1-native-vision-PFE-FY24-local-gemma-20260902T062613665Z-0abab6-a01/input/images/page-03.png>",
+        "<local-image:experiments/runs/R1/R1-native-vision-PFE-FY24-local-gemma-20260902T062613665Z-0abab6-a01/input/images/page-04.png>"
+      ]
+    }
+  ],
+  "options": {
+    "temperature": 0,
+    "top_p": 1,
+    "num_predict": 1600,
+    "seed": 7343,
+    "num_ctx": 32768
+  }
+}

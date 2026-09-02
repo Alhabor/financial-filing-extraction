@@ -1,0 +1,85 @@
+{
+  "run_id": "R1-standard-text-PFE-FY24-finance-llama-20260902T062613353Z-b8ccee-a01",
+  "phase": "R1",
+  "round": "R1-standard-text",
+  "status": "preflight_failed",
+  "attempt": 1,
+  "case_id": "PFE-FY24",
+  "dataset_role": "reserve",
+  "model_alias": "finance-llama",
+  "model_display_name": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "model_config_version": "MC001",
+  "provider": "llama.cpp",
+  "interface": "llama.cpp-compatible",
+  "profile_id": "standard-text-v001",
+  "prompt_version": "PV001",
+  "output_schema_version": "risk-output-v001",
+  "pipeline_output_schema_version": null,
+  "rubric_version": "RV001",
+  "input": {
+    "path": "experiments/runs/R1/R1-standard-text-PFE-FY24-finance-llama-20260902T062613353Z-b8ccee-a01/input/model_input.txt",
+    "source_path": "data/processed/case_packets/PFE-FY24/packet.txt",
+    "evaluation_path": "input/model_input.txt",
+    "packet_id": "CP-PFE-FY24-v001",
+    "canonical_pdf_path": "data/raw/sec/PFE-FY24/filing.pdf",
+    "sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a",
+    "source_sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a",
+    "transform": null,
+    "evidence_catalog_version": null,
+    "evidence_record_count": null,
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "fallback_reason": null,
+    "image_count": 0
+  },
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": 8192
+  },
+  "tools": {
+    "external_search": false,
+    "rag": false,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": null,
+    "ended_at_utc": null,
+    "latency_ms": null,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": null
+  },
+  "environment": {
+    "git_commit": "83cd0a80e4bb38622f4507261b8eb99e4afbf473",
+    "runtime": "node v24.18.0",
+    "hardware": "darwin arm64"
+  },
+  "harness": {
+    "mode": "dry-run",
+    "network_called": false,
+    "credential_env_name": null,
+    "case_packet_version": "case-packet-spec-v001"
+  },
+  "artifacts": {
+    "model_input": "input/model_input.txt",
+    "prompt": "input/prompt.txt",
+    "modality": "input/modality.json",
+    "request_sanitized": "input/request.sanitized.json",
+    "model_config": "input/model_config.json",
+    "profile": "input/profile.json",
+    "checksums": "checksums.sha256",
+    "context_preflight": "evaluation/context_preflight.json"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": null,
+  "notes": "Tokenizer preflight rejected live execution: 6840 input + 1600 output exceeds 8192 context tokens."
+}

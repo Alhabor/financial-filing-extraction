@@ -1,0 +1,115 @@
+{
+  "run_id": "R1-optimized-text-PFE-FY24-finance-llama-20260902T062613665Z-297555-a01",
+  "phase": "R1",
+  "round": "R1-optimized-text",
+  "status": "completed",
+  "attempt": 1,
+  "case_id": "PFE-FY24",
+  "dataset_role": "reserve",
+  "model_alias": "finance-llama",
+  "model_display_name": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "model_config_version": "MC001",
+  "provider": "llama.cpp",
+  "interface": "llama.cpp-compatible",
+  "profile_id": "optimized-finance-pipeline-v009",
+  "prompt_version": "PV013",
+  "output_schema_version": "finance-selection-v003",
+  "pipeline_output_schema_version": "risk-output-v001",
+  "rubric_version": "RV001",
+  "input": {
+    "path": "experiments/runs/R1/R1-optimized-text-PFE-FY24-finance-llama-20260902T062613665Z-297555-a01/input/model_input.txt",
+    "source_path": "data/processed/case_packets/PFE-FY24/packet.txt",
+    "evaluation_path": "input/source_packet.txt",
+    "packet_id": "CP-PFE-FY24-v001",
+    "canonical_pdf_path": "data/raw/sec/PFE-FY24/filing.pdf",
+    "sha256": "7cfb9d8a2e9541b963fb0431aab26d29c94a5ec6ba9f7977881b2650fd35361b",
+    "source_sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a",
+    "transform": "evidence-catalog-v005",
+    "evidence_catalog_version": "evidence-catalog-v005",
+    "evidence_record_count": 26,
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "grouped_material_consequence_sentence_catalog",
+    "fallback_reason": null,
+    "image_count": 0
+  },
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": 8192
+  },
+  "tools": {
+    "external_search": false,
+    "rag": true,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": "2026-09-02T06:28:15.171Z",
+    "ended_at_utc": "2026-09-02T06:29:23.847Z",
+    "latency_ms": 68676,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": 2426,
+    "output_tokens": 189,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": null,
+    "reasoning_tokens": null
+  },
+  "environment": {
+    "git_commit": "83cd0a80e4bb38622f4507261b8eb99e4afbf473",
+    "runtime": "node v24.18.0",
+    "hardware": "darwin arm64"
+  },
+  "harness": {
+    "mode": "live",
+    "network_called": true,
+    "credential_env_name": null,
+    "case_packet_version": "case-packet-spec-v001",
+    "endpoint": "http://127.0.0.1:8080/v1/chat/completions"
+  },
+  "artifacts": {
+    "model_input": "input/model_input.txt",
+    "prompt": "input/prompt.txt",
+    "modality": "input/modality.json",
+    "request_sanitized": "input/request.sanitized.json",
+    "model_config": "input/model_config.json",
+    "profile": "input/profile.json",
+    "source_packet": "input/source_packet.txt",
+    "evidence_catalog": "input/evidence_catalog.json",
+    "checksums": "checksums.sha256",
+    "context_preflight": "evaluation/context_preflight.json",
+    "raw_response": "raw/response.json",
+    "raw_body": "raw/response.body.txt",
+    "events": "events.ndjson",
+    "raw_text": "raw/response.txt",
+    "selection": "derived/selection.json",
+    "pipeline_output": "derived/pipeline_output.json",
+    "locator_evaluation": "evaluation/locator.json",
+    "pipeline_parsed_output": "derived/parsed.pipeline.json",
+    "pipeline_evaluation": "evaluation/pipeline.json"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": null,
+  "notes": "derived/pipeline_output.json, schema, metadata, and citation validation completed successfully.",
+  "provider_response": {
+    "http_status": 200,
+    "request_id": "chatcmpl-7QJgCuqMcv5WmsQci5GTlTx5v0J8eMPr",
+    "finish_reason": "stop"
+  },
+  "pipeline": {
+    "locator_version": "EL001",
+    "locator_status": "passed",
+    "normalized_output_schema": "risk-output-v001"
+  },
+  "evaluation": {
+    "pipeline": {
+      "parser_version": "PE001",
+      "automatic_evaluation_version": "AE002",
+      "automatic_status": "passed"
+    }
+  }
+}

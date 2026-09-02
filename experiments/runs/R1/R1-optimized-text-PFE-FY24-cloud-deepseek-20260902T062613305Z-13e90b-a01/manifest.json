@@ -1,0 +1,104 @@
+{
+  "run_id": "R1-optimized-text-PFE-FY24-cloud-deepseek-20260902T062613305Z-13e90b-a01",
+  "phase": "R1",
+  "round": "R1-optimized-text",
+  "status": "partial",
+  "attempt": 1,
+  "case_id": "PFE-FY24",
+  "dataset_role": "reserve",
+  "model_alias": "cloud-deepseek",
+  "model_display_name": "DeepSeek-V4-Flash-Vision-Exp",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "model_config_version": "MC001",
+  "provider": "deepseek",
+  "interface": "chat-completions",
+  "profile_id": "optimized-deepseek-text-v005",
+  "prompt_version": "PV016",
+  "output_schema_version": "risk-output-core-v001",
+  "pipeline_output_schema_version": null,
+  "rubric_version": "RV001",
+  "input": {
+    "path": "experiments/runs/R1/R1-optimized-text-PFE-FY24-cloud-deepseek-20260902T062613305Z-13e90b-a01/input/model_input.txt",
+    "source_path": "data/processed/case_packets/PFE-FY24/packet.txt",
+    "evaluation_path": "input/model_input.txt",
+    "packet_id": "CP-PFE-FY24-v001",
+    "canonical_pdf_path": "data/raw/sec/PFE-FY24/filing.pdf",
+    "sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a",
+    "source_sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a",
+    "transform": null,
+    "evidence_catalog_version": null,
+    "evidence_record_count": null,
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "fallback_reason": null,
+    "image_count": 0
+  },
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": null
+  },
+  "tools": {
+    "external_search": false,
+    "rag": false,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": "2026-09-02T06:29:12.163Z",
+    "ended_at_utc": "2026-09-02T06:29:18.804Z",
+    "latency_ms": 6641,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": 6980,
+    "output_tokens": 601,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": null,
+    "reasoning_tokens": null
+  },
+  "environment": {
+    "git_commit": "83cd0a80e4bb38622f4507261b8eb99e4afbf473",
+    "runtime": "node v24.18.0",
+    "hardware": "darwin arm64"
+  },
+  "harness": {
+    "mode": "live",
+    "network_called": true,
+    "credential_env_name": "DEEPSEEK_API_KEY",
+    "case_packet_version": "case-packet-spec-v001",
+    "endpoint": "https://api.deepseek.com/chat/completions"
+  },
+  "artifacts": {
+    "model_input": "input/model_input.txt",
+    "prompt": "input/prompt.txt",
+    "modality": "input/modality.json",
+    "request_sanitized": "input/request.sanitized.json",
+    "model_config": "input/model_config.json",
+    "profile": "input/profile.json",
+    "checksums": "checksums.sha256",
+    "raw_response": "raw/response.json",
+    "raw_body": "raw/response.body.txt",
+    "events": "events.ndjson",
+    "raw_text": "raw/response.txt",
+    "parsed_output": "derived/parsed.json",
+    "automatic_evaluation": "evaluation/automatic.json"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": null,
+  "notes": "raw/response.txt was preserved, but automatic schema, metadata, or citation validation failed.",
+  "provider_response": {
+    "http_status": 200,
+    "request_id": "a1f523b3-9c9d-4f7c-bf16-942e5e317a09",
+    "finish_reason": "stop"
+  },
+  "evaluation": {
+    "automatic": {
+      "parser_version": "PE001",
+      "automatic_evaluation_version": "AE002",
+      "automatic_status": "failed"
+    }
+  }
+}

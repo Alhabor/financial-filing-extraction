@@ -1,0 +1,61 @@
+{
+  "case_id": "PFE-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV013",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Competition from generic manufacturers",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "In China, we expect to continue to face intense competition by certain generic manufacturers, which has resulted, and may result in the future, in price cuts and volume loss of some of our products.",
+      "source_paragraph_ids": [
+        "PFE-FY24-P007"
+      ],
+      "source_pages": [
+        25
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Regulatory proceedings or investigations",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "If these products or any of our other major products were to, or continue to (if applicable), experience loss of patent protection (if applicable), changes in prescription or vaccination purchasing or growth rates, reduced product demand, material product liability litigation, unexpected side effects or safety concerns, regulatory proceedings or investigations, lower governmental and/or regulatory confidence, negative publicity affecting doctor or patient confidence, pressure from competitive products, changes in recommendations and coverage, changes in labeling, pricing and access pressures, including those related to the IRA, or supply shortages or if a new, more effective product should be introduced, the adverse impact on our revenues could be significant and our revenue forecasts and expectations could prove to be inaccurate and we may fail to meet these expectations.",
+      "source_paragraph_ids": [
+        "PFE-FY24-P008"
+      ],
+      "source_pages": [
+        25
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Failure to mitigate cybersecurity threats",
+      "risk_type": "Cybersecurity / Data / Privacy",
+      "evidence_quote": "Failure to mitigate this threat could adversely impact consumers who use our products, potentially causing them harm.",
+      "source_paragraph_ids": [
+        "PFE-FY24-P011"
+      ],
+      "source_pages": [
+        27
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

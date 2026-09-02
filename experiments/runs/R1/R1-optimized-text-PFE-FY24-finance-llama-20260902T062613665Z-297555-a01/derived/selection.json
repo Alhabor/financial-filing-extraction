@@ -1,0 +1,25 @@
+{
+  "case_id": "PFE-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV013",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Competition from generic manufacturers",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_id": "E0045"
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Regulatory proceedings or investigations",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_id": "E0059"
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Failure to mitigate cybersecurity threats",
+      "risk_type": "Cybersecurity / Data / Privacy",
+      "evidence_id": "E0089"
+    }
+  ]
+}

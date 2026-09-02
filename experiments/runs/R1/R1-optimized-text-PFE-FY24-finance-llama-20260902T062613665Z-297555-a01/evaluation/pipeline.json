@@ -1,0 +1,97 @@
+{
+  "evaluation_version": "AE002",
+  "parser_version": "PE001",
+  "run_id": "R1-optimized-text-PFE-FY24-finance-llama-20260902T062613665Z-297555-a01",
+  "case_id": "PFE-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV013",
+  "source_files": {
+    "candidate_response": "derived/pipeline_output.json",
+    "evaluation_input": "input/source_packet.txt",
+    "raw_response_sha256": "5b93e3a8f8973b89104dc931b615262b406cd2b6d311be6408d78391bac45767",
+    "model_input_sha256": "a950bc8848f2a1d4c5c6f4fe4d078b2ce5f0a069189efa5ba1a3d231135d3b6a"
+  },
+  "parse": {
+    "passed": true,
+    "format": "plain-json",
+    "parsed_text_sha256": "6cb329a9d7563203ca4f78529dff6c8a104580bc165669f86246b124aa485e5b",
+    "errors": []
+  },
+  "schema": {
+    "passed": true,
+    "errors": []
+  },
+  "metadata": {
+    "passed": true,
+    "errors": []
+  },
+  "citations": {
+    "passed": true,
+    "input_page_count": 4,
+    "input_paragraph_count": 16,
+    "risk_checks": [
+      {
+        "risk_id": "R1",
+        "passed": true,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "whitespace-normalized",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PFE-FY24-P007"
+        ],
+        "cited_pdf_pages": [
+          25
+        ],
+        "errors": []
+      },
+      {
+        "risk_id": "R2",
+        "passed": true,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "whitespace-normalized",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PFE-FY24-P008"
+        ],
+        "cited_pdf_pages": [
+          25
+        ],
+        "errors": []
+      },
+      {
+        "risk_id": "R3",
+        "passed": true,
+        "exact_substring_in_input": true,
+        "supported_by_cited_paragraphs": true,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "raw-exact",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PFE-FY24-P011"
+        ],
+        "cited_pdf_pages": [
+          27
+        ],
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "status": "passed"
+}
