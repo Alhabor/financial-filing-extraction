@@ -1,0 +1,86 @@
+{
+  "version": "case-packet-spec-v001",
+  "dataset_role": "development",
+  "cases": [
+    {
+      "case_id": "NVDA-FY25",
+      "dataset_role": "development",
+      "selected_pages": [16, 17, 18, 19, 20, 23, 24],
+      "risk_candidates": [
+        {"id": "C1", "label": "Supply and demand mismatch", "anchor": "Long manufacturing lead times"},
+        {"id": "C2", "label": "Product defects and remediation", "anchor": "Defects in our products"},
+        {"id": "C3", "label": "Customer and channel concentration", "anchor": "We receive a significant amount of our revenue"}
+      ]
+    },
+    {
+      "case_id": "COIN-FY24",
+      "dataset_role": "development",
+      "selected_pages": [25, 26, 28, 29, 42, 43],
+      "risk_candidates": [
+        {"id": "C1", "label": "Revenue concentration", "anchor": "Our net revenue may be concentrated"},
+        {"id": "C2", "label": "Platform cyberattack and security breach", "anchor": "Cyberattacks and security breaches"},
+        {"id": "C3", "label": "Critical banking or insurance relationship", "anchor": "Loss of a critical banking"}
+      ]
+    },
+    {
+      "case_id": "PYPL-FY24",
+      "dataset_role": "development",
+      "selected_pages": [18, 21, 22, 23],
+      "risk_candidates": [
+        {"id": "C1", "label": "Cryptocurrency custody and custodian bankruptcy", "anchor": "Custodial arrangements to safeguard cryptocurrency assets"},
+        {"id": "C2", "label": "Payment network and bank fee changes", "anchor": "Changes to payment card networks"},
+        {"id": "C3", "label": "Credit product exposure", "anchor": "Our credit products expose"}
+      ]
+    },
+    {
+      "case_id": "BA-FY24",
+      "dataset_role": "development",
+      "selected_pages": [14, 15, 16, 17, 20, 21],
+      "risk_candidates": [
+        {"id": "C1", "label": "Commercial airplane production and quality", "anchor": "Our Commercial Airplanes business depends"},
+        {"id": "C2", "label": "Labor union work stoppage", "anchor": "Some of our and our suppliers’ workforces are represented"},
+        {"id": "C3", "label": "Spirit AeroSystems acquisition", "anchor": "Our pending acquisition of Spirit"}
+      ]
+    },
+    {
+      "case_id": "JPM-FY24",
+      "dataset_role": "reserve",
+      "selected_pages": [15, 16, 17, 19, 20],
+      "risk_candidates": [
+        {"id": "C1", "label": "Resolution loss absorption", "anchor": "Holders of JPMorgan Chase"},
+        {"id": "C2", "label": "Less predictable legal and regulatory frameworks", "anchor": "less predictable legal"},
+        {"id": "C3", "label": "Interest rate and credit spread changes", "anchor": "Changes in interest rates and credit spreads"}
+      ]
+    },
+    {
+      "case_id": "TSLA-FY24",
+      "dataset_role": "reserve",
+      "selected_pages": [18, 19, 20, 21, 23],
+      "risk_candidates": [
+        {"id": "C1", "label": "Battery cell supply and materials", "anchor": "We will need to maintain and significantly grow"},
+        {"id": "C2", "label": "Product liability claims", "anchor": "We may be required to defend or insure against product liability"},
+        {"id": "C3", "label": "Dependence on Elon Musk", "anchor": "We are highly dependent on the services of Elon"}
+      ]
+    },
+    {
+      "case_id": "PFE-FY24",
+      "dataset_role": "reserve",
+      "selected_pages": [24, 25, 27, 28],
+      "risk_candidates": [
+        {"id": "C1", "label": "Managed care and payer pressure", "anchor": "MANAGED CARE TRENDS"},
+        {"id": "C2", "label": "Product and revenue concentration", "anchor": "CONCENTRATION"},
+        {"id": "C3", "label": "Pricing and reimbursement constraints", "anchor": "PRICING AND REIMBURSEMENT"}
+      ]
+    },
+    {
+      "case_id": "META-FY24",
+      "dataset_role": "reserve",
+      "selected_pages": [17, 18, 19, 20, 21, 22],
+      "risk_candidates": [
+        {"id": "C1", "label": "User retention and engagement", "anchor": "If we fail to retain existing users"},
+        {"id": "C2", "label": "Advertising revenue dependence", "anchor": "We generate substantially all of our revenue"},
+        {"id": "C3", "label": "Ad targeting and measurement signals", "anchor": "Our ad targeting and measurement tools"}
+      ]
+    }
+  ]
+}

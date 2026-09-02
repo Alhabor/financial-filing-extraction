@@ -1,0 +1,339 @@
+{
+  "packet_id": "CP-TSLA-FY24-v001",
+  "case_id": "TSLA-FY24",
+  "paragraphs": [
+    {
+      "paragraph_id": "TSLA-FY24-P001",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "page_text_line_start": 1,
+      "page_text_line_end": 8,
+      "text": "to a number of uncertainties inherent in all new manufacturing operations, including ongoing compliance with regulatory requirements, procurement and\nmaintenance of construction, environmental and operational licenses and approvals for additional expansion, supply chain constraints, hiring, training and\nretention of qualified employees and the pace of bringing production equipment and processes online with the capability to manufacture high-quality\nunits at scale. Moreover, we will have to establish and ramp production of our proprietary battery cells and packs at our new factories, and we additionally\nintend to incorporate sequential design and manufacturing changes into vehicles manufactured at each new factory. If we experience any issues or delays\nin meeting our projected timelines, costs, capital efficiency and production capacity for our new factories, expanding and managing teams to implement\niterative design and production changes there, maintaining and complying with the terms of any debt financing that we obtain to fund them or generating\nand maintaining demand for the vehicles we manufacture there, our business, prospects, operating results and financial condition may be harmed.",
+      "text_sha256": "b34e7072996b656be1f3190a07ebc45b85d95e9c811ae89375a0a7898a20308e"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "page_text_line_start": 11,
+      "page_text_line_end": 18,
+      "text": "We may be unable to grow our global product sales, delivery and installation capabilities and our servicing and vehicle charging\n     networks, or we may be unable to accurately project and effectively manage our growth.\n      Our success will depend on our ability to continue to expand our sales capabilities. We are targeting a global mass demographic with a broad range\nof potential customers, in which we have relatively limited experience projecting demand and pricing our products. We currently produce numerous\ninternational variants at a limited number of factories, and if our specific demand expectations for these variants prove inaccurate, we may not be able to\ntimely generate deliveries matched to the vehicles that we produce in the same timeframe or that are commensurate with the size of our operations in a\ngiven region. Likewise, as we develop and grow our energy products and services worldwide, our success will depend on our ability to correctly forecast\ndemand in various markets.",
+      "text_sha256": "4e4fa1a2cded658d4ddc3ee307d7095fd8a661dce703b8a4d53a5f02824b0db7"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "page_text_line_start": 20,
+      "page_text_line_end": 25,
+      "text": "Because we do not have independent dealer networks, we are responsible for delivering all of our vehicles to our customers. As our production\nvolumes continue to grow, we have faced in the past, and may face challenges with deliveries at increasing volumes, particularly in international markets\nrequiring significant transit times. We have also deployed a number of delivery models, such as deliveries to customers’ homes and workplaces and\ntouchless deliveries, but there is no guarantee that such models will be scalable or be accepted globally. Likewise, as we ramp our energy products, we\nare working to substantially increase our production and installation capabilities. If we experience production delays or inaccurately forecast demand, our\nbusiness, financial condition and operating results may be harmed.",
+      "text_sha256": "5e0d0cc6cd624b1f2b6f053f4a2e66b4a915577ba274764885cb9030abffbbc2"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "page_text_line_start": 27,
+      "page_text_line_end": 31,
+      "text": "Moreover, because of our unique expertise with our vehicles, we recommend that our vehicles be serviced by us or by certain authorized\nprofessionals. If we experience delays in adding servicing capacity or servicing our vehicles efficiently, or experience unforeseen issues with the reliability\nof our vehicles, particularly higher-volume additions to our fleet such as Model 3 and Model Y, it could overburden our servicing capabilities and parts\ninventory. Similarly, the increasing number of Tesla vehicles also requires us to continue to rapidly increase the number of our Supercharger stations and\nconnectors throughout the world.",
+      "text_sha256": "93be3c77084f9bacfa84a819d3d81ca0cdbd2f28d35feb40d351fd9263baf282"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "page_text_line_start": 33,
+      "page_text_line_end": 39,
+      "text": "There is no assurance that we will be able to ramp our business to meet our sales, delivery, installation, servicing and vehicle charging targets\nglobally, that our projections on which such targets are based will prove accurate or that the pace of growth or coverage of our customer infrastructure\nnetwork will meet customer expectations. These plans require significant cash investments and management resources and there is no guarantee that\nthey will generate additional sales or installations of our products, or that we will be able to avoid cost overruns or be able to hire additional personnel to\nsupport them. As we expand, we will also need to ensure our compliance with regulatory requirements in various jurisdictions applicable to the sale,\ninstallation and servicing of our products, the sale or dispatch of electricity related to our energy products and the operation of Superchargers. If we fail to\nmanage our growth effectively, it may harm our brand, business, prospects, financial condition and operating results.",
+      "text_sha256": "80a0bd9d11c20a5b9805300a4dfc53d051b60cb4f4ce4375e403d5b4f3c89146"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P006",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "page_text_line_start": 42,
+      "page_text_line_end": 51,
+      "text": "We will need to maintain and significantly grow our access to battery cells, including through the development and manufacture of\n     our own cells, and control our related costs.\n      We are dependent on the continued supply of lithium-ion battery cells for our vehicles and energy storage products, and we will require substantially\nmore cells to grow our business according to our plans. Currently, we rely on suppliers such as Panasonic and Contemporary Amperex Technology Co.\nLimited (CATL) for these cells. We have to date fully qualified only a very limited number of such suppliers and have limited flexibility in changing\nsuppliers. Any disruption in the supply of battery cells from our suppliers could limit production of our vehicles and energy storage products. In the long\nterm, we intend to supplement cells from our suppliers with cells manufactured by us, which we believe will be more efficient, manufacturable at greater\nvolumes and more cost-effective than currently available cells. However, our efforts to develop and manufacture such battery cells have required, and\nmay continue to require, significant investments, and there can be no assurance that we will be able to achieve these targets in the timeframes that we\nhave planned or at all. If we are",
+      "text_sha256": "df07f0e41ca0af6b8cf90883abb992d426171ba09aaefef04c81524e25853405"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P007",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 1,
+      "page_text_line_end": 2,
+      "text": "unable to do so, we may have to curtail our planned vehicle and energy storage product production or procure additional cells from suppliers at\npotentially greater costs, either of which may harm our business and operating results.",
+      "text_sha256": "5ffa054deb3473cd34387edde2ae01a43242c750468967e72b07b1a4992d9615"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P008",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 4,
+      "page_text_line_end": 11,
+      "text": "In addition, the cost and mass production of battery cells, whether manufactured by our suppliers or by us, depends in part upon the prices and\navailability of raw materials such as lithium, nickel, cobalt and/or other metals. The prices for these materials fluctuate and their available supply may be\nunstable, depending on market conditions and global demand for these materials. For example, as a result of increased global production of electric\nvehicles and energy storage products, suppliers of these raw materials may be unable to meet our volume needs. Additionally, our suppliers may not be\nwilling or able to reliably meet our timelines or our cost and quality needs, which may require us to replace them with other sources. Any reduced\navailability of these materials may impact our access to cells and our growth, and any increases in their prices may reduce our profitability if we cannot\nrecoup such costs through increased prices. Moreover, our inability to meet demand and any product price increases may harm our brand, growth,\nprospects and operating results.",
+      "text_sha256": "a2c6f3558e2424afc4c6012744a278781364ea7a8bd38defed6eeb66af4a0619"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P009",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 14,
+      "page_text_line_end": 18,
+      "text": "Our future growth and success are dependent upon consumers’ demand for electric vehicles and specifically our vehicles in an\n     automotive industry that is generally competitive, cyclical and volatile.\n      Though we continue to see increased interest and adoption of electric vehicles, if the market for electric vehicles in general and Tesla vehicles in\nparticular does not develop as we expect, develops more slowly than we expect, or if demand for our vehicles decreases in our markets or our vehicles\ncompete with each other, our business, prospects, financial condition and operating results may be harmed.",
+      "text_sha256": "3beb3db1355da2a000d7451632a5097ca2632cd459be966191f0eeb9119a6d46"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P010",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 20,
+      "page_text_line_end": 21,
+      "text": "In addition, electric vehicles still constitute a small percentage of overall vehicle sales. As a result, the market for our vehicles could be negatively\naffected by numerous factors, such as:",
+      "text_sha256": "cd7b01209342412424122b526b78250519aeaad00e080273a27026b53618de9f"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P011",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 23,
+      "page_text_line_end": 23,
+      "text": "•   perceptions about electric vehicle features, quality, safety, performance and cost;",
+      "text_sha256": "af50c73a4f013564376da4cc69ef959b0284aa836c363d2dcf9ea230bf1f8c23"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P012",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 25,
+      "page_text_line_end": 25,
+      "text": "•   perceptions about the limited range over which electric vehicles may be driven on a single battery charge, and access to charging facilities;",
+      "text_sha256": "94fc9cbd33b308526e89c4598c9490294a5a11a6923c1d4c40dca5f9d03812e3"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P013",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 27,
+      "page_text_line_end": 28,
+      "text": "•   competition, including from other types of alternative fuel vehicles, plug-in hybrid electric vehicles and high fuel-economy internal combustion\n          engine vehicles;",
+      "text_sha256": "3ae5777eb79236c9ea76b0f02f9a0e0ef2a596341dacf9a43a226d670c46f2ad"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P014",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 30,
+      "page_text_line_end": 30,
+      "text": "•   volatility in the cost of oil, gasoline and energy;",
+      "text_sha256": "0738499db8f2ec8662adbc228ca5ea5135381bfaf0f009219af9777b36477200"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P015",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 32,
+      "page_text_line_end": 32,
+      "text": "•   government regulations and economic incentives and conditions; and",
+      "text_sha256": "430b2fce889389acbac3657475101144c07297d572a4a95ac7a1c2ab9fa4bca7"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P016",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 34,
+      "page_text_line_end": 34,
+      "text": "•   concerns about our future viability.",
+      "text_sha256": "6a1c0f88da7c4f4b127d28d7fca1e1ae6832c5ade61ba1f37bb818d70cafe2bb"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P017",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 36,
+      "page_text_line_end": 43,
+      "text": "The target demographics for our vehicles are highly competitive. Sales of vehicles in the automotive industry tend to be cyclical in many markets,\nwhich may expose us to further volatility. We also cannot predict the duration or direction of current global trends or their sustained impact on consumer\ndemand. Ultimately, we continue to monitor macroeconomic conditions to remain flexible and to optimize and evolve our business as appropriate, and\nattempt to accurately project demand and infrastructure requirements globally and deploy our production, workforce and other resources accordingly.\nRising interest rates may lead to consumers to increasingly pull back spending, including on our products, which may harm our demand, business and\noperating results. If we experience unfavorable global market conditions, or if we cannot or do not maintain operations at a scope that is commensurate\nwith such conditions or are later required to or choose to suspend such operations again, our business, prospects, financial condition and operating results\nmay be harmed.",
+      "text_sha256": "7e9a0b447f478e994aa0feeba196ae0335f708c5e5fb41228d3a121deac7216c"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P018",
+      "pdf_page": 19,
+      "printed_page": 16,
+      "page_text_line_start": 46,
+      "page_text_line_end": 56,
+      "text": "We face strong competition for our products and services from a growing list of established and new competitors.\n      The worldwide automotive market is highly competitive today and we expect it will become even more so in the future. A significant and growing\nnumber of established and new automobile manufacturers, as well as other companies, have entered, or are reported to have plans to enter, the market\nfor electric and other alternative fuel vehicles, including hybrid, plug-in hybrid and fully electric vehicles, as well as the market for self-driving technology\nand other vehicle applications and software platforms. In some cases, our competitors offer or will offer electric vehicles in important markets such as\nChina and Europe, and/or have announced an intention to produce electric vehicles exclusively at some point in the future. In addition, certain\ngovernment and economic incentives which provide benefits to manufacturers who assemble domestically or have local suppliers, may provide a greater\nbenefit to our competitors, which could negatively impact our profitability. Many of our competitors have significantly more or better-established\nresources than we do to devote to the design, development, manufacturing, distribution, promotion, sale and support of their products. Increased\ncompetition could result in our lower vehicle unit sales, price reductions, revenue shortfalls, loss of customers and loss of market share, which may harm\nour business, financial condition and operating results.",
+      "text_sha256": "93ebd1393f863dd43306302a37cd0c3a651167b66b0077b415c0e01b3b7a6039"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P019",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 1,
+      "page_text_line_end": 3,
+      "text": "We also face competition in our energy generation and storage business from other manufacturers, developers, installers and service providers of\ncompeting energy technologies, as well as from large utilities. In addition, decreases in the retail or wholesale prices of electricity from utilities or other\nrenewable energy sources could make our products less attractive to customers and lead to an increased rate of customer defaults.",
+      "text_sha256": "4a4f51af660198d9e5923e05708be44f6a269120dd4bf98ddc1b0ad353bb8f10"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P020",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 6,
+      "page_text_line_end": 6,
+      "text": "Risks Related to Our Operations",
+      "text_sha256": "5b914271b65974a391379dccb153a661413375ce774e0b00bd1ec57dfd6292a6"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P021",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 8,
+      "page_text_line_end": 9,
+      "text": "We may experience issues with lithium-ion cells or other components manufactured at our Gigafactories, which may harm the\n     production and profitability of our vehicle and energy storage products.",
+      "text_sha256": "44be5bcc848c03fe20a5ff16beede92e32cffb6504b8f4c9ea01e98db53aa0d6"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P022",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 11,
+      "page_text_line_end": 15,
+      "text": "Our plan to grow the volume and profitability of our vehicles and energy storage products depends on significant lithium-ion battery cell production,\nincluding by our partner Panasonic at Gigafactory Nevada. We also produce several vehicle components at our Gigafactories, such as battery modules and\npacks and drive units, and manufacture energy storage products. If we are unable to or otherwise do not maintain and grow our respective operations, or\nif we are unable to do so cost-effectively or hire and retain highly-skilled personnel there, our ability to manufacture our products profitably would be\nlimited, which may harm our business and operating results.",
+      "text_sha256": "b40bc3b273a403ca6f162470097c8ca722024f95af1adf051fdb26634ddfdacb"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P023",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 17,
+      "page_text_line_end": 20,
+      "text": "Finally, the high volumes of lithium-ion cells and battery modules and packs manufactured by us and by our suppliers are stored and recycled at our\nvarious facilities. Any mishandling of these products may cause disruption to the operation of such facilities. While we have implemented safety\nprocedures related to the handling of the cells, there can be no assurance that a safety issue or fire related to the cells would not disrupt our operations.\nAny such disruptions or issues may harm our brand and business.",
+      "text_sha256": "7ef14ac732e3fbd7669aa586abd90729fd0e29f3539934156a9ddfa54ddb7d3c"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P024",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 22,
+      "page_text_line_end": 23,
+      "text": "We face risks associated with maintaining and expanding our international operations, including unfavorable and uncertain\n     regulatory, political, economic, tax and labor conditions.",
+      "text_sha256": "0ac91edc9bbd0678518276b97085d861dd9ec94ae18f3468759229a122d78319"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P025",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 25,
+      "page_text_line_end": 34,
+      "text": "We are subject to legal and regulatory requirements, political uncertainty and social, environmental and economic conditions in numerous\njurisdictions, including markets in which we generate significant sales, over which we have little control and which are inherently unpredictable. Our\noperations in such jurisdictions, particularly as a company based in the U.S., with additional manufacturing operations in China and Europe, create risks\nrelating to conforming our products to regulatory and safety requirements and charging and other electric infrastructures; organizing local operating\nentities; establishing, staffing and managing foreign business locations; attracting local customers; navigating foreign government taxes, regulations and\npermit requirements; enforceability of our contractual rights; trade restrictions, customs regulations, tariffs and price or exchange controls; and\npreferences in foreign nations for domestically manufactured products. For example, we monitor tax legislation changes on a global basis, including\nchanges arising as a result of the Organization for Economic Cooperation and Development’s multi-jurisdictional plan of action to address base erosion\nand profit shifting. Such conditions may increase our costs, impact our ability to sell our products and require significant management attention, and may\nharm our business if we are unable to manage them effectively.",
+      "text_sha256": "834b372520fd6f9706f23e96a0373674b2e2e1f84c1edcc60c4f01c357b31a9b"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P026",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 36,
+      "page_text_line_end": 37,
+      "text": "Our business may suffer if our products or features contain defects, fail to perform as expected or take longer than expected to\n     become fully functional.",
+      "text_sha256": "3176ce5707e8ba80e352d1fcf46f362bf6fdd6432850fe66cc6561084f1890f2"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P027",
+      "pdf_page": 20,
+      "printed_page": 17,
+      "page_text_line_start": 39,
+      "page_text_line_end": 51,
+      "text": "If our products contain design or manufacturing defects, whether relating to our software or hardware, that cause them not to perform as designed\nor intended or that require repair, or certain features of our vehicles such as new Autopilot or FSD (Supervised) features take longer than expected to\nbecome enabled, are legally restricted or become subject to onerous regulation, our ability to develop, market and sell our products and services may be\nharmed, and we may experience delivery delays, product recalls, allegations of product liability, breach of warranty and related consumer protection\nclaims and significant warranty and other expenses. While we are continuously working to develop and improve our products’ capability and performance,\nthere is no guarantee that any incremental changes in the specific software or equipment we deploy in our vehicles over time will not result in initial\nfunctional disparities from prior iterations or will perform as forecast in the timeframe we anticipate, or at all. Although we attempt to remedy any issues\nwe observe in our products as effectively and rapidly as possible, such efforts may not be timely, may hamper production or may not completely satisfy\nour customers. We have performed, and continue to perform, extensive internal testing on our products and features, though, like the rest of the industry,\nwe currently have a limited frame of reference by which to evaluate certain aspects of their long-term quality, reliability, durability and performance\ncharacteristics, including exposure to or consequence of external attacks. While we attempt to identify and address or remedy defects we identify pre-\nproduction and sale, there may be latent defects that we may be unable to detect or control for in our products, and thereby address, prior to their sale to\nor installation for customers.",
+      "text_sha256": "98993d9d06d40e8b0e5fdead0b53b78af13e53904ba57c8ab9607e97c04cd8bc"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P028",
+      "pdf_page": 21,
+      "printed_page": 18,
+      "page_text_line_start": 1,
+      "page_text_line_end": 16,
+      "text": "We may be required to defend or insure against product liability claims.\n        The automobile industry generally experiences significant product liability claims, and as such we face the risk of such claims in the event our\nvehicles do not perform or are claimed to not have performed as expected. As is true for other automakers, our vehicles have been involved and we\nexpect in the future will be involved in accidents resulting in death or personal injury, and such accidents where Autopilot, Enhanced Autopilot or FSD\n(Supervised) features are engaged are the subject of significant public attention, especially in light of NHTSA’s Standing General Order requiring reports\nregarding certain crashes involving vehicles with advanced driver assistance systems. We have experienced, and we expect to continue to face, claims\nand regulatory scrutiny arising from or related to misuse or claimed failures or alleged misrepresentations of such new technologies that we are\npioneering. In addition, the battery packs that we produce make use of lithium-ion cells. On rare occasions, lithium-ion cells can rapidly release the energy\nthey contain by venting smoke and flames in a manner that can ignite nearby materials as well as other lithium-ion cells. While we have designed our\nbattery packs to passively contain any single cell’s release of energy without spreading to neighboring cells, there can be no assurance that a field or\ntesting failure of our vehicles or other battery packs that we produce will not occur, in particular due to a high-speed crash. Likewise, as our solar energy\nsystems and energy storage products generate and store electricity, they have the potential to fail or cause injury to people or property. Any product\nliability claim may subject us to lawsuits and substantial monetary damages, product recalls or redesign efforts, and even a meritless claim may require\nus to defend it, all of which may generate negative publicity and be expensive and time-consuming. In most jurisdictions, we generally self-insure against\nthe risk of product liability claims for vehicle exposure, meaning that any product liability claims will likely have to be paid from company funds and not by\ninsurance.",
+      "text_sha256": "07f9d11babec76e0cbe8f0c567297744e6d761de422fb42c9e810780e519e546"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P029",
+      "pdf_page": 21,
+      "printed_page": 18,
+      "page_text_line_start": 19,
+      "page_text_line_end": 28,
+      "text": "We will need to maintain public credibility and confidence in our long-term business prospects in order to succeed.\n       In order to maintain and grow our business, we must maintain credibility and confidence among customers, suppliers, analysts, investors, ratings\nagencies and other parties in our long-term financial viability and business prospects. Maintaining such confidence may be challenging due to our limited\noperating history relative to established competitors; customer unfamiliarity with our products; any delays we may experience in scaling manufacturing,\ndelivery and service operations to meet demand; competition and uncertainty regarding the future of electric vehicles or our other products and services;\nour quarterly production and sales performance compared with market expectations; and other factors including those over which we have no control. In\nparticular, Tesla’s products, business, results of operations, and statements and actions of Tesla and its management are subject to significant amounts of\ncommentary by a range of third parties. Such attention can include criticism, which may be exaggerated or unfounded, such as speculation regarding the\nsufficiency or stability of our management team. Any such negative perceptions, whether caused by us or not, may harm our business and make it more\ndifficult to raise additional funds if needed.",
+      "text_sha256": "5dcc09d8c4bb60a5098a8c49bc969af6899015f7a0812b8ca554fa63fcb89d5f"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P030",
+      "pdf_page": 21,
+      "printed_page": 18,
+      "page_text_line_start": 31,
+      "page_text_line_end": 39,
+      "text": "We may be unable to effectively grow, or manage the compliance, residual value, financing and credit risks related to, our various\n     financing programs.\n      We offer financing arrangements for our vehicles in North America, Europe and Asia primarily ourselves and through various financial institutions.\nWe also currently offer vehicle financing arrangements directly through our local subsidiaries in certain markets. Depending on the country, such\narrangements are available for specified models and may include operating leases directly with us under which we typically receive only a very small\nportion of the total vehicle purchase price at the time of lease, followed by a stream of payments over the term of the lease. We have also offered various\narrangements for customers of our solar energy systems whereby they pay us a fixed payment to lease or finance the purchase of such systems or\npurchase electricity generated by them. If we do not successfully monitor and comply with applicable national, state and/or local financial regulations and\nconsumer protection laws governing these transactions, we may become subject to enforcement actions or penalties.",
+      "text_sha256": "1a4bdea046273a2f8b7a088be5291b4d792197ed330ca63bfe06d39f6bc1a3ff"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P031",
+      "pdf_page": 21,
+      "printed_page": 18,
+      "page_text_line_start": 41,
+      "page_text_line_end": 49,
+      "text": "The profitability of any directly-leased vehicles returned to us at the end of their leases depends on our ability to accurately project our vehicles’\nresidual values at the outset of the leases, and such values may fluctuate prior to the end of their terms depending on various factors such as supply and\ndemand of our used vehicles, economic cycles, legislative changes and the pricing of new vehicles. We have made in the past and may make in the future\ncertain adjustments to our prices from time to time in the ordinary course of business, which may impact the residual values of our vehicles and reduce\nthe profitability of our vehicle leasing program. The funding and growth of this program also rely on our ability to secure adequate financing and/or\nbusiness partners. If we are unable to adequately fund our leasing program through internal funds, partners or other financing sources, and compelling\nalternative financing programs are not available for our customers who may expect or need such options, we may be unable to grow our vehicle\ndeliveries. Furthermore, if our vehicle leasing business grows substantially, our business may suffer if we cannot effectively manage the resulting greater\nlevels of residual risk.",
+      "text_sha256": "f9e1e47d0fe59db6f0412663aeace53d1953c99951a2469a781ebbc5b04d20e1"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P032",
+      "pdf_page": 23,
+      "printed_page": 20,
+      "page_text_line_start": 1,
+      "page_text_line_end": 5,
+      "text": "We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer.\n      We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer. Although Mr. Musk spends significant\ntime with Tesla and is highly active in our management, he does not devote his full time and attention to Tesla. For example: Mr. Musk also currently\nholds management positions at Space Exploration Technologies Corp., X Corp., X.AI Corp., Neuralink Corp. and The Boring Company, and is involved in\nother ventures and with the Department of Government Efficiency.",
+      "text_sha256": "d83de5ac24cb531050c90b47f7e1d3887947206f1b715f37aba46c35ac82930b"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 20,
+      "page_text_line_start": 8,
+      "page_text_line_end": 18,
+      "text": "Our information technology systems or data, or those of our service providers or customers or users could be subject to cyber-\n     attacks or other security incidents, which could result in data breaches, intellectual property theft, claims, litigation, regulatory\n     investigations, significant liability, reputational damage and other adverse consequences.\n      We continue to expand our information technology systems as our operations grow, such as product data management, procurement, inventory\nmanagement, production planning and execution, sales, service and logistics, dealer management, financial, tax and regulatory compliance systems. This\nincludes the implementation of new internally developed systems and the deployment of such systems in the U.S. and abroad. While, we maintain\ninformation technology measures designed to protect us against intellectual property theft, data breaches, sabotage and other external or internal cyber-\nattacks or misappropriation, our systems and those of our service providers are potentially vulnerable to malware, ransomware, viruses, denial-of-service\nattacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, breakdowns,\ndamage, interruptions, system malfunctions, power outages, terrorism, acts of vandalism, security breaches, security incidents, inadvertent or intentional\nactions by employees or other third parties, and other cyber-attacks.",
+      "text_sha256": "f0cbd9d62d5c5bd07b3ae5723727a3314bcaf27b34863e6bd48d71db2e1f5dac"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P034",
+      "pdf_page": 23,
+      "printed_page": 20,
+      "page_text_line_start": 20,
+      "page_text_line_end": 25,
+      "text": "To the extent any security incident results in unauthorized access or damage to or acquisition, use, corruption, loss, destruction, alteration or\ndissemination of our data, including intellectual property and personal information, or our products or vehicles, or for it to be believed or reported that any\nof these occurred, it could disrupt our business, harm our reputation, compel us to comply with applicable data breach notification laws, subject us to time\nconsuming, distracting and expensive litigation, regulatory investigation and oversight, mandatory corrective action, require us to verify the correctness\nof database contents, or otherwise subject us to liability under laws, regulations and contractual obligations, including those that protect the privacy and\nsecurity of personal information. This could result in increased costs to us and result in significant legal and financial exposure and/or reputational harm.",
+      "text_sha256": "be59361cd00e8e498b58cebfb38fa9aecbbe9f84593f4910c125e5037206d76f"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P035",
+      "pdf_page": 23,
+      "printed_page": 20,
+      "page_text_line_start": 27,
+      "page_text_line_end": 32,
+      "text": "We also rely on service providers, and similar incidents relating to their information technology systems could also have a material adverse effect on\nour business. There have been and may continue to be significant supply chain attacks. Our service providers, including our workforce management\nsoftware provider, have been subject to ransomware and other security incidents, and we cannot guarantee that our or our service providers’ systems\nhave not been breached or that they do not contain exploitable defects, bugs, or vulnerabilities that could result in a security incident, or other disruption\nto, our or our service providers’ systems. Our ability to monitor our service providers’ security measures is limited, and, in any event, malicious third\nparties may be able to circumvent those security measures.",
+      "text_sha256": "1825b12d69d4070c40ba5f49ccf43d5605f109c1a0724bcd3bc72bbe58814e25"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P036",
+      "pdf_page": 23,
+      "printed_page": 20,
+      "page_text_line_start": 34,
+      "page_text_line_end": 38,
+      "text": "Further, the implementation, maintenance, segregation and improvement of these systems require significant management time, support and cost,\nand there are inherent risks associated with developing, improving and expanding our core systems as well as implementing new systems and updating\ncurrent systems, including disruptions to the related areas of business operation. These risks may affect our ability to manage our data and inventory,\nprocure parts or supplies or manufacture, sell, deliver and service products, adequately protect our intellectual property or achieve and maintain\ncompliance with, or realize available benefits under, tax laws and other applicable regulations.",
+      "text_sha256": "10ce76696d5e955a06ee2ecb3be110bc729c0062d930bbe4a3729adb802bf619"
+    },
+    {
+      "paragraph_id": "TSLA-FY24-P037",
+      "pdf_page": 23,
+      "printed_page": 20,
+      "page_text_line_start": 40,
+      "page_text_line_end": 44,
+      "text": "Moreover, if we do not successfully implement, maintain or expand these systems as planned, our operations may be disrupted, our ability to\naccurately and/or timely report our financial results could be impaired and deficiencies may arise in our internal control over financial reporting, which\nmay impact our ability to certify our financial results. Moreover, our proprietary information, including intellectual property and personal information,\ncould be compromised or misappropriated and our reputation may be adversely affected. If these systems or their functionality do not operate as we\nexpect them to, we may be required to expend significant resources to make corrections or find alternative sources for performing these functions.",
+      "text_sha256": "44726f8d66c6fad30b131d3fb752dbee88d9d71c1eac04c8dca2a4c372c437bc"
+    }
+  ]
+}

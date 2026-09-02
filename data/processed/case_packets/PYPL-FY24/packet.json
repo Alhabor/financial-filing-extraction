@@ -1,0 +1,98 @@
+{
+  "packet_id": "CP-PYPL-FY24-v001",
+  "case_id": "PYPL-FY24",
+  "dataset_role": "development",
+  "packet_version": "case-packet-spec-v001",
+  "source": {
+    "pdf_path": "data/raw/sec/PYPL-FY24/filing.pdf",
+    "pdf_sha256": "27787ae26bddde901e4d1220ded3549994ef5610c331f4ffb1f5ec292097f7eb",
+    "item1a_path": "data/processed/item_1a/PYPL-FY24.txt",
+    "item1a_sha256": "8b315e3464f478f229ad0f6cc3df8e7dadbd48e21853080357ce4e11cc240536",
+    "selected_pages": [
+      18,
+      21,
+      22,
+      23
+    ],
+    "page_map": [
+      {
+        "pdf_page": 18,
+        "printed_page": 18
+      },
+      {
+        "pdf_page": 21,
+        "printed_page": 21
+      },
+      {
+        "pdf_page": 22,
+        "printed_page": 22
+      },
+      {
+        "pdf_page": 23,
+        "printed_page": 23
+      }
+    ]
+  },
+  "model_input": {
+    "text_path": "data/processed/case_packets/PYPL-FY24/packet.txt",
+    "text_sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01",
+    "images": [
+      {
+        "pdf_page": 18,
+        "printed_page": 18,
+        "path": "data/processed/case_packets/PYPL-FY24/pages/page-018.png",
+        "sha256": "98ebe268fd444137a7d49eb59982d3b6a277fbd9028c51951d89fc805f7fbe26",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 21,
+        "printed_page": 21,
+        "path": "data/processed/case_packets/PYPL-FY24/pages/page-021.png",
+        "sha256": "ebacb1deb017ddb22fcd1b333eb28af4ce46c1bbeb245abdbc6cecd34fa9070d",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 22,
+        "printed_page": 22,
+        "path": "data/processed/case_packets/PYPL-FY24/pages/page-022.png",
+        "sha256": "fb7be9d1703534530bdce34fa379b50f8d418d08b028ecf58312ba34ab9a161a",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 23,
+        "printed_page": 23,
+        "path": "data/processed/case_packets/PYPL-FY24/pages/page-023.png",
+        "sha256": "1031471636ccd6aaf15b7e1db98ec6de5655687abfb2873f276ea10db55813ce",
+        "mime_type": "image/png"
+      }
+    ],
+    "locator_path": "data/processed/case_packets/PYPL-FY24/locator_index.json",
+    "paragraph_count": 33,
+    "extractor": "pdftotext -layout per physical PDF page",
+    "paragraph_granularity": "blank-line text block after PDF footer removal",
+    "locator_sha256": "f189ddb343def617e2eef1c30c540041f7bc9993aa1be757ac52b443ed8f06db"
+  },
+  "risk_candidates_for_internal_review": [
+    {
+      "id": "C1",
+      "label": "Cryptocurrency custody and custodian bankruptcy",
+      "anchor": "Custodial arrangements to safeguard cryptocurrency assets"
+    },
+    {
+      "id": "C2",
+      "label": "Payment network and bank fee changes",
+      "anchor": "Changes to payment card networks"
+    },
+    {
+      "id": "C3",
+      "label": "Credit product exposure",
+      "anchor": "Our credit products expose"
+    }
+  ],
+  "generation": {
+    "script": "scripts/build_case_packets.cjs",
+    "rendered_dpi": 144,
+    "created_at_utc": "2026-09-02T03:10:03.992Z"
+  },
+  "leakage_control": "risk_candidates_for_internal_review is not included in packet.txt or model requests."
+}

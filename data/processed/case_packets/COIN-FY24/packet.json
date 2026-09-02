@@ -1,0 +1,122 @@
+{
+  "packet_id": "CP-COIN-FY24-v001",
+  "case_id": "COIN-FY24",
+  "dataset_role": "development",
+  "packet_version": "case-packet-spec-v001",
+  "source": {
+    "pdf_path": "data/raw/sec/COIN-FY24/filing.pdf",
+    "pdf_sha256": "8ac69c453d362d9eb0ab4a0cd34fbcce0eb3b1a80ce95f0b041a56942d1abc32",
+    "item1a_path": "data/processed/item_1a/COIN-FY24.txt",
+    "item1a_sha256": "1313fafa20de12fdb8e841ac71f4001dadcc33049e17fc4d5582fe48cda841d8",
+    "selected_pages": [
+      25,
+      26,
+      28,
+      29,
+      42,
+      43
+    ],
+    "page_map": [
+      {
+        "pdf_page": 25,
+        "printed_page": 24
+      },
+      {
+        "pdf_page": 26,
+        "printed_page": 25
+      },
+      {
+        "pdf_page": 28,
+        "printed_page": 27
+      },
+      {
+        "pdf_page": 29,
+        "printed_page": 28
+      },
+      {
+        "pdf_page": 42,
+        "printed_page": 41
+      },
+      {
+        "pdf_page": 43,
+        "printed_page": 42
+      }
+    ]
+  },
+  "model_input": {
+    "text_path": "data/processed/case_packets/COIN-FY24/packet.txt",
+    "text_sha256": "35ad2caca4e16cf8880996dadefffd785e135718ad1340308bf97adfb572f2b2",
+    "images": [
+      {
+        "pdf_page": 25,
+        "printed_page": 24,
+        "path": "data/processed/case_packets/COIN-FY24/pages/page-025.png",
+        "sha256": "ca8069c01ecd636e13c2e6f1f54a6b259e12cce55b068819fb574e7766b8e7ff",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 26,
+        "printed_page": 25,
+        "path": "data/processed/case_packets/COIN-FY24/pages/page-026.png",
+        "sha256": "b5f3afbfc6827e8876161df3ad0051a95902f6bdeb0431bea7609329752a81ed",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 28,
+        "printed_page": 27,
+        "path": "data/processed/case_packets/COIN-FY24/pages/page-028.png",
+        "sha256": "9bb079126c1e5fbcb8207665e5ce49cf59c187f37bd6399d6f0fa527d3fcd322",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 29,
+        "printed_page": 28,
+        "path": "data/processed/case_packets/COIN-FY24/pages/page-029.png",
+        "sha256": "e1d1738087264ffdfcd2c93d4ff76643f716986975090e95110ab75bfcecb9e9",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 42,
+        "printed_page": 41,
+        "path": "data/processed/case_packets/COIN-FY24/pages/page-042.png",
+        "sha256": "088bb7714a5f08136dac90b35929463ef12e4502dd56eb0c2306633dae8631d5",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 43,
+        "printed_page": 42,
+        "path": "data/processed/case_packets/COIN-FY24/pages/page-043.png",
+        "sha256": "6a3e3bcd38347bb993dc1600991e0e22325cadfbec251410c74f123482ab5edc",
+        "mime_type": "image/png"
+      }
+    ],
+    "locator_path": "data/processed/case_packets/COIN-FY24/locator_index.json",
+    "paragraph_count": 30,
+    "extractor": "pdftotext -layout per physical PDF page",
+    "paragraph_granularity": "blank-line text block after PDF footer removal",
+    "locator_sha256": "f0dce531f4689d7c9131c27f09ed61702944496d3daec29c261cf92f0e0863f0"
+  },
+  "risk_candidates_for_internal_review": [
+    {
+      "id": "C1",
+      "label": "Revenue concentration",
+      "anchor": "Our net revenue may be concentrated"
+    },
+    {
+      "id": "C2",
+      "label": "Platform cyberattack and security breach",
+      "anchor": "Cyberattacks and security breaches"
+    },
+    {
+      "id": "C3",
+      "label": "Critical banking or insurance relationship",
+      "anchor": "Loss of a critical banking"
+    }
+  ],
+  "generation": {
+    "script": "scripts/build_case_packets.cjs",
+    "rendered_dpi": 144,
+    "created_at_utc": "2026-09-02T03:10:01.569Z"
+  },
+  "leakage_control": "risk_candidates_for_internal_review is not included in packet.txt or model requests."
+}

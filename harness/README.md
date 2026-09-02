@@ -2,7 +2,7 @@
 
 这是研究线的轻量实验编排层，不是最终产品后端。它把“同一案例如何进入不同模型”固定下来，并为每次运行生成可审计的输入、请求和元数据。
 
-当前脚本把 `data/processed/model_inputs/<CASE-ID>.txt` 作为候选输入。正式 P 轮开始前，还要从候选文本冻结短案例包、固定页码图像和段落定位索引；在此之前，dry-run 产物不算正式实验结果。
+当前脚本强制读取 `data/processed/case_packets/<CASE-ID>/` 中已经冻结的案例包。未冻结的 `data/processed/model_inputs/<CASE-ID>.txt` 只能作为候选材料，不能进入正式 harness 运行。
 
 ## 当前阶段：dry-run
 

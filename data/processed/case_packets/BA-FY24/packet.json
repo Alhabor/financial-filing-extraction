@@ -1,0 +1,122 @@
+{
+  "packet_id": "CP-BA-FY24-v001",
+  "case_id": "BA-FY24",
+  "dataset_role": "development",
+  "packet_version": "case-packet-spec-v001",
+  "source": {
+    "pdf_path": "data/raw/sec/BA-FY24/filing.pdf",
+    "pdf_sha256": "0a7b4383c3a344efff87841962e1b11e527e8b160c1f3fae3270aefa87187897",
+    "item1a_path": "data/processed/item_1a/BA-FY24.txt",
+    "item1a_sha256": "eea37eea15f570a02af6cae34dcbffe4ff7aa7442c3f901b35e036bd2918cfcc",
+    "selected_pages": [
+      14,
+      15,
+      16,
+      17,
+      20,
+      21
+    ],
+    "page_map": [
+      {
+        "pdf_page": 14,
+        "printed_page": 6
+      },
+      {
+        "pdf_page": 15,
+        "printed_page": 7
+      },
+      {
+        "pdf_page": 16,
+        "printed_page": 8
+      },
+      {
+        "pdf_page": 17,
+        "printed_page": 9
+      },
+      {
+        "pdf_page": 20,
+        "printed_page": 12
+      },
+      {
+        "pdf_page": 21,
+        "printed_page": 13
+      }
+    ]
+  },
+  "model_input": {
+    "text_path": "data/processed/case_packets/BA-FY24/packet.txt",
+    "text_sha256": "10fc4c18f246f19d47e8a46c8eb289a24f2167b7d86176704238ff167784e6f3",
+    "images": [
+      {
+        "pdf_page": 14,
+        "printed_page": 6,
+        "path": "data/processed/case_packets/BA-FY24/pages/page-014.png",
+        "sha256": "4b3ad142e810387e825fd83e6af65aacffc2513496ccf6dab2b818b11a1b93bc",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 15,
+        "printed_page": 7,
+        "path": "data/processed/case_packets/BA-FY24/pages/page-015.png",
+        "sha256": "5928eb10c87dc99bc0d5059b8be92f726353f5dfdda17a97dc9c85cdd0d99b90",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 16,
+        "printed_page": 8,
+        "path": "data/processed/case_packets/BA-FY24/pages/page-016.png",
+        "sha256": "fab0ddd9cc39e6bb49fc6a0aba189ffb29cad81e23d485b0e74ca820a4a1ceb2",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 17,
+        "printed_page": 9,
+        "path": "data/processed/case_packets/BA-FY24/pages/page-017.png",
+        "sha256": "62d1936ad5f2f820ecdc235850716c43dfe74af71df143ad8d4da18b97f07639",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 20,
+        "printed_page": 12,
+        "path": "data/processed/case_packets/BA-FY24/pages/page-020.png",
+        "sha256": "332238da6a0024cbc743f5108f20fd53cacbd2bc1c0ab475bdf8006b1c5d6b12",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 21,
+        "printed_page": 13,
+        "path": "data/processed/case_packets/BA-FY24/pages/page-021.png",
+        "sha256": "64fbf4183f891431c3e53319183d9c3285b5295c8cdc03fe700dcb59869e0b4e",
+        "mime_type": "image/png"
+      }
+    ],
+    "locator_path": "data/processed/case_packets/BA-FY24/locator_index.json",
+    "paragraph_count": 41,
+    "extractor": "pdftotext -layout per physical PDF page",
+    "paragraph_granularity": "blank-line text block after PDF footer removal",
+    "locator_sha256": "f52357719f7c8699fbb588c42f952ecd494885264c7d9e8020fec93d6727a9bc"
+  },
+  "risk_candidates_for_internal_review": [
+    {
+      "id": "C1",
+      "label": "Commercial airplane production and quality",
+      "anchor": "Our Commercial Airplanes business depends"
+    },
+    {
+      "id": "C2",
+      "label": "Labor union work stoppage",
+      "anchor": "Some of our and our suppliers’ workforces are represented"
+    },
+    {
+      "id": "C3",
+      "label": "Spirit AeroSystems acquisition",
+      "anchor": "Our pending acquisition of Spirit"
+    }
+  ],
+  "generation": {
+    "script": "scripts/build_case_packets.cjs",
+    "rendered_dpi": 144,
+    "created_at_utc": "2026-09-02T03:10:07.471Z"
+  },
+  "leakage_control": "risk_candidates_for_internal_review is not included in packet.txt or model requests."
+}

@@ -1,0 +1,375 @@
+{
+  "packet_id": "CP-BA-FY24-v001",
+  "case_id": "BA-FY24",
+  "paragraphs": [
+    {
+      "paragraph_id": "BA-FY24-P001",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 1,
+      "page_text_line_end": 1,
+      "text": "Item 1A. Risk Factors",
+      "text_sha256": "073ff5c623abbc00e44641e8d46d538d63096ef4cfccff86ec80bd980a98d24a"
+    },
+    {
+      "paragraph_id": "BA-FY24-P002",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 3,
+      "page_text_line_end": 9,
+      "text": "An investment in our securities involves risks and uncertainties, including those described below, which\ncan materially affect our business, financial position, results of operations and cash flows. These risk\nfactors should be carefully reviewed in conjunction with the other information in this report, including\n“Management's Discussion and Analysis of Financial Condition and Results of Operations” and the\nconsolidated financial statements and related notes. Due to risks and uncertainties, known and\nunknown, our past financial results may not be a reliable indicator of future performance, and historical\ntrends should not be used to anticipate results or trends in future periods.",
+      "text_sha256": "3e85d45a450c2b1f5fdd27fb25296a4fc1ef22dbbca62f6be824b9f9851495e4"
+    },
+    {
+      "paragraph_id": "BA-FY24-P003",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 11,
+      "page_text_line_end": 11,
+      "text": "Risks Related to Our Business and Operations",
+      "text_sha256": "7a0c08768f74576f668b1f9f3056d4072a7a6abf26172375f04e740cde4de3c0"
+    },
+    {
+      "paragraph_id": "BA-FY24-P004",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 13,
+      "page_text_line_end": 13,
+      "text": "We depend heavily on commercial airlines, subjecting us to unique risks.",
+      "text_sha256": "0259f24178c567f15c63454f8efadf9741e5c869017590bbc06e878330cb1596"
+    },
+    {
+      "paragraph_id": "BA-FY24-P005",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 15,
+      "page_text_line_end": 30,
+      "text": "Market conditions have a significant impact on demand for our commercial aircraft and related services.\nThe commercial aircraft market is predominantly driven by long-term trends in airline passenger and\ncargo traffic. The principal factors underlying long-term traffic growth are sustained economic growth\nand political stability in both developed and emerging markets. Demand for our commercial aircraft is\nfurther influenced by additional factors including airline profitability, availability of aircraft financing, trade\npolicies, geopolitics, technological advances, price and other competitive factors, fuel prices, inflationary\npressures, terrorism, pandemics, epidemics, sustainability-related preferences, environmental\nregulations, and reputational factors. Historically, the airline industry has been cyclical and very\ncompetitive and has experienced significant profit swings and constant challenges to be more cost\ncompetitive. Significant deterioration in the global economic environment, the airline industry generally\nor the financial stability of one or more of our major customers could result in fewer new orders for\naircraft or services, or could cause customers to seek to postpone or cancel contractual orders and/or\npayments to us, which could result in lower revenues, profitability and cash flows and a reduction in our\ncontractual backlog. In addition, because our commercial aircraft backlog consists of aircraft scheduled\nfor delivery over a period of several years, any of these macroeconomic, industry or customer impacts\ncould affect deliveries over a long period.",
+      "text_sha256": "874b763514df19baf6a7ac936601a9bfd355a7ebef5337040db0dcfda91c6bbf"
+    },
+    {
+      "paragraph_id": "BA-FY24-P006",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 32,
+      "page_text_line_end": 40,
+      "text": "We enter into firm fixed-price aircraft sales contracts with indexed price escalation clauses, which\nsubjects us to losses if we have cost overruns or if increases in our costs exceed the applicable\nescalation rate. Commercial aircraft sales contracts are typically entered into years before the aircraft\nare delivered. In order to help account for economic fluctuations between the contract date and delivery\ndate, aircraft pricing generally consists of a fixed amount as modified by price escalation formulas\nderived from labor, commodity and other price indices. Our revenue estimates are based on current\nexpectations with respect to these escalation formulas, but the actual escalation amounts are outside of\nour control. Escalation factors can fluctuate significantly from period to period. Changes in escalation\namounts can significantly impact revenues and operating margins in our BCA business.",
+      "text_sha256": "073752dacd242e479b19ce14c13d3bdaf7c9fc3236dfd60065c4b9955e1245ea"
+    },
+    {
+      "paragraph_id": "BA-FY24-P007",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 42,
+      "page_text_line_end": 48,
+      "text": "We derive a significant portion of our revenues from a limited number of commercial airlines. We can\nmake no assurance that any customer will exercise purchase options, fulfill existing purchase\ncommitments or purchase additional products or services from us. In addition, fleet decisions, airline\nconsolidations or financial challenges involving any of our major commercial airline customers could\nsignificantly reduce our revenues and limit our opportunity to generate profits from those customers.\nAirlines also are experiencing increased fuel and other costs, and the global economy has experienced\nand may continue to experience high inflation.",
+      "text_sha256": "8fd41068a7b365293475b69eb0ed5886c7905e078618ddb0424602315eed9a72"
+    },
+    {
+      "paragraph_id": "BA-FY24-P008",
+      "pdf_page": 14,
+      "printed_page": 6,
+      "page_text_line_start": 50,
+      "page_text_line_end": 51,
+      "text": "Our Commercial Airplanes business depends on our ability to maintain a healthy production\nsystem, ensure every airplane in our production system conforms to exacting specifications,",
+      "text_sha256": "7690c2f1d9ef3c88b6621c8ad55c24ec9da10f8a7ec34a565501cd36f2931502"
+    },
+    {
+      "paragraph_id": "BA-FY24-P009",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 1,
+      "page_text_line_end": 2,
+      "text": "achieve planned production rate targets, successfully develop and certify new aircraft or new\nderivative aircraft, and meet or exceed stringent performance and reliability standards.",
+      "text_sha256": "e62adc6d63f1d729b225fdbbfceab096e2ec795cb3cc90b7a58a7696ec60ad77"
+    },
+    {
+      "paragraph_id": "BA-FY24-P010",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 4,
+      "page_text_line_end": 7,
+      "text": "The commercial aircraft business is extremely complex, involving extensive coordination and integration\nwith suppliers, highly-skilled labor performed by thousands of employees of ours and other partners,\nand stringent and evolving regulatory requirements and performance and reliability standards. We have\nexperienced and may continue to experience production quality issues, including in our supply chain.",
+      "text_sha256": "0bc38a1a0343a62f38096fb7b462bdad2d00821a7fe0d6f58018789fd7bf4bd4"
+    },
+    {
+      "paragraph_id": "BA-FY24-P011",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 9,
+      "page_text_line_end": 17,
+      "text": "For example, as a result of the Alaska Airlines 737-9 accident in January 2024, the FAA investigated the\n737 quality control system, including Spirit, and increased its oversight of our production and quality and\nsafety management systems. The FAA identified multiple instances where we and Spirit failed to comply\nwith manufacturing quality control requirements. As part of our plan to improve safety and quality and to\naddress the issues identified by the FAA, we slowed 737 production rates and delayed planned\nproduction rate increases to reduce traveled work in our factory and at our suppliers. These actions\nsignificantly impacted our financial position, results of operations and cash flows during the year ended\nDecember 31, 2024, and are expected to continue to impact our financial position, results of operations\nand cash flows as we work to increase production and improve factory performance.",
+      "text_sha256": "432636a7cf64d713a620b7895149f3828af47b026b6ec45836afb922f6dcbc20"
+    },
+    {
+      "paragraph_id": "BA-FY24-P012",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 19,
+      "page_text_line_end": 24,
+      "text": "The introduction of new aircraft programs and/or derivatives, such as the 777X, 737-7 and 737-10,\ninvolves risks associated with meeting development, testing, certification and production schedules. We\nare following the lead of the FAA as we work through the certification process, and the FAA will\nultimately determine the timing of certification and entry into service. There have been delays on each\nof these development programs and if we experience additional delays in achieving certification, our\nfinancial position, results of operations and cash flows would be adversely impacted.",
+      "text_sha256": "6efc487109d89663e28e51b533578a4c1055947fcd760ed9c684ddbb6eedd84f"
+    },
+    {
+      "paragraph_id": "BA-FY24-P013",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 26,
+      "page_text_line_end": 29,
+      "text": "A number of our customers have contractual remedies, including compensation for late deliveries or\nrights to reject individual airplane deliveries based on delivery delays. Delays on the 737, 777X and 787\nprograms have resulted in, and may continue to result in, customers having the right to terminate\norders, be compensated for late deliveries and/or substitute orders for other Boeing aircraft.",
+      "text_sha256": "f2bfb5abeb6673dfdc05e41f1a09a2d47d841112e70bf90af18a8a38310f0f16"
+    },
+    {
+      "paragraph_id": "BA-FY24-P014",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 31,
+      "page_text_line_end": 40,
+      "text": "We must minimize disruption caused by production changes, achieve operational stability and\nimplement productivity improvements in order to meet customer demand and maintain our profitability.\nWe have previously announced plans to adjust production rates on several of our commercial aircraft\nprograms. In addition, we continue to seek opportunities to reduce the costs of building our aircraft,\nincluding working with our suppliers to reduce supplier costs, identifying and implementing productivity\nimprovements and optimizing how we manage inventory. If production rate changes at any of our\ncommercial aircraft assembly facilities are delayed or create significant disruption to our production\nsystem, or if our suppliers cannot timely deliver components that comply with design specifications to us\nat the cost and rates necessary to achieve our targets, we may be unable to meet delivery schedules\nand/or the financial performance of one or more of our programs may suffer.",
+      "text_sha256": "6743c145b5db55bb6d8b0573bd3c69036b7183f97ba33fb27ab9c69922646938"
+    },
+    {
+      "paragraph_id": "BA-FY24-P015",
+      "pdf_page": 15,
+      "printed_page": 7,
+      "page_text_line_start": 42,
+      "page_text_line_end": 52,
+      "text": "Operational challenges impacting the production system for one or more of our commercial aircraft\nprograms could result in additional production delays and/or failure to meet customer demand for new\naircraft, either of which would negatively impact our revenues and operating margins. Our commercial\naircraft production system is extremely complex. Operational issues, including delivery and/or\ncertification delays or defects in supplier components, failure to meet internal performance plans, or\ndelays or failures to achieve required regulatory approval, results in additional out-of-sequence work\nand increased production costs, as well as delayed deliveries to customers, impacts to aircraft\nperformance and/or increased warranty or fleet support costs. We and our suppliers are experiencing\nsupply chain disruptions and constraints, labor instability and inflationary pressures. We continue to\nmonitor the health and stability of the supply chain. These factors have and may continue to reduce\noverall productivity and adversely impact our financial position, results of operations and cash flows.",
+      "text_sha256": "fdc8955d5e1fde6c396f5e1cb0fc935b8e3c93b876e17de564eecb320016bf1f"
+    },
+    {
+      "paragraph_id": "BA-FY24-P016",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "page_text_line_start": 1,
+      "page_text_line_end": 7,
+      "text": "If our commercial aircraft fail to satisfy performance and reliability requirements and/or potentially\nrequired sustainability standards, we could face additional costs and/or lower revenues. Developing and\nmanufacturing commercial aircraft that meet or exceed our performance and reliability standards and/or\npotentially required sustainability standards, as well as those of customers and regulatory agencies, is\ncostly and technologically challenging. These challenges are particularly significant with newer aircraft\nprograms. Any failure of any Boeing aircraft to satisfy performance or reliability requirements could\nresult in disruption to our operations, higher costs and/or lower revenues.",
+      "text_sha256": "4d316b211df52517a401a29e6a376489d0fb614fac8dd376d5907bda73ea8945"
+    },
+    {
+      "paragraph_id": "BA-FY24-P017",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "page_text_line_start": 9,
+      "page_text_line_end": 11,
+      "text": "Changes in levels of U.S. government defense spending or acquisition priorities, as well as\nsignificant delays in U.S. government appropriations, could negatively impact our business,\nfinancial position and results of operations.",
+      "text_sha256": "17bfb63d62d0b428748f29d05387dd8ac9fc562aeaef34979b48244ffca470a9"
+    },
+    {
+      "paragraph_id": "BA-FY24-P018",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "page_text_line_start": 13,
+      "page_text_line_end": 20,
+      "text": "We derive a substantial portion of our revenue from the U.S. government, primarily from defense\nrelated programs with the United States Department of Defense (U.S. DoD) and contracts with other\ngovernment agencies, including NASA. Levels of U.S. defense spending are very difficult to predict and\nmay be impacted by numerous factors such as the evolving nature of the national security threat\nenvironment, U.S. national security strategy, U.S. foreign policy, the domestic political environment,\nmacroeconomic conditions and the ability of the U.S. government to enact relevant legislation such as\nauthorization and appropriations bills. The government may also constrain discretionary spending by\ninstituting enforceable spending caps.",
+      "text_sha256": "f37e3d9a71a1f3115fb4014164c11f83a963e1104949704f65c80b686d62cae6"
+    },
+    {
+      "paragraph_id": "BA-FY24-P019",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "page_text_line_start": 22,
+      "page_text_line_end": 36,
+      "text": "The timeliness of annual appropriations for U.S. government departments and agencies remains a\nrecurrent risk. Congress may fund government departments and agencies with one or more continuing\nresolutions, which could delay new programs or competitions and/or negatively impact the execution of\ncertain program activities. A lapse in appropriations for government departments or agencies would\nresult in a full or partial government shutdown, which could impact our operations. In the event of a\nprolonged shutdown, requirements to furlough employees in the U.S. DoD, the Department of\nTransportation, including the FAA, or other government agencies could result in payment delays, impair\nour ability to deliver commercial airplanes or perform work on existing contracts, delays in the\ncertification of new aircraft or otherwise impact our operations, negatively impact future orders, and/or\ncause other disruptions or delays. There is uncertainty regarding which government functions would\nshut down or continue operations during a lapse in appropriations, and corresponding uncertainty\nregarding the extent or magnitude of potential impacts to our operations. For additional information on\nU.S. government appropriations and budgets, see “Management’s Discussion and Analysis of Financial\nCondition and Results of Operations – Additional Considerations – U.S. Government Funding” on page\n31 of this Form 10-K.",
+      "text_sha256": "77895ce999e19edfbaff3317e4438523a769787a319401b9ae149ae98d3beb9e"
+    },
+    {
+      "paragraph_id": "BA-FY24-P020",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "page_text_line_start": 38,
+      "page_text_line_end": 45,
+      "text": "In addition, there continues to be uncertainty with respect to future acquisition priorities and program-\nlevel appropriations for the U.S. DoD and other government agencies (including NASA), including\nchanges to national security and defense priorities, and tension between modernization investments,\nsustainment investments, and investments in new technologies or emergent capabilities. Future\ninvestment priority changes or budget cuts, including changes associated with the authorizations and\nappropriations process, could result in reductions, cancellations, and/or delays of existing contracts or\nprograms or future program opportunities. Any of these impacts could have a material effect on our\nfinancial position, results of operations and/or cash flows.",
+      "text_sha256": "b01d0f7150c0e28b3d9bd00b58d96b14eea715ec4374b293d937c2084167896c"
+    },
+    {
+      "paragraph_id": "BA-FY24-P021",
+      "pdf_page": 16,
+      "printed_page": 8,
+      "page_text_line_start": 47,
+      "page_text_line_end": 53,
+      "text": "As a result of the significant ongoing uncertainty with respect to both U.S. defense spending and the\nevolving nature of the national security threat environment, we also expect the U.S. DoD to continue to\nemphasize affordability, innovation, cybersecurity and delivery of technical data and software in its\nprocurement processes, including the implementation of cybersecurity compliance requirements on the\nDefense Industrial Base, for which the supply chain may not be fully prepared. If we and our suppliers\nare unable to adjust to these changing acquisition priorities and policies, our revenues and market\nshare could be impacted.",
+      "text_sha256": "9f85734a2cb16bbe68dc522482a70d6234d945adddeaccd5ba02ed79e025f7a0"
+    },
+    {
+      "paragraph_id": "BA-FY24-P022",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 1,
+      "page_text_line_end": 3,
+      "text": "Our ability to deliver products and services that satisfy customer requirements is heavily\ndependent on the performance and financial stability of our subcontractors and suppliers, as\nwell as on the availability of highly skilled labor, raw materials and other components.",
+      "text_sha256": "8e572cbf6a120ad9ff1f1f4e733166f67a103234c23929668ca6ef85a66f1d83"
+    },
+    {
+      "paragraph_id": "BA-FY24-P023",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 5,
+      "page_text_line_end": 20,
+      "text": "We rely on other companies, including U.S. and non-U.S. subcontractors and suppliers, to provide and\nproduce raw materials, integrated components and sub-assemblies, and production commodities and to\nperform some of the services that we provide to our customers. Many of our suppliers are experiencing\ninflationary pressures, as well as resource constraints and disruptions due to production quality issues,\nglobal supply chain constraints, and labor instability. If one or more of our suppliers or subcontractors\ncontinue to experience financial difficulties, delivery delays or other performance problems, we may be\nunable to meet commitments to our customers and our financial position, results of operations and cash\nflows may continue to be adversely impacted. In addition, if one or more of the raw materials on which\nwe depend (such as aluminum, titanium or composites) becomes unavailable to us or our suppliers, or\nis available only at very high prices, including as a result of increased tariffs and trade restrictions, or\nhas quality issues or defects, we may be unable to deliver one or more of our products in a timely\nfashion or at budgeted costs. In some instances, we depend upon a single source of supply. Any\nservice disruption from one of these suppliers, either due to circumstances beyond the supplier’s\ncontrol, such as geopolitical developments, or as a result of performance problems or financial\ndifficulties, could have a material adverse effect on our ability to meet commitments to our customers or\nincrease our operating costs.",
+      "text_sha256": "8d1bbe13450527c671fb00a0d91cae93f33d39fd4b36098a39891d504cc45ad8"
+    },
+    {
+      "paragraph_id": "BA-FY24-P024",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 22,
+      "page_text_line_end": 25,
+      "text": "Some of our and our suppliers’ workforces are represented by labor unions. Work stoppages by\nour employees have adversely affected and could continue to adversely affect our business,\nfinancial condition, results of operations and/or cash flows. Future work stoppages by our or\nour suppliers’ employees could also adversely impact our business.",
+      "text_sha256": "a49ac367ac9141d6db809d96ffa413d30f3b054baee284f7230ad089d043d1c2"
+    },
+    {
+      "paragraph_id": "BA-FY24-P025",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 27,
+      "page_text_line_end": 42,
+      "text": "Approximately 58,000 employees, which constitute 34% of our total workforce, were union represented\nas of December 31, 2024 under collective bargaining agreements with varying durations and expiration\ndates. As of December 31, 2024, we had 9 unions in the U.S. with 27 independent agreements and 18\nemployee representative bodies internationally, and we cannot predict how stable our union\nrelationships will be or whether we will be able to meet the unions’ requirements. On September 12,\n2024, our contract with IAM 751, which represents over 30,000 Boeing manufacturing employees\nprimarily located in Washington state, expired and 96% of IAM 751 members voted to initiate a strike.\nOn November 4, 2024, members of IAM 751 voted to ratify a new contract, thereby ending the strike. As\na result of the strike, production of our commercial aircraft, other than the 787 production in Charleston,\nand certain of our Defense, Space & Security products halted, adversely impacting our business and\nfinancial position. Net cash used by operating activities for the year ended December 31, 2024, was\n$12.1 billion and we expect further negative operating cash flows to continue in future quarters as we\nwork to ramp up production and deliveries. The new contract with IAM 751 and pay enhancements for\ncertain non-union employees is adversely impacting our financial position, results of operations and\ncash flows. We may experience additional work stoppages in the future, which could adversely affect\nour business.",
+      "text_sha256": "6106d04f3a2162ca64dd3f2a107c8e9caba3ffa64ebebef5dde17f92a04c5379"
+    },
+    {
+      "paragraph_id": "BA-FY24-P026",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 44,
+      "page_text_line_end": 47,
+      "text": "The unions may also limit our flexibility in managing our workforce and operations. Union actions at\nsuppliers also affect us. Work stoppages and instability in our union relationships delay the production\nand/or development of our products, which could strain relationships with customers and result in lower\nrevenues.",
+      "text_sha256": "d4bc7b1a9f893556941b08c8d68a7e294209b2ef33bb55c1323926f0c219fb59"
+    },
+    {
+      "paragraph_id": "BA-FY24-P027",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 49,
+      "page_text_line_end": 50,
+      "text": "Competition within our markets and with respect to our products and services may reduce our\nfuture contracts and sales.",
+      "text_sha256": "2d346005a89c4f80f6af7f4ee5794ade3867a71ed45bce98fb0ed63f054b1b3b"
+    },
+    {
+      "paragraph_id": "BA-FY24-P028",
+      "pdf_page": 17,
+      "printed_page": 9,
+      "page_text_line_start": 52,
+      "page_text_line_end": 53,
+      "text": "The markets in which we operate are highly competitive and one or more of our competitors may have\nmore extensive or more specialized engineering, manufacturing and marketing capabilities than we do",
+      "text_sha256": "6e9a89a8bf72407c279174ee92c3bf7846c6816587b3fa97c8c4450a33235490"
+    },
+    {
+      "paragraph_id": "BA-FY24-P029",
+      "pdf_page": 20,
+      "printed_page": 12,
+      "page_text_line_start": 1,
+      "page_text_line_end": 2,
+      "text": "Accounting Estimates – Accounting for Long-term Contracts/Program Accounting” on pages 49 - 51 and\nNote 1 to our Consolidated Financial Statements on pages 60 - 70 of this Form 10-K.",
+      "text_sha256": "e73ef2f69f131bc01eba661478bb3aa97293e8d2a26b9b83ed0902eacba12924"
+    },
+    {
+      "paragraph_id": "BA-FY24-P030",
+      "pdf_page": 20,
+      "printed_page": 12,
+      "page_text_line_start": 4,
+      "page_text_line_end": 6,
+      "text": "Our pending acquisition of Spirit AeroSystems Holdings, Inc. (Spirit) subjects us to various\nrisks and uncertainties, including risks that we may not complete the acquisition or realize the\nanticipated benefits in the expected timeframe or at all.",
+      "text_sha256": "cdd8a11a67afd9834fb9e57b54553464443a32eb295be7f88fe390e71b428c14"
+    },
+    {
+      "paragraph_id": "BA-FY24-P031",
+      "pdf_page": 20,
+      "printed_page": 12,
+      "page_text_line_start": 8,
+      "page_text_line_end": 31,
+      "text": "On June 30, 2024, we entered into an Agreement and Plan of Merger (Merger Agreement) to acquire\nSpirit in an all-stock transaction that will include the assumption of Spirit's net debt at closing.\nCompletion of our acquisition of Spirit is subject to a number of conditions set forth in the Merger\nAgreement. On January 31, 2025, Spirit’s stockholders approved the Merger Agreement and the related\ntransactions. Some of the remaining conditions, such as certain regulatory approvals and the ability of\nSpirit to enter into definitive agreements relating to the disposition of Spirit operations related to certain\nAirbus commercial work packages and consummate the related transactions, are beyond our control,\nwhich make the completion of our acquisition of Spirit (and the timing thereof) uncertain. In addition, if\nSpirit or Boeing exercise certain termination rights included in the Merger Agreement, the acquisition\nwill not be consummated. Furthermore, the governmental authorities from which regulatory approvals\nrelated to the acquisition are required may impose burdensome or unacceptable conditions on the\ncompletion of the acquisition, require changes to the terms of the Merger Agreement, or prevent or\ndelay the consummation of the acquisition. If the acquisition is not completed, our ongoing business\nmay be adversely affected and we will be subject to a number of risks, including expenditure of time\nand resources, negative reactions from stakeholders, and potential stock price fluctuations. If we are\nsuccessful in completing the acquisition, we will be subject to other risks, including those related to the\nassumption of Spirit's net debt and other obligations at closing, which could adversely impact our\nfinancial position, results of operations and cash flows. Difficulties in integrating Spirit may result in the\nfailure to realize anticipated benefits of the acquisition (including anticipated synergies and quality\nimprovements) in the expected timeframe or at all, as well as operational challenges, the diversion of\nmanagement’s attention from other ongoing business concerns, and unforeseen expenses, which may\nhave an adverse impact on our operations and our financial position, results of operations, and cash\nflows. For additional information on the acquisition, see Note 2 to our Consolidated Financial\nStatements.",
+      "text_sha256": "e1b5da5a6dfdc8771fdc7cca78c39574f982c41b4d99e315627bd3bf70475ff0"
+    },
+    {
+      "paragraph_id": "BA-FY24-P032",
+      "pdf_page": 20,
+      "printed_page": 12,
+      "page_text_line_start": 33,
+      "page_text_line_end": 34,
+      "text": "We may not realize the anticipated benefits of mergers, acquisitions, joint ventures/strategic\nalliances or divestitures.",
+      "text_sha256": "fae24c1efbfcf90abccb05b3bdc3c5ece741e4c483b0b1b4851ca78963f0b802"
+    },
+    {
+      "paragraph_id": "BA-FY24-P033",
+      "pdf_page": 20,
+      "printed_page": 12,
+      "page_text_line_start": 36,
+      "page_text_line_end": 49,
+      "text": "As part of our business strategy, we may merge with or acquire businesses and/or form joint ventures\nand strategic alliances. Whether we realize the anticipated benefits from these acquisitions, including\nour acquisition of Spirit, and related activities depends, in part, upon our ability to integrate the\noperations of the acquired business, the performance of the underlying product and service portfolio,\nand the performance of the management team and other personnel of the acquired operations.\nAccordingly, our financial results could be adversely affected by unanticipated performance issues,\nlegacy liabilities, cybersecurity issues or vulnerabilities, transaction-related charges, amortization of\nexpenses related to intangibles, charges for impairment of long-term assets, credit guarantees, partner\nperformance and indemnifications. Consolidations of joint ventures could also impact our reported\nresults of operations or financial position. We also may make strategic divestitures from time to time.\nThese transactions may result in continued financial involvement in the divested businesses, such as\nthrough guarantees or other financial arrangements, following the transaction. Nonperformance by\nthose divested businesses could affect our future financial results through additional payment\nobligations, higher costs or asset write-downs.",
+      "text_sha256": "e0640abe602af97751a764b5dcb5207ca1164f79cf328f7c035740a888957ac4"
+    },
+    {
+      "paragraph_id": "BA-FY24-P034",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 1,
+      "page_text_line_end": 1,
+      "text": "Risks Related to Our Contracts",
+      "text_sha256": "b25676b5ec429bf748420e5c43071c9d748c5e585aa7dd6e085673cf35a4c00d"
+    },
+    {
+      "paragraph_id": "BA-FY24-P035",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 3,
+      "page_text_line_end": 4,
+      "text": "We conduct a significant portion of our business pursuant to U.S. government contracts, which\nare subject to unique risks.",
+      "text_sha256": "4b74f246bf97c64ce8ecb04a2c9444a1446a532a2fc10eb8384acb89f27772f7"
+    },
+    {
+      "paragraph_id": "BA-FY24-P036",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 6,
+      "page_text_line_end": 8,
+      "text": "In 2024, 42% of our revenues were earned pursuant to U.S. government contracts, which include\nForeign Military Sales (FMS) through the U.S. government. Business conducted pursuant to such\ncontracts is subject to extensive procurement regulations and other unique risks.",
+      "text_sha256": "281264c121bc377690d97cd06ec311bb022074882426b5bbd301b77baea025b3"
+    },
+    {
+      "paragraph_id": "BA-FY24-P037",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 10,
+      "page_text_line_end": 18,
+      "text": "Our sales to the U.S. government are subject to extensive procurement regulations, and changes to\nthose regulations could increase our costs. New procurement regulations or climate or cyber-related\ncontractual disclosures, or changes to existing requirements, could increase our compliance costs or\notherwise have a material impact on the operating margins of our BDS and BGS businesses. These\nrequirements may also result in withheld payments and/or reduced future business if we fail to comply.\nFor example, proposals to raise domestic content thresholds for our U.S. government contracts could\nhave negative impacts on our business. Compliance costs attributable to current and potential future\nprocurement regulations such as these could negatively impact our financial position, results of\noperations and/or cash flows.",
+      "text_sha256": "65a5a06d945ac16a09535f7d36ad6b6f9e0e1cc8afcbdd39d8e6a3c03132ff9b"
+    },
+    {
+      "paragraph_id": "BA-FY24-P038",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 20,
+      "page_text_line_end": 31,
+      "text": "The U.S. government may modify, curtail or terminate one or more of our contracts. The U.S.\ngovernment contracting party may modify, curtail or terminate its contracts and subcontracts with us,\nwithout prior notice and either at its convenience or for default based on performance. In addition,\nfunding pursuant to our U.S. government contracts may be reduced or withheld as part of the U.S.\nCongressional appropriations process due to changes in U.S. national security strategy and/or\npriorities, fiscal constraints, including enforceable spending caps, a sequester or a lack of funding\navailable to pay incurred obligations, or for other reasons. Further uncertainty with respect to ongoing\nprograms could result in the U.S. government financing its operations through temporary funding\nmeasures such as “Continuing Resolutions” rather than full-year appropriations. Any loss or anticipated\nloss or reduction of expected funding and/or modification, curtailment or termination of one or more\nlarge programs could have a material adverse effect on our financial position, results of operations and/\nor cash flows.",
+      "text_sha256": "f4ba5ba958c0c7d71f6e6ded38aca7b0102001e6a1930b919fd4dbd787719773"
+    },
+    {
+      "paragraph_id": "BA-FY24-P039",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 33,
+      "page_text_line_end": 46,
+      "text": "We are subject to U.S. government inquiries and investigations, including periodic audits of costs that\nwe determine are reimbursable under U.S. government contracts. U.S. government agencies, including\nthe Defense Contract Audit Agency and the Defense Contract Management Agency, routinely audit\ngovernment contractors. These agencies review our performance under contracts, cost structure and\ncompliance with applicable laws, regulations and standards, as well as the adequacy of and our\ncompliance with our internal control systems and policies. Any costs found to be misclassified or\ninaccurately allocated to a specific contract will be deemed non-reimbursable, and to the extent already\nreimbursed, must be refunded. Any inadequacies in our systems and policies could result in withholds\non billed receivables, penalties and reduced future business. Furthermore, if any audit, inquiry or\ninvestigation uncovers improper or illegal activities, we could be subject to civil and criminal penalties\nand administrative sanctions, including termination of contracts, forfeiture of profits, suspension of\npayments, fines and suspension or debarment from doing business with the U.S. government. We also\ncould suffer reputational harm if allegations of impropriety were made against us, even if such\nallegations are later determined to be false.",
+      "text_sha256": "659976bc588fb701ab9a38c552ae0803ffa895cc26e381bc7411a9c385760db5"
+    },
+    {
+      "paragraph_id": "BA-FY24-P040",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 48,
+      "page_text_line_end": 48,
+      "text": "We enter into fixed-price contracts, which could subject us to losses if we have cost overruns.",
+      "text_sha256": "96d86ba8517e222c0086e0b7a5b9917f471631b16a73a7f9415f384428671d17"
+    },
+    {
+      "paragraph_id": "BA-FY24-P041",
+      "pdf_page": 21,
+      "printed_page": 13,
+      "page_text_line_start": 50,
+      "page_text_line_end": 54,
+      "text": "Our BDS and BGS defense businesses generated approximately 54% and 63% of their 2024 revenues\nfrom fixed-price contracts. Fixed-price development contracts subject us to the risk of reduced margins\nor incurring losses if we are unable to achieve estimated costs and revenues. If our estimated costs\nexceed our estimated price, we recognize reach-forward losses which can significantly affect our\nreported results. For example, during the year ended December 31, 2024, BDS recorded $5.0 billion of",
+      "text_sha256": "1b3cf8f7010387d2f3a735901ac8ba81bd77daae9b89afa6d318a3443b08bc74"
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+{
+  "packet_id": "CP-META-FY24-v001",
+  "case_id": "META-FY24",
+  "paragraphs": [
+    {
+      "paragraph_id": "META-FY24-P001",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 1,
+      "page_text_line_end": 2,
+      "text": "•        our ability to comply with regulatory and legislative privacy requirements, including our consent order with the\n             Federal Trade Commission (FTC);",
+      "text_sha256": "9820ee5bf6dd643b1f5df95bbc2f15342fa1c90823df04868d9ac7eefe6bde03"
+    },
+    {
+      "paragraph_id": "META-FY24-P002",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 4,
+      "page_text_line_end": 4,
+      "text": "Risks Related to Data, Security, Platform Integrity, and Intellectual Property",
+      "text_sha256": "6db1282286c2cce1c49463960cfcb33415867890f290f48ed50ece15a51ded64"
+    },
+    {
+      "paragraph_id": "META-FY24-P003",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 6,
+      "page_text_line_end": 7,
+      "text": "•        the occurrence of security breaches, improper access to or disclosure of our data or user data, and other cyber\n             incidents, as well as intentional misuse of our services and other undesirable activity on our platform;",
+      "text_sha256": "c303ef126c6081b965ccf922fcedbe7dbe9e9ac8adfa57af0f1d3de78d78d820"
+    },
+    {
+      "paragraph_id": "META-FY24-P004",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 9,
+      "page_text_line_end": 9,
+      "text": "•        our ability to obtain, maintain, protect, and enforce our intellectual property rights; and",
+      "text_sha256": "3fe224a44378b7d62500102fbacf0c9170a11bada261817d0e4fda7c5d9c7fa4"
+    },
+    {
+      "paragraph_id": "META-FY24-P005",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 11,
+      "page_text_line_end": 11,
+      "text": "Risks Related to Ownership of Our Class A Common Stock",
+      "text_sha256": "32effa161767d76e08e6c4cddc81fdb8e8e2ead4dbe6f64d4eadf099c36e44cd"
+    },
+    {
+      "paragraph_id": "META-FY24-P006",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 13,
+      "page_text_line_end": 15,
+      "text": "•        limitations on the ability of holders of our Class A Common Stock to influence corporate matters due to the dual\n             class structure of our common stock and the control of a majority of the voting power of our outstanding capital\n             stock by our founder, Chairman, and Chief Executive Officer (CEO).",
+      "text_sha256": "5153adac09a6c21c6820663608817b3e36f8309e6e9e16006ec141cb2b2d69c3"
+    },
+    {
+      "paragraph_id": "META-FY24-P007",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 17,
+      "page_text_line_end": 17,
+      "text": "Risks Related to Our Product Offerings",
+      "text_sha256": "67dbfbeeef433f642af5b413032b549a300c9f666f4da50f22a5f62ed94eaaba"
+    },
+    {
+      "paragraph_id": "META-FY24-P008",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 19,
+      "page_text_line_end": 20,
+      "text": "If we fail to retain existing users or add new users, or if our users decrease their level of engagement with our products,\nour revenue, financial results, and business may be significantly harmed.",
+      "text_sha256": "09bff3d4056a18abbe60e5bde0f8bd55d6ce6b4c1e953f8a2cf9e97584e670ef"
+    },
+    {
+      "paragraph_id": "META-FY24-P009",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 22,
+      "page_text_line_end": 34,
+      "text": "The size of our active user base and our users' level of engagement across our products are critical to our success. Our\nfinancial performance has been and will continue to be significantly determined by our success in adding, retaining, and\nengaging active users of our products that deliver ad impressions, particularly for Facebook and Instagram. We have\nexperienced, and expect to continue to experience, fluctuations and declines in the size of our active user base in one or more\nmarkets from time to time, particularly in markets where we have achieved higher penetration rates. User growth and\nengagement are also impacted by a number of other factors, including competitive products and services, such as TikTok,\nthat have reduced some users' engagement with our products and services, as well as global and regional business,\nmacroeconomic, and geopolitical conditions. For example, the COVID-19 pandemic led to increases and decreases in the size\nand engagement of our active user base from period to period at different points during the pandemic. In addition, in\nconnection with the war in Ukraine, access to Facebook and Instagram was restricted in Russia and these services were then\nprohibited by the Russian government, which contributed to slight decreases in the size of our active user base following the\nonset of the war. Any future declines in the size of our active user base may adversely impact our ability to deliver ad\nimpressions and, in turn, our financial performance.",
+      "text_sha256": "1c1273e99aaa63eed4549a4cb0f06fda4faee49f178f1754ca4bb01157db939a"
+    },
+    {
+      "paragraph_id": "META-FY24-P010",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 36,
+      "page_text_line_end": 42,
+      "text": "If people do not perceive our products to be useful, reliable, and trustworthy, we may not be able to attract or retain\nusers or otherwise maintain or increase the frequency and duration of their engagement. A number of other social networking\ncompanies that achieved early popularity have since seen their active user bases or levels of engagement decline, in some\ncases precipitously. There is no guarantee that we will not experience a similar erosion of our active user base or engagement\nlevels. Our user engagement patterns have changed over time, and user engagement can be difficult to measure, particularly\nas we and our competitors introduce new and different products and services. Any number of factors can negatively affect\nuser retention, growth, and engagement, including if:",
+      "text_sha256": "8fd8e24de84cd9226036cb5741c2b62d441390af0e278db0b01ffc8a31d347f8"
+    },
+    {
+      "paragraph_id": "META-FY24-P011",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 44,
+      "page_text_line_end": 44,
+      "text": "•        users increasingly engage with other competitive products or services;",
+      "text_sha256": "6c8504841a29f91ac017aaec7bec0bf807f59d840aae89b895dd8c8e94eeca07"
+    },
+    {
+      "paragraph_id": "META-FY24-P012",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 46,
+      "page_text_line_end": 47,
+      "text": "•        we fail to introduce new features, products, or services that users find engaging or if we introduce new products\n             or services, or make changes to existing products and services, that are not favorably received;",
+      "text_sha256": "fa5cf94f08edd9416fb75ed0096e85cca7f61134bd48f007edcb83ea11e11e6e"
+    },
+    {
+      "paragraph_id": "META-FY24-P013",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 49,
+      "page_text_line_end": 50,
+      "text": "•        users feel that their experience is diminished as a result of the decisions we make with respect to the frequency,\n             prominence, format, size, and quality of ads that we display;",
+      "text_sha256": "45a1efc16cbd8992238123dfb72badc59815ad1310dda731ed466f075277f954"
+    },
+    {
+      "paragraph_id": "META-FY24-P014",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 52,
+      "page_text_line_end": 53,
+      "text": "•        users have difficulty installing, updating, or otherwise accessing our products on mobile devices as a result of\n             actions by us or third parties that we rely on to distribute our products and deliver our services;",
+      "text_sha256": "5e60d180af795f28b428967a3251b97fa75ed899e02842714cf3b5147f265a34"
+    },
+    {
+      "paragraph_id": "META-FY24-P015",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 55,
+      "page_text_line_end": 56,
+      "text": "•        user behavior on any of our products changes, including decreases in the quality and frequency of content\n             shared on our products and services;",
+      "text_sha256": "ac3a4bf5504d368dd27ee05f6d35d49414f39712aafd11eb55cf77b1dc7ae74c"
+    },
+    {
+      "paragraph_id": "META-FY24-P016",
+      "pdf_page": 17,
+      "printed_page": 15,
+      "page_text_line_start": 58,
+      "page_text_line_end": 59,
+      "text": "•        we are unable to continue to develop products for mobile devices that users find engaging, that work with a\n             variety of mobile operating systems and networks, and that achieve a high level of market acceptance;",
+      "text_sha256": "8ef81ff410395140fbbb86ff556960d09b378b632406fda2aa4b72b478cf018f"
+    },
+    {
+      "paragraph_id": "META-FY24-P017",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 1,
+      "page_text_line_end": 3,
+      "text": "•   there are decreases in user sentiment due to questions about the quality or usefulness of our products or our user\n    data practices, concerns about the nature of content made available on our products, or concerns related to\n    privacy, safety, security, well-being, or other factors;",
+      "text_sha256": "2b3d90e1517471a962da4445be094b1031ed8375573735c8dd4c006bcaa9f653"
+    },
+    {
+      "paragraph_id": "META-FY24-P018",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 5,
+      "page_text_line_end": 6,
+      "text": "•   we are unable to manage and prioritize information to ensure users are presented with content that is\n    appropriate, interesting, useful, and relevant to them;",
+      "text_sha256": "178e1237bd54991ed85e681ffec2efd3f2ce6344be2ede82f8a63600da5f065e"
+    },
+    {
+      "paragraph_id": "META-FY24-P019",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 8,
+      "page_text_line_end": 8,
+      "text": "•   we are unable to obtain or attract engaging third-party content;",
+      "text_sha256": "465f4a9d3ecb1efa48ed1fd980f208c60b4821609e7b95e9333540fbbe86785d"
+    },
+    {
+      "paragraph_id": "META-FY24-P020",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 10,
+      "page_text_line_end": 11,
+      "text": "•   we are unable to successfully maintain or grow usage of and engagement with applications that integrate with\n    our products;",
+      "text_sha256": "25a987008b259da373eee03b7e5779d6ef7366ef73598ccff9c2fd662c256f67"
+    },
+    {
+      "paragraph_id": "META-FY24-P021",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 13,
+      "page_text_line_end": 14,
+      "text": "•   users adopt new technologies where our products may be displaced in favor of other products or services, or\n    may not be featured or otherwise available;",
+      "text_sha256": "678b9d5004733dd62ba273bf8c8cf68ddd114c7a46ecdd8ebb47179855a227d7"
+    },
+    {
+      "paragraph_id": "META-FY24-P022",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 16,
+      "page_text_line_end": 17,
+      "text": "•   there are changes mandated by legislation, government and regulatory authorities, or litigation that adversely\n    affect our products or users;",
+      "text_sha256": "e5a619b681e93f84baaac6a1ddc970c46d10c8c225d5cedcffe5f75b2fb69c31"
+    },
+    {
+      "paragraph_id": "META-FY24-P023",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 19,
+      "page_text_line_end": 22,
+      "text": "•   we are unable to offer a number of our most significant products and services, including Facebook and\n    Instagram, in Europe, or are otherwise limited in our business operations, as a result of European courts\n    invalidating the EU-U.S. DPF or regulators, courts, or legislative bodies determining that the legal bases we rely\n    upon to transfer user data from the European Union to the United States are invalid;",
+      "text_sha256": "36baadddd6238feaba9cc6d7e5361b6880c9d4dadf6ab9be150d9a9b75b15ab4"
+    },
+    {
+      "paragraph_id": "META-FY24-P024",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 24,
+      "page_text_line_end": 29,
+      "text": "•   there is decreased engagement with our products, decreased efficiency of our advertising products, or failure to\n    accept our terms of service, as part of changes that we have implemented or may implement in the future,\n    whether voluntarily, in connection with the GDPR, the European Union's ePrivacy Directive, the DMA, the\n    DSA, the DMCC, U.S. state privacy laws including the California Consumer Privacy Act, as amended by the\n    California Privacy Rights Act (CCPA), youth social media laws, or other laws, regulations, or regulatory\n    actions, or otherwise;",
+      "text_sha256": "af8cc5324b5b037f7f8ff624dff92bb06daf1043dab9d4791824aae3e5dcd0e8"
+    },
+    {
+      "paragraph_id": "META-FY24-P025",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 31,
+      "page_text_line_end": 34,
+      "text": "•   technical or other problems prevent us from delivering our products in a rapid and reliable manner or otherwise\n    affect the user experience, such as security breaches or failure to prevent or limit spam or otherwise\n    objectionable content, or users feel their experience is diminished as a result of our efforts to protect the security\n    and integrity of our platform;",
+      "text_sha256": "05d0859495035180c96690a49e15b465472ed97efef3f1d1e658bb46232fafa1"
+    },
+    {
+      "paragraph_id": "META-FY24-P026",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 36,
+      "page_text_line_end": 39,
+      "text": "•   we adopt terms, policies, or procedures related to areas such as sharing, content, user data, or advertising, or we\n    take, or fail to take, actions to enforce our policies, that result in our removal of users from our platform or are\n    perceived negatively by our users or the general public, including as a result of decisions or recommendations\n    from the independent Oversight Board regarding content on our platform;",
+      "text_sha256": "8dab36d84f7e2a68ae678bb2d9e014e770a85cb69be9424df0b53237749f02bf"
+    },
+    {
+      "paragraph_id": "META-FY24-P027",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 41,
+      "page_text_line_end": 45,
+      "text": "•   we elect to focus our product decisions on longer-term initiatives that do not prioritize near-term user growth\n    and engagement (for example, we have announced plans to focus product decisions on optimizing the young\n    adult experience in the long term);\n•   we make changes in our user account login or registration processes or changes in how we promote different\n    products and services across our family of products;",
+      "text_sha256": "551240aca505164b882b3c40ad8d46dc03185acb34addead59325aeb992c368e"
+    },
+    {
+      "paragraph_id": "META-FY24-P028",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 47,
+      "page_text_line_end": 49,
+      "text": "•   initiatives designed to attract and retain users and engagement, including the use of evolving technologies such\n    as generative artificial intelligence, are unsuccessful or discontinued, whether as a result of actions by us, our\n    competitors, or other third parties, or otherwise;",
+      "text_sha256": "778345ffad85dba50ea08f92449779f53e6f818187a24950fb549dc215f39e48"
+    },
+    {
+      "paragraph_id": "META-FY24-P029",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 51,
+      "page_text_line_end": 52,
+      "text": "•   third-party initiatives that may enable greater use of our products, including low-cost or discounted data plans,\n    are scaled back or discontinued, or the pricing of data plans otherwise increases;",
+      "text_sha256": "177ab1266531b293377b12e6d1202e29dd4406f356fbcbc1f1a8abd8516604a1"
+    },
+    {
+      "paragraph_id": "META-FY24-P030",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 54,
+      "page_text_line_end": 58,
+      "text": "•   there is decreased engagement with our products as a result of taxes imposed on the use of social media or other\n    mobile applications in certain countries, internet shutdowns, or other actions by governments that affect the\n    accessibility of our products in their countries (for example, beginning in the first quarter of 2022, our user\n    growth and engagement were adversely affected by the war in Ukraine and service restrictions imposed by the\n    Russian government);",
+      "text_sha256": "142bd0d5d7ef7d4ca84c21240a1cc2635123a78edc79b9ea8b64dcfd2dd81225"
+    },
+    {
+      "paragraph_id": "META-FY24-P031",
+      "pdf_page": 18,
+      "printed_page": 16,
+      "page_text_line_start": 60,
+      "page_text_line_end": 60,
+      "text": "•   we fail to provide adequate customer service to users, marketers, developers, or other partners;",
+      "text_sha256": "08e4089ac07caf0a3c38ec589faf1e57c84b246fa1089616bfebdce3aee2a26c"
+    },
+    {
+      "paragraph_id": "META-FY24-P032",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 1,
+      "page_text_line_end": 3,
+      "text": "•         we, developers whose products are integrated with our products, or other partners and companies in our industry\n              are the subject of adverse media reports or other negative publicity, including as a result of our or their user data\n              practices; or",
+      "text_sha256": "0f531b63931e32d1714857965563d8bb60fbc9cc945977cde1d0ced62035acf3"
+    },
+    {
+      "paragraph_id": "META-FY24-P033",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 5,
+      "page_text_line_end": 7,
+      "text": "•         our current or future products, such as our development tools and application programming interfaces that\n              enable developers to build, grow, and monetize applications, reduce user activity on our products by making it\n              easier for our users to interact and share on third-party applications.",
+      "text_sha256": "ac5f56805ea446ace631987cf902af2d0d6e7a2cd51aa7f5fac6742129fd0df5"
+    },
+    {
+      "paragraph_id": "META-FY24-P034",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 9,
+      "page_text_line_end": 16,
+      "text": "From time to time, certain of these factors have negatively affected user retention, growth, and engagement to varying\ndegrees. If we are unable to maintain or increase our user base and user engagement, particularly for our significant revenue-\ngenerating products like Facebook and Instagram, our revenue and financial results may be adversely affected. Any\nsignificant decrease in user retention, growth, or engagement could render our products less attractive to users, marketers, and\ndevelopers, which is likely to have a material and adverse impact on our ability to deliver ad impressions and, accordingly,\nour revenue, business, financial condition, and results of operations. As the size of our active user base fluctuates in one or\nmore markets from time to time, we will become increasingly dependent on our ability to maintain or increase levels of user\nengagement and monetization in order to grow revenue.",
+      "text_sha256": "98ebacdbdb6d039348e19af0395765251f4afde923a76a53d070dbbf957bfadc"
+    },
+    {
+      "paragraph_id": "META-FY24-P035",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 18,
+      "page_text_line_end": 19,
+      "text": "We generate substantially all of our revenue from advertising. The loss of marketers, or reduction in spending by\nmarketers, could seriously harm our business.",
+      "text_sha256": "0879d6c2a9c02ce8062ec2559ead43213dbc21b0b24141a662a6c5bdba33b4c5"
+    },
+    {
+      "paragraph_id": "META-FY24-P036",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 21,
+      "page_text_line_end": 30,
+      "text": "Substantially all of our revenue is currently generated from marketers advertising on Facebook and Instagram. As is\ncommon in the industry, our marketers do not have long-term advertising commitments with us. Many of our marketers\nspend only a relatively small portion of their overall advertising budget with us. Marketers will not continue to do business\nwith us, or they will reduce the budgets they are willing to commit to us, if we do not deliver ads in an effective manner, if\nthey do not believe that their investment in advertising with us will generate a competitive return relative to other alternatives,\nor if they are not satisfied for any other reason. We have implemented, and we will continue to implement, changes to our\nuser data practices. Some of these changes reduce our ability to effectively target ads, which has to some extent adversely\naffected, and will continue to adversely affect, our advertising business. If we are unable to provide marketers with a suitable\nreturn on investment, the demand for our ads may not increase, or may decline, in which case our revenue and financial\nresults may be harmed.",
+      "text_sha256": "3aeb9359dfcb0c0148c796bce192fc03250ac198115e5c31554615945f1af1d2"
+    },
+    {
+      "paragraph_id": "META-FY24-P037",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 32,
+      "page_text_line_end": 32,
+      "text": "Our advertising revenue can also be adversely affected by a number of other factors, including:",
+      "text_sha256": "eda09a7eb079b2fe8150b329c3e97d5a022e3bdb6303e884341367e77f299e1f"
+    },
+    {
+      "paragraph_id": "META-FY24-P038",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 34,
+      "page_text_line_end": 34,
+      "text": "•         decreases in user engagement, including time spent on our products;",
+      "text_sha256": "5df50d623079eda487c80eb57971ea7c43ae0e7e0108caa2b7099111119cac8a"
+    },
+    {
+      "paragraph_id": "META-FY24-P039",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 36,
+      "page_text_line_end": 36,
+      "text": "•         our inability to continue to increase user access to and engagement with our products;",
+      "text_sha256": "6bef876893cb9c0824640d727c840843b42241cf8a83a928fb01ad748b601281"
+    },
+    {
+      "paragraph_id": "META-FY24-P040",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 38,
+      "page_text_line_end": 40,
+      "text": "•         product changes or inventory management decisions we may make that change the size, format, frequency, or\n              relative prominence of ads displayed on our products or of other unpaid content shared by marketers on our\n              products;",
+      "text_sha256": "f6d3bd0819c99fcb20c8d91e7ec2800a9d18977e725e836a474e4cf00e3075f7"
+    },
+    {
+      "paragraph_id": "META-FY24-P041",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 42,
+      "page_text_line_end": 42,
+      "text": "•         our inability to maintain or increase marketer demand, the pricing of our ads, or both;",
+      "text_sha256": "6b7edc1cc89a51273f62659c32963e347793f03e037ea4a3da8496dcc4ef0486"
+    },
+    {
+      "paragraph_id": "META-FY24-P042",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 44,
+      "page_text_line_end": 44,
+      "text": "•         our inability to maintain or increase the quantity or quality of ads shown to users;",
+      "text_sha256": "66e906379396265f3251999d873f98747f6bcda57c12c21812f32e7c092d21b9"
+    },
+    {
+      "paragraph_id": "META-FY24-P043",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 46,
+      "page_text_line_end": 48,
+      "text": "•         changes to the content or application of third-party policies that limit our ability to deliver, target, or measure\n              the effectiveness of advertising, including changes by mobile operating system and browser providers such as\n              Apple and Google;",
+      "text_sha256": "4afa2aada4da80dc1cf623865c4d6cd4084560d535a5bda6c558dc595f0118aa"
+    },
+    {
+      "paragraph_id": "META-FY24-P044",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 50,
+      "page_text_line_end": 52,
+      "text": "•         adverse litigation, government actions, or legislative, regulatory, or other legal developments relating to\n              advertising, including developments that may impact certain advertisers' ability to advertise on our platform or\n              our ability to deliver, target, or measure the effectiveness of advertising;",
+      "text_sha256": "64222f9ab8496ec67ce6f4de8ee8e9b592065ed563578431acfa2af8bb13d599"
+    },
+    {
+      "paragraph_id": "META-FY24-P045",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 54,
+      "page_text_line_end": 56,
+      "text": "•         user behavior or product changes that may reduce traffic to features or products that we monetize at a higher\n              rate, such as our Feed and Stories products, including as a result of increased usage of our Reels or other video\n              or messaging products;",
+      "text_sha256": "1c5fd9cd2a19c571c114d56459566599b9ebcb898b31b05112cf93dd556078c9"
+    },
+    {
+      "paragraph_id": "META-FY24-P046",
+      "pdf_page": 19,
+      "printed_page": 17,
+      "page_text_line_start": 58,
+      "page_text_line_end": 60,
+      "text": "•         reductions of advertising due to our efforts to implement or enforce advertising policies that protect the security\n              and integrity of our platform or that we believe are needed to comply with global content, security, or integrity\n              obligations;",
+      "text_sha256": "f03f0f2d6778754c7577f61011861243e55eb26c9a51d74ee8536157ff998a4b"
+    },
+    {
+      "paragraph_id": "META-FY24-P047",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 1,
+      "page_text_line_end": 2,
+      "text": "•        the availability, accuracy, utility, and security of analytics and measurement solutions offered by us or third\n             parties that demonstrate the value of our ads to marketers, or our ability to further improve such tools;",
+      "text_sha256": "0b300cfee134f436ce07ce4d48c45286b247be8b669a7671d577f00487cbc9c4"
+    },
+    {
+      "paragraph_id": "META-FY24-P048",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 4,
+      "page_text_line_end": 5,
+      "text": "•        loss of advertising market share to our competitors, including if prices to purchase our ads increase or if\n             competitors offer lower priced, more integrated, or otherwise more effective products;",
+      "text_sha256": "3ea2e7c7d2933f80aa52dae9d8f7a84461ad49351923776ef35224de7b088697"
+    },
+    {
+      "paragraph_id": "META-FY24-P049",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 7,
+      "page_text_line_end": 10,
+      "text": "•        limitations on our ability to offer a number of our most significant products and services, including Facebook\n             and Instagram, in Europe as a result of European courts invalidating the EU-U.S. DPF or regulators, courts, or\n             legislative bodies determining that the legal bases we rely upon to transfer user data from the European Union\n             to the United States are invalid;",
+      "text_sha256": "8cdb329231ab5c44155d023f20102967ce74021479e1ff73538546cefa569a5a"
+    },
+    {
+      "paragraph_id": "META-FY24-P050",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 12,
+      "page_text_line_end": 14,
+      "text": "•        limitations on our ability to deliver ads to users under the age of 18 and, in some cases, to continue to offer\n             certain products or services to certain cohorts of users, whether voluntarily, as a result of new laws, regulations,\n             or government actions in the United States and other jurisdictions, or otherwise;",
+      "text_sha256": "3718b02bbe42c7e2699f14b39a6a44e17d12db10000712277b8e10ee30b3439e"
+    },
+    {
+      "paragraph_id": "META-FY24-P051",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 16,
+      "page_text_line_end": 17,
+      "text": "•        changes in our marketing and sales or other operations that we are required to or elect to make as a result of\n             risks related to complying with laws or regulatory requirements or other government actions;",
+      "text_sha256": "388f668b31b515d4c74e4626179924910daac1880f0ea53543ba520a64beb5e0"
+    },
+    {
+      "paragraph_id": "META-FY24-P052",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 19,
+      "page_text_line_end": 23,
+      "text": "•        decisions by marketers to reduce their advertising as a result of announcements by us or adverse media reports\n             or other negative publicity involving us, our user data practices, our advertising metrics or tools, content on our\n             products, our interpretation, implementation, or enforcement of policies relating to content on our products\n             (including as a result of decisions or recommendations from the independent Oversight Board), developers with\n             applications that are integrated with our products, or other companies in our industry;",
+      "text_sha256": "8435f8dd756378b113becb4c8d5aaf3914c031b0ca55fc5fdbf9458ff64e4b02"
+    },
+    {
+      "paragraph_id": "META-FY24-P053",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 25,
+      "page_text_line_end": 28,
+      "text": "•        reductions of advertising by marketers due to illegal, illicit, or otherwise objectionable content made available\n             on our products by third parties, questions about our user data practices or the security of our platform, concerns\n             about brand safety or potential legal liability, or uncertainty regarding regulatory developments or their own\n             legal and compliance obligations, including with respect to artificial intelligence;",
+      "text_sha256": "859d3fd8484c7f3b47591dca8914a8ecdc893433021fc5bbbc55839fa5632458"
+    },
+    {
+      "paragraph_id": "META-FY24-P054",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 30,
+      "page_text_line_end": 37,
+      "text": "•        the effectiveness of our ad targeting or degree to which users consent to, opt out of, or reduce the use of data for\n             ads, including as a result of product changes and controls that we have implemented or may implement in the\n             future in connection with the GDPR, ePrivacy Directive, DMA, DMCC, U.S. state privacy laws including the\n             CCPA, and other laws, regulations, regulatory actions, or litigation, or otherwise, that impact our ability to use\n             data for advertising purposes (for example, in response to regulatory developments in Europe, we began\n             offering our users a \"subscription for no ads\" alternative in the European Union, European Economic Area, and\n             Switzerland, and subsequently in November 2024 provided users in those regions who elect to continue\n             receiving our services free-of-charge, supported by ads, an option to see less personalized ads);",
+      "text_sha256": "1be8f50c84c794d5d01eef443a2372fa81871f4c9c9e966d7e4a4f5c76babd7b"
+    },
+    {
+      "paragraph_id": "META-FY24-P055",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 39,
+      "page_text_line_end": 39,
+      "text": "•        the degree to which users cease or reduce the number of times they engage with our ads;",
+      "text_sha256": "fbfaa2617fb56a7a52614f939daf639406461138115df69ec14162a294aa273f"
+    },
+    {
+      "paragraph_id": "META-FY24-P056",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 41,
+      "page_text_line_end": 41,
+      "text": "•        changes in the way advertising on mobile devices or on personal computers is measured or priced;",
+      "text_sha256": "315e349305d9a36b6a06352ac2c5536a9c9d585cf60ae907b361cd46222837b9"
+    },
+    {
+      "paragraph_id": "META-FY24-P057",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 43,
+      "page_text_line_end": 43,
+      "text": "•        the success of technologies designed to block the display of ads or ad measurement tools;",
+      "text_sha256": "afe3e85ec0058a700a6eaee14010265014d538e0d40a17d8532f3293da480382"
+    },
+    {
+      "paragraph_id": "META-FY24-P058",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 45,
+      "page_text_line_end": 45,
+      "text": "•        changes in the composition of our marketer base or our inability to maintain or grow our marketer base; and",
+      "text_sha256": "062034831220c0cfe39becf860a26a4b5f2e2e21ea08b8857140da67da4e6e06"
+    },
+    {
+      "paragraph_id": "META-FY24-P059",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 47,
+      "page_text_line_end": 52,
+      "text": "•        the impact of macroeconomic and geopolitical conditions, whether in the advertising industry in general, or\n             among specific types of marketers or within particular geographies, which in turn can have broader effects in\n             other regions (for example, the war in Ukraine and service restrictions imposed by the Russian government have\n             adversely affected our advertising business in Europe and other regions, and advertiser spending also can be\n             subject to adverse effects from conflicts in the Middle East or the implementation of tariffs by the United States,\n             China, or other governments).",
+      "text_sha256": "4f9d344b7c902ed85543fa955ce169d1a182f851217c2e4a0559e60833370612"
+    },
+    {
+      "paragraph_id": "META-FY24-P060",
+      "pdf_page": 20,
+      "printed_page": 18,
+      "page_text_line_start": 54,
+      "page_text_line_end": 57,
+      "text": "From time to time, certain of these factors have adversely affected our advertising revenue to varying degrees. The\noccurrence of any of these or other factors in the future, including our enforcement efforts, could result in a reduction in\nmarketer spend or demand for our ads, which may reduce the prices we receive for our ads, could cause marketers to stop\nadvertising with us altogether, or could otherwise negatively affect our revenue and financial results, and could be material.",
+      "text_sha256": "da3864ee38344aa091207b1879aec545cf79cbfec3dd9351ee6e6458282b9cc7"
+    },
+    {
+      "paragraph_id": "META-FY24-P061",
+      "pdf_page": 21,
+      "printed_page": 19,
+      "page_text_line_start": 1,
+      "page_text_line_end": 4,
+      "text": "Our ad targeting and measurement tools incorporate data signals from user activity on websites and services that we do\nnot control, as well as signals generated within our products, and changes to the regulatory environment, third-party\nmobile operating systems and browsers, and our own products have impacted, and we expect will continue to impact, the\navailability of such signals, which will adversely affect our advertising revenue.",
+      "text_sha256": "2334578e0e9ba8f5f5c0d9f1c217a76f0b5ed64d0e093380235a46f990341815"
+    },
+    {
+      "paragraph_id": "META-FY24-P062",
+      "pdf_page": 21,
+      "printed_page": 19,
+      "page_text_line_start": 6,
+      "page_text_line_end": 29,
+      "text": "Our ad targeting and measurement tools rely on data signals from user activity on websites and services that we do not\ncontrol, as well as signals generated within our products, in order to deliver relevant and effective ads to our users, and any\nchanges in our ability to use such signals will adversely affect our business. For example, legislative and regulatory\ndevelopments, such as the GDPR, ePrivacy Directive, DMA, and U.S. state privacy laws, including the CCPA, have\nimpacted, and we expect will continue to impact, our ability to use such signals in our ad products. In particular, we have\nseen increases in the number of users opting to control certain types of ad targeting in Europe following product changes\nimplemented in connection with our GDPR and ePrivacy Directive compliance, and we have introduced product changes that\nlimit data signal use for certain users in California following adoption of the CCPA. Other U.S. state privacy laws, such as\nthe Texas Data Privacy and Security Act, the Colorado Privacy Act, and the Oregon Consumer Privacy Act, are introducing\nadditional rights for users and could result in restrictions on our use of signals from third-party apps and websites through\ncertain browser- and device-based universal opt-out mechanisms. Judicial and regulatory guidance, decisions, or enforcement\nactions, or new legislation in these or other jurisdictions may require us to make additional changes to our products in the\nfuture that further reduce our ability to use these signals, which has occurred in the past. For example, in response to\nregulatory developments in Europe, we announced plans to change the legal basis for behavioral advertising on Facebook and\nInstagram in the European Union, European Economic Area, and Switzerland from \"legitimate interests\" to \"consent,\" and in\nNovember 2023 we began offering users in the region a \"subscription for no ads\" alternative. We are engaging with\nregulators on our consent model, including regarding compliance with requirements under the GDPR, DMA, and EU\nconsumer laws. For example, in March 2024, the European Commission opened formal proceedings regarding the\ncompliance of our \"subscription for no ads\" model with requirements under the DMA, and it issued preliminary findings in\nJuly 2024. In addition, the European Data Protection Board has published an opinion on the operation of such models under\nGDPR and European consumer protection organizations have raised concerns regarding our compliance with consumer\nprotection laws. In response to these developments, in November 2024, we began offering users in the European Union,\nEuropean Economic Area, and Switzerland who elect to continue using our services free-of-charge, supported by ads, an\noption to see less personalized ads, which are expected to be less relevant and effective than our premium ad offerings.",
+      "text_sha256": "3221e4ee8da8c6bf34e57682406ea2105c3c48640d2365dad2cdafcfc0488aee"
+    },
+    {
+      "paragraph_id": "META-FY24-P063",
+      "pdf_page": 21,
+      "printed_page": 19,
+      "page_text_line_start": 31,
+      "page_text_line_end": 39,
+      "text": "In addition, mobile operating system and browser providers, such as Apple and Google, have implemented product\nchanges and/or announced future plans to limit the ability of websites and application developers to collect and use these\nsignals to target and measure advertising. For example, in 2021, Apple made certain changes to its products and data use\npolicies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and\nmeasure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the\nbudgets marketers are willing to commit to us and other advertising platforms. In addition, we have implemented, and may\ncontinue to implement, product changes that give users the ability to limit our use of such data signals to improve ads and\nother experiences on our products and services, including changes implemented in connection with the GDPR, ePrivacy\nDirective, DMA, and other regulatory frameworks.",
+      "text_sha256": "64de6b0dee7892d781a9036c2d8addece19e3914839c0a971b771012f3d812e9"
+    },
+    {
+      "paragraph_id": "META-FY24-P064",
+      "pdf_page": 21,
+      "printed_page": 19,
+      "page_text_line_start": 41,
+      "page_text_line_end": 45,
+      "text": "These developments have limited our ability to target and measure the effectiveness of ads on our platform and\nnegatively impacted our advertising revenue. For example, our advertising revenue has been negatively impacted by marketer\nreaction to targeting and measurement challenges associated with iOS changes beginning in 2021. If we are unable to\nmitigate these developments as they take further effect in the future, our targeting and measurement capabilities will be\nmaterially and adversely affected, which would in turn significantly impact our advertising revenue.",
+      "text_sha256": "864acd3128ad0ecb827cb6dfa056cc956ccd0af97a2c0bb01aa18ec1b6caaf8b"
+    },
+    {
+      "paragraph_id": "META-FY24-P065",
+      "pdf_page": 21,
+      "printed_page": 19,
+      "page_text_line_start": 47,
+      "page_text_line_end": 48,
+      "text": "Our user growth, engagement, and monetization on mobile devices depend upon effective operation with mobile operating\nsystems, networks, technologies, products, and standards that we do not control.",
+      "text_sha256": "14b7b062f1dc4330c0dc78cb1a8dcf20a1ebbbc74c51eb99713cf14aa1054ec0"
+    },
+    {
+      "paragraph_id": "META-FY24-P066",
+      "pdf_page": 21,
+      "printed_page": 19,
+      "page_text_line_start": 50,
+      "page_text_line_end": 57,
+      "text": "The substantial majority of our revenue is generated from advertising on mobile devices. There is no guarantee that\npopular mobile devices will continue to feature our products, or that mobile device users will continue to use our products\nrather than competing products. We are dependent on the interoperability of our products with popular mobile operating\nsystems, networks, technologies, products, and standards that we do not control, such as the Android and iOS operating\nsystems and mobile browsers. Changes, bugs, or technical issues in such systems, or changes in our relationships with mobile\noperating system partners, handset manufacturers, browser developers, or mobile carriers, or in the content or application of\ntheir terms of service or policies (which they have made in the past and continue to seek to implement) that degrade our\nproducts' functionality, reduce or eliminate our ability to update or distribute our products, give preferential treatment to",
+      "text_sha256": "0fe3d21e9932ef7288ba20af084478163f6753f8f13a6cad6580d10c1116d2a3"
+    },
+    {
+      "paragraph_id": "META-FY24-P067",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 1,
+      "page_text_line_end": 24,
+      "text": "competitive products, limit our ability to deliver, target, or measure the effectiveness of ads, or charge fees related to the\ndistribution of our products or our delivery of ads have adversely affected, and could in the future adversely affect, the usage\nof our products and monetization on mobile devices. For example, Apple previously released an update to its Safari browser\nthat limits the use of third-party cookies, which reduces our ability to provide the most relevant ads to our users and impacts\nmonetization, and also released changes to iOS that limit our ability to target and measure ads effectively, while expanding\ntheir own advertising business. In addition, Google previously proposed phasing out third-party cookies in its Chrome\nbrowser. We expect that any similar changes to Apple's, Google's, or other browser or mobile platforms will further limit our\nability to target and measure the effectiveness of ads and impact monetization. Additionally, in order to deliver high quality\nmobile products, it is important that our products work well with a range of mobile technologies, products, systems,\nnetworks, and standards that we do not control, and that we have good relationships with handset manufacturers, mobile\ncarriers, and browser developers. We may not be successful in maintaining or developing relationships with key participants\nin the mobile ecosystem or in developing products that operate effectively with these technologies, products, systems,\nnetworks, or standards. In the event that it is more difficult for our users to access and use our products on their mobile\ndevices, or if our users choose not to access or use our products on their mobile devices or use mobile products that do not\noffer access to our products, our user growth and user engagement could be harmed. From time to time, we may also take\nactions regarding the distribution of our products or the operation of our business based on what we believe to be in our long-\nterm best interests. Such actions may adversely affect our users and our relationships with the operators of mobile operating\nsystems, handset manufacturers, mobile carriers, browser developers, other business partners, or advertisers, and there is no\nassurance that these actions will result in the anticipated long-term benefits. In the event that our users are adversely affected\nby these actions or if our relationships with such third parties deteriorate, our user growth, engagement, and monetization\ncould be adversely affected and our business could be harmed. We have experienced challenges in operating with mobile\noperating systems, networks, technologies, products, and standards that we do not control, and any such occurrences in the\nfuture may negatively impact our user growth, engagement, and monetization on mobile devices, which may in turn\nmaterially and adversely affect our business and financial results.",
+      "text_sha256": "a0b9b786ce39f0ac1a281275081c3020ac897505b877a01aa6e361cfffddba1d"
+    },
+    {
+      "paragraph_id": "META-FY24-P068",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 26,
+      "page_text_line_end": 27,
+      "text": "Our new products and changes to existing products could fail to attract or retain users or generate revenue and profits, or\notherwise adversely affect our business.",
+      "text_sha256": "ac1cdb52679b249515add98d3368c071d5022cf81176f73fcba8f835878cdf6b"
+    },
+    {
+      "paragraph_id": "META-FY24-P069",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 29,
+      "page_text_line_end": 38,
+      "text": "Our ability to retain, increase, and engage our user base and to increase our revenue depends heavily on our ability to\ncontinue to evolve our existing products and to create successful new products, both independently and in conjunction with\ndevelopers or other third parties. We may introduce significant changes to our existing products or acquire or introduce new\nand unproven products, including using technologies with which we have little or no prior development or operating\nexperience. For example, we have relatively limited experience with consumer hardware products and virtual, augmented,\nand mixed reality technology, which may adversely affect our ability to successfully develop and market these evolving\nproducts and technologies. We are also making significant investments in artificial intelligence (AI) initiatives across our\nbusiness. For example, we continue to launch new AI features on our products, including support for new modalities,\nconversational AIs, stickers and photos, and editing tools. We continue to incur substantial costs, and we may not be\nsuccessful in generating profits, in connection with these efforts.",
+      "text_sha256": "e4956b9f9b9baae1a3b7fbe675869361d7879bdc5a178e032f06b83ef9f8164a"
+    },
+    {
+      "paragraph_id": "META-FY24-P070",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 40,
+      "page_text_line_end": 45,
+      "text": "In addition, we have invested, and expect to continue to invest, significant resources in growing our messaging\nproducts to support increasing usage of such products. We have historically monetized messaging in only a limited fashion,\nand we may not be successful in our efforts to generate meaningful revenue or profits from messaging over the long term.\nOur efforts to implement default end-to-end encryption across our messaging services on Facebook and Instagram have been\nsubject to governmental and regulatory scrutiny in multiple jurisdictions. For example, the Nevada Attorney General is\nseeking to enjoin our offering of default end-to-end encryption on Messenger for all Nevada residents under the age of 18.",
+      "text_sha256": "a60d76ceb796afd6bc5de9de0a1fbc9d488dde7b1c7cd6711e2ff425ae886d81"
+    },
+    {
+      "paragraph_id": "META-FY24-P071",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 47,
+      "page_text_line_end": 49,
+      "text": "If our new products or changes to existing products fail to engage users, marketers, or developers, or if our business\nplans are unsuccessful, we may fail to attract or retain users or to generate sufficient revenue, operating margin, or other\nvalue to justify our investments, and our business may be adversely affected.",
+      "text_sha256": "c6d9be3d89da4886b0afdb4b3a8d5fc632efb2ac6412fc00e88af41d6f63eef5"
+    },
+    {
+      "paragraph_id": "META-FY24-P072",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 51,
+      "page_text_line_end": 52,
+      "text": "We may not be successful in our artificial intelligence initiatives, which could adversely affect our business, reputation, or\nfinancial results.",
+      "text_sha256": "01175cb009bec5c959c8a18806f8c6318a0c8b734543f8b1fa8448e7e59acc31"
+    },
+    {
+      "paragraph_id": "META-FY24-P073",
+      "pdf_page": 22,
+      "printed_page": 20,
+      "page_text_line_start": 54,
+      "page_text_line_end": 57,
+      "text": "We are making significant investments in AI initiatives, including generative AI, to, among other things, recommend\nrelevant content across our products, enhance our advertising tools, develop new products, and develop new features for\nexisting products. In particular, we expect our AI initiatives will require increased investment in infrastructure and headcount.\nIf our investments are not successful longer-term, our business and financial performance could be harmed.",
+      "text_sha256": "6cfdc4ef0cf404930ec8e4092fe2f9bb5f96807afdc149858aa7879ea84af497"
+    }
+  ]
+}

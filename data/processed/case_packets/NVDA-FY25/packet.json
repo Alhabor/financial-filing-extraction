@@ -1,0 +1,134 @@
+{
+  "packet_id": "CP-NVDA-FY25-v001",
+  "case_id": "NVDA-FY25",
+  "dataset_role": "development",
+  "packet_version": "case-packet-spec-v001",
+  "source": {
+    "pdf_path": "data/raw/sec/NVDA-FY25/filing.pdf",
+    "pdf_sha256": "b67bd67a64488a54886de001c788bc5059a965fc6ef5b4d8b71624951e13df8e",
+    "item1a_path": "data/processed/item_1a/NVDA-FY25.txt",
+    "item1a_sha256": "15eefdc9286da299293f49463275294ab6493d5a3314e0f88f7ede656a055151",
+    "selected_pages": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24
+    ],
+    "page_map": [
+      {
+        "pdf_page": 16,
+        "printed_page": 16
+      },
+      {
+        "pdf_page": 17,
+        "printed_page": 17
+      },
+      {
+        "pdf_page": 18,
+        "printed_page": 18
+      },
+      {
+        "pdf_page": 19,
+        "printed_page": 19
+      },
+      {
+        "pdf_page": 20,
+        "printed_page": 20
+      },
+      {
+        "pdf_page": 23,
+        "printed_page": 23
+      },
+      {
+        "pdf_page": 24,
+        "printed_page": 24
+      }
+    ]
+  },
+  "model_input": {
+    "text_path": "data/processed/case_packets/NVDA-FY25/packet.txt",
+    "text_sha256": "6ebdc5ffb8ebbc00e3d2333cde711086efb336ab1369e62a77c0862eecd16f18",
+    "images": [
+      {
+        "pdf_page": 16,
+        "printed_page": 16,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-016.png",
+        "sha256": "14f782e58d33966d1b1a4a9b744dd363f69e96a4644c451fa2317e43a7eb36d7",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 17,
+        "printed_page": 17,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-017.png",
+        "sha256": "7c615082ae695a7de7fee7ddef37474188208e7aefba995e1736709a0cf59284",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 18,
+        "printed_page": 18,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-018.png",
+        "sha256": "6339c52f1801562c71228a31f12a51c67d9c161ba7b346ffa3033e92e4954694",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 19,
+        "printed_page": 19,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-019.png",
+        "sha256": "0dc43560b80d5912210e798725fe3c590f1b16cb43bec5d5b014d31069538392",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 20,
+        "printed_page": 20,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-020.png",
+        "sha256": "08cf703a582ca386aa818ab26c992302a4f1a5f1aca462c13457dff2fca1caad",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 23,
+        "printed_page": 23,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-023.png",
+        "sha256": "f88affba99973ed8d93f58d24d80b4893519abc6694ec24c13d26e77ba623966",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 24,
+        "printed_page": 24,
+        "path": "data/processed/case_packets/NVDA-FY25/pages/page-024.png",
+        "sha256": "694378630b07d97541bbaa8a70652c89e0e3ae35370f0802d7427542162f3758",
+        "mime_type": "image/png"
+      }
+    ],
+    "locator_path": "data/processed/case_packets/NVDA-FY25/locator_index.json",
+    "paragraph_count": 87,
+    "extractor": "pdftotext -layout per physical PDF page",
+    "paragraph_granularity": "blank-line text block after PDF footer removal",
+    "locator_sha256": "9c373d6a234e5a43975d978554f19f5fb6a19de44f0177aa13ba0c330ce1eaa0"
+  },
+  "risk_candidates_for_internal_review": [
+    {
+      "id": "C1",
+      "label": "Supply and demand mismatch",
+      "anchor": "Long manufacturing lead times"
+    },
+    {
+      "id": "C2",
+      "label": "Product defects and remediation",
+      "anchor": "Defects in our products"
+    },
+    {
+      "id": "C3",
+      "label": "Customer and channel concentration",
+      "anchor": "We receive a significant amount of our revenue"
+    }
+  ],
+  "generation": {
+    "script": "scripts/build_case_packets.cjs",
+    "rendered_dpi": 144,
+    "created_at_utc": "2026-09-02T03:09:57.856Z"
+  },
+  "leakage_control": "risk_candidates_for_internal_review is not included in packet.txt or model requests."
+}

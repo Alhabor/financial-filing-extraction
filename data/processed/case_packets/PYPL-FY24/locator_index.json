@@ -1,0 +1,303 @@
+{
+  "packet_id": "CP-PYPL-FY24-v001",
+  "case_id": "PYPL-FY24",
+  "paragraphs": [
+    {
+      "paragraph_id": "PYPL-FY24-P001",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 1,
+      "page_text_line_end": 3,
+      "text": "legislative and regulatory landscapes with respect to cryptocurrency may subject us to additional licensing and regulatory obligations or to additional inquiries\nor investigations from the SEC or other regulators and governmental authorities, and require us to make product changes, restrict or discontinue product\nofferings in certain markets, implement additional and potentially costly controls, or take other actions.",
+      "text_sha256": "6a10c036a1f438805b593d0bb8543907eaff00c007cf616c302ad339fc92aa8b"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P002",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 5,
+      "page_text_line_end": 14,
+      "text": "In August 2023, a third-party issuer with which we have partnered commercially (the “PYUSD Issuer”) launched a U.S. dollar-denominated stablecoin named\nPayPal USD (“PYUSD”), which is available to PayPal U.S. customers and Venmo customers. These PayPal and Venmo customers may, if provisioned for\nexternal transfers and subject to our sanctions and anti-money laundering controls, send PYUSD to external wallets not controlled by PayPal. The PYUSD\nIssuer may also allow institutional users to directly purchase PYUSD from the PYUSD Issuer (as per the PYUSD Issuer’s stablecoin terms and conditions).\nThe regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the\nSEC. There are uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice, and we\nand the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirement. If we or the PYUSD Issuer fail to\ncomply with regulations, requirements, prohibitions or other obligations applicable to us, we could face regulatory or other enforcement actions, potential fines,\npenalties, and other consequences. In addition, we could face reputational harm through our relationship with the PYUSD Issuer if the PYUSD Issuer were to\nface regulatory scrutiny, PYUSD is deemed to be a security, or PYUSD is alleged to be used for transactions in connection with illicit or illegal activities.",
+      "text_sha256": "07355f03e394729cadccf5fd54479cc62813a37bd3c30072fe73c5610372d4de"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P003",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 16,
+      "page_text_line_end": 21,
+      "text": "We hold our customers’ cryptocurrency assets through one or more third-party custodians. Financial and third-party risks related to our customer\ncryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, insufficient insurance coverage\nby a custodian to reimburse us for all such losses, a custodian’s failure to maintain effective controls over the custody and settlement services provided to us, a\ncustodian’s inability to purchase or liquidate cryptocurrency holdings, the failure of the PYUSD Issuer to maintain sufficient reserve assets backing PYUSD\nand defaults on financial or performance obligations by a custodian, banks with which the PYUSD Issuer maintains reserve assets or counterparty financial\ninstitutions, could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation.",
+      "text_sha256": "4022bf05c144921edb196821fe406dab1463cb1d64aa2a9897bb72f6ee106260"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P004",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 23,
+      "page_text_line_end": 27,
+      "text": "We have selected custodian partners and the PYUSD Issuer, and may in the future select additional custodian partners and stablecoin issuing entities, that are\nsubject to regulatory oversight, capital requirements, maintenance of audit and compliance industry certifications, and cybersecurity procedures and policies.\nNevertheless, any operational disruptions at any such custodian or issuer, or such custodians’ or issuer’s failure to safeguard cryptocurrency holdings (or\nreserve assets), could result in losses of customer assets, expose us to customer claims, reduce consumer confidence and materially impact our cryptocurrency\nproduct offerings and our operating results.",
+      "text_sha256": "7875927bff3e072d5777849317d551c80cec0fd3245bec6b6d65a024390ddcc8"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P005",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 29,
+      "page_text_line_end": 37,
+      "text": "Custodial arrangements to safeguard cryptocurrency assets involve unique risks and uncertainties in the event of a custodian’s bankruptcy. While other types of\nassets and some custodied cryptocurrencies have been deemed not to be part of the custodian’s bankruptcy estate under various regulatory regimes, bankruptcy\ncourts have not yet definitively determined the appropriate treatment of custodial holdings of digital assets in a bankruptcy proceeding. In the event of a\ncustodian’s bankruptcy, the lack of precedent and the highly fact-dependent nature of the determination could delay or preclude the return of custodied\ncryptocurrency assets to us or to our customers. Although we contractually require our custodians to segregate our customer assets and not commingle them\nwith proprietary or other assets, we cannot be certain that these contractual obligations, even if duly observed by a custodian, will be effective in preventing\nsuch assets from being treated as part of the custodian’s estate under bankruptcy or other insolvency law. In that event, our claim on behalf of such customers\nagainst a custodian’s estate for our customers’ cryptocurrency assets could be treated as a general unsecured claim against the custodian, in which case our\ncustomers could seek to hold us liable for any resulting losses.",
+      "text_sha256": "30a8ade19da0adf7c7ccca517b647f60183a907a25df007803cf34e4cc2f6fd7"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P006",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 39,
+      "page_text_line_end": 39,
+      "text": "Lending Regulation",
+      "text_sha256": "61bc65a480729b9f997e02b67680d4ac7dcc77aba9c263c1d129b7010217b5ba"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P007",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 41,
+      "page_text_line_end": 45,
+      "text": "We hold a number of U.S. state lending licenses for our U.S. consumer short-term installment loan product, which is subject to federal and state laws governing\nconsumer credit and debt collection. Similarly, the consumer short-term installment loan products that we offer outside the U.S. may be subject to consumer\ncredit legislation, licensing requirements, consumer lending laws, consumer protection or banking transparency regulations. Increased global regulatory focus\non short-term installment products and consumer credit more broadly could result in laws or regulations requiring changes to our policies, procedures,\noperations, and product offerings, and restrict or limit our ability to offer credit products.",
+      "text_sha256": "3ae1192cf75a77918404d4be9a986f146d1de05a496ccd7e936f9953d7bda560"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P008",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 47,
+      "page_text_line_end": 47,
+      "text": "Consumer Protection",
+      "text_sha256": "41ce02be68256fe2b6d0402ac033f35ca6c3d1f04d7d404bc4ffdd053ef3b9e9"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P009",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 1,
+      "page_text_line_end": 9,
+      "text": "property, there can be no assurance that we will be successful in protecting or enforcing our rights in every jurisdiction, that our contractual arrangements will\nprevent or deter third parties from infringing or misappropriating our intellectual property, or that third parties will not independently develop equivalent or\nsuperior intellectual property rights. We may be required to expend significant time and resources to prevent infringement and enforce our rights, and we may\nbe unable to discover or determine the extent of any unauthorized use of our proprietary rights. If we are unable to prevent third parties from infringing or\notherwise violating our proprietary rights, the uniqueness and value of our products and services could be adversely affected, the value of our brands could be\ndiminished, and our business could be adversely affected. We expect to continue to license in the future certain of our proprietary rights, such as trademarks or\ncopyrighted material, to others. These licensees may take actions that diminish the value of our proprietary rights or harm our reputation. Any failure to\nadequately protect or enforce our proprietary rights, or significant costs incurred in doing so, could diminish the value of our intangible assets and materially\nharm our business.",
+      "text_sha256": "8b8c71b519bedc6d9551be6dffe6be2aa0bbf83e3f277e8c7334ea9bceef938a"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P010",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 11,
+      "page_text_line_end": 11,
+      "text": "BUSINESS AND OPERATIONS RISKS",
+      "text_sha256": "dfb6e1e8137046453e754c93f5f16ab1cd3b7405833ccae66117e0c774e1c2b2"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P011",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 13,
+      "page_text_line_end": 13,
+      "text": "We face substantial and increasingly intense competition worldwide in the global payments industry.",
+      "text_sha256": "18ce800c00ae7479d7213e6ecf5de938a294c35eb21a22e2e752c151bde0fe44"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P012",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 15,
+      "page_text_line_end": 18,
+      "text": "The global payments industry is highly competitive, dynamic, and innovative, and increasingly subject to regulatory scrutiny and oversight. Many of the areas\nin which we compete evolve rapidly with innovative and disruptive technologies, shifting user preferences and needs, price sensitivity of consumers and\nmerchants, and frequent introductions of new products and services. Competition also may intensify as new competitors emerge, businesses combine or enter\ninto new partnerships, and established companies in other segments expand to become competitive with various aspects of our business.",
+      "text_sha256": "68228ae5f0742e5521c4965db9ace5364ccf792af3717df54e2022928dd961c1"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P013",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 20,
+      "page_text_line_end": 29,
+      "text": "We compete with a wide range of businesses in every aspect of our business. Some of our current and potential competitors are or may be larger than we are,\nhave larger customer bases, greater brand recognition, longer operating histories, a dominant or more secure position, broader geographic scope, volume, scale,\nresources, and market share than we do, or offer products and services that we do not offer. Other competitors are or may be smaller or younger companies that\nmay be more agile in responding to regulatory and technological changes and customer preferences. Our competitors may devote greater resources to the\ndevelopment, promotion, and sale of products and services, and/or offer lower prices or more effectively offer their own innovative programs, products, and\nservices. We often partner with other businesses, and the ability to continue developing these partnerships is important to our business. Competition for\nrelationships with these partners is intense, and there can be no assurance that we will be able to continue to establish, grow, or maintain these partner\nrelationships. If we are unable to differentiate our products and services from those of our competitors, drive value for our customers and adoption of our\nproducts and services, or effectively and efficiently align our resources with our goals and objectives, we may not be able to compete effectively, which could\nnegatively impact our results of operations and financial condition.",
+      "text_sha256": "77c1d152ae8d90caa0732fdbdc246a3344d1e4419ad84d42f21b857ef4969eaa"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P014",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 31,
+      "page_text_line_end": 31,
+      "text": "Changes to payment card networks or bank fees, rules, or practices could harm our business.",
+      "text_sha256": "c8568de590b949e35d86e72c173762cf6e443e4dd96b0784c51dd37fbac5ff2d"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P015",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 33,
+      "page_text_line_end": 39,
+      "text": "To process certain transactions, we must comply with applicable payment card, bank or other network (collectively, “network”) rules. The rules govern all\naspects of a transaction on the networks, including fees and other practices. From time to time, the networks have increased the fees and assessments that they\ncharge for transactions that access their networks. Certain networks have also imposed special fees or assessments for transactions that are executed through a\ndigital wallet such as the one that PayPal offers. Our payment processors may have the right to pass any increases in fees and assessments on to us and to\nincrease their own fees for processing. Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our\npayment processors could make our pricing less competitive, increase our operating costs, and reduce our operating income, which could materially harm our\nbusiness, financial condition, and results of operations.",
+      "text_sha256": "f0377b83dcc9afd11ad9670d1fe44560c13e2433d2b6409c8fde61dd10c4c019"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P016",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 41,
+      "page_text_line_end": 43,
+      "text": "In some jurisdictions, government regulations have required payment card networks to reduce or cap interchange fees. Any changes in interchange fee rates or\nlimitations, or their applicability to PayPal’s products and services, could adversely affect our competitive position against payment card service providers and\nthe revenue we earn from our branded card programs, require us to change our business practices, and harm our business.",
+      "text_sha256": "ea2f48471d8c416521bc915114745e31a5948e7b06329f341b2335e13ec01e8b"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P017",
+      "pdf_page": 21,
+      "printed_page": 21,
+      "page_text_line_start": 45,
+      "page_text_line_end": 50,
+      "text": "We may also be subject to fines and other penalties assessed by networks resulting from any rule violations by us or our merchants. The networks set and\ninterpret their rules, and have alleged from time to time that various aspects of our business model violate these rules, or our agreements with the networks.\nSuch allegations may result in significant fines, penalties, damages, or other liabilities, adversely impact benefits to us under the agreements, or require changes\nin our business practices that may be costly and adversely affect our business, results of operations and financial condition. The network rules may also\nincrease the cost of, impose restrictions on, or otherwise impact the development of, our products which may negatively affect product deployment and\nadoption. The networks could adopt new operating rules or interpret or re-interpret existing rules that",
+      "text_sha256": "e144711d69bd90dd1464e3a7b7420a162074e359f7172757a58b9dd3dac6f4de"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P018",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 1,
+      "page_text_line_end": 3,
+      "text": "we or our payment processors might find difficult or impractical to follow, or costly to implement, which could require us to make significant changes to our\nproducts, increase our operational costs, and negatively impact our business. If we become unable or limited in our ability to accept certain payment types such\nas debit or credit cards, our business would be materially and adversely affected.",
+      "text_sha256": "a9fb304d96f8d0de71752f99e9812d0668a39afba30fdce11c280258de422c3f"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P019",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 5,
+      "page_text_line_end": 5,
+      "text": "Changes in how consumers fund their PayPal transactions could harm our business.",
+      "text_sha256": "0b83cc068517bc2b300197e138cd683f7ef06f3fe4677e3643d5606e4f346951"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P020",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 7,
+      "page_text_line_end": 14,
+      "text": "We pay transaction fees when consumers fund payment transactions using credit cards, lower fees when consumers fund payments with debit cards, and\nnominal fees when consumers fund payment transactions by electronic transfer of funds from bank accounts, from an existing PayPal account balance or\nVenmo account balance, or through our PayPal branded consumer credit products. Our financial performance is sensitive to changes in the rate at which our\nconsumers fund payments using payment cards, which can significantly increase our costs. Although we provide consumers in certain markets with the\nopportunity to use their existing PayPal account balance or Venmo account balance to fund payment transactions, some of our consumers may prefer to use\npayment cards, which may offer features and benefits not provided as part of their PayPal accounts. Any increase in the portion of our payment volume funded\nusing payment cards or in fees associated with our funding mix, or other events or developments that make it more difficult or costly for us to fund transactions\nwith lower-cost funding options, could materially and adversely affect our financial performance and significantly harm our business.",
+      "text_sha256": "c5f1b2886099b5ec083f1a36a3ee456275ffdce77b67592703d4f56573c05339"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P021",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 16,
+      "page_text_line_end": 16,
+      "text": "Our credit products expose us to additional risks.",
+      "text_sha256": "6195b54a1523bc03db1fced065eabf3c3dd0f027455152774d1b1705a1f3d7f3"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P022",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 18,
+      "page_text_line_end": 26,
+      "text": "We offer credit products to a wide range of consumers and merchants in the U.S. and various international markets. The financial success of these products\ndepends largely on the effective management of related risk. The credit decision-making process for our consumer credit products uses proprietary\nmethodologies and credit algorithms and other analytical techniques designed to analyze the credit risk of specific consumers based on, among other factors,\ntheir past purchase and transaction history with PayPal or Venmo and their credit scores. Similarly, proprietary risk models and other indicators are applied to\nassess merchants who desire to use our merchant financing offerings to help predict their ability to repay. These risk models may not accurately predict the\ncreditworthiness of a consumer or merchant due to inaccurate assumptions, including those related to the particular consumer or merchant, market conditions,\neconomic environment, or limited transaction history or other data. The accuracy of these risk models and the ability to manage credit risk related to our credit\nproducts may also be affected by legal or regulatory requirements, changes in consumer behavior, changes in the economic environment, issuing bank policies,\nand other factors.",
+      "text_sha256": "3ede6382f949cd5387c85af3b0bde2d00e9f4696ec888501655838321f608df9"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P023",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 28,
+      "page_text_line_end": 37,
+      "text": "We are subject to the risk that account holders who use our credit products will default on their payment obligations. The non-payment rate among account\nholders may increase due to, among other factors, changes to underwriting standards, risk models not accurately predicting the creditworthiness of a user,\nworsening economic conditions, such as a recession or government austerity programs, increases in prevailing interest rates, and high unemployment rates.\nAccount holders who miss payments often fail to repay their loans, and account holders who file for protection under the bankruptcy laws generally do not\nrepay their loans. Further, laws or regulations may limit the assessment of late fees or penalties on certain credit products, which could negatively impact our\nrevenue share arrangement with an independent chartered financial institution with respect to our U.S. consumer credit products. Any deterioration in the\nperformance of loans facilitated through our platform or unexpected losses on such loans may increase the risk of potential charge-offs, increase our allowance\nfor loans and interest receivable, negatively impact our revenue share arrangement (as discussed in “Item 7. Management’s Discussion and Analysis of\nFinancial Condition and Results of Operations — Key Metrics and Financial Results”), and materially and adversely affect our financial condition and results\nof operations.",
+      "text_sha256": "f8a33947e65d41cb1c3f242398b8a15644c95f988ab09af906ac7efcfd36077c"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P024",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 39,
+      "page_text_line_end": 46,
+      "text": "We generally rely on the activities and charters of unaffiliated financial institutions to provide PayPal and Venmo branded consumer credit and merchant\nfinancing offerings to our U.S. customers. As a service provider to these unaffiliated financial institutions, which are federally supervised U.S. financial\ninstitutions, we are subject from time to time to examination by their federal banking regulators. In the event of any termination or interruption in a partner\nbank’s ability or willingness to lend, our ability to offer consumer credit and merchant financing products could be interrupted or limited, which could\nmaterially and adversely affect our business. We may be unable to reach a similar arrangement with another unaffiliated financial institution on favorable terms\nor at all. Obtaining and maintaining the lending licenses required for us to originate such loans ourselves would be a costly, time-consuming and uncertain\nprocess, and would subject us to additional laws and regulatory requirements, which could significantly increase our costs and compliance obligations and\nrequire us to change our business practices.",
+      "text_sha256": "46047ae3f2f669eb7c100dcb750df035cb85eb55c5f9240de0026c5818ac1bff"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P025",
+      "pdf_page": 22,
+      "printed_page": 22,
+      "page_text_line_start": 48,
+      "page_text_line_end": 50,
+      "text": "Merchant loans under our U.S. PayPal Working Capital (“PPWC”) and PayPal Business Loan (“PPBL”) products and certain U.S. installment loan products are\nprovided by a state-chartered industrial bank under a program agreement with us, and we acquire the receivables generated by those loans from the state-\nchartered bank after origination. In June 2020, the Federal",
+      "text_sha256": "7c2648866a8e70646b9955976b22bbd80a871ed84fee1c745da228cc21c7e776"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P026",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 1,
+      "page_text_line_end": 8,
+      "text": "Deposit Insurance Corporation (“FDIC”) approved a final rule clarifying that loans validly originated by state-chartered banks or insured branches of foreign\nbanks remain valid throughout the lifetime of the loan, reflecting a similar rule finalized by the Office of the Comptroller of Currency (“OCC”) in May 2020\nfor nationally chartered banks. The final rule reaffirms and codifies the so-called “valid-when-made doctrine,” which provides that the permissibility of an\ninterest rate for a loan is determined when the loan is made and will not be affected by subsequent events such as sale, assignment, or other transfer. While a\nnumber of state attorneys general have unsuccessfully challenged these FDIC and OCC rules, there remains some uncertainty whether non-bank entities\npurchasing loan receivables originated by FDIC-insured, state-chartered banks may rely on federal preemption of state usury laws and other state laws. An\nadverse outcome of these or similar challenges, or changes to applicable laws and regulations or regulatory policy, could materially impact our U.S. PPWC and\nPPBL products, certain installment products, and our business.",
+      "text_sha256": "695013c05012fbcb8f9bb06a783ce7b6723e55fe62cecde3d9d8a83e29f9555d"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P027",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 10,
+      "page_text_line_end": 16,
+      "text": "We currently purchase receivables related to our U.S. PayPal-branded merchant financing offerings and certain U.S. consumer installment loan products and\nextend credit for our consumer and merchant products outside the U.S. through our international subsidiaries. In June 2023, we entered into a multi-year\nagreement to sell U.K. and European buy now, pay later (“BNPL”) loan receivables originated by PayPal (Europe) and PayPal U.K., consisting of the sale of a\nsubstantial majority of the U.K. and European BNPL loan portfolio held on PayPal (Europe)’s balance sheet at the closing of the transaction and a forward-\nflow arrangement for the sale of future originations of eligible loans. The sale of future eligible receivables is subject to certain conditions. If these conditions\nare not satisfied or waived or if the parties are unable to fulfill their obligations under these arrangements, the sale of these receivables could be delayed and we\nmay not realize the expected benefits of this arrangement.",
+      "text_sha256": "8d9528c9239203492ed989d5827d1ad12d5e0db03a51cc47cd11419bfaa397c1"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P028",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 18,
+      "page_text_line_end": 18,
+      "text": "We rely on third parties in many aspects of our business, which creates additional risk.",
+      "text_sha256": "455081f4ddf5e76dc9ffb86e3425ec798c419ce43efde71e1850e83c9f083d6b"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P029",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 20,
+      "page_text_line_end": 29,
+      "text": "We rely on third parties in many aspects of our business, including, but not limited to, networks, banks, payment processors, and payment gateways that link us\nto the payment card and bank clearing networks to process transactions; unaffiliated third-party lenders to originate our U.S. credit products to consumers, U.S.\nmerchant financing, and branded credit card products; branded debit card and savings products issued by unaffiliated banks; cryptocurrency custodial service\nproviders; and external business partners and contractors who provide key functions (including, but not limited to, data center facilities and cloud computing,\ninformation technology, and outsourced customer support and product development functions). We are subject to additional risks inherent in engaging and\nrelying upon third-party providers, including operational, legal, regulatory, information security, reputational, commercial, and resiliency risks. If we are unable\nto effectively manage our third-party relationships, these third parties are unable to meet their obligations to us, we are overly reliant on certain relationships, or\nwe experience substantial disruptions in these relationships (including interruptions to the availability of our products and services), our operations, results of\noperations, and financial results could be adversely impacted. Additionally, our relationships with third parties inherently involve a lesser degree of control over\nbusiness operations, governance, and compliance, which potentially increases our financial, legal, reputational, and operational risk.",
+      "text_sha256": "2800530e746724a30919b5e74f16ec03d66946f3b68d1b40b3d3ce035fd94af2"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P030",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 31,
+      "page_text_line_end": 31,
+      "text": "Any factors that reduce cross-border trade or make such trade more difficult could harm our business.",
+      "text_sha256": "ab21aca4a13ee8761dd63f7db16375b7787284f9df9ba826fcd8158f031af748"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P031",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 33,
+      "page_text_line_end": 39,
+      "text": "Cross-border trade (i.e., transactions where the merchant and consumer are in different countries) is an important source of our revenues and profits. Cross-\nborder transactions generally provide higher revenues and operating income than similar transactions that take place within a single country or market. In\ncertain markets, cross-border trade represents our primary (and in some instances our only) offerings. Cross-border trade may be negatively impacted by\nvarious factors including foreign exchange rate fluctuations, tariffs, trade barriers or restrictions, sanctions, import or export controls, and the interpretation and\napplication of laws of multiple jurisdictions in the context of cross-border trade and foreign exchange. Any factors that increase the costs of cross-border trade\nfor us or our customers or that restrict, delay, or make cross-border trade more difficult or impractical could reduce our cross-border transactions and volume,\nnegatively impact our revenues and profits, and harm our business.",
+      "text_sha256": "9d2efa89a8bc9242c3427255218db921fdfee7f8c45e440fee4c338a79bbf9a8"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P032",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 41,
+      "page_text_line_end": 42,
+      "text": "Failure to deal effectively with fraud, abusive behaviors, bad transactions, and negative customer experiences may increase our loss rate and could\nnegatively impact our business and severely diminish merchant and consumer confidence in and use of our services.",
+      "text_sha256": "6bdf0e57637900fc9bd5662306f2d3b6e5098d665e4a155f9d67effdb32f9e9f"
+    },
+    {
+      "paragraph_id": "PYPL-FY24-P033",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 44,
+      "page_text_line_end": 48,
+      "text": "We expect that third parties will continue to attempt to abuse access to and misuse our payments services to commit fraud by, among other things, creating\nfictitious PayPal accounts using stolen or synthetic identities or personal information, taking over customer accounts or creating fraudulent accounts, making\ntransactions with stolen financial instruments, abusing or misusing our services for financial gain, or fraudulently inducing users of our products and services\ninto engaging in fraudulent transactions. Due to the nature of PayPal’s digital payments services, third parties may seek to engage in abusive schemes or fraud\nattacks that are often difficult to detect and may be deployed at a scale that would otherwise not be possible in physical",
+      "text_sha256": "86af87a238be36348aa6a985897d5b7da4c2b378b118dcddd803d15f6f80a2e4"
+    }
+  ]
+}

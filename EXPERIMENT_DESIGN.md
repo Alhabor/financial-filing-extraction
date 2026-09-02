@@ -65,13 +65,13 @@
 
 ## 4. 数据和案例治理
 
-主要事实来源为公开 Form 10-K 的 Item 1A. Risk Factors。当前数据池包含 8 份案例，具体来源和哈希见 `data/manifests/filings.csv`。
+主要事实来源为公开 Form 10-K 的 Item 1A. Risk Factors。当前数据池包含 8 份案例，具体来源和哈希见 `data/manifests/filings.csv`；P 阶段短案例包见 `data/manifests/case_packets.json`。前四份是 development，后四份是 reserve。
 
 模型输入不预先提供中文解释、人工答案、分析师结论或风险标签。每个案例应保留：
 
 - 公司、财年结束日、提交日和 SEC accession；
 - PDF、完整抽取文本和 Item 1A 文本；
-- PDF 物理页码和原文段落 ID；
+- PDF 物理页码、页脚印刷页码和原文段落 ID；
 - 固定的短案例包（文本文件、页面图像、页码/段落定位索引）；
 - 来源 URL、抽取时间和 SHA-256；
 - 是否属于开发集、验证集或正式盲测集。
@@ -227,9 +227,9 @@ R1 使用没有参与 Prompt 修改的新案例。R2 只有在需要验证新方
 
 ## 12. 当前状态
 
-- 研究数据池：8 份公开 10-K，已整理；
+- 研究数据池：8 份公开 10-K，已整理；8 个短案例包已冻结为 `case-packet-spec-v001`；
 - Prompt：尚未开始准备轮；
-- 模型运行：尚未开始；
+- 模型运行：尚未开始；本机当前没有已安装的 Ollama/llama.cpp 模型，云端运行需要新的环境变量凭证；
 - 原始结果留痕结构：已设计，见 `EXPERIMENT_ARCHIVE.md`；
 - harness：已确定采用统一输入物料化、模型适配器和显式视觉回退，当前先实现 dry-run；
 - 输出契约：已建立初版，见 `schemas/risk-output.schema.json`；

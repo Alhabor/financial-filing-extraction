@@ -1,0 +1,789 @@
+{
+  "packet_id": "CP-NVDA-FY25-v001",
+  "case_id": "NVDA-FY25",
+  "paragraphs": [
+    {
+      "paragraph_id": "NVDA-FY25-P001",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 1,
+      "page_text_line_end": 7,
+      "text": "wins, and greater financial, sales, marketing and distribution resources than we do. These competitors may be able to acquire market share and/or prevent us\nfrom doing so, more effectively identify and capitalize upon opportunities in new markets and end-user trends, more quickly transition their products, and impinge\non our ability to procure sufficient foundry capacity and scarce input materials during a supply-constrained environment, which could harm our business. Some of\nour customers have in-house expertise and internal development capabilities similar to some of ours and can use or develop their own solutions to replace those\nwe are providing. For example, others may offer cloud-based services that compete with our AI cloud service offerings, and we may not be able to establish\nmarket share sufficient to achieve the scale necessary to meet our business objectives. If we are unable to successfully compete in this environment, demand\nfor our products, services and technologies could decrease and we may not establish meaningful revenue.",
+      "text_sha256": "54b37a72f0699bf7ff1a009d505d2de6279d51951000255b3018a2be84e206f7"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P002",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 9,
+      "page_text_line_end": 16,
+      "text": "Risks Related to Demand, Supply, and Manufacturing\nLong manufacturing lead times and uncertain supply and component availability, combined with a failure to estimate customer demand accurately,\nhas led and could lead to mismatches between supply and demand.\nWe have long manufacturing lead times and build finished products and maintain inventory in advance of anticipated demand. In periods of shortages impacting\nthe semiconductor industry and/or limited supply or capacity in our supply chain, the lead times for certain supply may be extended. We have previously\nexperienced and may continue to experience extended lead times of more than 12 months. To secure future supply and capacity, we have paid premiums,\nprovided deposits, and entered into long-term supply agreements and capacity commitments, which have increased our product costs and this may continue.\nWe may still be unable to secure sufficient commitments for capacity to address our business needs.",
+      "text_sha256": "336e668959fe1d0fac846dd641f9d6d26efb75617b77d4cd23f238c162acd480"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P003",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 18,
+      "page_text_line_end": 25,
+      "text": "If we inaccurately estimate demand, or our customers change orders, as we have experienced in the past, we may not be able to reduce our supply\ncommitments in time, at the same rate, or at all. Significant mismatches between supply and demand have varied across our market platforms, resulted in both\nproduct shortages and excess inventory, significantly harmed our financial results and could reoccur. If we underestimate demand, and our foundry partners and\ncontract manufacturers are unable to increase production or provide sufficient supply, we may not be able to meet increased customer demand in a timely\nmanner, or at all. Our reputation and customer relationships could be damaged and we could lose revenue and market share. Additionally, since some of our\nproducts are part of a complex data center buildout, supply constraints or availability issues with respect to any one component have had and may have a\nbroader revenue impact. For example, our ability to sell certain products has been and could be impeded if components necessary for the finished products are\nnot available from third parties.",
+      "text_sha256": "f03d07fdcf700c6ffa5a2293aedd5aa053ec2dfbe5e5b243f268e79fbc9b8c18"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P004",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 27,
+      "page_text_line_end": 33,
+      "text": "If we overestimate demand, or if customers cancel or defer orders or choose to purchase from our competitors, we may not be able to utilize on-hand inventory\nor reduce purchase commitments accordingly. We have had to reduce average selling prices, including due to our channel pricing programs, increase prices for\ncertain of our products as a result of our suppliers’ increase in prices, write down our inventory, incur cancellation penalties, and record impairments, and may\nhave to do so in the future. These impacts would be amplified by our non-cancellable and non-returnable purchase orders placed in advance of our historical\nlead times and could be exacerbated if we need to make changes to the design of future products. The risk of these impacts has increased and may continue to\nincrease as our purchase obligations and prepaids have grown and are expected to continue to grow and become a greater portion of our total supply. All of\nthese factors may negatively impact our gross margins and financial results.",
+      "text_sha256": "0fd0af9aaa717502a7493f82784b64c4c6c0f77b25097a03e62ad8771c9250ba"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P005",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 35,
+      "page_text_line_end": 36,
+      "text": "Factors that have caused and/or could in the future cause us to underestimate or overestimate demand, and impact the timing and volume of our revenue,\ninclude:",
+      "text_sha256": "1367f2090156a8c6d42177359060bf941070076d1f6bdc2424e2c953d259b166"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P006",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 38,
+      "page_text_line_end": 38,
+      "text": "•    changes in product development cycles and time to market;",
+      "text_sha256": "fb2d705394d8fc180eeebbee55280c998783f07c940f17a45bf99f928fcad252"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P007",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 40,
+      "page_text_line_end": 40,
+      "text": "•    competing technologies and competitor product releases, announcements or other actions;",
+      "text_sha256": "b2a5be5523ccdc53ed0d929c58be5a5d2368d3e28841e73d417b1c890e897953"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P008",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 42,
+      "page_text_line_end": 42,
+      "text": "•    changes in business and economic conditions;",
+      "text_sha256": "b5a0591daba64268619f0512c3885957b4d4bcb4c0c708caf73e2a4bff99ac33"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P009",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 44,
+      "page_text_line_end": 44,
+      "text": "•    sudden or sustained government lockdowns or public health issues;",
+      "text_sha256": "2a44aad30864ab688dbb753ee1d8e7c307015e48f623d5e8dbd67d1a49206a1d"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P010",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 46,
+      "page_text_line_end": 46,
+      "text": "•    rapidly changing technology or customer requirements;",
+      "text_sha256": "ba077d0707b77bd52e4bf3e1b055af3887ab6bacc3d048e6a464d6af8b67638e"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P011",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 48,
+      "page_text_line_end": 48,
+      "text": "•    the availability of sufficient data center capacity or energy for customers to procure;",
+      "text_sha256": "53e418c87c789317e3739053c7659c9485d9b3f256a609cd6148879f49d940ab"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P012",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 50,
+      "page_text_line_end": 50,
+      "text": "•    new product introductions and transitions resulting in less demand for existing products;",
+      "text_sha256": "b1db295c9c055fca61b592495a9d5519672772e1a0cbea0a922d26ab175067ff"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P013",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 52,
+      "page_text_line_end": 52,
+      "text": "•    new or unexpected end-use cases;",
+      "text_sha256": "32d8f8c43c34f36bf364246f8ee2384656aa1b694c7e253ea28bd044f4484393"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P014",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 54,
+      "page_text_line_end": 54,
+      "text": "•    increase in demand for competitive products;",
+      "text_sha256": "050b9c5251e99fd3c17236cc53705131c37d55b9e347645de99dd7a3f42be6ab"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P015",
+      "pdf_page": 16,
+      "printed_page": 16,
+      "page_text_line_start": 56,
+      "page_text_line_end": 56,
+      "text": "•    changes in end-user demand;",
+      "text_sha256": "1370ff71213aafd47d5acfaa4e08be1447516cd08baad5b5bcd21d4e92268cd3"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P016",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 1,
+      "page_text_line_end": 1,
+      "text": "•    purchasing decisions made, and inventory levels held by, distributors, ODMs, OEMs, system integrators, other channel partners and other third parties;",
+      "text_sha256": "deb95e26a814d96e765f440e6286cfa745db0dc08d8ee807b848d06bba349f88"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P017",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 3,
+      "page_text_line_end": 4,
+      "text": "•    the ability of developers, end customers and other third parties to build, enhance, and maintain accelerated computing applications that leverage our\n         platforms;",
+      "text_sha256": "efd1f19c75998a74868a8ad1f904ad7369aa928aab79a81a56ca268b7b422db1"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P018",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 6,
+      "page_text_line_end": 6,
+      "text": "•    the availability of third-party content on our platforms, such as GeForce NOW;",
+      "text_sha256": "7907808be63af1c62d2c1715cb6f45d9dd8539b2adf66b56a5b1dd6153de4d11"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P019",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 8,
+      "page_text_line_end": 8,
+      "text": "•    the demand for accelerated computing, AI-related cloud services, or large language models;",
+      "text_sha256": "ed4845c220be2309fbb09954a06ae64c0a6b8a4798af5df394e60ff681aecd9b"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P020",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 10,
+      "page_text_line_end": 10,
+      "text": "•    changes that impact the ecosystem for the architectures underlying our products and technologies;",
+      "text_sha256": "fe004d764e0acd4aac9ea24b84e2492fa25bf3caa533d18a75cfd44e1e607f57"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P021",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 12,
+      "page_text_line_end": 12,
+      "text": "•    government actions or changes in governmental policies, such as export controls, increased restrictions on gaming usage, or tariffs; and",
+      "text_sha256": "ea4c3d74b4c90f9600b8f40ad82f78e22627be8ffcaa2964941b946ec481c404"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P022",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 14,
+      "page_text_line_end": 14,
+      "text": "•    our customers' ability to invest in AI infrastructure.",
+      "text_sha256": "a822448ebccd93180ddfaf3544d08e9d4487ad4dfdf4343746484f7353b2f11b"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P023",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 16,
+      "page_text_line_end": 19,
+      "text": "Challenges in estimating demand could become more pronounced or volatile in the future on both a global and regional basis. Extended lead times may occur if\nwe experience other supply constraints caused by natural disasters, pandemics or other events. In addition, geopolitical tensions, such as those involving Taiwan\nand China, which comprise a significant portion of our revenue and where we have suppliers, contract manufacturers, and assembly partners who are critical to\nour supply continuity, could have a material adverse impact on us.",
+      "text_sha256": "9b5dd791af8f51be743b1ca1fb373c48e714718dc9b60ed9541afe8d4d79e603"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P024",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 21,
+      "page_text_line_end": 26,
+      "text": "We continue to increase our supply and capacity purchases with existing and new suppliers to support our demand projections and increasing complexity of our\ndata center products. With these additions, we have also entered and may continue to enter into prepaid manufacturing and capacity agreements to supply both\ncurrent and future products. The increased purchase volumes and integration of new suppliers and contract manufacturers into our supply chain creates more\ncomplexity in managing multiple suppliers with variations in production planning, execution and logistics. Our expanding product portfolio and varying component\ncompatibility and quality may lead to increased inventory levels. We have incurred and may in the future incur inventory provisions or impairments if our\ninventory or supply or capacity commitments exceed demand for our products or demand declines.",
+      "text_sha256": "a1cae56563ed4eefb33e1effc28157a983cd5632fd4b164cf6141116e384cab5"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P025",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 28,
+      "page_text_line_end": 40,
+      "text": "Product transitions are complex and we often ship both new and prior architecture products simultaneously as our channel partners prepare to ship and support\nnew products. We are generally in various stages of transitioning the architectures of our Data Center, Gaming, Professional Visualization, and Automotive\nproducts. The computing industry is experiencing a broader and faster launch cadence of accelerated computing platforms to meet a growing and diverse set of\nAI opportunities. We have introduced a new product and architecture cadence of our Data Center solutions where we seek to complete new computing solutions\neach year and provide a greater variety of Data Center offerings. The increased frequency of these transitions and the larger number of products and product\nconfigurations may magnify the challenges associated with managing our supply and demand which may further create volatility in our revenue. Qualification\ntime for new products, customers anticipating product transitions, and channel partners reducing channel inventory of prior architectures ahead of new product\nintroductions can reduce, or create volatility in, our revenue. We have experienced and may in the future experience reduced demand for current generation\narchitectures when customers anticipate transitions, and we may be unable to sell multiple product architectures at the same time for current and future\narchitecture transitions. Our financial results have been and may in the future be negatively impacted if we are unable to execute our architectural transitions as\nplanned for any reason. The increased frequency and complexity of newly introduced products could result in unanticipated quality or production issues that\ncould increase the magnitude of inventory provisions, warranty, or other costs or result in product delays. For example, our gross margins in the second quarter\nof fiscal year 2025 were negatively impacted by inventory provisions for low-yielding Blackwell material.",
+      "text_sha256": "aebaaaf788614634e9ce24a0d442fc101a72a3ca0afa1b4a41dc40892c0afa94"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P026",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 42,
+      "page_text_line_end": 46,
+      "text": "We incur significant engineering development resources for new products, and changes to our product roadmap may impact our ability to develop other products\nor adequately manage our supply chain cost. Customers may delay purchasing existing products as we increase the frequency of new products or may not be\nable to adopt our new products as fast as forecasted, both impacting the timing of our revenue and supply chain cost. While we have managed prior product\ntransitions and have sold multiple product architectures at the same time, these transitions are difficult, may impair our ability to predict demand and impact our\nsupply mix, and may cause us to incur additional costs.",
+      "text_sha256": "6e38c10992156a3c0fdb5c49d3ce3fbf6c6a8cca11b717ba5ae347697dd5fd77"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P027",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 48,
+      "page_text_line_end": 50,
+      "text": "Demand estimates for our products, applications, and services can be incorrect, which may create volatility in our revenue or supply levels. We may not be able\nto generate significant revenue from them. Because our products may be used in multiple use cases and applications, it is difficult to estimate with any\nreasonable degree of precision the impact of generative AI models on our reported revenue or forecasted demand.",
+      "text_sha256": "c31085302b5c561de6cbaca7a6f4ddf3fe7836597893beeeffcc65f8b940b799"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P028",
+      "pdf_page": 17,
+      "printed_page": 17,
+      "page_text_line_start": 52,
+      "page_text_line_end": 54,
+      "text": "The use of our GPUs for new, mercurial, or trendy applications, has impacted and can impact in the future demand for our products, including by leading to\ninconsistent spikes and drops in demand. For example, several years ago, our Gaming GPUs began to be used for mining digital currencies, such as Ethereum.\nIt is difficult for us to estimate with any reasonable degree of precision the past or current impact of cryptocurrency mining, or forecast the future impact of",
+      "text_sha256": "2f86a97300d2ac39314071e7b331cec2ad95b08be35eee898ea5d422bbd86808"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P029",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 1,
+      "page_text_line_end": 9,
+      "text": "cryptocurrency mining, on demand for our products. Volatility in the cryptocurrency market, including new compute technologies, price changes in\ncryptocurrencies, government cryptocurrency policies and regulations, new cryptocurrency standards and changes in the method of verifying blockchain\ntransactions, has impacted and can in the future impact cryptocurrency mining and demand for our products and can further impact our ability to estimate\ndemand for our products. Changes to cryptocurrency standards and processes including, but not limited to, the Ethereum 2.0 merge in 2022, have reduced and\nmay in the future decrease the usage of GPUs for Ethereum mining. This has created and may in the future create increased aftermarket sales of our GPUs,\nwhich could negatively impact retail prices for our GPUs and reduce demand for our new GPUs. In general, our new products or previously sold products may\nbe resold online or on the unauthorized “gray market,” which also makes demand forecasting difficult. Gray market products and reseller marketplaces compete\nwith our new products and distribution channels. Our inability to accurately predict our demand that arises from new use cases may create volatility in our\nrevenue.",
+      "text_sha256": "fbfde702c4bef62676973a55f5935d6f39973ba88b79d2d27dd8c7f569c0139a"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P030",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 11,
+      "page_text_line_end": 17,
+      "text": "Dependency on third-party suppliers and their technology to manufacture, assemble, test, or package our products reduces our control over product\nquantity and quality, manufacturing yields, and product delivery schedules and could harm our business.\nWe depend on foundries to manufacture our semiconductor wafers using their fabrication equipment and techniques. We do not assemble, test, or package our\nproducts, but instead contract with independent subcontractors. These subcontractors assist with procuring components used in our systems, boards, and\nproducts. We face risks which have adversely affected or could adversely affect our ability to meet customer demand and scale our supply chain, negatively\nimpact longer-term demand for our products and services, and adversely affect our business operations, gross margin, revenue and/or financial results,\nincluding:",
+      "text_sha256": "0619cdb177a7605ad01b3938aac75920b9b6f4b38271208d16ae1f5f968c2d39"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P031",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 19,
+      "page_text_line_end": 19,
+      "text": "•    lack of guaranteed supply of wafer, component and capacity;",
+      "text_sha256": "c3f38953d1ad4d1e7f2a621d5150a9cc211c9f59ece350698bd77eb87158e7e2"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P032",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 21,
+      "page_text_line_end": 21,
+      "text": "•    decommitment by our suppliers;",
+      "text_sha256": "2f1ed80a65789bf422d3768d05a85dd037123c73b023f6b482ca8295f40a968f"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P033",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 23,
+      "page_text_line_end": 24,
+      "text": "•    potential higher wafer and component prices resulting from incorrectly estimating demand and failing to place orders with our suppliers with sufficient\n         quantities or timely;",
+      "text_sha256": "0cb1e560b5a65c74729c28b909ca22cb4f3608d58705502f8cb0ea0bc8637010"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P034",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 26,
+      "page_text_line_end": 27,
+      "text": "•    failure by our foundries or contract manufacturers to procure raw materials or provide adequate levels of manufacturing or test capacity for our\n         products;",
+      "text_sha256": "7c32a87fdfd988b2c6115b8b3c365800256b88ddbc3bf0ee3cc7658dba50b486"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P035",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 29,
+      "page_text_line_end": 30,
+      "text": "•    failure by our foundries to develop, obtain, or successfully implement high quality process technologies, including transitions to smaller geometry\n         process technologies such as advanced process node technologies and memory designs needed to manufacture our products;",
+      "text_sha256": "2cd16117380d027179fbf03461173c2cb005050d4df5e612d0663350c9fdce81"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P036",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 32,
+      "page_text_line_end": 32,
+      "text": "•    failure by our suppliers to comply with our policies and expectations and emerging regulatory requirements;",
+      "text_sha256": "6911d47e5eab841ec0d6c7a2d904c389343c366d86e39989a6fd958748e114c9"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P037",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 34,
+      "page_text_line_end": 35,
+      "text": "•    limited number and geographic concentration of global suppliers, foundries, contract manufacturers, assembly and test providers and memory\n         manufacturers;",
+      "text_sha256": "e9c511c2c919593d0dda3fb93223d50a0f98763105b63a76064bf9c52d594fc8"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P038",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 37,
+      "page_text_line_end": 38,
+      "text": "•    loss of a supplier and additional expense and/or production delays as a result of qualifying a new foundry or subcontractor and commencing volume\n         production or testing in the event of a loss, addition or change of a supplier;",
+      "text_sha256": "bb3321d05b89a12b752d1baabd24179128bada45c55591625ac1fe213fee2a75"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P039",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 40,
+      "page_text_line_end": 40,
+      "text": "•    lack of direct control over product quantity, quality, and delivery schedules;",
+      "text_sha256": "ed7dc4493e57b4ba5ce43d0b0284bc921dba2142e94cbea2dfd5a8223f8d0b97"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P040",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 42,
+      "page_text_line_end": 43,
+      "text": "•    integration of new suppliers and contract manufacturers creating more complexity in managing multiple suppliers with variations in production planning,\n         execution, and logistics;",
+      "text_sha256": "bb4e46401a9b1e3aa97f73202ceb4cc5425303c7281d50071010575c5811be3c"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P041",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 45,
+      "page_text_line_end": 45,
+      "text": "•    suppliers or their suppliers failing to provide high quality products and/or making changes to their products without our qualification;",
+      "text_sha256": "75cedde0705a9dfd7bacd0bfe49ab09e2162feb20847107bf02bfdb181954f46"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P042",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 47,
+      "page_text_line_end": 48,
+      "text": "•    delays in product shipments, shortages, a decrease in product quality and/or higher expenses in the event our subcontractors or foundries prioritize our\n         competitors’ or other customers’ orders over ours;",
+      "text_sha256": "1ce44839326366eefb622ca9d0d649bea3ba62c21b099c1789a1dd4f60dbee3c"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P043",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 50,
+      "page_text_line_end": 50,
+      "text": "•    requirements to place orders that are not cancellable upon changes in demand or requirements to prepay for supply in advance;",
+      "text_sha256": "fa9a0f06398510ea5fb2c028a03c26886cecdc7faed64525ff570cf2c9166e10"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P044",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 52,
+      "page_text_line_end": 52,
+      "text": "•    low manufacturing yields resulting from issues in our product design or a foundry’s proprietary process technology;",
+      "text_sha256": "1a5307872cb41688252f9a5820b565d0f6736cda3b3e512620c83583370398f0"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P045",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 54,
+      "page_text_line_end": 54,
+      "text": "•    suppliers extending lead times and/or increasing costs during shortages; and",
+      "text_sha256": "2eb772d0e2b206f63cc00c860c38210a939b7d0eb93cead761c45f5791f42465"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P046",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "page_text_line_start": 56,
+      "page_text_line_end": 57,
+      "text": "•    disruptions in manufacturing, assembly and other processes due to closures related to heat waves, earthquakes, fires, or other natural disasters,\n         electricity conservation efforts, pandemics, and cybersecurity incidents.",
+      "text_sha256": "74c95a8e6cfe456b9569437a9ff3e6c57c5ba29339dac96bc1a5fc259b806285"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P047",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 1,
+      "page_text_line_end": 10,
+      "text": "Defects in our products have caused and could cause us to incur significant expenses to remediate, which can damage our reputation and cause us\nto lose market share.\nOur hardware and software product and service offerings are complex. They have in the past and may in the future contain defects, security vulnerabilities,\nexperience failures, or unsatisfactory performance due to issues in design, fabrication, packaging, materials, bugs and/or use within a system. These risks may\nalso increase when our products are introduced into new devices, markets, technologies and applications, or new versions are released, and when we rely on\npartners to supply and manufacture components that are used in our products, as these arrangements reduce our direct control over production. AI software\nproducts that we or our partners offer rely on training data that may originate from third parties and new training methods, and the resulting products may contain\nunknown or undetected defects and errors, or reflect unintended bias. Although arrangements with component providers may contain provisions for product\ndefect expense reimbursement, we generally remain responsible to the customer for warranty product defects that may occur from time to time. Some failures in\nour products or services have been in the past and may in the future be only discovered after a product or service has been shipped or used.",
+      "text_sha256": "066b5192b09af5f190edd61831c5753660da58bc234e06b0127853eb2b6a767e"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P048",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 12,
+      "page_text_line_end": 22,
+      "text": "Undiscovered vulnerabilities in our products or services could result in loss of data or intangible property, or expose our customers to unscrupulous third parties\nwho develop and deploy malicious software programs that could attack our products or services. Defects or failure of our offerings to perform to specifications\ncould lead to substantial damage to the products in which our offerings have been integrated by OEMs, ODMs, AIB manufacturers, automotive manufacturers,\nand tier 1 automotive suppliers, and to the user of such end product. Any such defect may cause us to incur significant warranty, support, and repair or\nreplacement costs as part of a product recall or otherwise, write-off the value of related inventory, and divert the attention of our engineering and management\npersonnel from our product development efforts to find and correct the issue. Our efforts to remedy these issues may not be timely or satisfactory to our\ncustomers. An error or defect in new products, releases or related software drivers after commencement of commercial shipments could result in failure to\nachieve market acceptance, loss of design wins, temporary or permanent withdrawal from a product or market and harm to our relationships with existing and\nprospective customers and partners and consumers’ perceptions of our brand, which would in turn negatively impact our business operations, gross margin,\nrevenue and/or financial results. We may be required to reimburse our customers, partners or consumers, including for costs to repair or replace products in the\nfield or in connection with indemnification obligations, or pay fines imposed by regulatory agencies.",
+      "text_sha256": "39ff0037ac71e7305ea10f72ba5b2d40b1f0a126343ac451be52e8074599464e"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P049",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 24,
+      "page_text_line_end": 30,
+      "text": "For example, in fiscal year 2023, a defect was identified in a third-party component embedded in certain Data Center products. This defect has had, and other\ndefects may in the future have, an adverse effect on our cost and supply of components and finished goods. These costs could be significant in future periods.\nWe recorded a net warranty liability during fiscal year 2023 primarily in connection with this defect. While we believe we have accurately recorded for warranty\nobligations, we may need to record additional amounts in the future if our estimate proves to be incorrect. In general, if a product liability claim regarding any of\nour products is brought against us, even if the alleged damage is due to the actions or inactions of a third party, such as within our supply chain, the cost of\ndefending the claim could be significant and would divert the efforts of our technical and management personnel and harm our business. Further, our business\nliability insurance may be inadequate or future coverage may be unavailable on acceptable terms, which could adversely impact our financial results.",
+      "text_sha256": "f6eb175ce06bce7eff35abbd0864809dfbace9715321b6885e607977442d3f40"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P050",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 32,
+      "page_text_line_end": 38,
+      "text": "Risks Related to Our Global Operating Business\nAdverse economic conditions may harm our business.\nEconomic and industry uncertainty or changes, including recession or slowing growth, inflation, changes or uncertainty in fiscal, monetary, or trade policy,\ndisruptions to capital markets and the banking system, currency fluctuations, higher interest rates, tighter credit, lower capital expenditures by businesses,\nincluding on IT infrastructure, increases in unemployment, labor shortages, and lower consumer confidence and spending, global supply chain constraints, and\nglobal economic and geopolitical developments, including the implementation of tariffs by the USG or other governments, have in the past and/or could in the\nfuture have adverse, wide-ranging effects on our business and financial results, including:",
+      "text_sha256": "d659fc74b7eb31703d5391cac91a4d7ff1de3a3ed5e79be8f78050c804bc8156"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P051",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 40,
+      "page_text_line_end": 41,
+      "text": "•    increased costs for wafers, components, logistics, and other supply chain expenses, which have negatively impacted our gross margin in the past and\n         may do so in the future;",
+      "text_sha256": "118fdf80c3a3a308eb1005e008b0a6c644f7a145f61780cf523c34279e33d696"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P052",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 43,
+      "page_text_line_end": 44,
+      "text": "•    increased supply, employee, facilities and infrastructure costs and volatility in the financial markets, which have reduced and may in the future reduce\n         our margins;",
+      "text_sha256": "8fa42a4f1b6d7a00a50cd1bdecdef7f5ec12ab6b1ed4a88859927a73dc73aa4c"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P053",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 46,
+      "page_text_line_end": 46,
+      "text": "•    decrease in demand for our products, services and technologies and those of our customers, partners or licensees;",
+      "text_sha256": "6874c27a5e2cfe245bbe71ef9c20e5112cfeeafd04535e364217cdfa2bb5db50"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P054",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 48,
+      "page_text_line_end": 49,
+      "text": "•    the inability of our suppliers to deliver on their supply commitments to us and our customers’ or our licensees’ inability to supply products to customers\n         and/or end users;",
+      "text_sha256": "a2ec6094388b673ad9ce75edc2bf99b01fd5d4eac6ec0e3e300bd9793eecf0d0"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P055",
+      "pdf_page": 19,
+      "printed_page": 19,
+      "page_text_line_start": 51,
+      "page_text_line_end": 51,
+      "text": "•    limits on our ability to forecast operating results and make business decisions;",
+      "text_sha256": "e78aeda06d55f990f8d0b8a58675213fe564fb8d152b42e78227f441d383cc31"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P056",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 1,
+      "page_text_line_end": 1,
+      "text": "•    the insolvency of key suppliers, distributors, customers, CSPs, data center providers, licensing parties or other third parties we rely on;",
+      "text_sha256": "d5ea21899bb4a83efe7184357ccf692dc8fed3facfe0497938fbdfd8a7c5e819"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P057",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 3,
+      "page_text_line_end": 5,
+      "text": "•    reduced profitability of customers, which may cause them to scale back operations, exit businesses, file for bankruptcy protection and potentially cease\n         operations, or lead to mergers, consolidations or strategic alliances among other companies, which could adversely affect our ability to compete\n         effectively; and",
+      "text_sha256": "80b007974d99063b5f1e238a275f5bbf488063460fdfc98a306b6b08102f02b7"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P058",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 7,
+      "page_text_line_end": 9,
+      "text": "•    increased credit and collectability risks, higher borrowing costs or reduced availability of capital markets, reduced liquidity, adverse impacts on our\n         customers and suppliers, failures of counterparties, including financial institutions and insurers, asset impairments, and declines in the value of our\n         financial instruments.",
+      "text_sha256": "6a16726f2d38ffee3d53e85b376c6834f10a197012187d659b61ac56a2c98ffb"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P059",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 11,
+      "page_text_line_end": 13,
+      "text": "Adverse developments affecting financial institutions, such as bank failures or instability, or concerns or speculation about similar events or risks, could lead to\nmarket-wide liquidity problems and other disruptions, which could impact our customers’ ability to fulfill their payment obligations to us, our vendors’ ability to\nfulfill their contractual obligations to us, or our ability to fulfill our own obligations.",
+      "text_sha256": "a41a9581200af35b0b476c3e7bb3a2dcf0a69c37cfc0f036d6925dda0d27698f"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P060",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 15,
+      "page_text_line_end": 19,
+      "text": "Additionally, we maintain an investment portfolio of various holdings, types, and maturities. These investments are subject to general credit, liquidity, market and\ninterest rate risks, which may be exacerbated by market downturns or events that affect global financial markets, as described above. A majority of our\ninvestment portfolio comprises USG securities. A decline in global financial markets for long periods or a downgrade of the USG credit rating due to an actual or\nthreatened default on government debt could result in higher interest rates, a decline in the value of the U.S. dollar, reduced market liquidity or other adverse\nconditions. These factors could cause an unrealized or realized loss position in our investments or require us to record impairment charges.",
+      "text_sha256": "ae1d0966eb3a21766669c8712c76f82b683b01f282b2e55e4ebfb11b91e6f443"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P061",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 21,
+      "page_text_line_end": 30,
+      "text": "International sales and operations are a significant part of our business, which exposes us to risks that could harm our business.\nWe sell our products internationally, and we also have operations and conduct business internationally. Our semiconductor wafers are manufactured,\nassembled, tested and packaged by third parties located outside of the United States, and we generated 53% of our revenue in fiscal year 2025 from sales\noutside the United States. The market in China, where our offerings are limited by export controls, is highly competitive and we expect it to remain competitive\ngoing forward. The global nature of our business subjects us to a number of risks and uncertainties, which have had in the past and could in the future have a\nmaterial adverse effect on our business, financial condition and results of operations. These include domestic and international economic and political conditions\nin countries in which we and our suppliers and manufacturers do business, government lockdowns to control case spread of global or local health issues,\ndiffering legal standards with respect to protection of IP and employment practices, different domestic and international business and cultural practices,\ndisruptions to capital markets, counter-inflation policies, currency fluctuations, natural disasters, acts of war or other military actions, terrorism, public health\nissues, restrictions on international trade, such as tariffs, sanctions, and other controls on imports or exports, and catastrophic events.",
+      "text_sha256": "986bd9a612406e60072f17c64dbcc4a4f9c349d181605560399210f3fec36e11"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P062",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 32,
+      "page_text_line_end": 36,
+      "text": "Product, system security, and data protection incidents or breaches, as well as cyber-attacks, could disrupt our operations, reduce our expected\nrevenue, increase our expenses, and significantly harm our business and reputation.\nSecurity breaches, computer malware, social-engineering attacks, denial-of-service attacks, software bugs, server malfunctions, software or hardware failures,\nloss of data or other information technology assets, and other cyber-attacks are becoming increasingly sophisticated, making it more difficult to successfully\ndetect, defend against them or implement adequate preventative measures.",
+      "text_sha256": "acd2cdbf8b0ea5105892f9d93da2271e79ad7e2dfc8568c777bfb540ad15284e"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P063",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 38,
+      "page_text_line_end": 40,
+      "text": "Cyber-attacks, including ransomware attacks by organized criminal threat actors, nation-states, and nation-state-supported actors, may become more prevalent\nand severe. Our ability to recover from ransomware attacks may be limited if our backups have been affected by the attack, or if restore from backups is delayed\nor not feasible.",
+      "text_sha256": "94a82cc873a3264f305c73ac8048f76e2583b7901b0c2cdcf1870715bcb3f2ed"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P064",
+      "pdf_page": 20,
+      "printed_page": 20,
+      "page_text_line_start": 42,
+      "page_text_line_end": 53,
+      "text": "Individuals, groups of hackers and sophisticated organizations, including nation-states and nation-state-supported actors, and other threat actors have engaged\nand are expected to continue to engage in cyber-attacks. Additionally, some actors are using AI technology to launch more automated, targeted and coordinated\nattacks. Due to geopolitical conflicts and during times of war or other major conflicts, we and the third parties we rely upon may be subject to a heightened risk of\ncyber-attacks that could materially disrupt our ability to provide services and products. We may also face cybersecurity threats due to error or intentional\nmisconduct by employees, contractors or other third-party service providers. Certain aspects of effective cybersecurity are dependent upon our employees,\ncontractors and/or other third-party service providers safeguarding our sensitive information and adhering to our security policies and access control\nmechanisms. We have in the past experienced, and may in the future experience, security incidents arising from a failure to properly handle sensitive information\nor adhere to our security policies and access control mechanisms, including, for example, employees posting company data on third-party websites without\npermission, and, although no such events have had a material adverse effect on our business, there can be no assurance that an insider threat or error will not\nresult in an incident that is material to us or lead to negative publicity. Furthermore, we rely on products and services provided by third-party suppliers to operate\ncertain critical business systems, including without limitation, cloud-based infrastructure, encryption and authentication technology, employee email and other\nfunctions, which exposes us to",
+      "text_sha256": "4edd5b851feda2ab75ebdc86265413d4611fb1928884ccdf61f257eada9f11b1"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P065",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 1,
+      "page_text_line_end": 14,
+      "text": "We acquire and invest in businesses that offer products, services and technologies that we believe will help expand or enhance our strategic objectives.\nAcquisitions or investments involve significant challenges and risks and could impair our ability to grow our business, develop new products or sell our products\nand ultimately could have a negative impact on our financial results. If we pursue a particular transaction, we may limit our ability to enter into other transactions\nthat could help us achieve our other strategic objectives. If we are unable to timely complete acquisitions, including due to delays and challenges in obtaining\nregulatory approvals, we may be unable to pursue other transactions, we may not be able to retain critical talent from the target company, technology may\nevolve and make the acquisition less attractive, and other changes can take place, which could reduce the anticipated benefits of the transaction and negatively\nimpact our business. Regulators could also impose conditions that reduce the ultimate value of our acquisitions. In addition, to the extent that our perceived\nability to consummate acquisitions has been harmed, future acquisitions may be more difficult, complex or expensive. Further, our investments in publicly traded\ncompanies could create volatility in our results and may generate losses up to the value of the investment. In addition, we have invested and may continue to\ninvest in private companies to further our strategic objectives and to support certain key business initiatives. These companies can include early-stage\ncompanies still defining their strategic direction. Many of the instruments in which we invest are non-marketable and illiquid at the time of our initial investment,\nand we are not always able to achieve a return. To the extent any of the companies in which we invest are not successful, we could recognize an impairment\nand/or lose all or part of our investment. Our investment portfolio contains industry sector concentration risks, and a decline in any one or multiple industry\nsectors could increase our impairment losses.",
+      "text_sha256": "f253ded9b7eed29addf176eaa00867e85f725ca29d9ff0af932a8e8d5d7944cd"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P066",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 16,
+      "page_text_line_end": 20,
+      "text": "We face additional risks related to acquisitions and strategic investments, including the diversion of capital and other resources, including management’s\nattention; difficulty in realizing a satisfactory return and uncertainties to realize the benefits of an acquisition or strategic investment, if at all; difficulty or inability in\nobtaining governmental, regulatory approval or restrictions or other consents and approvals or financing; legal proceedings initiated as a result of an acquisition\nor investment; and potential failure of our due diligence processes to identify significant issues with the assets or company in which we are investing or are\nacquiring.",
+      "text_sha256": "22c8fb0cc90f916025326f2138f731dc5da6ecca08ae64604310b6a2833d5808"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P067",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 22,
+      "page_text_line_end": 22,
+      "text": "Additional risks related to acquisitions include, but are not limited to:",
+      "text_sha256": "c331d002cd725b77701068d26585ae084b857bf6c947ff8bc3e70a41a9bd4ceb"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P068",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 24,
+      "page_text_line_end": 25,
+      "text": "•    difficulty in integrating the technology, systems, products, policies, processes, or operations and integrating and retaining the employees, including key\n          personnel, of the acquired business;",
+      "text_sha256": "b1c892a414c114b999e0991610306aea1b161aedfff4e7e058433c0c91289a74"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P069",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 27,
+      "page_text_line_end": 27,
+      "text": "•    assumption of liabilities and incurring amortization expenses, impairment charges to goodwill or write-downs of acquired assets;",
+      "text_sha256": "42f48e87f8fff5cc8776f1de5d9118f0996127853307469b6a786e9240a19b7a"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P070",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 29,
+      "page_text_line_end": 29,
+      "text": "•    integrating accounting, forecasting and controls, procedures and reporting cycles;",
+      "text_sha256": "c494fb8026a4a0d496232b1231508abfebd336a9988fa9c96346965c98c45a95"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P071",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 31,
+      "page_text_line_end": 31,
+      "text": "•    coordinating and integrating operations, particularly in countries in which we do not currently operate;",
+      "text_sha256": "0851c642b0c56d1d894214735818dc4f4cd7219e8be7f81bdfd91d89ad74d2be"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P072",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 33,
+      "page_text_line_end": 34,
+      "text": "•    stock price impact, fines, fees or reputation harm if we are unable to obtain regulatory approval for an acquisition or are otherwise unable to close an\n          acquisition;",
+      "text_sha256": "b107f57988bae8ca002cb933b16beecdb88cf7b012a4dcc7fda16260ac4a7a29"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P073",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 36,
+      "page_text_line_end": 37,
+      "text": "•    potential issuances of debt to finance our acquisitions, resulting in increased debt, increased interest expense, and compliance with debt covenants or\n          other restrictions;",
+      "text_sha256": "0f3c2bcca45162ebb7181d1ba04ff1d2b59800f68176ca765665c082cfd3f184"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P074",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 39,
+      "page_text_line_end": 39,
+      "text": "•    the potential for our acquisitions to result in dilutive issuances of our equity securities;",
+      "text_sha256": "6050ffae76f766910f0b65507718d1421f42fd46400cde7d55656633c3fd007f"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P075",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 41,
+      "page_text_line_end": 41,
+      "text": "•    the potential variability of the amount and form of any performance-based consideration;",
+      "text_sha256": "61b829b1eeeb54e2fb00d49f27b061b188d7da894fa743d90397d7938dde1ef9"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P076",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 43,
+      "page_text_line_end": 43,
+      "text": "•    negative changes in general economic conditions in the regions or the industries in which we or our target operate;",
+      "text_sha256": "eb14d30dd6f2e8f8a88ff11094735f00bea18e1ec1c98dfa9c4e948e569e5b07"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P077",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 45,
+      "page_text_line_end": 45,
+      "text": "•    exposure to additional cybersecurity risks and vulnerabilities; and",
+      "text_sha256": "dc062593ca15ffa651f9d53317d35116c91cb087f24e8b9480492f5f98a99c78"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P078",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 47,
+      "page_text_line_end": 47,
+      "text": "•    impairment of relationships with, or loss of our or our target’s employees, vendors and customers.",
+      "text_sha256": "4517d8a5ea9d26cb09f6a44932cbd697ecedd3e568d992b9be9f0326b7eb04bf"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P079",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 49,
+      "page_text_line_end": 52,
+      "text": "For example, when integrating acquisition target systems into our own, we have experienced and may continue to experience challenges including lengthy and\ncostly systems integration, delays in purchasing and shipping products, difficulties with system integration via electronic data interchange and other processes\nwith our key suppliers and customers, and training and change management needs of integration personnel. These challenges have impacted our results of\noperations and may continue to do so in the future.",
+      "text_sha256": "11ffc5a6f32c079fc75f1595468bfea20fa9a329f08e5094c94e812932c0f0ad"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P080",
+      "pdf_page": 23,
+      "printed_page": 23,
+      "page_text_line_start": 54,
+      "page_text_line_end": 59,
+      "text": "We receive a significant amount of our revenue from a limited number of partners and distributors and we have a concentration of sales to\ncustomers who purchase directly or indirectly from us, and our revenue could be adversely affected if we lose or are prevented from selling to any of\nthese customers.\nWe have experienced periods where we receive a significant amount of our revenue from a limited number of customers, and this trend may continue. Sales to\ndirect Customers A, B and C represented 12%, 11% and 11% of total revenue, respectively, for fiscal year 2025, all of which were primarily attributable to the\nCompute & Networking segment. With",
+      "text_sha256": "b9d5f224139510a61bffa4634c8999fdaffa82876b1b745dd53890b47c1c922b"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P081",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 1,
+      "page_text_line_end": 15,
+      "text": "several of these partners, we are selling multiple products and systems in our portfolio through their channels. Our operating results depend on sales to our\npartner network, as well as the ability of these partners to sell products that incorporate our technologies. We have a small number of partners that are involved\nin system integration with our key customers. As our system design becomes increasingly complex, system integrators may be unable to meet specifications of\nour key customers. Changes in our partners' or customers' business models or their ownership can reduce the number of partners available to us and harm our\nability to sell our advanced data center systems to customers. In the future, these partners may decide to purchase fewer products, not to incorporate our\nproducts into their ecosystem, or to alter their purchasing patterns in some other way. Because most of our sales are made on a purchase order basis, our\ncustomers can generally cancel, change, or delay product purchase commitments with little notice to us and without penalty. Our partners or customers may\ndevelop their own solutions; our customers may purchase products from our competitors; and our partners may discontinue sales or lose market share in the\nmarkets for which they purchase our products, all of which may alter partners’ or customers’ purchasing patterns. Many of our indirect customers often do not\npurchase directly from us but through multiple OEMs, ODMs, system integrators, distributors, and other channel partners. For fiscal year 2025, an indirect\ncustomer which primarily purchases our products through system integrators and distributors, including through Customer B, is estimated to represent 10% or\nmore of total revenue, attributable to the Compute & Networking segment. If end demand increases or our finished goods supply availability is concentrated near\na quarter end, the system integrators, distributors, and channel partners may have limited ability to increase their credit, which could impact the timing and\namount of our revenue. The loss of any of our large customers, a significant reduction in purchases by them, our inability to sell to a customer due to U.S. or\nother countries’ trade restrictions, or any difficulties in collecting accounts receivable would likely harm our financial condition and results of operations.",
+      "text_sha256": "19fdc5eddd6c8cd33c11d31668c181d2c1c53fe2f3426c6d8133e26dea61f78e"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P082",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 17,
+      "page_text_line_end": 25,
+      "text": "If we are unable to attract, retain and motivate our executives and key employees, our business may be harmed.\nTo remain competitive and successfully execute our business strategy, we must attract, retain, and motivate our executives and key employees, as well as\nrecruit and develop exceptional and diverse talent. However, labor is subject to external factors that are beyond our control, including our industry’s highly\ncompetitive market for skilled workers and leaders, and workforce participation rates. Changes in immigration and work permit regulations, or in their\nadministration or interpretation, could impair our ability to attract and retain qualified employees. Competition for talent drives up costs in the form of cash and\nstock-based compensation. In times of stock price volatility, as we have experienced in the past and may experience in the future, the retentive value of our\nstock-based compensation may decrease. Additionally, we are highly dependent on the services of our longstanding executive team. Failure to ensure effective\nsuccession planning, transfer of knowledge, and smooth transitions involving executives and key employees could hinder our strategic planning, execution, and\nlong-term success.",
+      "text_sha256": "321e144d9edcf7e4148d7813e6609e6c9e9bcfb8fa7d00d1785aaba176aaad8b"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P083",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 27,
+      "page_text_line_end": 35,
+      "text": "Our business is dependent upon the proper functioning of our business processes and information systems and modification or interruption of such\nsystems may disrupt our business and internal controls.\nWe rely upon internal processes and information systems to support key business functions, including our assessment of internal controls over financial\nreporting as required by Section 404 of the Sarbanes-Oxley Act. The efficient operation and scalability of these processes and systems is critical to support our\ngrowth. We continue to design and implement updated accounting functionality related to a new enterprise resource planning, or ERP, system. Any ERP system\nimplementation may introduce problems, such as quality issues or programming errors, that could have an impact on our continued ability to successfully\noperate our business or to timely and accurately report our financial results. These changes may be costly and disruptive to our operations and could impose\nsubstantial demands on management time. Failure to implement new or updated controls, or difficulties encountered in their implementation, could harm our\noperating results or cause us to fail to meet our reporting obligations.",
+      "text_sha256": "105e14b6e23d600c74646bb977c41214827e2a111335e1ba60a8743fb533774c"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P084",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 37,
+      "page_text_line_end": 41,
+      "text": "Identification of material weaknesses in our internal controls, even if quickly remediated once disclosed, may cause investors to lose confidence in our financial\nstatements and our stock price may decline. Remediation of any material weakness could require us to incur significant expenses, and if we fail to remediate any\nmaterial weakness, our financial statements may be inaccurate, we may be required to restate our financial statements, our ability to report our financial results\non a timely and accurate basis may be adversely affected, our access to the capital markets may be restricted, our stock price may decline, and we may be\nsubject to sanctions or investigation by regulatory authorities.",
+      "text_sha256": "5950e2f6509c8dcc1810afa405dd2712b7750fac98267fede5a3ba8c7a7cb6d8"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P085",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 43,
+      "page_text_line_end": 46,
+      "text": "Our operating results have in the past fluctuated and may in the future fluctuate, and if our operating results are below the expectations of securities\nanalysts or investors, our stock price could decline.\nOur operating results have in the past fluctuated and may continue to fluctuate due to a number of factors. Therefore, investors should not rely on our past\nresults of operations as an indication of our future performance. Factors that could affect our results of operations include, but are not limited to:",
+      "text_sha256": "172d6fb4becce795b65fe227084feb89fdc1c4e419cfe3105c6f5e347e7bc760"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P086",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 48,
+      "page_text_line_end": 48,
+      "text": "•    our ability to adjust spending due to the multi-year development cycle for some of our products and services;",
+      "text_sha256": "8415c34a2daa7a6f30d0d27ed93bf53424e2aca5785efde95ea53dfdcb703b18"
+    },
+    {
+      "paragraph_id": "NVDA-FY25-P087",
+      "pdf_page": 24,
+      "printed_page": 24,
+      "page_text_line_start": 50,
+      "page_text_line_end": 50,
+      "text": "•    our ability to comply with our contractual obligations to customers;",
+      "text_sha256": "4f96a43ba8487fb69537258cd6f4c08aed70d404ce2a2a6bd129145688688886"
+    }
+  ]
+}

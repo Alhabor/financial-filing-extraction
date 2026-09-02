@@ -193,8 +193,14 @@ function main() {
   if (!model) throw new Error(`Unknown model alias: ${modelAlias}`);
   if (!profile) throw new Error(`Unknown profile: ${profileId}`);
 
-  const inputPath = path.join(ROOT, 'data', 'processed', 'model_inputs', `${caseId}.txt`);
-  if (!fs.existsSync(inputPath)) throw new Error(`Case input does not exist: ${relativePath(inputPath)}`);
+  const packetDir = path.join(ROOT, 'data', 'processed', 'case_packets', caseId);
+  const packetPath = path.join(packetDir, 'packet.txt');
+  const packetManifestPath = path.join(packetDir, 'packet.json');
+  if (!fs.existsSync(packetPath) || !fs.existsSync(packetManifestPath)) {
+    throw new Error(`Frozen case packet does not exist for ${caseId}; run scripts/build_case_packets.cjs first.`);
+  }
+  const packetManifest = readJson(packetManifestPath);
+  const inputPath = packetPath;
   const promptPath = path.join(ROOT, profile.prompt_path);
   if (!fs.existsSync(promptPath)) throw new Error(`Prompt does not exist: ${relativePath(promptPath)}`);
 
@@ -205,7 +211,10 @@ function main() {
     throw new Error(`Model ${modelAlias} is not configured for image input; materialize a text fallback explicitly.`);
   }
 
-  const imageArgs = asArray(args.image);
+  const packetImages = (packetManifest.model_input?.images || []).map((image) => path.join(ROOT, image.path));
+  const imageArgs = actualModality === 'native-vision'
+    ? (args.image === undefined ? packetImages : asArray(args.image))
+    : [];
   if (actualModality === 'native-vision' && imageArgs.length === 0) {
     throw new Error('Native vision materialization requires at least one --image path.');
   }
@@ -259,6 +268,8 @@ function main() {
     input: {
       path: relativePath(path.join(inputDir, 'model_input.txt')),
       source_path: relativePath(inputPath),
+      packet_id: packetManifest.packet_id,
+      canonical_pdf_path: packetManifest.source.pdf_path,
       sha256: sha256Text(caseText),
       requested_modality: requestedModality,
       actual_modality: actualModality,
@@ -298,7 +309,8 @@ function main() {
     harness: {
       mode: 'dry-run',
       network_called: false,
-      credential_env_name: model.credential_env
+      credential_env_name: model.credential_env,
+      case_packet_version: packetManifest.packet_version
     },
     artifacts: {
       model_input: 'input/model_input.txt',

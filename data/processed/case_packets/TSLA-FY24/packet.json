@@ -1,0 +1,110 @@
+{
+  "packet_id": "CP-TSLA-FY24-v001",
+  "case_id": "TSLA-FY24",
+  "dataset_role": "reserve",
+  "packet_version": "case-packet-spec-v001",
+  "source": {
+    "pdf_path": "data/raw/sec/TSLA-FY24/filing.pdf",
+    "pdf_sha256": "2957d89daa2066035df5cf56f3586dd3c25a20a8e366fcf4da866e7e48c1a504",
+    "item1a_path": "data/processed/item_1a/TSLA-FY24.txt",
+    "item1a_sha256": "cbf44e605fa6f7c018948bbeb5df297e8ebfe059ee3568f444b54e03e0c27bfe",
+    "selected_pages": [
+      18,
+      19,
+      20,
+      21,
+      23
+    ],
+    "page_map": [
+      {
+        "pdf_page": 18,
+        "printed_page": 15
+      },
+      {
+        "pdf_page": 19,
+        "printed_page": 16
+      },
+      {
+        "pdf_page": 20,
+        "printed_page": 17
+      },
+      {
+        "pdf_page": 21,
+        "printed_page": 18
+      },
+      {
+        "pdf_page": 23,
+        "printed_page": 20
+      }
+    ]
+  },
+  "model_input": {
+    "text_path": "data/processed/case_packets/TSLA-FY24/packet.txt",
+    "text_sha256": "3a4d2eb0b03b7c3403c40d94f4e65ac7a306a1d997aa15b0e62dcb0d9f7b5165",
+    "images": [
+      {
+        "pdf_page": 18,
+        "printed_page": 15,
+        "path": "data/processed/case_packets/TSLA-FY24/pages/page-018.png",
+        "sha256": "49dcd74f43c2282eef106f8081759d297032105a952d0d3c21d327e554482a66",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 19,
+        "printed_page": 16,
+        "path": "data/processed/case_packets/TSLA-FY24/pages/page-019.png",
+        "sha256": "dcabedd614eb77d44f9668db79fd0e055d391f947a9218c2b4a9b1e1267f9004",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 20,
+        "printed_page": 17,
+        "path": "data/processed/case_packets/TSLA-FY24/pages/page-020.png",
+        "sha256": "70f7db60cf9156b06741546046bb452e7f48b6cb2621fb96f0fef8ea4634751e",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 21,
+        "printed_page": 18,
+        "path": "data/processed/case_packets/TSLA-FY24/pages/page-021.png",
+        "sha256": "d7dd25ee2b47673482ea92a1fc352af26e33e819b47cc238dd7008cc80abeeda",
+        "mime_type": "image/png"
+      },
+      {
+        "pdf_page": 23,
+        "printed_page": 20,
+        "path": "data/processed/case_packets/TSLA-FY24/pages/page-023.png",
+        "sha256": "85575f1574d35672e99b0c4eeb7ff7494a18919cf3479a1a8d8377156ce9c75f",
+        "mime_type": "image/png"
+      }
+    ],
+    "locator_path": "data/processed/case_packets/TSLA-FY24/locator_index.json",
+    "paragraph_count": 37,
+    "extractor": "pdftotext -layout per physical PDF page",
+    "paragraph_granularity": "blank-line text block after PDF footer removal",
+    "locator_sha256": "691b3ce0c0ed7fbd24e35ca670704583d012d2ab4ce92c5b6e7ebdf598a329d6"
+  },
+  "risk_candidates_for_internal_review": [
+    {
+      "id": "C1",
+      "label": "Battery cell supply and materials",
+      "anchor": "We will need to maintain and significantly grow"
+    },
+    {
+      "id": "C2",
+      "label": "Product liability claims",
+      "anchor": "We may be required to defend or insure against product liability"
+    },
+    {
+      "id": "C3",
+      "label": "Dependence on Elon Musk",
+      "anchor": "We are highly dependent on the services of Elon"
+    }
+  ],
+  "generation": {
+    "script": "scripts/build_case_packets.cjs",
+    "rendered_dpi": 144,
+    "created_at_utc": "2026-09-02T03:10:13.452Z"
+  },
+  "leakage_control": "risk_candidates_for_internal_review is not included in packet.txt or model requests."
+}
