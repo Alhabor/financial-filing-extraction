@@ -1,12 +1,12 @@
 %%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "primaryTextColor": "#222222", "lineColor": "#777777"}}}%%
 flowchart LR
-  DS0([DeepSeek]) --> DS1[Frozen case text] --> DS2[PV016<br/>reasoning off] --> DS3[JSON object] --> DS4[Schema + quote validation]
-  GM0([Gemma]) --> GM1[Frozen case text] --> GM2[PV015<br/>thinking off] --> GM3[Schema-constrained JSON] --> GM4[Schema + quote validation]
-  FN0([Finance]) --> FN1[Frozen case text] --> FN2[Material-consequence<br/>screen] --> FN3[Grouped Evidence Catalog] --> FN4[PV013 selects 3<br/>Evidence IDs] --> FN5[EL001 restores quotes<br/>paragraphs + pages] --> FN6[Schema + quote validation]
+  DS0([DeepSeek]) --> DS1[Reads the same case] --> DS2[Follows model instructions<br/>and writes the full answer] --> DS3[Program checks<br/>format + quote + location]
+  GM0([Gemma]) --> GM1[Reads the same case] --> GM2[Follows model instructions<br/>and writes the full answer] --> GM3[Program checks<br/>format + quote + location]
+  FN0([Finance]) --> FN1[Program turns candidate text<br/>into numbered evidence] --> FN2[Finance model selects 3 numbers<br/>and writes summary + category] --> FN3[Program restores by number<br/>quote + paragraph + page] --> FN4[Program checks<br/>format + quote + location]
 
   classDef ds fill:#E9EEFA,stroke:#2E5A9E,color:#222222;
   classDef gm fill:#EEE9F7,stroke:#5C2D91,color:#222222;
   classDef fn fill:#E8F3EB,stroke:#3E8E5A,color:#222222;
-  class DS0,DS1,DS2,DS3,DS4 ds;
-  class GM0,GM1,GM2,GM3,GM4 gm;
-  class FN0,FN1,FN2,FN3,FN4,FN5,FN6 fn;
+  class DS0,DS1,DS2,DS3 ds;
+  class GM0,GM1,GM2,GM3 gm;
+  class FN0,FN1,FN2,FN3,FN4 fn;
