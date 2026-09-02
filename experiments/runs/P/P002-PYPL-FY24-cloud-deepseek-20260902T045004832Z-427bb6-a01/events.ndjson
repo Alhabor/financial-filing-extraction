@@ -1,0 +1,4 @@
+{"timestamp_utc":"2026-09-02T04:57:26.714Z","event":"dispatch_started","provider":"deepseek","model_id":"deepseek-v4-flash-vision-exp"}
+{"timestamp_utc":"2026-09-02T04:57:35.841Z","event":"response_received","http_status":200}
+{"timestamp_utc":"2026-09-02T04:57:35.842Z","event":"raw_capture_completed","status":"partial"}
+{"timestamp_utc":"2026-09-02T04:57:40.901Z","event":"automatic_evaluation_completed","status":"failed"}

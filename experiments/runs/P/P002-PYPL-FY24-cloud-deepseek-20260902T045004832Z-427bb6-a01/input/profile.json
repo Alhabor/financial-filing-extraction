@@ -1,0 +1,14 @@
+{
+  "description": "P002 DeepSeek text profile: visible-output mode plus JSON enforcement.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "text",
+  "prompt_path": "prompts/PV002.md",
+  "prompt_version": "PV002",
+  "reasoning": "disabled",
+  "structured_output": "risk-schema",
+  "allow_external_search": false,
+  "allow_rag": false,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}

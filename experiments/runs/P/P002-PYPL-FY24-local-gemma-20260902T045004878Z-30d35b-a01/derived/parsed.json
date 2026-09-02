@@ -1,0 +1,68 @@
+{
+  "case_id": "PYPL-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV003",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Changes in the regulatory landscape for stablecoins could lead to significant compliance costs and enforcement actions.",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "we and the PYUSD Issuer may face substantial costs to operationalize and comply with any additional or changed requirement.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P002"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "The text explicitly states that changes to laws could result in substantial costs and potential regulatory enforcement or fines.",
+      "financial_impact": "substantial costs to operationalize and comply; potential fines, penalties, and other consequences",
+      "time_horizon": "Not disclosed in the supplied excerpt.",
+      "monitoring_indicators": [
+        "changes to federal, state, and international laws and regulations"
+      ],
+      "mitigation": "Not disclosed in the supplied excerpt.",
+      "uncertainty": "uncertainties on how ongoing changes to federal, state, and international laws and regulations would apply to stablecoins in practice"
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Operational failures or insolvency of third-party custodians could lead to the loss of customer assets and harm the business.",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "any operational disruptions at such custodian or issuer, or such custodians’ or issuer’s failure to safeguard cryptocurrency holdings (or reserve assets), could result in losses of customer assets",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P004"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "The text identifies that failures by custodians to safeguard assets could result in direct losses of customer assets and impact operating results.",
+      "financial_impact": "result in losses of customer assets, expose us to customer claims, reduce consumer confidence and materially impact our cryptocurrency product offerings and our operating results.",
+      "time_horizon": "Not disclosed in the supplied excerpt.",
+      "monitoring_indicators": [
+        "operational disruptions at such custodian or issuer",
+        "failure to safeguard cryptocurrency holdings"
+      ],
+      "mitigation": "Not disclosed in the supplied excerpt.",
+      "uncertainty": "Not disclosed in the supplied excerpt."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Increased fees or changes in rules from payment card networks could increase operating costs and reduce income.",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our payment processors could make our pricing less competitive, increase our operating costs, and reduce our operating income",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P015"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "The text states that increases in network fees could directly increase operating costs and reduce operating income, harming the business.",
+      "financial_impact": "make our pricing less competitive, increase our operating costs, and reduce our operating income, which could materially harm our business, financial condition, and results of operations.",
+      "time_horizon": "Not disclosed in the supplied excerpt.",
+      "monitoring_indicators": [
+        "increase in interchange fees, special fees, or assessments"
+      ],
+      "mitigation": "Not disclosed in the supplied excerpt.",
+      "uncertainty": "Not disclosed in the supplied amounts."
+    }
+  ]
+}

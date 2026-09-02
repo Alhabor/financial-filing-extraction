@@ -1,0 +1,14 @@
+{
+  "description": "P002 Gemma text profile: thinking disabled plus schema-constrained output.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "text",
+  "prompt_path": "prompts/PV003.md",
+  "prompt_version": "PV003",
+  "reasoning": "disabled",
+  "structured_output": "risk-schema",
+  "allow_external_search": false,
+  "allow_rag": false,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}

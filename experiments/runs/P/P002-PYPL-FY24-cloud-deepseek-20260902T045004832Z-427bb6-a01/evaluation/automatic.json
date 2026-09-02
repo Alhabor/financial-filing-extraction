@@ -1,0 +1,48 @@
+{
+  "evaluation_version": "AE002",
+  "parser_version": "PE001",
+  "run_id": "P002-PYPL-FY24-cloud-deepseek-20260902T045004832Z-427bb6-a01",
+  "case_id": "PYPL-FY24",
+  "model_id": "deepseek-v4-flash-vision-exp",
+  "prompt_version": "PV002",
+  "source_files": {
+    "raw_response": "raw/response.txt",
+    "model_input": "input/model_input.txt",
+    "raw_response_sha256": "9b1eff1ec458923cb166d4ea352dc710e674a66b7f6dd53c1ae268306fdd718c",
+    "model_input_sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01"
+  },
+  "parse": {
+    "passed": true,
+    "format": "plain-json",
+    "parsed_text_sha256": "9b1eff1ec458923cb166d4ea352dc710e674a66b7f6dd53c1ae268306fdd718c",
+    "errors": []
+  },
+  "schema": {
+    "passed": false,
+    "errors": [
+      "$.risks[0].source_paragraph_ids must be an array",
+      "$.risks[0].source_pages must be an array",
+      "$.risks[0].monitoring_indicators must be an array",
+      "$.risks[1].source_paragraph_ids must be an array",
+      "$.risks[1].source_pages must be an array",
+      "$.risks[1].monitoring_indicators must be an array",
+      "$.risks[2].source_paragraph_ids must be an array",
+      "$.risks[2].source_pages must be an array",
+      "$.risks[2].monitoring_indicators must be an array"
+    ]
+  },
+  "metadata": {
+    "passed": false,
+    "errors": [
+      "Skipped because schema validation failed."
+    ]
+  },
+  "citations": {
+    "passed": false,
+    "errors": [
+      "Skipped because schema validation failed."
+    ],
+    "risk_checks": []
+  },
+  "status": "failed"
+}

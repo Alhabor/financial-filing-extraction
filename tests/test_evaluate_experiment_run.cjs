@@ -51,6 +51,20 @@ function main() {
   assert.equal(invoke(plainRun).status, 1, 'existing outputs must not be overwritten');
   assert.equal(invoke(plainRun, '--force').status, 0);
 
+  const layoutRun = copyFixture('layout-whitespace');
+  const layoutInputPath = path.join(layoutRun, 'input', 'model_input.txt');
+  const layoutInput = fs.readFileSync(layoutInputPath, 'utf8').replace(
+    'demand volatility that could reduce revenue and margins',
+    'demand volatility that could reduce\nrevenue and margins'
+  );
+  fs.writeFileSync(layoutInputPath, layoutInput, 'utf8');
+  const layout = invoke(layoutRun);
+  assert.equal(layout.status, 0, layout.stderr);
+  const layoutCheck = readJson(automaticPath(layoutRun)).citations.risk_checks[0];
+  assert.equal(layoutCheck.exact_substring_in_input, false);
+  assert.equal(layoutCheck.whitespace_normalized_substring_in_input, true);
+  assert.equal(layoutCheck.citation_match_mode, 'whitespace-normalized');
+
   const fencedRun = copyFixture('fenced');
   const plainResponse = fs.readFileSync(responsePath(fencedRun), 'utf8');
   fs.writeFileSync(responsePath(fencedRun), `\n\`\`\`json\n${plainResponse}\n\`\`\`\n`, 'utf8');

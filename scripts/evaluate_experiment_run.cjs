@@ -14,7 +14,7 @@ const path = require('node:path');
 
 const SCRIPT_NAME = 'evaluate_experiment_run.cjs';
 const PARSER_VERSION = 'PE001';
-const EVALUATION_VERSION = 'AE001';
+const EVALUATION_VERSION = 'AE002';
 const SCHEMA_PATH = path.resolve(__dirname, '..', 'schemas', 'risk-output.schema.json');
 
 function usage() {
@@ -274,16 +274,23 @@ function validateCitations(output, inputText) {
       .map((paragraph) => paragraph.paragraph_id);
     const uncitedParagraphPages = paragraphPages.filter((page) => !risk.source_pages.includes(page));
     const citedText = citedParagraphs.map((paragraph) => paragraph.text).join('\n');
+    const normalizedQuote = typeof risk.evidence_quote === 'string'
+      ? risk.evidence_quote.replace(/\s+/gu, ' ').trim()
+      : '';
+    const normalizedInput = inputText.replace(/\s+/gu, ' ').trim();
+    const normalizedCitedText = citedText.replace(/\s+/gu, ' ').trim();
     const quoteInInput = typeof risk.evidence_quote === 'string' && inputText.includes(risk.evidence_quote);
     const quoteInCitedParagraphs = typeof risk.evidence_quote === 'string' && citedText.includes(risk.evidence_quote);
+    const normalizedQuoteInInput = normalizedQuote.length > 0 && normalizedInput.includes(normalizedQuote);
+    const normalizedQuoteInCitedParagraphs = normalizedQuote.length > 0 && normalizedCitedText.includes(normalizedQuote);
 
     if (missingParagraphIds.length) riskErrors.push(`missing paragraph IDs: ${missingParagraphIds.join(', ')}`);
     if (duplicateParagraphIds.length) riskErrors.push(`duplicate paragraph IDs: ${[...new Set(duplicateParagraphIds)].join(', ')}`);
     if (paragraphsWithoutPages.length) riskErrors.push(`cited paragraphs have no PDF page marker: ${paragraphsWithoutPages.join(', ')}`);
     if (missingPages.length) riskErrors.push(`source pages not present in input: ${[...new Set(missingPages)].join(', ')}`);
     if (uncitedParagraphPages.length) riskErrors.push(`cited paragraph pages omitted from source_pages: ${uncitedParagraphPages.join(', ')}`);
-    if (!quoteInInput) riskErrors.push('evidence_quote is not an exact substring of input/model_input.txt');
-    if (!quoteInCitedParagraphs) riskErrors.push('evidence_quote is not supported by the cited paragraph text');
+    if (!normalizedQuoteInInput) riskErrors.push('evidence_quote changes more than extraction-layout whitespace relative to input/model_input.txt');
+    if (!normalizedQuoteInCitedParagraphs) riskErrors.push('evidence_quote is not supported by the cited paragraph text after whitespace normalization');
     if (!ids.length) riskErrors.push('source_paragraph_ids must identify at least one paragraph');
     if (!risk.source_pages.length) riskErrors.push('source_pages must identify at least one page');
 
@@ -292,6 +299,13 @@ function validateCitations(output, inputText) {
       passed: riskErrors.length === 0,
       exact_substring_in_input: quoteInInput,
       supported_by_cited_paragraphs: quoteInCitedParagraphs,
+      whitespace_normalized_substring_in_input: normalizedQuoteInInput,
+      whitespace_normalized_supported_by_cited_paragraphs: normalizedQuoteInCitedParagraphs,
+      citation_match_mode: quoteInInput && quoteInCitedParagraphs
+        ? 'raw-exact'
+        : normalizedQuoteInInput && normalizedQuoteInCitedParagraphs
+          ? 'whitespace-normalized'
+          : null,
       paragraph_ids_exist: missingParagraphIds.length === 0,
       cited_pages_exist: missingPages.length === 0,
       cited_paragraphs_have_pages: paragraphsWithoutPages.length === 0,

@@ -1,0 +1,103 @@
+{
+  "evaluation_version": "AE002",
+  "parser_version": "PE001",
+  "run_id": "P002-PYPL-FY24-local-gemma-20260902T045004878Z-30d35b-a01",
+  "case_id": "PYPL-FY24",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "prompt_version": "PV003",
+  "source_files": {
+    "raw_response": "raw/response.txt",
+    "model_input": "input/model_input.txt",
+    "raw_response_sha256": "92e7559e7bd1a68427b46b49bec44cd4d9e839ef9d14960470255caeb39bf246",
+    "model_input_sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01"
+  },
+  "parse": {
+    "passed": true,
+    "format": "plain-json",
+    "parsed_text_sha256": "92e7559e7bd1a68427b46b49bec44cd4d9e839ef9d14960470255caeb39bf246",
+    "errors": []
+  },
+  "schema": {
+    "passed": true,
+    "errors": []
+  },
+  "metadata": {
+    "passed": true,
+    "errors": []
+  },
+  "citations": {
+    "passed": false,
+    "input_page_count": 4,
+    "input_paragraph_count": 33,
+    "risk_checks": [
+      {
+        "risk_id": "R1",
+        "passed": true,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "whitespace-normalized",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PYPL-FY24-P002"
+        ],
+        "cited_pdf_pages": [
+          18
+        ],
+        "errors": []
+      },
+      {
+        "risk_id": "R2",
+        "passed": false,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": false,
+        "whitespace_normalized_supported_by_cited_paragraphs": false,
+        "citation_match_mode": null,
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PYPL-FY24-P004"
+        ],
+        "cited_pdf_pages": [
+          18
+        ],
+        "errors": [
+          "evidence_quote changes more than extraction-layout whitespace relative to input/model_input.txt",
+          "evidence_quote is not supported by the cited paragraph text after whitespace normalization"
+        ]
+      },
+      {
+        "risk_id": "R3",
+        "passed": true,
+        "exact_substring_in_input": false,
+        "supported_by_cited_paragraphs": false,
+        "whitespace_normalized_substring_in_input": true,
+        "whitespace_normalized_supported_by_cited_paragraphs": true,
+        "citation_match_mode": "whitespace-normalized",
+        "paragraph_ids_exist": true,
+        "cited_pages_exist": true,
+        "cited_paragraphs_have_pages": true,
+        "cited_paragraph_pages_in_source_pages": true,
+        "cited_paragraph_ids": [
+          "PYPL-FY24-P015"
+        ],
+        "cited_pdf_pages": [
+          21
+        ],
+        "errors": []
+      }
+    ],
+    "errors": [
+      "R2: evidence_quote changes more than extraction-layout whitespace relative to input/model_input.txt",
+      "R2: evidence_quote is not supported by the cited paragraph text after whitespace normalization"
+    ]
+  },
+  "status": "failed"
+}

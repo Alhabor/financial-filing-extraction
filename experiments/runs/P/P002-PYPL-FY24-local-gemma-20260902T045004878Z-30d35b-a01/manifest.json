@@ -1,0 +1,96 @@
+{
+  "run_id": "P002-PYPL-FY24-local-gemma-20260902T045004878Z-30d35b-a01",
+  "phase": "P",
+  "round": "P002",
+  "status": "partial",
+  "attempt": 1,
+  "case_id": "PYPL-FY24",
+  "dataset_role": "development",
+  "model_alias": "local-gemma",
+  "model_display_name": "gemma4:26b-a4b-it-q4_K_M",
+  "model_id": "gemma4:26b-a4b-it-q4_K_M",
+  "model_config_version": "MC001",
+  "provider": "ollama",
+  "interface": "ollama-chat",
+  "profile_id": "optimized-gemma-text-v002",
+  "prompt_version": "PV003",
+  "output_schema_version": "risk-output-v001",
+  "rubric_version": "RV001",
+  "input": {
+    "path": "experiments/runs/P/P002-PYPL-FY24-local-gemma-20260902T045004878Z-30d35b-a01/input/model_input.txt",
+    "source_path": "data/processed/case_packets/PYPL-FY24/packet.txt",
+    "packet_id": "CP-PYPL-FY24-v001",
+    "canonical_pdf_path": "data/raw/sec/PYPL-FY24/filing.pdf",
+    "sha256": "11c7b94ae7792697f15dcd2e71ff67021a592169cd1b1435fd28df746d5cce01",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "fallback_reason": null,
+    "image_count": 0
+  },
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 1600,
+    "seed": 7343,
+    "context_length": 32768
+  },
+  "tools": {
+    "external_search": false,
+    "rag": false,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": "2026-09-02T04:53:56.077Z",
+    "ended_at_utc": "2026-09-02T04:56:09.162Z",
+    "latency_ms": 133085,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": 5450,
+    "output_tokens": 913,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": 133.0523615,
+    "reasoning_tokens": 0
+  },
+  "environment": {
+    "git_commit": "c09f7ca61ab9610adea0e1d52b267ee5d5361817",
+    "runtime": "node v24.18.0",
+    "hardware": "darwin arm64"
+  },
+  "harness": {
+    "mode": "live",
+    "network_called": true,
+    "credential_env_name": null,
+    "case_packet_version": "case-packet-spec-v001",
+    "endpoint": "http://127.0.0.1:11434/api/chat"
+  },
+  "artifacts": {
+    "model_input": "input/model_input.txt",
+    "prompt": "input/prompt.txt",
+    "modality": "input/modality.json",
+    "request_sanitized": "input/request.sanitized.json",
+    "model_config": "input/model_config.json",
+    "profile": "input/profile.json",
+    "checksums": "checksums.sha256",
+    "raw_response": "raw/response.json",
+    "raw_body": "raw/response.body.txt",
+    "events": "events.ndjson",
+    "raw_text": "raw/response.txt",
+    "parsed_output": "derived/parsed.json",
+    "automatic_evaluation": "evaluation/automatic.json"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": null,
+  "notes": "Raw response was preserved, but automatic schema, metadata, or citation validation failed.",
+  "provider_response": {
+    "http_status": 200,
+    "request_id": null,
+    "finish_reason": "stop"
+  },
+  "evaluation": {
+    "parser_version": "PE001",
+    "automatic_evaluation_version": "AE002",
+    "automatic_status": "failed"
+  }
+}

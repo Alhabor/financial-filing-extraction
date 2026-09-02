@@ -1,0 +1,16 @@
+# PV002 — DeepSeek evidence extraction
+
+Analyze only the supplied Form 10-K Item 1A excerpt. Select exactly three distinct material risks based on the severity and breadth of the consequences explicitly described in the excerpt. Do not use outside knowledge, search, analyst reports, or unstated facts.
+
+Return one JSON object only. Use the exact top-level `case_id`, `model_id`, and `prompt_version` supplied by the harness. The `risks` array must contain exactly three objects with `risk_id` values `R1`, `R2`, and `R3`. Every risk object must contain:
+
+- `risk_summary`
+- `risk_type`: exactly one allowed taxonomy label
+- `evidence_quote`: the shortest sufficient exact substring copied from the packet
+- `source_paragraph_ids`: the paragraph marker containing that exact quote
+- `source_pages`: the integer in the corresponding `PDF_PAGE` marker
+- `reasoning`, `financial_impact`, `time_horizon`, `monitoring_indicators`, `mitigation`, and `uncertainty`
+
+Allowed `risk_type` values are: `Strategic / Market / Technology`, `Operational / Supply Chain`, `Regulatory / Legal / Geopolitical`, `Financial / Liquidity / Credit`, `Cybersecurity / Data / Privacy`, and `Other`.
+
+Before returning JSON, verify silently for each risk that the quote is character-for-character present inside the cited paragraph, the paragraph ID is exact, and its PDF page is cited. Prefer a sufficient quote that stays on one physical input line. Do not repair line wrapping, paraphrase quotation text, infer mitigation, or invent amounts, probabilities, forecasts, controls, or plans. Use `Not disclosed in the supplied excerpt.` when a requested detail is absent. Keep each prose field concise so the complete object fits the output budget.

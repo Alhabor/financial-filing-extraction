@@ -1,0 +1,70 @@
+{
+  "case_id": "PYPL-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV004",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Regulatory and legal risks related to cryptocurrency and stablecoins",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "The regulatory treatment of stablecoins is evolving and has drawn significant attention from legislative and regulatory bodies around the world, including the SEC.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P003"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "The regulatory landscape is evolving, and the company may face substantial costs to operationalize and comply with additional or changed requirements.",
+      "financial_impact": "The company could face regulatory or other enforcement actions, potential fines, penalties, and other consequences.",
+      "time_horizon": "Ongoing",
+      "monitoring_indicators": [
+        "Regulatory scrutiny",
+        "Changes to laws and regulations"
+      ],
+      "mitigation": "The company may need to adapt its business practices to comply with changing regulations.",
+      "uncertainty": "The regulatory landscape is evolving, and the company may face uncertainty in its compliance obligations."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Operational risks related to cryptocurrency and stablecoins",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_quote": "Custodial arrangements to safeguard cryptocurrency assets involve unique risks and uncertainties in the event of a custodian’s bankruptcy.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P005"
+      ],
+      "source_pages": [
+        22
+      ],
+      "reasoning": "The company faces operational risks related to the management of cryptocurrency assets, including the risk of custodian bankruptcy.",
+      "financial_impact": "The company could face losses of customer assets, expose itself to customer claims, and negatively impact its business.",
+      "time_horizon": "Ongoing",
+      "monitoring_indicators": [
+        "Custodian bankruptcy",
+        "Changes to laws and regulations"
+      ],
+      "mitigation": "The company may need to adapt its business practices to mitigate operational risks.",
+      "uncertainty": "The company faces uncertainty in its ability to manage operational risks."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Financial risks related to credit products",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "We are subject to the risk that account holders who use our credit products will default on their payment obligations.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P023"
+      ],
+      "source_pages": [
+        23
+      ],
+      "reasoning": "The company faces financial risks related to the credit products it offers, including the risk of default by account holders.",
+      "financial_impact": "The company could face increased losses, reduced revenue, and negatively impacted financial performance.",
+      "time_horizon": "Ongoing",
+      "monitoring_indicators": [
+        "Default rates",
+        "Changes to credit scoring models"
+      ],
+      "mitigation": "The company may need to adapt its credit scoring models and risk management practices to mitigate financial risks.",
+      "uncertainty": "The company faces uncertainty in its ability to manage financial risks."
+    }
+  ]
+}

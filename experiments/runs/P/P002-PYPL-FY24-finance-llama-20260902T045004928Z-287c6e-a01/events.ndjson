@@ -1,0 +1,5 @@
+{"timestamp_utc":"2026-09-02T04:50:35.523Z","event":"dispatch_started","provider":"llama.cpp","model_id":"QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M"}
+{"timestamp_utc":"2026-09-02T04:53:17.402Z","event":"response_received","http_status":200}
+{"timestamp_utc":"2026-09-02T04:53:17.404Z","event":"raw_capture_completed","status":"partial"}
+{"timestamp_utc":"2026-09-02T04:53:31.672Z","event":"automatic_evaluation_completed","status":"failed"}
+{"timestamp_utc":"2026-09-02T04:57:07.913Z","event":"automatic_evaluation_completed","status":"failed"}
