@@ -1,0 +1,7 @@
+[PDF_PAGE 1 | PRINTED_PAGE 1]
+[PARAGRAPH FIXTURE-FY24-P001]
+The company identifies a material operational risk in its filing.
+
+[PDF_PAGE 2 | PRINTED_PAGE 2]
+[PARAGRAPH FIXTURE-FY24-P002]
+The filing describes controls and uncertainty around that risk.
