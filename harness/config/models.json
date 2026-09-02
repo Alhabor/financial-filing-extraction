@@ -1,26 +1,54 @@
 {
   "cloud-deepseek": {
+    "config_version": "MC001",
     "display_name": "DeepSeek-V4-Flash-Vision-Exp",
     "provider": "deepseek",
     "interface": "chat-completions",
     "model_id": "deepseek-v4-flash-vision-exp",
     "modalities": ["text", "image"],
-    "credential_env": "DEEPSEEK_API_KEY"
+    "credential_env": "DEEPSEEK_API_KEY",
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "default_parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_output_tokens": 1600,
+      "seed": 7343,
+      "context_length": null
+    }
   },
   "local-gemma": {
+    "config_version": "MC001",
     "display_name": "gemma4:26b-a4b-it-q4_K_M",
     "provider": "ollama",
     "interface": "ollama-chat",
     "model_id": "gemma4:26b-a4b-it-q4_K_M",
-    "modalities": ["text"],
-    "credential_env": null
+    "modalities": ["text", "image"],
+    "credential_env": null,
+    "endpoint": "http://127.0.0.1:11434/api/chat",
+    "default_parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_output_tokens": 1600,
+      "seed": 7343,
+      "context_length": 32768
+    }
   },
   "finance-llama": {
+    "config_version": "MC001",
     "display_name": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
     "provider": "llama.cpp",
     "interface": "llama.cpp-compatible",
     "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
     "modalities": ["text"],
-    "credential_env": null
+    "credential_env": null,
+    "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
+    "runtime_note": "Launch llama-server with this model_id as --alias. The GGUF path stays outside the repository.",
+    "default_parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_output_tokens": 1600,
+      "seed": 7343,
+      "context_length": 8192
+    }
   }
 }

@@ -81,7 +81,7 @@ function gitCommit() {
 }
 
 function utcStamp() {
-  return new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+  return new Date().toISOString().replace(/[-:]/g, '').replace('.', '');
 }
 
 function safePart(value, label) {
@@ -107,7 +107,11 @@ function imageArtifact(imagePath, index, inputDir) {
   };
 }
 
-function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModality, images) {
+function compactObject(value) {
+  return Object.fromEntries(Object.entries(value).filter(([, item]) => item !== null && item !== undefined));
+}
+
+function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModality, images, parameters) {
   const systemContent = `${prompt.trim()}\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: ${caseId}\n- model_id: ${model.model_id}\n- prompt_version: ${promptVersion}`;
   const request = {
     model: model.model_id,
@@ -125,6 +129,13 @@ function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModa
       userMessage.images = images.map((image) => `<local-image:${image.path}>`);
     }
     request.messages = [{ role: 'system', content: systemContent }, userMessage];
+    request.options = compactObject({
+      temperature: parameters.temperature,
+      top_p: parameters.top_p,
+      num_predict: parameters.max_output_tokens,
+      seed: parameters.seed,
+      num_ctx: parameters.context_length
+    });
     return request;
   }
 
@@ -141,6 +152,12 @@ function buildRequest(model, prompt, caseText, caseId, promptVersion, actualModa
     { role: 'system', content: systemContent },
     { role: 'user', content: userContent }
   ];
+  Object.assign(request, compactObject({
+    temperature: parameters.temperature,
+    top_p: parameters.top_p,
+    max_tokens: parameters.max_output_tokens,
+    seed: parameters.seed
+  }));
   return request;
 }
 
@@ -200,6 +217,7 @@ function main() {
     throw new Error(`Frozen case packet does not exist for ${caseId}; run scripts/build_case_packets.cjs first.`);
   }
   const packetManifest = readJson(packetManifestPath);
+  if (packetManifest.case_id !== caseId) throw new Error(`Frozen packet case_id mismatch: ${packetManifest.case_id}`);
   const inputPath = packetPath;
   const promptPath = path.join(ROOT, profile.prompt_path);
   if (!fs.existsSync(promptPath)) throw new Error(`Prompt does not exist: ${relativePath(promptPath)}`);
@@ -211,7 +229,20 @@ function main() {
     throw new Error(`Model ${modelAlias} is not configured for image input; materialize a text fallback explicitly.`);
   }
 
-  const packetImages = (packetManifest.model_input?.images || []).map((image) => path.join(ROOT, image.path));
+  if (packetManifest.model_input?.text_sha256 !== sha256File(packetPath)) {
+    throw new Error(`Frozen packet text hash mismatch for ${caseId}.`);
+  }
+  const locatorPath = path.join(ROOT, packetManifest.model_input.locator_path);
+  if (!fs.existsSync(locatorPath) || packetManifest.model_input.locator_sha256 !== sha256File(locatorPath)) {
+    throw new Error(`Frozen packet locator hash mismatch for ${caseId}.`);
+  }
+  const packetImages = (packetManifest.model_input?.images || []).map((image) => {
+    const imagePath = path.join(ROOT, image.path);
+    if (!fs.existsSync(imagePath) || image.sha256 !== sha256File(imagePath)) {
+      throw new Error(`Frozen packet image hash mismatch: ${image.path}`);
+    }
+    return imagePath;
+  });
   const imageArgs = actualModality === 'native-vision'
     ? (args.image === undefined ? packetImages : asArray(args.image))
     : [];
@@ -221,18 +252,38 @@ function main() {
   if (actualModality !== 'native-vision' && imageArgs.length > 0) {
     throw new Error('--image is only valid when actual modality is native-vision.');
   }
+  if (actualModality === 'native-vision') {
+    const requestedImages = imageArgs.map((imagePath) => path.resolve(imagePath));
+    const canonicalImages = packetImages.map((imagePath) => path.resolve(imagePath));
+    if (JSON.stringify(requestedImages) !== JSON.stringify(canonicalImages)) {
+      throw new Error('Native vision runs must use every frozen packet image in canonical order.');
+    }
+  }
 
   const caseText = fs.readFileSync(inputPath, 'utf8');
   const prompt = fs.readFileSync(promptPath, 'utf8');
+  const parameters = {
+    temperature: null,
+    top_p: null,
+    max_output_tokens: null,
+    seed: null,
+    context_length: null,
+    ...(model.default_parameters || {}),
+    ...(profile.parameters || {})
+  };
   const outputRoot = path.resolve(String(args['output-root'] || path.join('experiments', 'runs')));
-  const runId = `${round}-${caseId}-${modelAlias}-${utcStamp()}-a${attempt}`;
+  const runId = `${round}-${caseId}-${modelAlias}-${utcStamp()}-${crypto.randomBytes(3).toString('hex')}-a${attempt}`;
   const runDir = path.join(outputRoot, phase, runId);
   if (fs.existsSync(runDir)) throw new Error(`Refusing to overwrite existing run: ${runDir}`);
 
   const inputDir = path.join(runDir, 'input');
-  fs.mkdirSync(inputDir, { recursive: true });
+  fs.mkdirSync(path.dirname(runDir), { recursive: true });
+  fs.mkdirSync(runDir);
+  fs.mkdirSync(inputDir);
   fs.writeFileSync(path.join(inputDir, 'model_input.txt'), caseText, 'utf8');
   fs.writeFileSync(path.join(inputDir, 'prompt.txt'), prompt, 'utf8');
+  writeJson(path.join(inputDir, 'model_config.json'), model);
+  writeJson(path.join(inputDir, 'profile.json'), profile);
 
   const images = imageArgs.map((imagePath, index) => imageArtifact(imagePath, index, inputDir));
   const modality = {
@@ -245,7 +296,7 @@ function main() {
   };
   writeJson(path.join(inputDir, 'modality.json'), modality);
 
-  const request = buildRequest(model, prompt, caseText, caseId, profile.prompt_version, actualModality, images);
+  const request = buildRequest(model, prompt, caseText, caseId, profile.prompt_version, actualModality, images, parameters);
   assertSanitized(request);
   writeJson(path.join(inputDir, 'request.sanitized.json'), request);
 
@@ -256,9 +307,11 @@ function main() {
     status: 'planned',
     attempt: Number(attempt),
     case_id: caseId,
+    dataset_role: packetManifest.dataset_role,
     model_alias: modelAlias,
     model_display_name: model.display_name,
     model_id: model.model_id,
+    model_config_version: model.config_version || null,
     provider: model.provider,
     interface: model.interface,
     profile_id: profileId,
@@ -277,13 +330,7 @@ function main() {
       fallback_reason: fallbackReason,
       image_count: images.length
     },
-    parameters: {
-      temperature: null,
-      top_p: null,
-      max_output_tokens: null,
-      seed: null,
-      context_length: null
-    },
+    parameters,
     tools: {
       external_search: Boolean(profile.allow_external_search),
       rag: Boolean(profile.allow_rag),
@@ -317,6 +364,8 @@ function main() {
       prompt: 'input/prompt.txt',
       modality: 'input/modality.json',
       request_sanitized: 'input/request.sanitized.json',
+      model_config: 'input/model_config.json',
+      profile: 'input/profile.json',
       checksums: 'checksums.sha256'
     },
     secret_policy: 'Credentials and authorization headers are never written to experiment artifacts.',
@@ -330,6 +379,8 @@ function main() {
     'input/prompt.txt',
     'input/modality.json',
     'input/request.sanitized.json',
+    'input/model_config.json',
+    'input/profile.json',
     'manifest.json'
   ].map((relative) => ({
     path: relative,

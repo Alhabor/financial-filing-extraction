@@ -4,9 +4,9 @@
 
 当前脚本强制读取 `data/processed/case_packets/<CASE-ID>/` 中已经冻结的案例包。未冻结的 `data/processed/model_inputs/<CASE-ID>.txt` 只能作为候选材料，不能进入正式 harness 运行。
 
-## 当前阶段：dry-run
+## 两阶段运行
 
-当前只实现输入物料化，不调用云端 API、Ollama 或 llama.cpp。这样可以先检查：
+第一阶段只做输入物料化，不调用云端 API、Ollama 或 llama.cpp。这样可以先检查：
 
 - 三个模型收到的文本是否来自同一个固定案例包；
 - Prompt 版本和模型别名是否正确；
@@ -14,6 +14,16 @@
 - 脱敏请求中没有 Authorization、API Key 或环境变量快照。
 
 入口脚本是 `scripts/materialize_experiment_run.cjs`。模型配置在 `harness/config/models.json`，输入条件在 `harness/config/profiles.json`。
+
+第二阶段必须对单个已物料化目录显式执行 live gate：
+
+```bash
+node scripts/execute_experiment_run.cjs \
+  --run-dir experiments/runs/P/<RUN-ID> \
+  --confirm-live
+```
+
+执行器只接受 `status=planned` 且尚无 `raw/` 的运行。云端凭证只从模型配置指定的环境变量读取；实际 Authorization 头和图片 base64 不写入磁盘。成功响应先标记为 `partial`，只有自动解析和引用校验完成后才能变为 `completed`。失败、超时和非 JSON 响应都会保留在原 attempt 中，重试必须创建新的 attempt。
 
 ## 内部流程
 

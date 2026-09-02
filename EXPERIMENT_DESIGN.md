@@ -228,10 +228,10 @@ R1 使用没有参与 Prompt 修改的新案例。R2 只有在需要验证新方
 ## 12. 当前状态
 
 - 研究数据池：8 份公开 10-K，已整理；8 个短案例包已冻结为 `case-packet-spec-v001`；
-- Prompt：尚未开始准备轮；
-- 模型运行：尚未开始；本机当前没有已安装的 Ollama/llama.cpp 模型，云端运行需要新的环境变量凭证；
+- Prompt：`PV001` 和准备轮协议 `experiments/P_PROTOCOL.md` 已冻结，尚未产生正式 P 输出；
+- 模型运行：Ollama、Gemma、金融 GGUF 与 llama.cpp 已就绪；DeepSeek 锁定模型 ID 已确认。金融模型的 8192 context 已形成 P001 明确诊断项；
 - 原始结果留痕结构：已设计，见 `EXPERIMENT_ARCHIVE.md`；
-- harness：已确定采用统一输入物料化、模型适配器和显式视觉回退，当前先实现 dry-run；
+- harness：已实现两阶段 materialize/live gate、不可覆盖 raw 记录、自动 Schema/引用检查和显式视觉回退协议；
 - 输出契约：已建立初版，见 `schemas/risk-output.schema.json`；
 - 产品仓库：计划名为 `financial_filing_risk_analyzer`，尚未创建；
 - GitHub 远程仓库：尚未创建。

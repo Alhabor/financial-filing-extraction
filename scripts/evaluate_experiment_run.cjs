@@ -89,6 +89,31 @@ function sha256(text) {
   return crypto.createHash('sha256').update(text, 'utf8').digest('hex');
 }
 
+function sha256File(filePath) {
+  return crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
+}
+
+function filesRecursively(directory) {
+  const files = [];
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const target = path.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...filesRecursively(target));
+    else if (entry.isFile() && entry.name !== 'checksums.sha256') files.push(target);
+  }
+  return files;
+}
+
+function refreshChecksums(runDirectory) {
+  const rows = filesRecursively(runDirectory)
+    .map((filePath) => ({
+      path: path.relative(runDirectory, filePath).split(path.sep).join('/'),
+      sha256: sha256File(filePath)
+    }))
+    .sort((left, right) => left.path.localeCompare(right.path))
+    .map((entry) => `${entry.sha256}  ${entry.path}`);
+  fs.writeFileSync(path.join(runDirectory, 'checksums.sha256'), `${rows.join('\n')}\n`, 'utf8');
+}
+
 function parseResponseText(responseText) {
   const withoutBom = responseText.replace(/^\uFEFF/, '');
   const trimmed = withoutBom.trim();
@@ -201,12 +226,16 @@ function validateAgainstSchema(value, schema, rootSchema, location = '$') {
 }
 
 function parseInputEvidence(inputText) {
-  const pagePattern = /\[PDF_PAGE\s+(\d+)\s*\|\s*PRINTED_PAGE\s+(\d+)\]/g;
+  const pagePattern = /\[PDF_PAGE\s+(\d+)\s*\|\s*PRINTED_PAGE\s+(\d+|unknown)\]/g;
   const paragraphPattern = /\[PARAGRAPH\s+([^\]\s]+)\]/g;
   const pages = [];
   let pageMatch;
   while ((pageMatch = pagePattern.exec(inputText)) !== null) {
-    pages.push({ pdf_page: Number(pageMatch[1]), printed_page: Number(pageMatch[2]), start: pageMatch.index });
+    pages.push({
+      pdf_page: Number(pageMatch[1]),
+      printed_page: pageMatch[2] === 'unknown' ? null : Number(pageMatch[2]),
+      start: pageMatch.index
+    });
   }
   const paragraphs = [];
   let paragraphMatch;
@@ -360,6 +389,25 @@ function main() {
   } catch (error) {
     automatic.parse.errors = [error.message];
     writeJson(paths.automatic, automatic);
+    manifest.artifacts = {
+      ...(manifest.artifacts || {}),
+      automatic_evaluation: 'evaluation/automatic.json'
+    };
+    manifest.evaluation = {
+      parser_version: PARSER_VERSION,
+      automatic_evaluation_version: EVALUATION_VERSION,
+      automatic_status: 'failed'
+    };
+    manifest.status = 'partial';
+    manifest.notes = 'Raw response was preserved, but automatic JSON parsing failed.';
+    writeJson(paths.manifest, manifest);
+    fs.appendFileSync(path.join(runDirectory, 'events.ndjson'), `${JSON.stringify({
+      timestamp_utc: new Date().toISOString(),
+      event: 'automatic_evaluation_completed',
+      status: 'failed',
+      stage: 'parse'
+    })}\n`, 'utf8');
+    refreshChecksums(runDirectory);
     fail(error.message);
   }
 
@@ -383,6 +431,30 @@ function main() {
 
   writeJson(paths.parsed, parsedResponse.value);
   writeJson(paths.automatic, automatic);
+  manifest.artifacts = {
+    ...(manifest.artifacts || {}),
+    parsed_output: 'derived/parsed.json',
+    automatic_evaluation: 'evaluation/automatic.json'
+  };
+  manifest.evaluation = {
+    parser_version: PARSER_VERSION,
+    automatic_evaluation_version: EVALUATION_VERSION,
+    automatic_status: automatic.status
+  };
+  if (allPassed) {
+    manifest.status = 'completed';
+    manifest.notes = 'Raw response, schema, metadata, and exact citation validation completed successfully.';
+  } else {
+    manifest.status = 'partial';
+    manifest.notes = 'Raw response was preserved, but automatic schema, metadata, or citation validation failed.';
+  }
+  writeJson(paths.manifest, manifest);
+  fs.appendFileSync(path.join(runDirectory, 'events.ndjson'), `${JSON.stringify({
+    timestamp_utc: new Date().toISOString(),
+    event: 'automatic_evaluation_completed',
+    status: automatic.status
+  })}\n`, 'utf8');
+  refreshChecksums(runDirectory);
   process.stdout.write(`${JSON.stringify({
     status: automatic.status,
     run_id: automatic.run_id,
