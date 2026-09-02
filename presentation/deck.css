@@ -258,6 +258,7 @@ code { font-family: "SF Mono", ui-monospace, monospace; font-size: .88em; }
 .progress span { display: block; height: 100%; width: 0; background: var(--green); transition: width .18s ease-out; }
 .exit { position: fixed; z-index: 20; left: 16px; top: 14px; padding: 7px 10px; background: color-mix(in srgb, var(--surface) 88%, transparent); border: 1px solid var(--hair); color: var(--muted); font-size: 12px; text-decoration: none; opacity: .45; }
 .exit:hover, .exit:focus-visible { opacity: 1; }
+.orientation-hint { display: none; }
 .notes { display: none; position: absolute; z-index: 30; inset: auto calc(var(--u) * 4.8) calc(var(--u) * 4) calc(var(--u) * 4.8); max-height: 34%; overflow: auto; padding: calc(var(--u) * 1.1); background: color-mix(in srgb, var(--surface) 96%, transparent); border: 1px solid var(--green); box-shadow: 0 calc(var(--u) * .8) calc(var(--u) * 2.4) var(--shadow); }
 .notes.show { display: block; }
 .notes p { font-size: calc(var(--u) * 1.05); }
@@ -269,5 +270,11 @@ html[data-language="en"] .simple-columns p { font-size: calc(var(--u) * .96); }
 html[data-language="en"] .lane strong { font-size: calc(var(--u) * 1.2); }
 html[data-language="en"] .slide[data-layout="close"] blockquote { font-size: calc(var(--u) * 1.32); }
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+@media (max-width: 700px) and (orientation: portrait) {
+  .orientation-hint { position: fixed; z-index: 40; left: 50%; bottom: 22px; display: block; width: max-content; max-width: calc(100% - 32px); transform: translateX(-50%); padding: 11px 15px; border: 1px solid var(--green); border-radius: 2px; background: var(--surface); color: var(--ink); font-size: 15px; line-height: 1.45; text-align: center; }
+  .orientation-hint span { display: none; }
+  html[data-language="zh"] .orientation-hint span[lang="zh-CN"],
+  html[data-language="en"] .orientation-hint span[lang="en"] { display: inline; }
+}
 @media (prefers-reduced-motion: reduce) { .slide.active { animation: none; } .progress span { transition: none; } }
-@media print { @page { size: 16in 9in; margin: 0; } html, body { overflow: visible; background: white; } body { display: block; } .stage { width: 16in; height: auto; box-shadow: none; } .slide { position: relative; display: flex !important; width: 16in; height: 9in; break-after: page; } .preferences, .navigation, .sourcebar, .progress, .exit, .notes { display: none !important; } }
+@media print { @page { size: 16in 9in; margin: 0; } html, body { overflow: visible; background: white; } body { display: block; } .stage { width: 16in; height: auto; box-shadow: none; } .slide { position: relative; display: flex !important; width: 16in; height: 9in; break-after: page; } .preferences, .navigation, .sourcebar, .progress, .exit, .orientation-hint, .notes { display: none !important; } }
