@@ -1,0 +1,21 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial Unicode MS", "primaryTextColor": "#222222", "lineColor": "#777777"}}}%%
+flowchart LR
+  A[JPMorgan双栏PDF<br/>左栏句子 + 右栏句子] --> B[pdftotext -layout]
+  B --> C[同一文本行包含<br/>左栏片段 + 右栏片段]
+  C --> D1[DeepSeek / Gemma<br/>重建单栏连续句子]
+  C --> D2[Finance Evidence ID<br/>复制冻结抽取文本]
+  D1 --> E1[视觉阅读较正常<br/>但不是抽取文本连续子串]
+  D2 --> E2[与抽取文本逐字一致<br/>但引用可能交错难读]
+  E1 --> F1[自动引用校验：失败]
+  E2 --> F2[自动引用校验：通过]
+
+  classDef source fill:#EEF0F5,stroke:#777777,color:#222222;
+  classDef general fill:#E9EEFA,stroke:#2E5A9E,color:#222222;
+  classDef finance fill:#E8F3EB,stroke:#3E8E5A,color:#222222;
+  classDef fail fill:#F8E8E8,stroke:#B03A3A,color:#222222;
+  classDef pass fill:#E8F3EB,stroke:#3E8E5A,color:#222222;
+  class A,B,C source;
+  class D1,E1 general;
+  class D2,E2 finance;
+  class F1 fail;
+  class F2 pass;

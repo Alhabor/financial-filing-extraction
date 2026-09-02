@@ -1,0 +1,15 @@
+phase,case_id,condition,model_alias,automatic_status,latency_seconds,input_tokens,output_tokens,status_explanation
+R1,PFE-FY24,Standard text,DeepSeek,failed,16.183,6898,1600,Output budget consumed by reasoning; no assistant answer
+R1,PFE-FY24,Standard text,Gemma,failed,246.034,7032,1600,Output budget consumed by thinking; no assistant answer
+R1,PFE-FY24,Standard text,Finance pipeline,preflight_failed,,6840,,Input plus reserved output exceeded the 8192-token context
+R1,PFE-FY24,Optimized text,DeepSeek,partial,6.641,6980,601,Schema passed; two of three quotations passed
+R1,PFE-FY24,Optimized text,Gemma,passed,156.519,7050,748,All automatic gates passed
+R1,PFE-FY24,Optimized text,Finance pipeline,passed,68.676,2426,189,All automatic gates passed after deterministic localization
+R1,PFE-FY24,Native vision,DeepSeek,failed,16.138,1851,1600,Output budget consumed by reasoning; no assistant answer
+R1,PFE-FY24,Native vision,Gemma,failed,188.465,1514,1600,Output budget consumed by thinking; no assistant answer
+R2,JPM-FY24,Optimized text,DeepSeek,failed,6.311,6104,633,Schema passed; packet-string citation gate failed for all three quotations
+R2,JPM-FY24,Optimized text,Gemma,failed,239.547,5901,730,One of three quotation checks passed; one page locator confused printed and PDF pages
+R2,JPM-FY24,Optimized text,Finance pipeline,passed,148.477,3099,192,Automatic evidence-ID and deterministic locator gates passed
+R3,META-FY24,Optimized text,DeepSeek,passed,7.195,7281,677,All automatic gates passed
+R3,META-FY24,Optimized text,Gemma,passed,231.120,7676,738,All automatic gates passed
+R3,META-FY24,Optimized text,Finance pipeline,passed,161.604,2135,182,All automatic gates passed

@@ -1,0 +1,12 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial Unicode MS", "primaryTextColor": "#222222", "lineColor": "#777777"}}}%%
+flowchart LR
+  DS0([DeepSeek]) --> DS1[冻结案例文本] --> DS2[PV016<br/>关闭reasoning] --> DS3[JSON对象] --> DS4[Schema + 引用校验]
+  GM0([Gemma]) --> GM1[冻结案例文本] --> GM2[PV015<br/>关闭thinking] --> GM3[Schema约束JSON] --> GM4[Schema + 引用校验]
+  FN0([Finance]) --> FN1[冻结案例文本] --> FN2[Material-consequence<br/>screen] --> FN3[分组Evidence Catalog] --> FN4[PV013选择3个<br/>Evidence ID] --> FN5[EL001恢复原句<br/>段落与页码] --> FN6[Schema + 引用校验]
+
+  classDef ds fill:#E9EEFA,stroke:#2E5A9E,color:#222222;
+  classDef gm fill:#EEE9F7,stroke:#5C2D91,color:#222222;
+  classDef fn fill:#E8F3EB,stroke:#3E8E5A,color:#222222;
+  class DS0,DS1,DS2,DS3,DS4 ds;
+  class GM0,GM1,GM2,GM3,GM4 gm;
+  class FN0,FN1,FN2,FN3,FN4,FN5,FN6 fn;

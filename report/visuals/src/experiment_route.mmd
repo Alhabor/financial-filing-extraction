@@ -1,0 +1,22 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial Unicode MS", "primaryColor": "#EEF0F5", "primaryTextColor": "#222222", "primaryBorderColor": "#2E5A9E", "lineColor": "#777777"}}}%%
+flowchart LR
+  A[8份10-K<br/>冻结短案例包] --> B[P001共同基准<br/>同一Prompt与文本]
+  B --> C{失败类型分化}
+  C --> D[DeepSeek<br/>reasoning耗尽预算]
+  C --> E[Gemma<br/>thinking耗尽预算]
+  C --> F[Finance Llama<br/>结构与定位失败]
+  D --> G[模型专属调优]
+  E --> G
+  F --> G
+  G --> H[配置冻结<br/>PV016 / PV015 / PV013]
+  H --> I[R1 Pfizer<br/>标准 / 优化 / 视觉]
+  I --> J[R2 JPMorgan<br/>仅冻结优化方案]
+  J --> K[R3 Meta<br/>仅冻结优化方案]
+  K --> L[原始输出 + 自动校验<br/>+ 语义复核 + Git留痕]
+
+  classDef stage fill:#EEF0F5,stroke:#2E5A9E,color:#222222;
+  classDef fail fill:#F8E8E8,stroke:#B03A3A,color:#222222;
+  classDef freeze fill:#E8F3EB,stroke:#3E8E5A,color:#222222;
+  class A,B,G,I,J,K,L stage;
+  class C,D,E,F fail;
+  class H freeze;

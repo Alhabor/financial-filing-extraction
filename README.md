@@ -45,6 +45,8 @@ Group 7 的 **SHBI-GB 7343 — AI in Finance** 课程项目。项目从课程要
 
 精简 R1 结果见 [experiments/R1_PFE_SUMMARY.md](experiments/R1_PFE_SUMMARY.md)，额外优化方案盲测见 [experiments/R2_R3_OPTIMIZED_SUMMARY.md](experiments/R2_R3_OPTIMIZED_SUMMARY.md)。原计划 24 次 P003 稳定性矩阵未运行，因此项目不声称已建立统计稳定性。产品演示仓库和部署仍属于下一阶段。
 
+面向课堂展示与后续网页阅读的完整中文实验报告见 [report/financial_filing_extraction_report_zh.md](report/financial_filing_extraction_report_zh.md)。报告包含三种方案的调优轨迹、R1–R3 结果、JPM 双栏 PDF 失败案例和可复用的 PNG/SVG 图表；实验结论暂时留空，等待小组阅读证据后提炼。
+
 ## 仓库边界
 
 当前仓库 `Financial filing extraction` 是研究主仓库，保存数据、Prompt 版本、实验运行记录、评分和方法文档。
@@ -62,6 +64,7 @@ data/                    # 公开 10-K 原始材料和模型输入
 experiments/              # P、F、R1、R2、R3 的运行档案和留痕模板
 prompts/                  # 各模型 Prompt 版本与变更记录
 evaluations/              # 人工金融分析、自动评分和专家参照
+report/                   # 详细中文报告、绘图数据、图源和 PNG/SVG
 schemas/                 # 研究线与产品线共享的输出契约
 scripts/                 # 数据准备与验证脚本
 EXPERIMENT_DESIGN.md     # 实验方案

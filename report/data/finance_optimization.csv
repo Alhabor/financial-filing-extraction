@@ -1,0 +1,11 @@
+sequence,stage,case_id,prompt_version,latency_seconds,input_tokens,output_tokens,automatic_gate,semantic_gate,change
+1,P001 baseline,PYPL-FY24,PV001,138.422,5199,487,failed,failed,Prose output and unsupported locators
+2,P002 a01,PYPL-FY24,PV004,161.881,5193,672,failed,failed,JSON contract added but pages remained wrong
+3,P002 a02,PYPL-FY24,PV007,288.642,5248,1311,failed,failed,Explicit locator-state algorithm regressed
+4,P002 a03,PYPL-FY24,PV008,,,,preflight_failed,not_run,Verbose evidence catalog exceeded context
+5,P002 a04,PYPL-FY24,PV008,188.561,5411,518,passed,failed,Compact physical-line evidence IDs
+6,P002 a05,PYPL-FY24,PV010,161.398,5070,542,passed,failed,Complete sentences but unsupported analysis remained
+7,P002 a06,PYPL-FY24,PV011,60.424,1952,191,passed,failed,Core-only contract and consequence screen v001
+8,P002 a07,PYPL-FY24,PV012,59.900,2202,187,passed,passed,Corrected screen and paragraph-group uniqueness
+9,COIN a01,COIN-FY24,PV012,69.885,2676,192,passed,failed,Classification precedence remained wrong
+10,COIN a02,COIN-FY24,PV013,75.425,2700,191,passed,passed_with_caveat,Primary-driver category precedence
