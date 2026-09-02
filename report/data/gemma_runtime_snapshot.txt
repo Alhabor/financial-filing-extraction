@@ -1,0 +1,24 @@
+Command: ollama show gemma4:26b-a4b-it-q4_K_M
+Captured: 2026-09-02
+
+Model
+  architecture        gemma4
+  parameters          25.8B
+  context length      262144
+  embedding length    2816
+  quantization        Q4_K_M
+  requires            0.20.0
+
+Capabilities
+  completion
+  vision
+  tools
+  thinking
+
+Model defaults reported by the local package
+  top_p               0.95
+  temperature         1
+  top_k                64
+
+Note: experiment-time parameters and the 32768 context cap came from
+harness/config/models.json and harness/config/profiles.json, not these package defaults.

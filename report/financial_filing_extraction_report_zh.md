@@ -110,9 +110,63 @@ Form 10-K 是美国上市公司向 SEC 提交的年度报告。Item 1A “Risk F
 | 通用本地 | `gemma4:26b-a4b-it-q4_K_M` | 本地 Ollama | `PV015` / `optimized-gemma-text-v004` | 冻结文本直接输入 |
 | 金融专门 | `QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M` | 本地 GGUF | `PV013` / `optimized-finance-pipeline-v009` | 候选证据目录 + 确定性回填 |
 
+### 3.1 三个模型的背景与选择理由
+
+三个模型并非只是“云端、通用本地、金融本地”三个标签。它们在开发者、模型规模、训练目标、开放方式和运行机制上都有明显差异，这些差异直接影响后续方案设计。
+
+| 模型 | 开发与来源 | 架构或规模 | 原始定位 | 本实验选择它代表什么 |
+|---|---|---|---|---|
+| DeepSeek-V4-Flash-Vision-Exp | DeepSeek 官方 API 实验模型 | 官方资料未公开参数量与权重；云端托管 | 通用多模态、推理、Agent 与工具使用 | 能直接调用的高能力通用云端方案 |
+| Gemma 4 26B A4B IT | Google DeepMind 开放权重模型；本地为 Ollama Q4_K_M 版本 | MoE；官方标注约 25.2B 总参数、3.8B 激活参数 | 通用文本、视觉、推理与工具使用 | 数据留在本机的高能力通用模型方案 |
+| Llama-3-8B-Instruct-Finance-RAG | Meta Llama 3 8B Instruct 的金融 LoRA 微调版；QuantFactory 转为 GGUF | 8B；本实验使用 Q4_K_M 量化 | 根据给定 10-K 上下文回答金融问题 | 小型、可本地运行、经过金融任务适配的专门模型方案 |
+
+#### 3.1.1 DeepSeek-V4-Flash-Vision-Exp
+
+这是 DeepSeek 于 2026 年 8 月 21 日上线的实验性多模态 API 模型。根据 [DeepSeek 官方发布说明](https://api-docs.deepseek.com/news/news260821/)，它在文本能力上与 DeepSeek-V4-Flash 对齐，并增加图像理解；官方接口同时支持 Chat Completions、Responses、JSON 输出、工具调用，以及 thinking / non-thinking 两种模式。[官方模型说明](https://api-docs.deepseek.com/quick_start/pricing/)列出的服务上下文长度为 1M Token，但参数量、权重和具体网络结构没有公开，因此本报告不把它描述成某个未经证实的参数规模。
+
+本实验选择它，不是因为它接受过金融专项训练，而是因为它代表常见的生产路径：通过云端 API 获得较强的通用语言与视觉能力，不需要在本地加载模型。对应代价是文件内容需要发送给外部服务，运行依赖网络和供应商接口，并产生按 Token 计量的调用成本。
+
+它与 10-K 任务的直接关系有两点。第一，通用模型需要仅凭 Prompt 理解“重大风险、逐字引文、主风险类型和页码定位”等金融披露要求；第二，它原生支持图像，因此可以测试直接读取 10-K 页面截图是否优于文本抽取。准备阶段暴露的主要适配问题不是金融知识不足，而是默认 reasoning 会占用最终输出预算。
+
+#### 3.1.2 Gemma 4 26B A4B IT Q4_K_M
+
+Gemma 是 Google DeepMind 基于 Gemini 研究与技术推出的开放权重模型家族。本实验使用 instruction-tuned 的 Gemma 4 26B A4B。根据 [Google 官方 Gemma 4 模型卡](https://ai.google.dev/gemma/docs/core/model_card_4)，该版本采用 Mixture-of-Experts（MoE）架构，约有 25.2B 总参数，但每次推理只激活约 3.8B 参数；`A4B` 表示约 4B 激活参数。官方版本支持文本和图像，原生上下文长度为 256K Token，并具有可开关的 thinking 模式。
+
+本地 `ollama show` 返回的实际安装包信息为 `gemma4` 架构、约 25.8B 参数、262,144 Token 原生上下文、支持 completion、vision、tools 和 thinking；脱敏后的命令输出保存在 [`report/data/gemma_runtime_snapshot.txt`](data/gemma_runtime_snapshot.txt)。模型名称末尾的 `Q4_K_M` 表示使用 K-quant 的 4-bit 中等量化版本：它以一定精度损失换取更小的内存占用和本地运行可行性。本实验进一步把 harness 上下文限制为 32,768 Token，而不是直接使用模型声明的全部上限。
+
+选择 Gemma 的目的，是设置一个与 DeepSeek 同属通用多模态模型、但可以完全在本地运行的方案。它没有针对金融 10-K 专门微调，因此需要通过 Prompt 学会本任务的风险选择、分类和逐字证据规则；同时，本地部署使文件不需要传给云端。准备阶段最关键的适配是关闭 thinking，并把逐字复制过程拆成明确自检步骤。
+
+#### 3.1.3 Llama-3-8B-Instruct-Finance-RAG-GGUF Q4_K_M
+
+这个名称包含三层来源，不能把它简单理解成一个从零训练的“金融大模型”：
+
+1. 基础模型是 Meta 的 Llama 3 8B Instruct；
+2. `curiousily/Llama-3-8B-Instruct-Finance-RAG` 使用 LoRA，在 `virattt/financial-qa-10K` 的 4,000 个样本上进行金融问答微调；
+3. QuantFactory 再使用 llama.cpp 将其转换并量化为 GGUF，本实验选择 `Q4_K_M` 版本。
+
+这些来源和训练说明可在 [QuantFactory 模型卡](https://huggingface.co/QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF)中逐级核对。模型卡显示 `Q4_K_M` 文件约 4.92 GB，本实验通过 llama.cpp 在本地以 8,192 Token 上下文运行。
+
+名称中的 `RAG` 不表示该模型会自动搜索、建立索引或取回 10-K。它的训练格式是“给出 question 和 context，再依据 context 回答”。检索和上下文准备仍必须由外部程序完成。这个训练背景解释了为什么它在最终方案中适合从候选证据目录里选择 Evidence ID，却不适合独立承担 PDF 解析、全文检索、严格 JSON、段落 ID 和页码恢复等全部任务。
+
+选择它的目的，是观察一个规模较小、能在本地运行、且见过 10-K 金融问答数据的模型，能否通过更贴近其训练方式的工作流完成风险抽取。它与 Gemma 的区别不只是参数更少，而是训练目标更窄：Gemma 是通用推理与多模态模型；Finance-RAG 更接近“根据已经提供的金融证据回答问题”的专门组件。
+
+#### 3.1.4 这组三模型比较实际代表什么
+
+本实验没有把“云端、本地、金融”视为三个互斥能力等级，而是用它们代表三条可实施路线：
+
+- **云端通用路线**：模型能力和调用便利性优先；
+- **本地通用路线**：隐私与本地控制优先，同时保留较强通用能力；
+- **本地金融专门路线**：使用更小的领域微调模型，并由外部证据管线补足它不擅长的工作。
+
+因此，后续比较的不是“模型名字谁更高级”，而是三种背景不同的模型经过适配后，哪种完整方案更适合 10-K 风险证据抽取。
+
+### 3.2 共同运行控制
+
 共同的主要生成参数为 `temperature = 0`、`top_p = 1`、`max_output_tokens = 1600`、`seed = 7343`。Gemma 使用 32,768 Token 上下文；金融模型使用 8,192 Token 上下文。配置原件见 [`harness/config/models.json`](../harness/config/models.json) 与 [`harness/config/profiles.json`](../harness/config/profiles.json)。
 
-### 3.1 为什么这项任务需要 Token 预算
+DeepSeek 官方服务支持更大的上下文，Gemma 本地模型也声明 256K 原生上下文，但本实验没有按各模型最大容量填满输入。上下文上限、输出预算和采样参数属于实验运行控制，不等同于模型厂商公布的理论最大能力。
+
+### 3.3 为什么这项任务需要 Token 预算
 
 本实验要求每个方案完成同一项可交付工作：从一段较长的 10-K 风险因素中选出三个重大风险，并为每项风险返回摘要、分类、逐字引文和原文定位。初始输出 Schema 还要求理由、金融影响、时间范围、监控指标、缓释措施和不确定性。它是一个有明确交付边界的结构化抽取任务，而不是不限长度的金融评论。
 
@@ -130,7 +184,7 @@ Form 10-K 是美国上市公司向 SEC 提交的年度报告。Item 1A “Risk F
 
 换言之，本实验测试的不是“给模型无限 Token 时能否答题”，而是“在一个可控制、可比较、适合进入分析工作流的资源边界内，哪种方案能够完成三个风险的可核验抽取”。
 
-### 3.2 Token 预算如何进入一次调用
+### 3.4 Token 预算如何进入一次调用
 
 Token 是模型处理文字时使用的计量单位，不等同于汉字数或英文单词数。一次调用需要同时考虑两种容量：
 
@@ -207,7 +261,7 @@ P001 / P002 的首要目标是完成方案设计，而不是测量或排列三�
 
 ## 5. 准备阶段的起点：共同 Prompt 暴露三类设计问题
 
-P001 使用 PayPal、相同 `PV001` Prompt、相同核心任务与 1,600 Token 输出预算，作为三个方案设计的共同起点。目的不是根据这一次运行判断模型优劣，而是观察同一通用 Prompt 在不同模型上暴露哪些适配问题，并据此建立三条独立的优化路线。其结果分别对应 3.1–3.2 节介绍的输出预算耗尽，以及结构化输出控制问题。
+P001 使用 PayPal、相同 `PV001` Prompt、相同核心任务与 1,600 Token 输出预算，作为三个方案设计的共同起点。目的不是根据这一次运行判断模型优劣，而是观察同一通用 Prompt 在不同模型上暴露哪些适配问题，并据此建立三条独立的优化路线。其结果分别对应 3.3–3.4 节介绍的输出预算耗尽，以及结构化输出控制问题。
 
 | 模型 | 开发阶段观察 | 时间 | 输入 / 输出 Token | 暴露的方案设计问题 |
 |---|---|---:|---:|---|
