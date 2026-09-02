@@ -1,0 +1,27 @@
+{
+  "standard-text-v001": {
+    "description": "All models receive the same text input and core prompt.",
+    "requested_modality": "text",
+    "actual_modality": "text",
+    "input_view": "text",
+    "prompt_path": "prompts/PV001.md",
+    "prompt_version": "PV001",
+    "allow_external_search": false,
+    "allow_rag": false,
+    "allow_human_intervention": false,
+    "fallback_allowed": false
+  },
+  "native-vision-v001": {
+    "description": "A vision-capable model receives fixed page images from the same case packet.",
+    "requested_modality": "native-vision",
+    "actual_modality": "native-vision",
+    "input_view": "page_images",
+    "prompt_path": "prompts/PV001.md",
+    "prompt_version": "PV001",
+    "allow_external_search": false,
+    "allow_rag": false,
+    "allow_human_intervention": false,
+    "fallback_allowed": true,
+    "fallback_profile": "standard-text-v001"
+  }
+}

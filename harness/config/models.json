@@ -1,0 +1,26 @@
+{
+  "cloud-deepseek": {
+    "display_name": "DeepSeek-V4-Flash-Vision-Exp",
+    "provider": "deepseek",
+    "interface": "chat-completions",
+    "model_id": "deepseek-v4-flash-vision-exp",
+    "modalities": ["text", "image"],
+    "credential_env": "DEEPSEEK_API_KEY"
+  },
+  "local-gemma": {
+    "display_name": "gemma4:26b-a4b-it-q4_K_M",
+    "provider": "ollama",
+    "interface": "ollama-chat",
+    "model_id": "gemma4:26b-a4b-it-q4_K_M",
+    "modalities": ["text"],
+    "credential_env": null
+  },
+  "finance-llama": {
+    "display_name": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+    "provider": "llama.cpp",
+    "interface": "llama.cpp-compatible",
+    "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+    "modalities": ["text"],
+    "credential_env": null
+  }
+}

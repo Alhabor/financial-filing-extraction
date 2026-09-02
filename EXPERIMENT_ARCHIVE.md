@@ -19,6 +19,9 @@ experiments/
 │   ├── run-manifest.template.json
 │   └── evaluation.template.json
 └── INDEX.csv
+harness/
+├── config/                      # 模型别名、接口和输入条件；不保存凭证
+└── README.md                    # dry-run、适配器和回退协议
 ```
 
 单个实验单元是一个“模型 × 案例 × 一次尝试”。每次重跑都必须创建新的目录，不得覆盖同一案例的旧结果。
@@ -29,6 +32,7 @@ experiments/runs/R1/R1-COIN-FY24-<model>-<timestamp>-a01/
 ├── input/
 │   ├── model_input.txt
 │   ├── prompt.txt
+│   ├── modality.json
 │   └── request.sanitized.json
 ├── raw/
 │   ├── response.json
@@ -53,6 +57,7 @@ experiments/runs/R1/R1-COIN-FY24-<model>-<timestamp>-a01/
 
 - `run_id`、`phase`、`round`、`attempt` 和 `status`；
 - `case_id`、输入文件路径和输入 SHA-256；
+- 请求模态、实际模态、是否发生文本回退及回退原因；
 - `model_alias`、实际 `model_id`、provider 和运行接口；
 - `prompt_version`、输出 Schema 版本和评分规则版本；
 - temperature、top-p、最大输出长度、seed 等参数；
@@ -64,6 +69,12 @@ experiments/runs/R1/R1-COIN-FY24-<model>-<timestamp>-a01/
 - 失败原因、人工修正和备注。
 
 不得记录 Authorization 请求头、API Key、环境变量完整快照、Cookie、私钥或其他凭证。`request.sanitized.json` 只保留脱敏后的请求正文和非敏感调用参数。
+
+## 3.1 Harness 与视觉回退
+
+harness 只接受已固定的案例包，不在运行时偷偷改变输入。适配器负责将统一的内部请求转换为 provider 格式：云端视觉接口使用文本块和页面图像引用，本地 Ollama 接口使用 `messages`/`images`，文本 GGUF 接口使用纯文本消息。真实调用时，图片可以在内存中编码为请求需要的格式，但档案只保存图片路径、SHA-256 和脱敏请求，不保存带凭证的请求头。
+
+视觉运行失败、模型不支持图像、图像解码失败或视觉输出未通过最小引用检查时，harness 保存原始失败痕迹，然后用相同案例文本创建新的 `text_fallback` attempt。两次 attempt 必须拥有不同的 `run_id`，并在索引中关联；回退结果不得覆盖视觉尝试。
 
 ## 3. 原始层和派生层
 

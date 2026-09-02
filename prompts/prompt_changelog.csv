@@ -1,1 +1,2 @@
 prompt_version,created_at_utc,scope,parent_version,change_reason,affected_cases,validation_summary,status,git_commit,notes
+PV001,2026-09-02T00:00:00Z,core,,Initial evidence-first prompt for the standardized text condition,all,Not yet run; preparation only,active,,No analyst answer or gold label is embedded.
