@@ -112,7 +112,7 @@ Form 10-K 是美国上市公司向 SEC 提交的年度报告。Item 1A “Risk F
 
 共同的主要生成参数为 `temperature = 0`、`top_p = 1`、`max_output_tokens = 1600`、`seed = 7343`。Gemma 使用 32,768 Token 上下文；金融模型使用 8,192 Token 上下文。配置原件见 [`harness/config/models.json`](../harness/config/models.json) 与 [`harness/config/profiles.json`](../harness/config/profiles.json)。
 
-这里要强调：优化阶段结束后，三者已经不是同一种“裸模型调用”。我们比较的是在同一业务任务与同一核心输出契约下，针对各模型特点设计出来的解决方案。
+优化阶段结束后，三者已不再是同一种“裸模型调用”。本实验比较的是在同一业务任务与核心输出契约下，针对各模型特点设计的三种完整解决方案。
 
 ![三种最终方案架构](visuals/rendered/final_solution_architectures.png)
 
@@ -146,9 +146,9 @@ DeepSeek 和 Gemma 最终直接阅读案例文本并生成完整 JSON。金融�
 | R2 | JPMorgan Chase | 冻结后扩展盲测 | 不允许 |
 | R3 | Meta | 冻结后扩展盲测 | 不允许 |
 
-### 4.2 为什么没有把准备轮伪装成测试轮
+### 4.2 开发集与盲测集的隔离
 
-PayPal 和 Coinbase 已经影响了 Prompt 设计，因此只能说明“我们如何把方案调到可用”，不能再用来证明泛化效果。Pfizer、JPMorgan 和 Meta 在配置冻结后才运行，而且每个单元只运行一次、没有重试、没有根据盲测答案改 Prompt。
+PayPal 和 Coinbase 用于发现错误并调整 Prompt，因此归入开发集，其结果用于呈现优化过程，不计入冻结方案的跨案例表现。Pfizer、JPMorgan 和 Meta 构成盲测集，仅在配置冻结后运行；每个实验单元执行一次，不重试，也不依据盲测输出修改 Prompt。这样的划分使调优证据与冻结后的表现证据保持独立。
 
 ### 4.3 每一次调用保留了什么
 
@@ -362,7 +362,7 @@ JPMorgan 年报使用双栏版式。`pdftotext -layout` 在部分页面把左栏
 ### 10.3 加入页面图像复核后，结果怎么变化
 
 - DeepSeek 的监管执法、处置计划重组、经济与信用环境三个主题均有金融相关性，并可在页面视觉列中找到支持；但部分短引文没有覆盖摘要里的完整后果，因此更适合标为“带条件的部分结果”，而不是直接把三条都视为纯模型幻觉。
-- Gemma 的监管解决、政治/地缘不确定性、利率与信用利差主题同样相关；但页码契约确实有一处错误，不能只用双栏问题替它免责。
+- Gemma 的监管解决、政治/地缘不确定性、利率与信用利差主题同样相关；但页码契约确实有一处独立错误，不能归因于双栏文本抽取。
 - Finance pipeline 的第一项“诉讼暴露”更接近 Regulatory / Legal，而不是 Strategic；“不利经济条件”更接近 Financial / Market，而不是 Operational。它证明了逐字可定位，却没有自动证明分类正确。
 
 ### 10.4 这个案例对评价设计的具体影响
@@ -436,7 +436,7 @@ DeepSeek 和 Gemma 直接阅读完整冻结案例，输入大约 5,900–7,700 T
 
 ## 13. 如何阅读和复核原始实验结果
 
-如果要自己判断 presentation 应该得出什么结论，建议按下面顺序阅读，而不是先看汇总数字。
+为了在形成最终实验结论前独立核对证据，建议按以下顺序阅读，而不是只看汇总数字。
 
 ### 13.1 第一层：先看三份摘要
 
@@ -473,7 +473,7 @@ Finance pipeline 的 JPMorgan run 为：
 - Gemma：[`PV001`](../prompts/PV001.md) → [`PV003`](../prompts/PV003.md) → [`PV006`](../prompts/PV006.md) → [`PV015`](../prompts/PV015.md)；
 - Finance：[`PV001`](../prompts/PV001.md) → [`PV004`](../prompts/PV004.md) → [`PV007`](../prompts/PV007.md) → [`PV008`](../prompts/PV008.md) → [`PV010`](../prompts/PV010.md) → [`PV011`](../prompts/PV011.md) → [`PV012`](../prompts/PV012.md) → [`PV013`](../prompts/PV013.md)。
 
-每个改动都应与前一个失败现象对应。若某项 Prompt 规则找不到它要解决的具体错误，就不应把它包装成有效优化。
+每个改动都应与前一个失败现象对应。只有能够指向具体错误，并由后续运行验证效果的 Prompt 规则，才计为有效优化。
 
 ---
 
@@ -498,6 +498,6 @@ Finance pipeline 的 JPMorgan run 为：
 
 ## 15. 实验结论
 
-> **本节有意留空。** 由小组成员阅读上述调优过程、原始输出、自动门槛、页面复核和金融分类差异后，再提炼适合 presentation 的、有具体证据支撑的结论。
+> **本节有意留空。** 由小组成员阅读上述调优过程、原始输出、自动门槛、页面复核和金融分类差异后，再提炼适合最终报告与课堂展示的、有具体证据支撑的结论。
 
 <!-- Presentation conclusion to be written after group review. -->
