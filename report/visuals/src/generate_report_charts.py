@@ -155,7 +155,7 @@ def plot_tokens(rows: list[dict[str, str]]) -> None:
 
 
 def plot_finance_evolution(rows: list[dict[str, str]]) -> None:
-    plotted = [r for r in rows if r["input_tokens"]]
+    plotted = [r for r in rows if r["input_tokens"] and r["stage"] != "P001 baseline"]
     labels = [f'{r["stage"]}\n{r["prompt_version"]}' for r in plotted]
     x = np.arange(len(plotted))
     inputs = [int(r["input_tokens"]) for r in plotted]
@@ -187,14 +187,6 @@ def plot_finance_evolution(rows: list[dict[str, str]]) -> None:
 
 def main() -> None:
     rows = read_csv("reviewed_results.csv")
-    r1_rows = [r for r in rows if r["phase"] == "R1"]
-    outcome_matrix(
-        r1_rows,
-        stem="01_r1_outcome_matrix",
-        title="R1：标准文本、优化文本与原生视觉的自动门槛结果",
-        row_order=["Standard text", "Optimized text", "Native vision"],
-        subtitle="标准文本：通过0个/共3个；优化文本：完整通过2个/共3个；原生视觉：通过0个/共2个。",
-    )
     blind_rows = [r for r in rows if r["condition"] == "Optimized text"]
     # Build the optimized case-by-model matrix.
     cases = ["PFE-FY24", "JPM-FY24", "META-FY24"]
@@ -214,7 +206,7 @@ def main() -> None:
         for j in range(3):
             ax.text(j, i, labels[i, j], ha="center", va="center", color="white", fontsize=12)
     ax.set_title("冻结优化方案：三个公司 × 三种解决方案", loc="left", fontsize=17, color=DARK, pad=20)
-    ax.text(0, 1.03, "自动完整通过的公司数：DeepSeek 1/3、Gemma 2/3、Finance pipeline 3/3；这不是金融语义正确率。", transform=ax.transAxes, fontsize=10.5, color=GRAY, va="bottom")
+    ax.text(0, 1.03, "自动完整通过的公司数：DeepSeek 1个、Gemma 2个、Finance pipeline 3个；每条工作流共运行3个公司。", transform=ax.transAxes, fontsize=10.5, color=GRAY, va="bottom")
     ax.set_xticks(np.arange(-0.5, 3, 1), minor=True)
     ax.set_yticks(np.arange(-0.5, 3, 1), minor=True)
     ax.grid(which="minor", color="white", linewidth=3)

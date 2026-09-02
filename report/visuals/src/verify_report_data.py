@@ -89,7 +89,6 @@ def main() -> None:
 
     rendered = ROOT / "report" / "visuals" / "rendered"
     expected_stems = [
-        "01_r1_outcome_matrix",
         "02_blind_outcome_matrix",
         "03_optimized_latency",
         "04_optimized_tokens",
