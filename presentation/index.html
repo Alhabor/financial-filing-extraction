@@ -1,14 +1,26 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="light">
+<html lang="zh-CN" data-language="zh" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="SHBI-GB 7343 AI in Finance 第七组 10-K 风险证据抽取实验演示" />
     <meta name="theme-color" content="#eef1ed" />
     <title>Financial filing extraction｜SHBI-GB 7343</title>
-    <link rel="stylesheet" href="deck.css?v=20260902f" />
-    <script src="slides.zh.js?v=20260902f" defer></script>
-    <script src="deck.js?v=20260902f" defer></script>
+    <script>
+      (() => {
+        try {
+          const params = new URLSearchParams(location.search);
+          const savedLanguage = params.get("lang") || localStorage.getItem("financial-filing-language");
+          const savedTheme = params.get("theme") || localStorage.getItem("financial-filing-theme");
+          document.documentElement.dataset.language = savedLanguage === "en" ? "en" : "zh";
+          document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "light";
+        } catch (_) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="deck.css?v=20260902g" />
+    <script src="slides.zh.js?v=20260902g" defer></script>
+    <script src="slides.en.js?v=20260902g" defer></script>
+    <script src="deck.js?v=20260902g" defer></script>
   </head>
   <body>
     <main class="stage" aria-label="Financial filing extraction 演示文稿">
@@ -17,6 +29,7 @@
 
       <nav class="preferences" aria-label="显示设置">
         <span class="trace" id="trace">EVIDENCE 01</span>
+        <button id="language-toggle" class="chrome-btn language" type="button" aria-label="Switch to English">EN</button>
         <button id="theme-toggle" class="chrome-btn" type="button" aria-label="切换至深色主题">☾</button>
         <a class="chrome-btn gh" href="https://github.com/Alhabor/financial-filing-extraction" target="_blank" rel="noreferrer" aria-label="打开项目仓库">GH↗</a>
       </nav>
@@ -32,6 +45,6 @@
 
       <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
     </main>
-    <a class="exit" href="https://alhabor.com/show/">← 展示站</a>
+    <a id="exit-link" class="exit" href="https://alhabor.com/show/">← 展示站</a>
   </body>
 </html>

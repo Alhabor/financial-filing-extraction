@@ -247,6 +247,7 @@ code { font-family: "SF Mono", ui-monospace, monospace; font-size: .88em; }
 .sourcebar { left: calc(var(--u) * 4.8); bottom: calc(var(--u) * 1.55); max-width: 62%; }
 .trace, .count, .source-label { color: var(--muted); font: 650 calc(var(--u) * .72)/1 "SF Mono", monospace; letter-spacing: .08em; }
 .chrome-btn, .sourcebar a { display: inline-grid; place-items: center; min-width: calc(var(--u) * 2.05); height: calc(var(--u) * 1.85); padding: 0 calc(var(--u) * .65); border: 1px solid var(--hair); border-radius: 2px; background: color-mix(in srgb, var(--surface) 86%, transparent); color: var(--ink-2); text-decoration: none; font-size: calc(var(--u) * .76); cursor: pointer; }
+.chrome-btn.language { min-width: calc(var(--u) * 2.65); font-family: "SF Mono", ui-monospace, monospace; font-weight: 700; }
 .chrome-btn:hover, .chrome-btn:focus-visible, .sourcebar a:hover, .sourcebar a:focus-visible { color: var(--ink); border-color: var(--green); }
 .sourcebar a { min-width: auto; height: calc(var(--u) * 1.65); font-size: calc(var(--u) * .66); }
 .count { min-width: calc(var(--u) * 4.5); text-align: center; }
@@ -257,6 +258,10 @@ code { font-family: "SF Mono", ui-monospace, monospace; font-size: .88em; }
 .notes { display: none; position: absolute; z-index: 30; inset: auto calc(var(--u) * 4.8) calc(var(--u) * 4) calc(var(--u) * 4.8); max-height: 34%; overflow: auto; padding: calc(var(--u) * 1.1); background: color-mix(in srgb, var(--surface) 96%, transparent); border: 1px solid var(--green); box-shadow: 0 calc(var(--u) * .8) calc(var(--u) * 2.4) var(--shadow); }
 .notes.show { display: block; }
 .notes p { font-size: calc(var(--u) * 1.05); }
+html[data-language="en"] h2 { max-width: 96%; font-size: calc(var(--u) * 3.35); }
+html[data-language="en"] .manual-flow article strong { font-size: calc(var(--u) * 1.14); }
+html[data-language="en"] .manual-flow article p { font-size: calc(var(--u) * .88); }
+html[data-language="en"] .slide[data-layout="close"] blockquote { font-size: calc(var(--u) * 1.75); }
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .slide.active { animation: none; } .progress span { transition: none; } }
 @media print { @page { size: 16in 9in; margin: 0; } html, body { overflow: visible; background: white; } body { display: block; } .stage { width: 16in; height: auto; box-shadow: none; } .slide { position: relative; display: flex !important; width: 16in; height: 9in; break-after: page; } .preferences, .navigation, .sourcebar, .progress, .exit, .notes { display: none !important; } }
