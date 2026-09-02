@@ -164,4 +164,111 @@ function buildSentenceEvidenceCatalog(packetText, caseId) {
   };
 }
 
-module.exports = { buildEvidenceCatalog, buildCompactLineEvidenceCatalog, buildSentenceEvidenceCatalog, sha256Text };
+function isCompleteMaterialConsequenceSentence(record) {
+  const text = record.text.trim();
+  const wordCount = text.split(/\s+/u).length;
+  if (wordCount < 10 || !/^[A-Z“‘]/u.test(text) || !/[.!?]$/u.test(text)) return false;
+  // Reject common extraction fragments that end at a cross-reference or abbreviation.
+  if (/(?:\bItem\s+\d+|\bU\.S|\bU\.K)\.$/u.test(text)) return false;
+  const consequencePatterns = [
+    /\bmaterial(?:ly)?\b/iu,
+    /\badvers(?:e|ely)\b/iu,
+    /\bnegative(?:ly)?\s+(?:affect|impact)/iu,
+    /\b(?:significantly|severely)\s+(?:harm|impact|increase|reduce|affect|diminish)/iu,
+    /\b(?:fines?|penalt(?:y|ies)|damages|liabilit(?:y|ies)|loss(?:es)?|charge-offs?|customer claims?)\b/iu,
+    /\b(?:could|may|might|would|will)\b.{0,80}\b(?:delay|disrupt|restrict|limit|prevent|preclude|expose|require)\b/iu,
+    /\b(?:increase|increases|increased|reduce|reduces|reduced)\b.{0,80}\b(?:costs?|revenue|income|profit|results?|financial performance)\b/iu,
+    /\b(?:harm|impact|affect|diminish)\b.{0,60}\b(?:business|financial|operations?|results?|reputation|revenue|income|profits?|confidence)\b/iu
+  ];
+  return consequencePatterns.some((pattern) => pattern.test(text));
+}
+
+function buildMaterialConsequenceEvidenceCatalog(packetText, caseId) {
+  const sentenceCatalog = buildSentenceEvidenceCatalog(packetText, caseId);
+  const records = sentenceCatalog.catalog.records.filter(isCompleteMaterialConsequenceSentence);
+  if (records.length < 3) {
+    throw new Error(`Material consequence screen produced fewer than three records for ${caseId}.`);
+  }
+  return {
+    catalog: {
+      ...sentenceCatalog.catalog,
+      catalog_version: 'evidence-catalog-v004',
+      source_record_count: sentenceCatalog.catalog.record_count,
+      record_count: records.length,
+      screen_version: 'material-consequence-screen-v001',
+      records
+    },
+    modelInput: [
+      `Case: ${caseId}`,
+      'Input view: deterministic material-consequence sentence catalog derived from the frozen packet.',
+      'The lexical screen reduces search volume but is not a gold label; choose three distinct material risks.',
+      'Each ID maps to one complete sentence; only extraction-layout whitespace was normalized.',
+      '',
+      ...records.map((record) => `[${record.evidence_id}] ${record.text}`)
+    ].join('\n')
+  };
+}
+
+function isCompleteMaterialConsequenceSentenceV2(record) {
+  const text = record.text.trim();
+  const wordCount = text.split(/\s+/u).length;
+  if (wordCount < 10 || !/^[A-Z“‘]/u.test(text) || !/[.!?]$/u.test(text)) return false;
+  if (/(?:\bItem\s+\d+|\bU\.S|\bU\.K)\.$/u.test(text)) return false;
+  const consequencePatterns = [
+    /\bmaterial(?:ly)?(?:\s+and)?\s+(?:adversely\s+)?(?:harm|impact|affect)/iu,
+    /\bmaterial adverse\b/iu,
+    /\badvers(?:e|ely)\b/iu,
+    /\bnegative(?:ly)?\s+(?:affect|impact)/iu,
+    /\b(?:significantly|severely)\s+(?:harm|impact|increase|reduce|affect|diminish)/iu,
+    /\b(?:fines?|penalt(?:y|ies)|damages|liabilit(?:y|ies)|loss(?:es)?|charge-offs?|customer claims?)\b/iu,
+    /\b(?:could|may|might|would|will)\b.{0,80}\b(?:delay|disrupt|restrict|limit|prevent|preclude|expose|require)\b/iu,
+    /\b(?:increase|increases|increased|reduce|reduces|reduced)\b.{0,80}\b(?:costs?|revenue|income|profit|results?|financial performance)\b/iu,
+    /\b(?:harm|impact|affect|diminish)\b.{0,60}\b(?:business|financial|operations?|results?|reputation|revenue|income|profits?|confidence)\b/iu
+  ];
+  return consequencePatterns.some((pattern) => pattern.test(text));
+}
+
+function buildGroupedMaterialConsequenceEvidenceCatalog(packetText, caseId) {
+  const sentenceCatalog = buildSentenceEvidenceCatalog(packetText, caseId);
+  const paragraphIds = [...new Set(sentenceCatalog.catalog.records.map((record) => record.paragraph_id))];
+  const groupByParagraph = new Map(paragraphIds.map((paragraphId, index) => [
+    paragraphId,
+    `G${String(index + 1).padStart(3, '0')}`
+  ]));
+  const records = sentenceCatalog.catalog.records
+    .filter(isCompleteMaterialConsequenceSentenceV2)
+    .map((record) => ({ ...record, group_id: groupByParagraph.get(record.paragraph_id) }));
+  if (new Set(records.map((record) => record.group_id)).size < 3) {
+    throw new Error(`Material consequence screen produced fewer than three paragraph groups for ${caseId}.`);
+  }
+  return {
+    catalog: {
+      ...sentenceCatalog.catalog,
+      catalog_version: 'evidence-catalog-v005',
+      source_record_count: sentenceCatalog.catalog.record_count,
+      record_count: records.length,
+      screen_version: 'material-consequence-screen-v002',
+      records
+    },
+    modelInput: [
+      `Case: ${caseId}`,
+      'Input view: deterministic grouped material-consequence sentence catalog derived from the frozen packet.',
+      'The lexical screen reduces search volume but is not a gold label; choose three distinct material risks.',
+      'Choose exactly one record from each of three different GROUP values.',
+      'Each ID maps to one complete sentence; only extraction-layout whitespace was normalized.',
+      '',
+      ...records.map((record) => `[${record.evidence_id} | GROUP ${record.group_id}] ${record.text}`)
+    ].join('\n')
+  };
+}
+
+module.exports = {
+  buildEvidenceCatalog,
+  buildCompactLineEvidenceCatalog,
+  buildSentenceEvidenceCatalog,
+  buildMaterialConsequenceEvidenceCatalog,
+  buildGroupedMaterialConsequenceEvidenceCatalog,
+  isCompleteMaterialConsequenceSentence,
+  isCompleteMaterialConsequenceSentenceV2,
+  sha256Text
+};

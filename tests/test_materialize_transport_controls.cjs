@@ -78,6 +78,28 @@ try {
   assert.ok(sentenceCatalog.records.some((record) => record.match_mode === 'whitespace-normalized'));
   assert.match(financePipelineV2.request.messages[1].content, /\[E0001\]/);
 
+  const financePipelineV3 = materialize(temporary, 'finance-llama', 'optimized-finance-pipeline-v007');
+  assert.equal(financePipelineV3.request.response_format.schema.$id, 'finance-selection-v003');
+  assert.equal(financePipelineV3.manifest.prompt_version, 'PV011');
+  assert.equal(financePipelineV3.manifest.input.transform, 'evidence-catalog-v004');
+  const consequenceCatalog = JSON.parse(fs.readFileSync(path.join(financePipelineV3.runDir, 'input', 'evidence_catalog.json'), 'utf8'));
+  assert.equal(consequenceCatalog.catalog_version, 'evidence-catalog-v004');
+  assert.equal(consequenceCatalog.screen_version, 'material-consequence-screen-v001');
+  assert.ok(consequenceCatalog.record_count >= 3);
+  assert.ok(consequenceCatalog.record_count < consequenceCatalog.source_record_count);
+  assert.doesNotMatch(financePipelineV3.request.messages[1].content, /\[E0051\]/);
+
+  const financePipelineV4 = materialize(temporary, 'finance-llama', 'optimized-finance-pipeline-v008');
+  assert.equal(financePipelineV4.request.response_format.schema.$id, 'finance-selection-v003');
+  assert.equal(financePipelineV4.manifest.prompt_version, 'PV012');
+  assert.equal(financePipelineV4.manifest.input.transform, 'evidence-catalog-v005');
+  const groupedCatalog = JSON.parse(fs.readFileSync(path.join(financePipelineV4.runDir, 'input', 'evidence_catalog.json'), 'utf8'));
+  assert.equal(groupedCatalog.catalog_version, 'evidence-catalog-v005');
+  assert.equal(groupedCatalog.screen_version, 'material-consequence-screen-v002');
+  assert.ok(groupedCatalog.records.every((record) => /^G[0-9]{3}$/.test(record.group_id)));
+  assert.doesNotMatch(financePipelineV4.request.messages[1].content, /copyrighted material, to others/);
+  assert.match(financePipelineV4.request.messages[1].content, /\[E[0-9]{4} \| GROUP G[0-9]{3}\]/);
+
   for (const result of [deepseek, gemma, finance, deepseekV3, gemmaV3, financeV3]) {
     assert.equal(result.manifest.parameters.max_output_tokens, 1600);
     assert.equal(result.manifest.tools.external_search, false);
@@ -88,6 +110,10 @@ try {
   assert.equal(financePipeline.manifest.tools.rag, true);
   assert.equal(financePipelineV2.manifest.parameters.max_output_tokens, 1600);
   assert.equal(financePipelineV2.manifest.tools.rag, true);
+  assert.equal(financePipelineV3.manifest.parameters.max_output_tokens, 1600);
+  assert.equal(financePipelineV3.manifest.tools.rag, true);
+  assert.equal(financePipelineV4.manifest.parameters.max_output_tokens, 1600);
+  assert.equal(financePipelineV4.manifest.tools.rag, true);
   process.stdout.write('test_materialize_transport_controls: all deterministic tests passed\n');
 } finally {
   fs.rmSync(temporary, { recursive: true, force: true });

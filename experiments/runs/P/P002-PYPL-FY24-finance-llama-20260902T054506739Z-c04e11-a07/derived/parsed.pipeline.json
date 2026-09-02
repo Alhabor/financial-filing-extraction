@@ -1,0 +1,61 @@
+{
+  "case_id": "PYPL-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV012",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Regulatory and legal risks",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_quote": "If we or the PYUSD Issuer fail to comply with regulations, requirements, prohibitions or other obligations applicable to us, we could face regulatory or other enforcement actions, potential fines, penalties, and other consequences.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P002"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Financial and operational risks",
+      "risk_type": "Financial / Liquidity / Credit",
+      "evidence_quote": "Financial and third-party risks related to our customer cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, insufficient insurance coverage by a custodian to reimburse us for all such losses, a custodian’s failure to maintain effective controls over the custody and settlement services provided to us, a custodian’s inability to purchase or liquidate cryptocurrency holdings, the failure of the PYUSD Issuer to maintain sufficient reserve assets backing PYUSD and defaults on financial or performance obligations by a custodian, banks with which the PYUSD Issuer maintains reserve assets or counterparty financial institutions, could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P003"
+      ],
+      "source_pages": [
+        18
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Strategic and competitive risks",
+      "risk_type": "Strategic / Market / Technology",
+      "evidence_quote": "If we are unable to differentiate our products and services from those of our competitors, drive value for our customers and adoption of our products and services, or effectively and efficiently align our resources with our goals and objectives, we may not be able to compete effectively, which could negatively impact our results of operations and financial condition.",
+      "source_paragraph_ids": [
+        "PYPL-FY24-P013"
+      ],
+      "source_pages": [
+        21
+      ],
+      "reasoning": "The selected filing sentence explicitly states the risk and a consequence.",
+      "financial_impact": "Not separately analyzed in the core extraction task.",
+      "time_horizon": "Not separately analyzed in the core extraction task.",
+      "monitoring_indicators": [],
+      "mitigation": "Not separately analyzed in the core extraction task.",
+      "uncertainty": "Not separately analyzed in the core extraction task."
+    }
+  ]
+}

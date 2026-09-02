@@ -68,16 +68,20 @@ function validateSelection(selection, manifest, recordById) {
     errors.push('risk_id values must be ordered R1, R2, R3');
   }
   const selectedEvidence = new Set();
+  const selectedParagraphs = new Set();
+  const coreOnly = manifest.output_schema_version === 'finance-selection-v003';
   for (const risk of risks) {
     const prefix = risk?.risk_id || 'unknown risk';
-    const requiredStrings = [
-      'risk_summary', 'risk_type', 'evidence_id', 'reasoning', 'financial_impact',
-      'time_horizon', 'mitigation', 'uncertainty'
-    ];
+    const requiredStrings = coreOnly
+      ? ['risk_summary', 'risk_type', 'evidence_id']
+      : [
+          'risk_summary', 'risk_type', 'evidence_id', 'reasoning', 'financial_impact',
+          'time_horizon', 'mitigation', 'uncertainty'
+        ];
     for (const field of requiredStrings) {
       if (typeof risk?.[field] !== 'string' || risk[field].trim() === '') errors.push(`${prefix}.${field} must be a non-empty string`);
     }
-    if (!Array.isArray(risk?.monitoring_indicators) || risk.monitoring_indicators.some((item) => typeof item !== 'string')) {
+    if (!coreOnly && (!Array.isArray(risk?.monitoring_indicators) || risk.monitoring_indicators.some((item) => typeof item !== 'string'))) {
       errors.push(`${prefix}.monitoring_indicators must be an array of strings`);
     }
     const record = recordById.get(risk?.evidence_id);
@@ -88,6 +92,10 @@ function validateSelection(selection, manifest, recordById) {
       if (sha256Text(record.text) !== record.text_sha256) errors.push(`${prefix}.evidence_id has a catalog text hash mismatch`);
       if (record.text.trim().split(/\s+/u).length < 5) errors.push(`${prefix}.evidence_id resolves to fewer than five words`);
       if (!record.paragraph_id || !Number.isInteger(record.pdf_page)) errors.push(`${prefix}.evidence_id has an incomplete locator`);
+      if (manifest.input?.transform === 'evidence-catalog-v005') {
+        if (selectedParagraphs.has(record.paragraph_id)) errors.push(`${prefix}.evidence_id repeats a source paragraph group`);
+        selectedParagraphs.add(record.paragraph_id);
+      }
     }
   }
   return errors;
@@ -119,10 +127,10 @@ function main() {
   const manifest = readJson(manifestPath);
   const catalog = readJson(catalogPath);
   const sourcePacket = fs.readFileSync(sourcePacketPath, 'utf8');
-  if (!['finance-selection-v001', 'finance-selection-v002'].includes(manifest.output_schema_version)) {
+  if (!['finance-selection-v001', 'finance-selection-v002', 'finance-selection-v003'].includes(manifest.output_schema_version)) {
     throw new Error('Run does not use a supported finance-selection raw contract.');
   }
-  if (!['evidence-catalog-v001', 'evidence-catalog-v002', 'evidence-catalog-v003'].includes(catalog.catalog_version)) throw new Error('Unsupported evidence catalog version.');
+  if (!['evidence-catalog-v001', 'evidence-catalog-v002', 'evidence-catalog-v003', 'evidence-catalog-v004', 'evidence-catalog-v005'].includes(catalog.catalog_version)) throw new Error('Unsupported evidence catalog version.');
   if (catalog.case_id !== manifest.case_id) throw new Error('Catalog case_id does not match the run.');
   if (catalog.source_packet_sha256 !== sha256Text(sourcePacket)) throw new Error('Frozen source packet hash does not match the catalog.');
   if (!Array.isArray(catalog.records) || catalog.records.length !== catalog.record_count) throw new Error('Catalog record count is inconsistent.');
@@ -166,6 +174,7 @@ function main() {
     prompt_version: selection.prompt_version,
     risks: selection.risks.map((risk) => {
       const record = recordById.get(risk.evidence_id);
+      const coreOnly = manifest.output_schema_version === 'finance-selection-v003';
       locatorEvaluation.mappings.push({
         risk_id: risk.risk_id,
         evidence_id: record.evidence_id,
@@ -181,12 +190,22 @@ function main() {
         evidence_quote: record.text,
         source_paragraph_ids: [record.paragraph_id],
         source_pages: [record.pdf_page],
-        reasoning: risk.reasoning,
-        financial_impact: risk.financial_impact,
-        time_horizon: risk.time_horizon,
-        monitoring_indicators: risk.monitoring_indicators,
-        mitigation: risk.mitigation,
-        uncertainty: risk.uncertainty
+        reasoning: coreOnly
+          ? 'The selected filing sentence explicitly states the risk and a consequence.'
+          : risk.reasoning,
+        financial_impact: coreOnly
+          ? 'Not separately analyzed in the core extraction task.'
+          : risk.financial_impact,
+        time_horizon: coreOnly
+          ? 'Not separately analyzed in the core extraction task.'
+          : risk.time_horizon,
+        monitoring_indicators: coreOnly ? [] : risk.monitoring_indicators,
+        mitigation: coreOnly
+          ? 'Not separately analyzed in the core extraction task.'
+          : risk.mitigation,
+        uncertainty: coreOnly
+          ? 'Not separately analyzed in the core extraction task.'
+          : risk.uncertainty
       };
     })
   };

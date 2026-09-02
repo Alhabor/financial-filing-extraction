@@ -1,0 +1,89 @@
+{
+  "model": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "# PV012 — Finance RAG grouped core material-risk selection\n\nUse only the supplied grouped material-consequence sentence catalog derived from a Form 10-K Item 1A packet. Identify exactly three distinct material risks. The deterministic lexical screen is only a search aid, not a gold answer.\n\nFor each risk, select one sentence that states both a concrete risk theme or driver and an explicit consequence for the filer. Prefer broad or severe consequences affecting operations, financial condition, results, customers, or reputation. Do not select a heading, fragment, generic background statement, or a sentence whose consequence belongs only to an uncited prior sentence.\n\nEach record has the form `[E0001 | GROUP G001] complete evidence sentence`. Select exactly one record from each of three different GROUP values. Return only its `evidence_id`; the deterministic locator restores the exact quote, paragraph, and page. Do not quote or rewrite source text.\n\nReturn one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects ordered `R1`, `R2`, `R3`, with only these fields: `risk_id`, `risk_summary`, `risk_type`, and `evidence_id`.\n\n`risk_summary` must be a concrete 4–12 word noun phrase naming the source-supported risk theme. It must not equal the category label and must not add a product, activity, cause, or consequence absent from the selected sentence.\n\nClassification boundaries:\n\n- Use `Cybersecurity / Data / Privacy` only when the selected sentence explicitly concerns security, data, privacy, access, or a breach.\n- Use `Operational / Supply Chain` only when it explicitly concerns operations, service interruption, production, delivery, suppliers, providers, or third parties.\n- Use `Regulatory / Legal / Geopolitical` for laws, regulations, enforcement, litigation, fines, sanctions, or political/trade restrictions.\n- Use `Financial / Liquidity / Credit` for liquidity, credit, lending, funding, fees, losses, revenue, income, or financial counterparties when that is the central theme.\n- Use `Strategic / Market / Technology` for competition, market demand, adoption, pricing, or technological change.\n- Use `Other` when the central theme, such as intellectual-property protection, does not fit the five categories above.\n\nThe three evidence IDs must exist, be different, come from three different GROUP values, and represent three different risk themes. Never add facts from memory.\n\nHarness metadata (copy these values exactly into the top-level JSON):\n- case_id: PYPL-FY24\n- model_id: QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M\n- prompt_version: PV012"
+    },
+    {
+      "role": "user",
+      "content": "Case: PYPL-FY24\nInput view: deterministic grouped material-consequence sentence catalog derived from the frozen packet.\nThe lexical screen reduces search volume but is not a gold label; choose three distinct material risks.\nChoose exactly one record from each of three different GROUP values.\nEach ID maps to one complete sentence; only extraction-layout whitespace was normalized.\n\n[E0007 | GROUP G002] If we or the PYUSD Issuer fail to comply with regulations, requirements, prohibitions or other obligations applicable to us, we could face regulatory or other enforcement actions, potential fines, penalties, and other consequences.\n[E0010 | GROUP G003] Financial and third-party risks related to our customer cryptocurrency offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodians, insufficient insurance coverage by a custodian to reimburse us for all such losses, a custodian’s failure to maintain effective controls over the custody and settlement services provided to us, a custodian’s inability to purchase or liquidate cryptocurrency holdings, the failure of the PYUSD Issuer to maintain sufficient reserve assets backing PYUSD and defaults on financial or performance obligations by a custodian, banks with which the PYUSD Issuer maintains reserve assets or counterparty financial institutions, could expose our customers and us to loss, and significantly harm our business, financial condition, and reputation.\n[E0012 | GROUP G004] Nevertheless, any operational disruptions at any such custodian or issuer, or such custodians’ or issuer’s failure to safeguard cryptocurrency holdings (or reserve assets), could result in losses of customer assets, expose us to customer claims, reduce consumer confidence and materially impact our cryptocurrency product offerings and our operating results.\n[E0015 | GROUP G005] In the event of a custodian’s bankruptcy, the lack of precedent and the highly fact-dependent nature of the determination could delay or preclude the return of custodied cryptocurrency assets to us or to our customers.\n[E0017 | GROUP G005] In that event, our claim on behalf of such customers against a custodian’s estate for our customers’ cryptocurrency assets could be treated as a general unsecured claim against the custodian, in which case our customers could seek to hold us liable for any resulting losses.\n[E0024 | GROUP G009] We may be required to expend significant time and resources to prevent infringement and enforce our rights, and we may be unable to discover or determine the extent of any unauthorized use of our proprietary rights.\n[E0025 | GROUP G009] If we are unable to prevent third parties from infringing or otherwise violating our proprietary rights, the uniqueness and value of our products and services could be adversely affected, the value of our brands could be diminished, and our business could be adversely affected.\n[E0027 | GROUP G009] These licensees may take actions that diminish the value of our proprietary rights or harm our reputation.\n[E0028 | GROUP G009] Any failure to adequately protect or enforce our proprietary rights, or significant costs incurred in doing so, could diminish the value of our intangible assets and materially harm our business.\n[E0040 | GROUP G013] If we are unable to differentiate our products and services from those of our competitors, drive value for our customers and adoption of our products and services, or effectively and efficiently align our resources with our goals and objectives, we may not be able to compete effectively, which could negatively impact our results of operations and financial condition.\n[E0041 | GROUP G014] Changes to payment card networks or bank fees, rules, or practices could harm our business.\n[E0047 | GROUP G015] Any increase in interchange fees, special fees, or assessments for transactions that we pay to the networks or our payment processors could make our pricing less competitive, increase our operating costs, and reduce our operating income, which could materially harm our business, financial condition, and results of operations.\n[E0049 | GROUP G016] Any changes in interchange fee rates or limitations, or their applicability to PayPal’s products and services, could adversely affect our competitive position against payment card service providers and the revenue we earn from our branded card programs, require us to change our business practices, and harm our business.\n[E0050 | GROUP G017] We may also be subject to fines and other penalties assessed by networks resulting from any rule violations by us or our merchants.\n[E0052 | GROUP G017] Such allegations may result in significant fines, penalties, damages, or other liabilities, adversely impact benefits to us under the agreements, or require changes in our business practices that may be costly and adversely affect our business, results of operations and financial condition.\n[E0053 | GROUP G017] The network rules may also increase the cost of, impose restrictions on, or otherwise impact the development of, our products which may negatively affect product deployment and adoption.\n[E0056 | GROUP G018] If we become unable or limited in our ability to accept certain payment types such as debit or credit cards, our business would be materially and adversely affected.\n[E0057 | GROUP G019] Changes in how consumers fund their PayPal transactions could harm our business.\n[E0059 | GROUP G020] Our financial performance is sensitive to changes in the rate at which our consumers fund payments using payment cards, which can significantly increase our costs.\n[E0061 | GROUP G020] Any increase in the portion of our payment volume funded using payment cards or in fees associated with our funding mix, or other events or developments that make it more difficult or costly for us to fund transactions with lower-cost funding options, could materially and adversely affect our financial performance and significantly harm our business.\n[E0072 | GROUP G023] Further, laws or regulations may limit the assessment of late fees or penalties on certain credit products, which could negatively impact our revenue share arrangement with an independent chartered financial institution with respect to our U.S. consumer credit products.\n[E0074 | GROUP G023] Management’s Discussion and Analysis of Financial Condition and Results of Operations — Key Metrics and Financial Results”), and materially and adversely affect our financial condition and results of operations.\n[E0077 | GROUP G024] In the event of any termination or interruption in a partner bank’s ability or willingness to lend, our ability to offer consumer credit and merchant financing products could be interrupted or limited, which could materially and adversely affect our business.\n[E0079 | GROUP G024] Obtaining and maintaining the lending licenses required for us to originate such loans ourselves would be a costly, time-consuming and uncertain process, and would subject us to additional laws and regulatory requirements, which could significantly increase our costs and compliance obligations and require us to change our business practices.\n[E0096 | GROUP G029] If we are unable to effectively manage our third-party relationships, these third parties are unable to meet their obligations to us, we are overly reliant on certain relationships, or we experience substantial disruptions in these relationships (including interruptions to the availability of our products and services), our operations, results of operations, and financial results could be adversely impacted.\n[E0098 | GROUP G030] Any factors that reduce cross-border trade or make such trade more difficult could harm our business.\n[E0102 | GROUP G031] Cross-border trade may be negatively impacted by various factors including foreign exchange rate fluctuations, tariffs, trade barriers or restrictions, sanctions, import or export controls, and the interpretation and application of laws of multiple jurisdictions in the context of cross-border trade and foreign exchange.\n[E0103 | GROUP G031] Any factors that increase the costs of cross-border trade for us or our customers or that restrict, delay, or make cross-border trade more difficult or impractical could reduce our cross-border transactions and volume, negatively impact our revenues and profits, and harm our business.\n[E0104 | GROUP G032] Failure to deal effectively with fraud, abusive behaviors, bad transactions, and negative customer experiences may increase our loss rate and could negatively impact our business and severely diminish merchant and consumer confidence in and use of our services."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 1600,
+  "seed": 7343,
+  "response_format": {
+    "type": "json_object",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "finance-selection-v003",
+      "title": "Finance model core material-risk selection",
+      "type": "object",
+      "required": [
+        "case_id",
+        "model_id",
+        "prompt_version",
+        "risks"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prompt_version": {
+          "type": "string",
+          "pattern": "^PV[0-9]{3,}$"
+        },
+        "risks": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "risk_id",
+              "risk_summary",
+              "risk_type",
+              "evidence_id"
+            ],
+            "properties": {
+              "risk_id": {
+                "type": "string",
+                "pattern": "^R[1-3]$"
+              },
+              "risk_summary": {
+                "type": "string",
+                "minLength": 4,
+                "maxLength": 120
+              },
+              "risk_type": {
+                "type": "string",
+                "enum": [
+                  "Strategic / Market / Technology",
+                  "Operational / Supply Chain",
+                  "Regulatory / Legal / Geopolitical",
+                  "Financial / Liquidity / Credit",
+                  "Cybersecurity / Data / Privacy",
+                  "Other"
+                ]
+              },
+              "evidence_id": {
+                "type": "string",
+                "pattern": "^E[0-9]{4}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# PV010 — Finance RAG sentence evidence selection
+
+Use only the supplied sentence evidence catalog derived from a Form 10-K Item 1A packet. Identify exactly three distinct material risks based on severe or broad consequences explicitly stated by the filer.
+
+Each record has the form `[E0001] complete evidence sentence`. Select exactly one consequence-bearing `evidence_id` for each risk. The deterministic locator will restore the frozen paragraph and page. Do not quote or rewrite source text.
+
+Return one JSON object only. Copy the harness `case_id`, `model_id`, and `prompt_version`. `risks` must contain exactly three objects `R1`, `R2`, `R3`. Every object must contain the schema fields; `monitoring_indicators` is an array of strings.
+
+Use one risk type: `Strategic / Market / Technology`, `Operational / Supply Chain`, `Regulatory / Legal / Geopolitical`, `Financial / Liquidity / Credit`, `Cybersecurity / Data / Privacy`, or `Other`.
+
+Strict analytical boundaries:
+
+1. `risk_summary` may name only the risk theme stated in the selected sentence. Do not append another product, activity, or risk domain.
+2. `reasoning` explains why that selected sentence represents the stated risk; do not add facts from memory.
+3. `financial_impact` states only a consequence present in the selected sentence. If none is present, use `Not disclosed in the selected evidence sentence.`
+4. `time_horizon` and `uncertainty` must use the same absent-detail string unless explicitly stated in the selected sentence.
+5. Every suggested monitoring indicator must begin `Analytical suggestion:` so it cannot be mistaken for a filer disclosure. Otherwise use `[]`.
+6. Set `mitigation` exactly to `Not disclosed in the selected evidence sentence.`
+
+The three evidence IDs must exist, be different, and represent three distinct themes. Never invent controls, amounts, probabilities, forecasts, plans, or causal facts. Keep every field concise.

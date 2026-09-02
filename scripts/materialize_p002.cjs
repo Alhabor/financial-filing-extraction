@@ -41,7 +41,7 @@ function manifests(directory) {
 
 function matrix(scope) {
   if (scope === 'finance-pipeline-smoke') {
-    return [{ caseId: 'PYPL-FY24', modelAlias: 'finance-llama', profile: 'optimized-finance-pipeline-v006' }];
+    return [{ caseId: 'PYPL-FY24', modelAlias: 'finance-llama', profile: 'optimized-finance-pipeline-v008' }];
   }
   const cases = scope === 'smoke'
     ? ['PYPL-FY24']

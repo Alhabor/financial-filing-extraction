@@ -1,0 +1,16 @@
+{
+  "description": "P002 finance RAG profile for core risk identification over a deterministic material-consequence screen.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "material_consequence_sentence_catalog",
+  "input_transform": "evidence-catalog-v004",
+  "prompt_path": "prompts/PV011.md",
+  "prompt_version": "PV011",
+  "structured_output": "finance-selection-schema-v003",
+  "output_schema_version": "finance-selection-v003",
+  "pipeline_output_schema_version": "risk-output-v001",
+  "allow_external_search": false,
+  "allow_rag": true,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}

@@ -8,7 +8,9 @@ const { execFileSync } = require('node:child_process');
 const {
   buildEvidenceCatalog,
   buildCompactLineEvidenceCatalog,
-  buildSentenceEvidenceCatalog
+  buildSentenceEvidenceCatalog,
+  buildMaterialConsequenceEvidenceCatalog,
+  buildGroupedMaterialConsequenceEvidenceCatalog
 } = require('./lib/evidence_catalog.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -17,6 +19,7 @@ const PROFILE_CONFIG_PATH = path.join(ROOT, 'harness', 'config', 'profiles.json'
 const OUTPUT_SCHEMA_PATH = path.join(ROOT, 'schemas', 'risk-output.schema.json');
 const FINANCE_SELECTION_SCHEMA_PATH = path.join(ROOT, 'schemas', 'finance-selection.schema.json');
 const FINANCE_SELECTION_SCHEMA_V2_PATH = path.join(ROOT, 'schemas', 'finance-selection-v002.schema.json');
+const FINANCE_SELECTION_SCHEMA_V3_PATH = path.join(ROOT, 'schemas', 'finance-selection-v003.schema.json');
 
 function parseArgs(argv) {
   const args = {};
@@ -126,6 +129,8 @@ function applyTransportControls(request, model, profile) {
       ? FINANCE_SELECTION_SCHEMA_PATH
       : profile.structured_output === 'finance-selection-schema-v002'
         ? FINANCE_SELECTION_SCHEMA_V2_PATH
+        : profile.structured_output === 'finance-selection-schema-v003'
+          ? FINANCE_SELECTION_SCHEMA_V3_PATH
       : null;
   const schema = schemaPath ? readJson(schemaPath) : null;
   if (profile.reasoning === 'disabled') {
@@ -303,6 +308,14 @@ function main() {
     evidenceCatalog = transformed.catalog;
   } else if (profile.input_transform === 'evidence-catalog-v003') {
     const transformed = buildSentenceEvidenceCatalog(sourcePacketText, caseId);
+    caseText = transformed.modelInput;
+    evidenceCatalog = transformed.catalog;
+  } else if (profile.input_transform === 'evidence-catalog-v004') {
+    const transformed = buildMaterialConsequenceEvidenceCatalog(sourcePacketText, caseId);
+    caseText = transformed.modelInput;
+    evidenceCatalog = transformed.catalog;
+  } else if (profile.input_transform === 'evidence-catalog-v005') {
+    const transformed = buildGroupedMaterialConsequenceEvidenceCatalog(sourcePacketText, caseId);
     caseText = transformed.modelInput;
     evidenceCatalog = transformed.catalog;
   } else if (profile.input_transform) {

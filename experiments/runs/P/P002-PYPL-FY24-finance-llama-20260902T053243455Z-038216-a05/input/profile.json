@@ -1,0 +1,16 @@
+{
+  "description": "P002 finance RAG profile with complete-sentence evidence and bounded analysis fields.",
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "sentence_evidence_catalog",
+  "input_transform": "evidence-catalog-v003",
+  "prompt_path": "prompts/PV010.md",
+  "prompt_version": "PV010",
+  "structured_output": "finance-selection-schema-v002",
+  "output_schema_version": "finance-selection-v002",
+  "pipeline_output_schema_version": "risk-output-v001",
+  "allow_external_search": false,
+  "allow_rag": true,
+  "allow_human_intervention": false,
+  "fallback_allowed": false
+}

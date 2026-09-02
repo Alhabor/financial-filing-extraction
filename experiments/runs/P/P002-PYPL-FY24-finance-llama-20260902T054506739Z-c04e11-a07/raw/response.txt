@@ -1,0 +1,25 @@
+{
+"case_id": "PYPL-FY24",
+"model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+"prompt_version": "PV012",
+"risks": [
+{
+"risk_id": "R1",
+"risk_summary": "Regulatory and legal risks",
+"risk_type": "Regulatory / Legal / Geopolitical",
+"evidence_id": "E0007"
+},
+{
+"risk_id": "R2",
+"risk_summary": "Financial and operational risks",
+"risk_type": "Financial / Liquidity / Credit",
+"evidence_id": "E0010"
+},
+{
+"risk_id": "R3",
+"risk_summary": "Strategic and competitive risks",
+"risk_type": "Strategic / Market / Technology",
+"evidence_id": "E0040"
+}
+]
+}

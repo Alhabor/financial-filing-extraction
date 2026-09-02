@@ -1,0 +1,8 @@
+{
+  "requested_modality": "text",
+  "actual_modality": "text",
+  "input_view": "sentence_evidence_catalog",
+  "fallback_allowed": false,
+  "fallback_reason": null,
+  "images": []
+}

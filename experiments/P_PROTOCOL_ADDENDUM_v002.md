@@ -42,3 +42,13 @@ Run `PYPL-FY24` first. Proceed to other development cases only if:
 - a human review finds no material unsupported claim in the model-authored analytical fields.
 
 After the compact physical-line catalog passed automatic checks but exposed incomplete-line and theme-expansion problems in manual review, `evidence-catalog-v003` may prospectively use complete sentence spans. It normalizes extraction whitespace only, retains the original paragraph/page mapping, and remains subject to `AE002` word-and-punctuation fidelity checks. `v001` is the original verbose locator view; `v002` is the compact physical-line view; neither is rewritten.
+
+## Attempt-6 core-task contract
+
+Attempt 5 showed that requiring the finance model to populate non-core analytical fields induced unsupported generic claims even when its evidence IDs were valid. Prospectively, `finance-selection-v003` therefore limits the model-authored contract to the exercise's stated core tasks: a concrete risk summary, one risk-type classification, and one evidence ID for each of exactly three risks.
+
+`evidence-catalog-v004` applies the fixed, case-agnostic `material-consequence-screen-v001` to the complete-sentence catalog. The screen keeps sentences with explicit consequence language and basic completeness checks. It is a retrieval aid, not a gold label: the model must still select three distinct material risks, and all retained and rejected sentence records remain derivable from the archived frozen packet.
+
+For `finance-selection-v003`, `EL001` copies the exact evidence and locators as before. Fields outside the core exercise are populated with the explicit marker `Not separately analyzed in the core extraction task.` or an empty indicator array. These markers are pipeline-authored abstentions, not model analysis, and must not receive credit as extracted financial detail. Agent-assisted review still evaluates whether each risk summary and category are supported by its selected sentence.
+
+Attempt 6 exposed a false positive in `material-consequence-screen-v001`: the ordinary noun `material` could satisfy the materiality rule. `evidence-catalog-v005` prospectively uses `material-consequence-screen-v002`, which requires materiality language to modify an impact verb. It also displays a deterministic group ID for each source paragraph. `EL001` rejects repeated paragraph groups for v005 runs as a mechanical safeguard against presenting two sentences from the same source risk paragraph as independent themes.

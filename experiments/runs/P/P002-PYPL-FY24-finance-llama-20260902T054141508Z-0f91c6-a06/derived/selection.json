@@ -1,0 +1,25 @@
+{
+  "case_id": "PYPL-FY24",
+  "model_id": "QuantFactory/Llama-3-8B-Instruct-Finance-RAG-GGUF:Q4_K_M",
+  "prompt_version": "PV011",
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk_summary": "Regulatory and compliance risks",
+      "risk_type": "Regulatory / Legal / Geopolitical",
+      "evidence_id": "E0007"
+    },
+    {
+      "risk_id": "R2",
+      "risk_summary": "Cybersecurity and data privacy risks",
+      "risk_type": "Cybersecurity / Data / Privacy",
+      "evidence_id": "E0025"
+    },
+    {
+      "risk_id": "R3",
+      "risk_summary": "Operational and supply chain risks",
+      "risk_type": "Operational / Supply Chain",
+      "evidence_id": "E0026"
+    }
+  ]
+}
