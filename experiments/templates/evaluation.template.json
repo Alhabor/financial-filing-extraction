@@ -1,0 +1,64 @@
+{
+  "run_id": "<run-id>",
+  "case_id": "<case-id>",
+  "model_id": "<model-id>",
+  "rubric_version": "RV001",
+  "reviewers": [],
+  "risk_items": [
+    {
+      "risk_id": "R1",
+      "risk_validity": null,
+      "materiality": null,
+      "evidence_exactness": null,
+      "evidence_support": null,
+      "risk_type": null,
+      "risk_type_correctness": null,
+      "financial_reasoning": null,
+      "expert_overlap": null,
+      "unsupported_inference": null,
+      "temporal_leakage": null,
+      "uncertainty_discipline": null,
+      "notes": ""
+    },
+    {
+      "risk_id": "R2",
+      "risk_validity": null,
+      "materiality": null,
+      "evidence_exactness": null,
+      "evidence_support": null,
+      "risk_type": null,
+      "risk_type_correctness": null,
+      "financial_reasoning": null,
+      "expert_overlap": null,
+      "unsupported_inference": null,
+      "temporal_leakage": null,
+      "uncertainty_discipline": null,
+      "notes": ""
+    },
+    {
+      "risk_id": "R3",
+      "risk_validity": null,
+      "materiality": null,
+      "evidence_exactness": null,
+      "evidence_support": null,
+      "risk_type": null,
+      "risk_type_correctness": null,
+      "financial_reasoning": null,
+      "expert_overlap": null,
+      "unsupported_inference": null,
+      "temporal_leakage": null,
+      "uncertainty_discipline": null,
+      "notes": ""
+    }
+  ],
+  "workflow": {
+    "output_usability": null,
+    "manual_correction_minutes": null,
+    "decision_usefulness": null
+  },
+  "adjudication": {
+    "required": false,
+    "decision": null,
+    "notes": ""
+  }
+}

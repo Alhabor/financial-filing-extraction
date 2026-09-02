@@ -1,0 +1,1 @@
+run_id,phase,round,case_id,model_alias,model_id,prompt_version,status,dataset_role,started_at_utc,ended_at_utc,latency_ms,input_tokens,output_tokens,estimated_api_cost_usd,local_runtime_seconds,git_commit,notes

@@ -1,0 +1,57 @@
+{
+  "run_id": "<unique-run-id>",
+  "phase": "P",
+  "round": "P001",
+  "status": "planned",
+  "attempt": 1,
+  "case_id": "<case-id>",
+  "model_alias": "<cloud-deepseek|local-gemma|finance-llama>",
+  "model_id": "<actual-model-id>",
+  "provider": "<provider>",
+  "interface": "<api|ollama|llama.cpp>",
+  "prompt_version": "PV001",
+  "output_schema_version": "risk-output-v001",
+  "rubric_version": "RV001",
+  "input": {
+    "path": "<relative-input-path>",
+    "sha256": "<sha256>"
+  },
+  "parameters": {
+    "temperature": null,
+    "top_p": null,
+    "max_output_tokens": null,
+    "seed": null,
+    "context_length": null
+  },
+  "tools": {
+    "external_search": false,
+    "rag": false,
+    "human_intervention": false
+  },
+  "timing": {
+    "started_at_utc": "<timestamp>",
+    "ended_at_utc": "<timestamp>",
+    "latency_ms": null,
+    "time_to_first_token_ms": null
+  },
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "estimated_api_cost_usd": null,
+    "local_runtime_seconds": null
+  },
+  "environment": {
+    "git_commit": "<commit>",
+    "runtime": "<runtime-summary>",
+    "hardware": "<hardware-summary>"
+  },
+  "artifacts": {
+    "raw_response": "raw/response.json",
+    "raw_text": "raw/response.txt",
+    "parsed_output": "derived/parsed.json",
+    "automatic_evaluation": "evaluation/automatic.json"
+  },
+  "secret_policy": "Credentials and authorization headers are never written to experiment artifacts.",
+  "failure": null,
+  "notes": ""
+}

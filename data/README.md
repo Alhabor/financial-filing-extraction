@@ -17,7 +17,7 @@ data/
 └── manifests/filings.csv
 ```
 
-`processed/` 文件是由 `scripts/prepare_10k_dataset.cjs` 从 `raw/` 文件机械生成的；模型输入中没有人工风险标签、分析结论或所谓标准答案。这样可以把“原始材料”“模型输入”和后续评分参考分开。
+`processed/` 文件是由 `scripts/prepare_10k_dataset.cjs` 从 `raw/` 文件机械生成的；模型输入中没有人工风险标签、分析结论或所谓标准答案。这样可以把“原始材料”“模型输入”和后续评分参考分开。实验运行档案位于仓库根目录的 `experiments/`，不与原始数据混合。
 
 ## 重新生成
 
