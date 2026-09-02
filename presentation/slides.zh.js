@@ -2,12 +2,12 @@ window.FINANCIAL_FILING_SLIDES = [
   {
     layout: "hero", kicker: "SHBI-GB 7343 · AI in Finance · Group 7",
     title: "Financial filing<br>extraction",
-    body: `<p class="hero-subtitle">用 AI 从公司年报中找出三个重大风险，并让每条结论都能回到原文</p><div class="hero-thesis"><span>这套展示回答什么</span><strong>哪种工作流能在完整性、速度与可追溯性之间取得最好平衡？核心思路是：判断交给模型，逐字引文与页码交给程序。</strong></div><p class="byline">Heyang Li · Haoyu Zheng · Haisen Zhang</p>`,
+    body: `<p class="hero-subtitle">用 AI 从公司年报中找出三个重大风险，并让每条结论都能回到原文</p><div class="hero-thesis"><span>这套展示回答什么</span><strong>哪种工作流能在完整性、速度与可追溯性之间取得最好平衡？核心思路是：判断交给模型，逐字引文与页码交给程序。</strong></div><div class="hero-contract"><p><span>比较对象</span><strong>DeepSeek · Gemma · Finance pipeline</strong></p><p><span>最终交付</span><strong>3 个风险 · 逐字引文 · PDF 定位</strong></p><p><span>选择顺序</span><strong>先完整可追溯，再比较速度</strong></p></div><p class="byline">Heyang Li · Haoyu Zheng · Haisen Zhang</p>`,
     sources: [["中文报告", "report/financial_filing_extraction_report_zh.md"]], notes: "开场只说明任务和比较对象，不展开模型背景。"
   },
   {
     layout: "task", kicker: "01 · 成功标准", title: "任务：从 10-K 的风险章节中交付三个可核验风险",
-    body: `<div class="task-grid"><div class="filing-sheet"><span>10-K · 美国上市公司年度报告</span><p><strong>Item 1A / Risk Factors：</strong>集中披露可能影响公司经营或财务表现的重大风险。</p><mark>输入：一段该章节原文</mark></div><ol class="number-list"><li><span><strong>选出</strong>恰好三个重大风险（可能明显影响经营、现金流或损失）</span></li><li><span><strong>概括</strong>风险及其金融影响</span></li><li><span><strong>归入</strong>一个主类型，如监管、市场或运营</span></li><li><span><strong>逐字引用</strong>支持判断的原句</span></li><li><span><strong>定位</strong>段落与 PDF 物理页（阅读器显示的第几页）</span></li></ol></div><p class="bottom-claim"><strong>成功 = 判断合理 + 引文逐字一致 + 位置可回查。</strong>答案只是“听起来合理”还不够。</p>`,
+    body: `<div class="task-grid"><div class="filing-sheet"><span>10-K · 美国上市公司年度报告</span><p><strong>Item 1A / Risk Factors：</strong>公司正式披露可能对业务、经营结果或财务状况造成重大不利影响的风险章节。</p><div class="filing-contract"><p><span>输入</span><strong>一段 Item 1A 原文</strong></p><p><span>输出</span><strong>恰好三条结构化风险</strong></p><p><span>证据</span><strong>每条绑定原句、段落与 PDF 物理页</strong></p></div><div class="term-notes"><p><strong>重大风险</strong>不是寻找 <code>material</code> 单词，而是判断是否可能实质影响经营或财务结果。</p><p><strong>物理页</strong>指 PDF 阅读器显示的页序，不一定等于文件印刷页码。</p></div><div class="output-record"><span>一条合格结果包含</span><p><b>risk_summary</b><strong>风险 + 金融后果</strong></p><p><b>category</b><strong>一个主风险类型</strong></p><p><b>evidence_quote</b><strong>完全复制的支持原句</strong></p><p><b>location</b><strong>段落 ID + PDF 物理页</strong></p></div></div><ol class="number-list"><li><span><strong>选出</strong>恰好三个重大风险（可能明显影响经营、现金流或损失）</span></li><li><span><strong>概括</strong>风险及其金融影响</span></li><li><span><strong>归入</strong>一个主类型，如监管、市场或运营</span></li><li><span><strong>逐字引用</strong>支持判断的原句，不做同义改写</span></li><li><span><strong>定位</strong>段落与 PDF 物理页，确保观众能回查</span></li></ol></div><p class="bottom-claim"><strong>成功 = 判断合理 + 引文逐字一致 + 位置可回查。</strong>答案只是“听起来合理”还不够。</p>`,
     sources: [["任务定义", "report/financial_filing_extraction_report_zh.md#1-先把任务说清楚"]], notes: "重大风险不是找 material 单词，而是识别有明确经营或财务影响的风险。"
   },
   {
@@ -22,7 +22,7 @@ window.FINANCIAL_FILING_SLIDES = [
   },
   {
     layout: "simple-compare", kicker: "04 · 核心设计差别", title: "前两种靠模型指令约束，第三种把任务拆给模型和程序",
-    body: `<div class="simple-columns"><article><span>DeepSeek</span><h3>用 Prompt（模型指令）约束输出</h3><p>要求模型返回 JSON——一种有固定字段、便于程序读取的答案格式。</p><strong>剩余问题：模型仍可能改写引文</strong></article><article><span>Gemma</span><h3>在 Prompt 中再加逐字自检</h3><p>要求模型核对每个词和标点，再填写段落与页码。</p><strong>剩余问题：运行较慢，定位仍会失败</strong></article><article><span>Finance pipeline</span><h3>模型只选 Evidence ID（证据编号）</h3><p>程序先给每段原文编号；模型选三个编号，程序再恢复原句与页码。</p><strong>设计变化：判断交给模型，精确复制交给程序</strong></article></div>`,
+    body: `<div class="simple-columns"><article><span>DeepSeek</span><h3>用 Prompt（模型指令）约束输出</h3><p class="method-copy">模型直接阅读案例文本，并一次生成三个风险、分类、JSON、引文与位置。</p><dl class="design-details"><div><dt>判断</dt><dd>模型</dd></div><div><dt>逐字复制</dt><dd>模型</dd></div><div><dt>主要优势</dt><dd>云端运行最快</dd></div></dl><strong>剩余问题：Prompt 能固定格式，却不能保证模型不改写引文</strong></article><article><span>Gemma</span><h3>在 Prompt 中再加逐字自检</h3><p class="method-copy">本地模型按六步检查每个词和标点，再填写段落与页码。</p><dl class="design-details"><div><dt>判断</dt><dd>模型</dd></div><div><dt>逐字复制</dt><dd>模型自检</dd></div><div><dt>主要优势</dt><dd>文件留在本机</dd></div></dl><strong>剩余问题：运行较慢，定位仍可能失败</strong></article><article><span>Finance pipeline</span><h3>模型只选 Evidence ID（证据编号）</h3><p class="method-copy">程序先给候选原文编号；模型选三个编号，程序恢复原句、段落与页码。</p><dl class="design-details"><div><dt>判断</dt><dd>金融模型</dd></div><div><dt>逐字复制</dt><dd>确定性程序</dd></div><div><dt>主要优势</dt><dd>精确字段可保证</dd></div></dl><strong>设计变化：模型做判断，程序做必须精确的工作</strong></article></div>`,
     sources: [["DeepSeek PV016", "prompts/PV016.md"], ["Gemma PV015", "prompts/PV015.md"], ["Finance PV013", "prompts/PV013.md"]], notes: "只讲三种方案如何不同，不再展开所有调优版本。"
   },
   {
@@ -52,7 +52,7 @@ window.FINANCIAL_FILING_SLIDES = [
   },
   {
     layout: "close", kicker: "10 · 选择结论", title: "在“可追溯优先”的目标下，最实用的是<br>Finance pipeline",
-    body: `<div class="closing-evidence"><article><span>稳定性</span><strong>3 / 3 公司完整通过</strong><p>格式、逐字引文与位置均可回查</p></article><article><span>时间代价</span><strong>平均机器时间 2.1 分钟</strong><p>慢于 DeepSeek，快于 Gemma</p></article><article><span>为什么选择它</span><strong>减少模型容易犯的错误</strong><p>模型判断；程序负责精确字段</p></article></div><blockquote><strong>选择顺序：先保证完整与可追溯，再比较速度。</strong>DeepSeek 更快但仅 1/3 完整通过；Finance 较慢却 3/3 完整通过。因此本任务选择 Finance，不代表小模型本身更聪明。</blockquote><p class="thanks">谢谢 · Questions welcome</p>`,
+    body: `<div class="closing-evidence"><article><span>稳定性</span><strong>3 / 3 公司完整通过</strong><p>固定格式、逐字引文与位置都能回查；DeepSeek 为 1 / 3，Gemma 为 2 / 3。</p></article><article><span>时间代价</span><strong>平均机器时间 2.1 分钟</strong><p>慢于 DeepSeek 的 6.7 秒，快于 Gemma 的 3.5 分钟；这是本实验端到端时间。</p></article><article><span>优势来自哪里</span><strong>减少模型容易犯的精确复制错误</strong><p>模型判断风险；程序恢复引文、段落与页码，最后仍由人工复核金融含义。</p></article></div><blockquote><strong>选择规则：先保证完整与可追溯，再比较速度。</strong>因此本任务选择 Finance pipeline；这说明职责拆分更合适，不代表小模型本身更聪明。</blockquote><div class="decision-boundary"><p><span>适合这类任务</span><strong>问题可拆分，同时要求固定格式、逐字证据与可靠定位</strong></p><p><span>仍不能自动保证</span><strong>双栏 PDF 解析、证据是否充分，以及风险分类是否最合理</strong></p></div><p class="thanks">谢谢 · Questions welcome</p>`,
     sources: [["中文完整报告", "report/financial_filing_extraction_report_zh.md"], ["项目仓库", "https://github.com/Alhabor/financial-filing-extraction"]], notes: "结束时只重复方案选择、时间权衡和原因。"
   }
 ];
