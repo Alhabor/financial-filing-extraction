@@ -236,8 +236,8 @@ code { font-family: "SF Mono", ui-monospace, monospace; font-size: .88em; }
 
 .result-figure { height: calc(var(--u) * 32.5); }
 .score-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(var(--u) * 1); margin-top: calc(var(--u) * .8); }
-.score-summary span { padding-top: calc(var(--u) * .6); border-top: 2px solid var(--hair); color: var(--muted); font-size: calc(var(--u) * 1); }
-.score-summary strong { float: right; color: var(--green); font: 750 calc(var(--u) * 1.25)/1 "SF Mono", monospace; }
+.score-summary span { display: flex; align-items: baseline; justify-content: center; gap: calc(var(--u) * .75); padding-top: calc(var(--u) * .6); border-top: 2px solid var(--hair); color: var(--muted); font-size: calc(var(--u) * 1); }
+.score-summary strong { color: var(--green); font: 750 calc(var(--u) * 1.25)/1 "SF Mono", monospace; white-space: nowrap; }
 .metric-layout { display: grid; grid-template-columns: 1.5fr .65fr; gap: calc(var(--u) * 1.7); height: calc(var(--u) * 34.2); min-height: 0; }
 .metric-layout .figure-wrap { height: 100%; min-height: 0; overflow: hidden; }
 .metric-copy { display: flex; flex-direction: column; justify-content: space-between; gap: calc(var(--u) * .8); }
