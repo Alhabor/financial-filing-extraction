@@ -1,5 +1,7 @@
 # Mini-exercise 实验设计
 
+[English version](EXPERIMENT_DESIGN.en.md) | 中文
+
 **版本：** v0.2.0
 **状态：** 准备轮已收口；已完成精简 R1 及两个优化方案扩展盲测
 **项目：** Group 7 — Financial filing extraction

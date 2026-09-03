@@ -1,5 +1,7 @@
 # Financial filing extraction — HTML presentation
 
+[English version](README.en.md) | 中文
+
 中英文课堂演示入口：`presentation/index.html`
 
 本演示是 11 页固定 16:9 静态 HTML deck，支持：

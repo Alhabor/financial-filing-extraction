@@ -1,5 +1,7 @@
 # 产品仓库路线
 
+[English version](PRODUCT_REPO_PLAN.en.md) | 中文
+
 ## 产品仓库名
 
 `financial_filing_risk_analyzer`
@@ -49,4 +51,3 @@
 - 默认不保存用户上传文件，除非明确启用存储；
 - 对上传文件、请求频率、上下文长度和费用设置限制；
 - 产品定位为有证据的风险筛查辅助，不提供投资建议或自动交易。
-

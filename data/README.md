@@ -1,5 +1,7 @@
 # 数据目录说明
 
+[English version](README.en.md) | 中文
+
 本目录保存 Group 7 mini-exercise 的公开 10-K 材料及其可重复生成的文本衍生物。
 
 ## 目录结构

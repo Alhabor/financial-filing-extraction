@@ -1,5 +1,7 @@
 # 实验运行档案
 
+[English version](README.en.md) | 中文
+
 这里保存准备轮 `P`、冻结确认 `F` 和正式测试 `R1`/`R2`/`R3` 的运行记录。准备轮的固定矩阵与退出条件见 [P_PROTOCOL.md](P_PROTOCOL.md)。
 
 每个运行目录对应一次“模型 × 案例 × 尝试”。推荐命名：

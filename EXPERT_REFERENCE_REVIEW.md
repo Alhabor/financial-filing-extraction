@@ -1,5 +1,7 @@
 # 专业解读参考核查
 
+[English version](EXPERT_REFERENCE_REVIEW.en.md) | 中文
+
 **项目：** Financial filing extraction  
 **课程：** SHBI-GB 7343 — AI in Finance  
 **版本：** v0.1.0  

@@ -1,6 +1,8 @@
 # Report assets
 
-主报告：[`financial_filing_extraction_report_zh.md`](financial_filing_extraction_report_zh.md)
+[English version](README.en.md) | 中文
+
+主报告：[`financial_filing_extraction_report_zh.md`](financial_filing_extraction_report_zh.md) · [英文镜像](financial_filing_extraction_report_en.md)
 
 ## 图表再生成
 

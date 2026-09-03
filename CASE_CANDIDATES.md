@@ -1,5 +1,7 @@
 # 10-K 候选案例清单
 
+[English version](CASE_CANDIDATES.en.md) | 中文
+
 **项目：** Financial filing extraction
 **课程：** SHBI-GB 7343 — AI in Finance
 **小组：** Group 7

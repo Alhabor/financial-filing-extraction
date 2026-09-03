@@ -1,5 +1,7 @@
 # Frozen case packets
 
+[English version](README.en.md) | 中文
+
 这里保存准备轮使用的短案例包。每个案例包由同一组 PDF 页面生成：
 
 - `packet.txt`：带 `[PDF_PAGE n | PRINTED_PAGE m]` 和 `[PARAGRAPH CASE-Pnnn]` 定位标记的文本视图；

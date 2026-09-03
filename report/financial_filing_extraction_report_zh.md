@@ -1,5 +1,7 @@
 # Financial filing extraction：小模型方案为什么在 10-K 风险抽取中更好用
 
+[English version](financial_filing_extraction_report_en.md) | 中文
+
 **课程：** SHBI-GB 7343 — AI in Finance<br>
 **小组：** Group 7<br>
 **项目：** Mini-exercise: financial filing extraction<br>

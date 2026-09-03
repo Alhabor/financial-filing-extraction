@@ -1,5 +1,7 @@
 # Financial filing extraction
 
+[English version](README.en.md) | 中文
+
 Group 7 的 **SHBI-GB 7343 — AI in Finance** 课程项目。项目从课程要求的 10-K 风险因素抽取出发，比较三种模型在真实金融分析工作流中的适配方式，并将实验结果延伸为一个可追溯的 filing risk analyzer 原型。
 
 ## 项目目标
@@ -45,7 +47,7 @@ Group 7 的 **SHBI-GB 7343 — AI in Finance** 课程项目。项目从课程要
 
 精简 R1 结果见 [experiments/R1_PFE_SUMMARY.md](experiments/R1_PFE_SUMMARY.md)，额外优化方案盲测见 [experiments/R2_R3_OPTIMIZED_SUMMARY.md](experiments/R2_R3_OPTIMIZED_SUMMARY.md)。原计划 24 次 P003 稳定性矩阵未运行，因此项目不声称已建立统计稳定性。产品演示仓库和部署仍属于下一阶段。
 
-面向课堂展示与后续网页阅读的完整中文实验报告见 [report/financial_filing_extraction_report_zh.md](report/financial_filing_extraction_report_zh.md)。报告包含三种方案的调优轨迹、R1–R3 结果、JPM 双栏 PDF 失败案例和可复用的 PNG/SVG 图表；实验结论暂时留空，等待小组阅读证据后提炼。
+面向课堂展示与后续网页阅读的完整中文实验报告见 [report/financial_filing_extraction_report_zh.md](report/financial_filing_extraction_report_zh.md)，英文镜像见 [report/financial_filing_extraction_report_en.md](report/financial_filing_extraction_report_en.md)。报告包含三种方案的调优轨迹、R1–R3 结果、JPM 双栏 PDF 失败案例和可复用的 PNG/SVG 图表；实验结论暂时留空，等待小组阅读证据后提炼。
 
 ## 仓库边界
 

@@ -1,5 +1,7 @@
 # 评分与金融分析
 
+[English version](README.en.md) | 中文
+
 这里保存风险证据核验、人工金融分析、专家参照和自动统计结果。评分文件必须通过 `run_id`、`case_id`、`model_id` 和 `rubric_version` 与原始运行关联。
 
 评价分为三层：
