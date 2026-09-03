@@ -240,6 +240,7 @@ code { font-family: "SF Mono", ui-monospace, monospace; font-size: .88em; }
 .score-summary strong { color: var(--green); font: 750 calc(var(--u) * 1.25)/1 "SF Mono", monospace; white-space: nowrap; }
 .metric-layout { display: grid; grid-template-columns: 1.5fr .65fr; gap: calc(var(--u) * 1.7); height: calc(var(--u) * 34.2); min-height: 0; }
 .metric-layout .figure-wrap { height: 100%; min-height: 0; overflow: hidden; }
+html[data-language="zh"] .slide[data-layout="metric"] .bottom-claim { margin-top: calc(var(--u) * 1.8); }
 .metric-copy { display: flex; flex-direction: column; justify-content: space-between; gap: calc(var(--u) * .8); }
 .metric-copy p { padding: calc(var(--u) * 1); background: var(--surface); border-left: 3px solid var(--green); font-size: calc(var(--u) * .92); }
 .metric-copy strong { display: block; margin: calc(var(--u) * .35) 0; font-size: calc(var(--u) * 1.35); }
